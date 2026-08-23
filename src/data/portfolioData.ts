@@ -82,8 +82,8 @@ export const BRAND_INFO = {
   notionSite: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
   notionMarketplace: 'https://owen-oparaku.notion.site/Donor-Pulse-1fc7f686868a806789ddec17e2686d75',
   profilePhotoDrive: 'https://drive.google.com/file/d/1WD_DujTmlpSi9yzN5B0GxDq2B59Gjr5p/view?usp=sharing',
-  profilePhotoUrl: 'src/assets/owens_profile.png',
-  profilePhotoFallback: 'src/assets/owens_profile.png',
+  profilePhotoUrl: owensProfilePhoto,
+  profilePhotoFallback: owensProfilePhoto,
 };
 
 export const STATS: StatItem[] = [
