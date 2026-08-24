@@ -210,9 +210,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: 'Engineered a bespoke, unified Client Management System in Notion powered by an 8-relational database architecture. Deeply connected lead pipelines, active client engagements, project milestone queues, budgeting, vendor logistics, and automated Make.com notification webhooks into one central executive cockpit.',
     outcome: 'Eliminated operational silos, cut client onboarding setup time by 75%, and gave founders instant transparency across all active deliverables. The architecture was so robust that the agency closed their expansion deals on the spot during the initial demo.',
     stats: { label: 'System Complexity', value: '8 Connected Databases' },
-    link: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    link: 'https://owen-oparaku.notion.site/Vultures-Client-Management-System-3a47f686868a80dd9ee3d2cae2b7d46f?source=copy_link',
     linkText: 'View Notion Workspace Breakdown',
-    liveDemoUrl: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    liveDemoUrl: 'https://owen-oparaku.notion.site/Vultures-Client-Management-System-3a47f686868a80dd9ee3d2cae2b7d46f?source=copy_link',
     highlights: [
       '8 interconnected relational databases unifying clients, deliverables, tasks, and budgets',
       'Automated client onboarding pipeline with stage triggers and status notifications',
@@ -250,9 +250,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: 'Engineered an all-in-one Client Management & Production Workspace featuring structured client intake portals, deliverable review queues, vendor dispatch tracking, and automated workback milestone schedules calculated directly from event dates.',
     outcome: 'Replaced 5 disparate tools with a single source of truth, reduced internal status meetings by 80%, and achieved 100% on-time milestone delivery across live client productions.',
     stats: { label: 'Tools Replaced', value: '5 Tools Unified' },
-    link: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    link: 'https://https://owen-oparaku.notion.site/Client-Management-System-3667f686868a80578963c4f9c8af9c98?source=copy_link',
     linkText: 'View Production System Breakdown',
-    liveDemoUrl: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    liveDemoUrl: 'https://owen-oparaku.notion.site/Client-Management-System-3667f686868a80578963c4f9c8af9c98?source=copy_link',
     highlights: [
       'Single centralized hub connecting client contracts, production schedules, and budgets',
       'Structured approval checkpoints keeping stakeholders informed without email clutter',
@@ -270,9 +270,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: "Engineered Marcus' System — a centralized operational command center in Notion orchestrating wholesale accounts, real-time inventory balances, automated low-stock reorder thresholds, supplier lead times, and dispatch fulfillment pipelines.",
     outcome: 'Streamlined order fulfillment from procurement to dispatch, eradicated stockouts across core SKUs, and provided instant clarity on supplier unit economics, active purchase orders, and sales margins.',
     stats: { label: 'Inventory Accuracy', value: '100% Real-Time Tracking' },
-    link: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    link: 'https://owen-oparaku.notion.site/Marcus-System-3667f686868a8040bd6bd136425008e1?source=copy_link',
     linkText: 'View Supply Chain & Wholesale Engine',
-    liveDemoUrl: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    liveDemoUrl: 'https://owen-oparaku.notion.site/Marcus-System-3667f686868a8040bd6bd136425008e1?source=copy_link',
     highlights: [
       'Real-time stock level monitoring with dynamic reorder threshold formulas',
       'Integrated wholesale order and procurement pipeline tracking vendor lead times and invoices',
@@ -290,9 +290,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     solution: 'Designed a bespoke Notion Operating System built specifically for fine jewelry artisans. Engineered dedicated modules for custom client commissions, CAD design approvals, precious metal/gemstone inventory balances, workshop bench workflows, and valuation documentation.',
     outcome: 'Accelerated custom piece turnaround, reduced workshop production cycle friction, and provided artisans and sales staff with instant access to gem specifications, metal weights, ring sizings, and client commission histories.',
     stats: { label: 'Production Cycle', value: 'Streamlined Commission Workflow' },
-    link: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    link: 'https://owen-oparaku.notion.site/Knight-Jewelries-Studio-2187f686868a80418071fb84aa15d471?source=copy_link',
     linkText: 'View Jewelry Studio & Vault System',
-    liveDemoUrl: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    liveDemoUrl: 'https://owen-oparaku.notion.site/Knight-Jewelries-Studio-2187f686868a80418071fb84aa15d471?source=copy_link',
     highlights: [
       'End-to-end bespoke commission pipeline from 3D CAD modeling to bench crafting and QA',
       'Precious gemstone and precious metal weight inventory tracking with automated pricing formulas',
@@ -300,23 +300,24 @@ export const CASE_STUDIES: CaseStudy[] = [
     ]
   },
   {
-    id: 'louis-lessor',
-    client: 'Louis Lessor',
-    title: 'Multi-Tier CRM & Coach Pipeline System',
-    industry: 'Coaching Network & High-Ticket Sales',
-    tools: ['Notion', 'Relational Databases', 'Access Control', 'Sales Pipelines'],
-    badge: 'Sales Operations',
-    problem: 'Growing a coaching network sounds great until reps start stepping on each other\'s leads and coaches cannot tell what is actually happening in their own pipeline. Leads were duplicated, and reps were confused about who owned which conversation.',
-    solution: 'Engineered a multi-tier CRM in Notion with strictly filtered views for each individual coach, tailored guest access for around 20 sales representatives, and one master executive marketing CRM tracking every lead by assigned coach.',
-    outcome: 'Eliminated lead overlapping completely. Every coach now has clear visibility into their active pipeline while the founder maintains total oversight across the entire sales team.',
-    stats: { label: 'Sales Reps Managed', value: '20+ Active Reps' },
-    link: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
-    linkText: 'View Multi-Tier CRM Structure',
-    liveDemoUrl: 'https://owen-oparaku.notion.site/Oparaku-Owens-Project-Manager-Notion-Expert-Virtual-Assistant-1fc7f686868a806789ddec17e2686d75',
+    id: 'nova-lines',
+    client: 'Nova Lines',
+    title: 'Content, Community & Subscriber Operations Hub',
+    industry: 'Digital Marketing Agency',
+    tools: ['Notion', 'Content Pipelines', 'Event Management', 'Subscriber Tracking'],
+    badge: 'Marketing Operations',
+    problem: 'Running a content driven brand across articles, newsletters, social posts and video meant Nova Lines had ideas scattered across five different tools, no clear view of what was published versus planned, and a growing subscriber list nobody was properly segmenting or tracking.',
+    solution: 'Built a full Notion operations hub with a content workflow board covering articles, newsletters, social posts and video from idea to publish, a live events and community calendar tracking registration status for every meetup and workshop, a team dashboard mapping every role and contact, and a subscriber system tagging each contact by campaign type and active status.',
+    outcome: 'Nova Lines now runs their entire content and community engine from one workspace. Every piece of content has a clear owner and stage, every event shows real time registration status, and the subscriber base is fully segmented for targeted outreach instead of one size fits all blasts.',
+    stats: { label: 'Content Pieces Tracked', value: '15+ Live Items' },
+    link: 'https://owen-oparaku.notion.site/American-Mahjong-2927f686868a80cbb666d8899010694a?source=copy_link',
+    linkText: 'View Content & Community Hub',
+    liveDemoUrl: 'https://owen-oparaku.notion.site/American-Mahjong-2927f686868a80cbb666d8899010694a?source=copy_link',
     highlights: [
-      'Isolated guest permissions preventing unauthorized lead visibility',
-      'Unified executive marketing CRM with real-time deal stage tracking',
-      'Zero lead collision across twenty remote sales representatives'
+      'Unified content pipeline for articles, newsletters, social posts and video',
+    'Live event calendar with registration status tracking',
+    'Team dashboard mapping every role and contact',
+    'Segmented subscriber system by campaign and status'
     ]
   }
 ];
