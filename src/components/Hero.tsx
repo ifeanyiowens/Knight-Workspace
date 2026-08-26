@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BRAND_INFO } from '../data/portfolioData';
-import owensProfilePhoto from '../assets/owens_profile.png';
+import owensProfilePhoto from '../assets/owens_profile_nobg.png';
 import { Calendar, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
 
@@ -94,48 +94,42 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           </div>
 
-          {/* Right Column: Clean, Welcoming Portrait Image of Owens (No cluttered cards) */}
+          {/* Right Column: Photo cut out and floating free, no card frame */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md">
-              
-              {/* Soft warm ambient halo behind the photo */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#1B4332]/60 to-[#D4AF37]/30 rounded-3xl blur-2xl opacity-70 -z-10" />
 
-              {/* Clean Image Container with elegant soft framing */}
-              <div className="relative rounded-3xl overflow-hidden bg-[#16201B] border border-white/15 shadow-2xl group">
-                {!imageError ? (
-                  <img
-                    src={owensProfilePhoto}
-                    alt="Owens Oparaku"
-                    className="w-full h-auto max-h-[480px] object-cover object-top group-hover:scale-[1.02] transition-transform duration-700"
-                    onError={() => setImageError(true)}
-                  />
-                ) : (
-                  <div className="w-full h-80 flex flex-col items-center justify-center bg-[#1B4332] text-white p-6 text-center">
-                    <span className="font-serif text-4xl font-bold text-[#D4AF37] mb-2">OO</span>
-                    <span className="font-serif text-lg font-bold">Owens Oparaku</span>
-                    <span className="text-xs text-white/70 mt-1">Business Operations Architect</span>
-                  </div>
-                )}
+              {/* Soft warm ambient halo behind the photo, this is what gives it depth without a box */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#1B4332]/70 to-[#D4AF37]/40 rounded-full blur-[70px] opacity-80 -z-10" />
 
-                {/* Subtle soft bottom gradient overlay for smooth contrast */}
-                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0E1411] via-[#0E1411]/60 to-transparent pointer-events-none" />
-
-                {/* Friendly, Welcoming Name & Title Bar */}
-                <div className="absolute bottom-4 inset-x-4 p-3.5 rounded-2xl bg-[#111815]/90 backdrop-blur-md border border-white/10 shadow-lg flex items-center justify-between">
-                  <div>
-                    <h3 className="font-serif text-base font-bold text-white leading-tight">
-                      Owens Oparaku
-                    </h3>
-                    <p className="text-xs text-[#D4AF37] font-medium">
-                      Your Systems & Operations Architect
-                    </p>
-                  </div>
-                  <span className="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] font-semibold border border-emerald-500/30 flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Available for Q2/Q3
-                  </span>
+              {!imageError ? (
+                <img
+                  src={owensProfilePhoto}
+                  alt="Owens Oparaku"
+                  className="relative w-full h-auto max-h-[520px] object-contain object-bottom mx-auto drop-shadow-[0_25px_35px_rgba(0,0,0,0.45)]"
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="w-full h-80 flex flex-col items-center justify-center bg-[#1B4332] text-white p-6 text-center rounded-3xl">
+                  <span className="font-serif text-4xl font-bold text-[#D4AF37] mb-2">OO</span>
+                  <span className="font-serif text-lg font-bold">Owens Oparaku</span>
+                  <span className="text-xs text-white/70 mt-1">Business Operations Architect</span>
                 </div>
+              )}
+
+              {/* Floating name badge, no longer pinned to a card edge */}
+              <div className="relative mx-auto -mt-6 w-fit max-w-[90%] p-3.5 rounded-2xl bg-[#111815]/90 backdrop-blur-md border border-white/10 shadow-lg flex items-center gap-4">
+                <div>
+                  <h3 className="font-serif text-base font-bold text-white leading-tight">
+                    Owens Oparaku
+                  </h3>
+                  <p className="text-xs text-[#D4AF37] font-medium">
+                    Your Systems & Operations Architect
+                  </p>
+                </div>
+                <span className="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[11px] font-semibold border border-emerald-500/30 flex items-center gap-1.5 whitespace-nowrap">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Available for Q2/Q3
+                </span>
               </div>
 
             </div>
