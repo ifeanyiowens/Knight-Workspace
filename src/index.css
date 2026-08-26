@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
   --color-forest: #1B4332;
   --color-forest-dark: #122B20;
   --color-forest-light: #2D6A4F;
@@ -19,11 +19,11 @@
 }
 
 .font-playfair {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
 }
 
 .font-jakarta {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Custom smooth scroll and subtle scrollbar */
