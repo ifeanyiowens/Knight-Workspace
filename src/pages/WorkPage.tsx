@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { sectionBgStyle } from '../utils/sectionBackground';
 import { CASE_STUDIES } from '../data/portfolioData';
 import { CaseStudy, PageId } from '../types';
 import { CaseStudyModal } from '../components/CaseStudyModal';
@@ -65,7 +64,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
     <div className="w-full bg-[#0D1310] text-[#EDEDEA]">
       
       {/* Page Header Banner */}
-      <section className="py-20 md:py-24 bg-[#111815] border-b border-white/10 relative overflow-hidden" style={sectionBgStyle('17,24,21')}>
+      <section className="py-20 md:py-24 bg-[#111815]/72 border-b border-white/10 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#1B4332]/30 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

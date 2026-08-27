@@ -4,6 +4,7 @@ import { Footer } from './components/Footer';
 import { CalModal } from './components/CalModal';
 import { CustomCursor } from './components/CustomCursor';
 import { NoiseOverlay } from './components/NoiseOverlay';
+import { SiteBackground } from './components/SiteBackground';
 import { ScrollProgress } from './components/ScrollProgress';
 import { PageSwitcherBar } from './components/PageSwitcherBar';
 import { PageId } from './types';
@@ -73,9 +74,12 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0D1310] text-[#EDEDEA] font-sans selection:bg-[#D4AF37]/30 selection:text-[#D4AF37] relative flex flex-col justify-between">
+    <div className="min-h-screen text-[#EDEDEA] font-sans selection:bg-[#D4AF37]/30 selection:text-[#D4AF37] relative flex flex-col justify-between">
       {/* Custom smooth tracking cursor */}
       <CustomCursor />
+
+      {/* Single continuous background image behind the whole page */}
+      <SiteBackground />
 
       {/* Subtle organic film grain texture */}
       <NoiseOverlay opacity={0.035} />

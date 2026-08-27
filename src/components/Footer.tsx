@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
   };
 
   return (
-    <footer className="bg-[#0A0E0C] text-[#EDEDEA] pt-20 pb-12 border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-[#0A0E0C]/72 text-[#EDEDEA] pt-20 pb-12 border-t border-white/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Giant Statement Headline (Moritz Dunkel signature) */}

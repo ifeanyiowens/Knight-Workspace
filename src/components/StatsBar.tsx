@@ -1,7 +1,6 @@
 import React from 'react';
 import { STATS } from '../data/portfolioData';
 import { Clock, CheckCircle2, TrendingUp, Sparkles, ArrowUpRight } from 'lucide-react';
-import { sectionBgStyle } from '../utils/sectionBackground';
 
 export const StatsBar: React.FC = () => {
   const getIcon = (iconName: string) => {
@@ -18,7 +17,7 @@ export const StatsBar: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-[#0C120F] text-[#EDEDEA] border-b border-white/10" style={sectionBgStyle('12,18,15')}>
+    <section className="py-16 bg-[#0C120F]/72 text-[#EDEDEA] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Tag */}
