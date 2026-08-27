@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { sectionBgStyle } from '../utils/sectionBackground';
 import { PROCESS_STEPS } from '../data/portfolioData';
 import { ProcessStep, PageId } from '../types';
 import { SystemWorkflowVisualizer } from '../components/SystemWorkflowVisualizer';
@@ -62,7 +63,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
     <div className="w-full bg-[#0D1310] text-[#EDEDEA]">
       
       {/* Header Banner */}
-      <section className="py-20 md:py-24 bg-[#111815]/88 border-b border-white/10 relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-[#111815] border-b border-white/10 relative overflow-hidden" style={sectionBgStyle('17,24,21')}>
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-[#1B4332]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

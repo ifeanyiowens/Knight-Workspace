@@ -3,6 +3,7 @@ import { BRAND_INFO } from '../data/portfolioData';
 import owensProfilePhoto from '../assets/owens_profile.png';
 import { Calendar, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
+import { sectionBgStyle } from '../utils/sectionBackground';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -17,7 +18,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   };
 
   return (
-    <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-[#0E1411]/88 text-[#EDEDEA] overflow-hidden border-b border-white/10">
+    <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-[#0E1411] text-[#EDEDEA] overflow-hidden border-b border-white/10" style={sectionBgStyle('14,20,17')}>
       {/* Ambient warm background glows */}
       <div className="absolute top-10 left-1/4 w-[500px] h-[500px] bg-[#1B4332]/40 rounded-full blur-[140px] pointer-events-none -z-10" />
       <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-[#D4AF37]/15 rounded-full blur-[120px] pointer-events-none -z-10" />
