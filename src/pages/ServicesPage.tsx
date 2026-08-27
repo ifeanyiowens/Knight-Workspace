@@ -53,7 +53,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
   };
 
   return (
-    <div className="w-full bg-[#0D1310] text-[#EDEDEA]">
+    <div className="w-full text-[#EDEDEA]">
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#111815]/72 border-b border-white/10 relative overflow-hidden">
