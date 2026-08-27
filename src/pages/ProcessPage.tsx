@@ -156,7 +156,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         </div>
 
         {/* Active Phase Deep Dive */}
-        <div className="rounded-3xl bg-[#16201B] border border-white/10 p-8 sm:p-10 shadow-2xl relative overflow-hidden mb-16">
+        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-8 sm:p-10 shadow-2xl relative overflow-hidden mb-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-6 space-y-4">

@@ -40,7 +40,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
         </div>
 
         {/* Calculator Card Container (Moritz Dunkel style) */}
-        <div className="rounded-3xl bg-[#16201B] border border-white/10 shadow-2xl overflow-hidden">
+        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 shadow-2xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
             {/* Left Column: Sliders & Controls */}

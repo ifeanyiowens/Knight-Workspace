@@ -89,7 +89,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
         </div>
 
         {/* Deep Dive Problem-to-Solution Bridge */}
-        <div className="rounded-2xl bg-[#16201B] border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left: Current Chaos */}

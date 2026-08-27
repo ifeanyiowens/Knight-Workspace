@@ -113,7 +113,7 @@ export const TestimonialsSection: React.FC = () => {
         {/* Carousel / Spotlight View */}
         {activeTab === 'carousel' && (
           <div className="max-w-3xl mx-auto">
-            <div className="rounded-3xl bg-[#16201B] border border-white/10 p-8 sm:p-12 shadow-2xl relative">
+            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-8 sm:p-12 shadow-2xl relative">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-1.5">
                   {[...Array(TESTIMONIALS[carouselIndex].rating)].map((_, i) => (

@@ -110,7 +110,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
         </div>
 
         {/* Deep Dive Spotlight for Active Phase */}
-        <div className="rounded-2xl bg-[#16201B] border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden mb-12">
+        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left: Phase Overview */}

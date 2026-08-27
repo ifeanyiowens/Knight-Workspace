@@ -27,7 +27,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           {/* Left Column: Visual Profile & Badges */}
           <div className="lg:col-span-5 flex flex-col space-y-6">
             
-            <div className="rounded-3xl bg-[#16201B] border border-white/10 p-7 shadow-2xl relative overflow-hidden">
+            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-7 shadow-2xl relative overflow-hidden">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-[#1B4332] border-2 border-[#D4AF37] flex-shrink-0 shadow-lg">
                   {!imageFailed ? (

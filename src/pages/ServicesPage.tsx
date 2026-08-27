@@ -246,7 +246,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         </div>
 
         {/* 3-Tier Engagement Structure Comparison */}
-        <div className="rounded-3xl bg-[#16201B] border border-white/10 p-8 sm:p-10 shadow-2xl mb-16">
+        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-8 sm:p-10 shadow-2xl mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest font-bold block mb-2">
               HOW WE WORK TOGETHER

@@ -119,7 +119,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
           {/* Left: Quick Booking Card & Channel Directs */}
           <div className="lg:col-span-5 space-y-6">
             
-            <div className="rounded-3xl bg-[#16201B] border border-white/10 p-7 sm:p-8 shadow-2xl">
+            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-7 sm:p-8 shadow-2xl">
               <span className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest font-bold block mb-2">
                 INSTANT SCHEDULING
               </span>
@@ -187,7 +187,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
 
           {/* Right: Structured Architecture Project Brief Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-3xl bg-[#16201B] border border-white/10 p-7 sm:p-10 shadow-2xl">
+            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-7 sm:p-10 shadow-2xl">
               
               <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#D4AF37] uppercase">
                 <MessageSquare className="w-4 h-4" />
@@ -323,7 +323,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
         </div>
 
         {/* Frequently Asked Questions Accordion */}
-        <div className="rounded-3xl bg-[#16201B] border border-white/10 p-8 sm:p-12 mb-20 shadow-2xl">
+        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-8 sm:p-12 mb-20 shadow-2xl">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest font-bold block mb-2">
               FREQUENTLY ASKED QUESTIONS
@@ -337,7 +337,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
             {FAQ_ITEMS.map((faq, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl bg-[#0E1411] border border-white/10 overflow-hidden transition-all"
+                className="rounded-2xl bg-[#0E1411]/85 border border-white/10 overflow-hidden transition-all"
               >
                 <button
                   onClick={() => toggleFaq(idx)}

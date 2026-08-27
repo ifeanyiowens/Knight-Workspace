@@ -51,7 +51,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onOpenBooking })
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
           {/* Left Column: Direct Cal.com Booking Card (Moritz Dunkel style) */}
-          <div className="lg:col-span-5 flex flex-col justify-between rounded-3xl bg-[#16201B] text-[#EDEDEA] p-7 sm:p-9 lg:p-10 border border-[#D4AF37]/30 shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-5 flex flex-col justify-between rounded-3xl bg-[#16201B]/88 text-[#EDEDEA] p-7 sm:p-9 lg:p-10 border border-[#D4AF37]/30 shadow-2xl relative overflow-hidden">
             
             <div className="space-y-6">
               <div className="flex items-center justify-between">
@@ -116,7 +116,7 @@ export const BookingSection: React.FC<BookingSectionProps> = ({ onOpenBooking })
           </div>
 
           {/* Right Column: Contact Inquiry & Quick Audit Form */}
-          <div className="lg:col-span-7 rounded-3xl bg-[#16201B] border border-white/10 p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between">
+          <div className="lg:col-span-7 rounded-3xl bg-[#16201B]/88 border border-white/10 p-7 sm:p-9 lg:p-10 shadow-2xl flex flex-col justify-between">
             
             {!formSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-5">

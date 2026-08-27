@@ -137,7 +137,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         </div>
 
         {/* Bottom Banner */}
-        <div className="rounded-2xl bg-[#16201B] border border-white/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-1.5 text-center sm:text-left">
             <h4 className="font-serif text-xl sm:text-2xl font-bold text-white">
               Unsure which setup fits your business best?

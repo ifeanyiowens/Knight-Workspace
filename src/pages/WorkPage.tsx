@@ -255,7 +255,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         </div>
 
         {/* Operational Comparison Matrix Table across all 6 clients */}
-        <div className="rounded-3xl bg-[#16201B] border border-white/10 p-6 sm:p-8 shadow-2xl mb-16">
+        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-6 sm:p-8 shadow-2xl mb-16">
           <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#D4AF37]">
             <Cpu className="w-4 h-4" />
             <span>CROSS-CLIENT ARCHITECTURAL MATRIX</span>
