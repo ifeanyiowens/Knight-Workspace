@@ -58,7 +58,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
       <StatsBar />
 
       {/* 4. Problem & Diagnostic Showcase with Before/After Slider */}
-      <section className="py-20 bg-[#111815] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+      <section className="py-20 bg-[#111815]/88 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-8 border-b border-white/10">
@@ -135,7 +135,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
       </section>
 
       {/* 5. Featured Works Preview (3 Top Architectures) */}
-      <section className="py-20 bg-[#0E1411] text-[#EDEDEA] border-b border-white/10 relative">
+      <section className="py-20 bg-[#0E1411]/88 text-[#EDEDEA] border-b border-white/10 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-10 border-b border-white/10">
@@ -231,14 +231,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
       </section>
 
       {/* 6. Live Systems Simulator Preview */}
-      <section className="py-20 bg-[#111815] text-[#EDEDEA] border-b border-white/10">
+      <section className="py-20 bg-[#111815]/88 text-[#EDEDEA] border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SystemWorkflowVisualizer />
         </div>
       </section>
 
       {/* 7. Verified Client Proof & Testimonials Spotlight */}
-      <section className="py-20 bg-[#0E1411] text-[#EDEDEA] border-b border-white/10">
+      <section className="py-20 bg-[#0E1411]/88 text-[#EDEDEA] border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-white/10">
@@ -299,7 +299,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
       </section>
 
       {/* 8. Bottom Page-Turn Call to Action */}
-      <section className="py-20 bg-[#16201B] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+      <section className="py-20 bg-[#16201B]/88 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>

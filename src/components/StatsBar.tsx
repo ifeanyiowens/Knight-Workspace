@@ -17,7 +17,7 @@ export const StatsBar: React.FC = () => {
   };
 
   return (
-    <section className="py-16 bg-[#0C120F] text-[#EDEDEA] border-b border-white/10">
+    <section className="py-16 bg-[#0C120F]/88 text-[#EDEDEA] border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Tag */}

@@ -74,7 +74,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0D1310] text-[#EDEDEA] font-sans selection:bg-[#D4AF37]/30 selection:text-[#D4AF37] relative flex flex-col justify-between">
+    <div className="min-h-screen bg-[#0D1310]/95 text-[#EDEDEA] font-sans selection:bg-[#D4AF37]/30 selection:text-[#D4AF37] relative flex flex-col justify-between">
       {/* Custom smooth tracking cursor */}
       <CustomCursor />
 
