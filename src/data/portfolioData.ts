@@ -311,23 +311,23 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: 'nova-lines',
-    client: 'Nova Lines',
+    client: 'American Mahjong (Nova Lines)',
     title: 'Content, Community & Subscriber Operations Hub',
-    industry: 'Digital Marketing Agency',
+    industry: 'Games, Hobby & Community Media',
     tools: ['Notion', 'Content Pipelines', 'Event Management', 'Subscriber Tracking'],
-    badge: 'Marketing Operations',
-    problem: 'Running a content driven brand across articles, newsletters, social posts and video meant Nova Lines had ideas scattered across five different tools, no clear view of what was published versus planned, and a growing subscriber list nobody was properly segmenting or tracking.',
-    solution: 'Built a full Notion operations hub with a content workflow board covering articles, newsletters, social posts and video from idea to publish, a live events and community calendar tracking registration status for every meetup and workshop, a team dashboard mapping every role and contact, and a subscriber system tagging each contact by campaign type and active status.',
-    outcome: 'Nova Lines now runs their entire content and community engine from one workspace. Every piece of content has a clear owner and stage, every event shows real time registration status, and the subscriber base is fully segmented for targeted outreach instead of one size fits all blasts.',
+    badge: 'Community & Content OS',
+    problem: 'Running a content driven American Mahjong brand across rule breakdowns, newsletters, social posts and video meant Nova Lines had ideas scattered across five different tools, no clear view of what was published versus planned, and a growing player and subscriber base nobody was properly segmenting or tracking.',
+    solution: 'Built a full Notion operations hub with a content workflow board covering rule guides, newsletters, social posts and video from idea to publish, a live events and community calendar tracking registration status for every game night and tournament, a team dashboard mapping every role and contact, and a subscriber system tagging each player by campaign type and active status.',
+    outcome: 'Nova Lines now runs their entire American Mahjong content and community engine from one workspace. Every piece of content has a clear owner and stage, every game night and tournament shows real time registration status, and the player base is fully segmented for targeted outreach instead of one size fits all blasts.',
     stats: { label: 'Content Pieces Tracked', value: '15+ Live Items' },
     link: 'https://owen-oparaku.notion.site/American-Mahjong-2927f686868a80cbb666d8899010694a?source=copy_link',
     linkText: 'View Content & Community Hub',
     liveDemoUrl: 'https://owen-oparaku.notion.site/American-Mahjong-2927f686868a80cbb666d8899010694a?source=copy_link',
     highlights: [
-      'Unified content pipeline for articles, newsletters, social posts and video',
-    'Live event calendar with registration status tracking',
+      'Unified content pipeline for rule guides, newsletters, social posts and video',
+    'Live game night and tournament calendar with registration status tracking',
     'Team dashboard mapping every role and contact',
-    'Segmented subscriber system by campaign and status'
+    'Segmented player and subscriber system by campaign and status'
     ]
   }
 ];
