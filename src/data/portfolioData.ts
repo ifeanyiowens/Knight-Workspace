@@ -1,5 +1,10 @@
 import { CaseStudy, Testimonial, Certification, Service, StatItem, PageInfo } from '../types';
 import owensProfilePhoto from '../assets/owens_profile.png';
+import vulturesVzwImage from '../assets/case-studies/vultures-vzw.webp';
+import donorPulseImage from '../assets/case-studies/donor-pulse.webp';
+import clientManagementSystemImage from '../assets/case-studies/client-management-system.webp';
+import marcusSystemImage from '../assets/case-studies/marcus-system.webp';
+import knightJewelriesImage from '../assets/case-studies/knight-jewelries.webp';
 
 export const PAGES_CONFIG: PageInfo[] = [
   {
@@ -206,6 +211,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Creative Agency & Event Management',
     tools: ['Notion', 'Make.com', '8 Relational Databases', 'Automations'],
     badge: 'Agency Operating System',
+    image: vulturesVzwImage,
     problem: 'An expanding creative and event management agency struggled with fragmented client briefs, dislocated financial logs, and scattered project files across loose notes and message threads. As their portfolio scaled, the absence of centralized operational architecture created delivery bottlenecks and strained team bandwidth.',
     solution: 'Engineered a bespoke, unified Client Management System in Notion powered by an 8-relational database architecture. Deeply connected lead pipelines, active client engagements, project milestone queues, budgeting, vendor logistics, and automated Make.com notification webhooks into one central executive cockpit.',
     outcome: 'Eliminated operational silos, cut client onboarding setup time by 75%, and gave founders instant transparency across all active deliverables. The architecture was so robust that the agency closed their expansion deals on the spot during the initial demo.',
@@ -226,6 +232,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Nonprofits, Foundations & Mission Teams',
     tools: ['Notion', 'Formulas 2.0', 'Health Scoring', 'Pipeline Logic'],
     badge: 'Donor & Grant OS',
+    image: donorPulseImage,
     problem: 'Nonprofits, foundations, and mission-driven teams routinely lose touch with high-value donors and miss crucial grant reporting deadlines due to expensive, overly rigid enterprise CRMs or messy spreadsheets where records quickly grow obsolete.',
     solution: 'Architected Donor Pulse — an intelligent donor and grant management system in Notion featuring automatic donor health status tracking (Active, Due for Check-in, Gone Quiet), gift and pledge pipeline tracking, program performance analytics, and structured touchpoint logs.',
     outcome: 'Automated donor check-in reminders, protected critical funding streams, and eliminated manual spreadsheet maintenance — empowering teams to steward major donors and grant providers with zero dropped follow-ups.',
@@ -246,6 +253,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Live Events & Production Operations',
     tools: ['Notion', 'Client Portals', 'Automated Workflows', 'Database Relations'],
     badge: 'Production Systems',
+    image: clientManagementSystemImage,
     problem: 'Managing high-stakes event deliverables and client approvals across disconnected spreadsheets, email threads, and group chats led to frequent scope misunderstandings, delayed asset approvals, and stressful last-minute production fire drills.',
     solution: 'Engineered an all-in-one Client Management & Production Workspace featuring structured client intake portals, deliverable review queues, vendor dispatch tracking, and automated workback milestone schedules calculated directly from event dates.',
     outcome: 'Replaced 5 disparate tools with a single source of truth, reduced internal status meetings by 80%, and achieved 100% on-time milestone delivery across live client productions.',
@@ -266,6 +274,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Wholesale & Retail Distribution',
     tools: ['Notion', 'Inventory Formulas', 'Procurement Logic', 'Relational Schemas'],
     badge: 'Supply Chain Command',
+    image: marcusSystemImage,
     problem: 'Scaling a multi-channel retail and wholesale distribution network on disconnected spreadsheets led to frequent inventory discrepancies, delayed supplier purchase orders, and zero real-time visibility into warehouse stock levels and shipment statuses.',
     solution: "Engineered Marcus' System — a centralized operational command center in Notion orchestrating wholesale accounts, real-time inventory balances, automated low-stock reorder thresholds, supplier lead times, and dispatch fulfillment pipelines.",
     outcome: 'Streamlined order fulfillment from procurement to dispatch, eradicated stockouts across core SKUs, and provided instant clarity on supplier unit economics, active purchase orders, and sales margins.',
@@ -286,6 +295,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Luxury Jewelry & Custom Manufacturing',
     tools: ['Notion', 'CAD Revision Tracking', 'Gemstone Inventory', 'Formulas 2.0'],
     badge: 'Luxury Studio OS',
+    image: knightJewelriesImage,
     problem: 'Bespoke fine jewelry commissions and studio inventory were difficult to manage across 3D CAD design revisions, gemstone procurement, artisan bench crafting stages, and final valuation certificates, resulting in production delays and lost customer records.',
     solution: 'Designed a bespoke Notion Operating System built specifically for fine jewelry artisans. Engineered dedicated modules for custom client commissions, CAD design approvals, precious metal/gemstone inventory balances, workshop bench workflows, and valuation documentation.',
     outcome: 'Accelerated custom piece turnaround, reduced workshop production cycle friction, and provided artisans and sales staff with instant access to gem specifications, metal weights, ring sizings, and client commission histories.',

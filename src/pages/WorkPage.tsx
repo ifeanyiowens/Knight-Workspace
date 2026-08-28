@@ -161,7 +161,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
 
                 {/* System Workspace Image Preview */}
                 {study.image && (
-                  <div className="mb-5 overflow-hidden rounded-2xl border border-white/10 bg-black/50 relative group/img aspect-[16/9] shadow-inner">
+                  <div className="mb-5 overflow-hidden rounded-2xl border border-white/10 bg-black/50 relative group/img aspect-[4/3] shadow-inner">
                     <img
                       src={study.image}
                       alt={`${study.title} Notion Workspace Preview`}
