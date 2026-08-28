@@ -5,6 +5,7 @@ import donorPulseImage from '../assets/case-studies/donor-pulse.webp';
 import clientManagementSystemImage from '../assets/case-studies/client-management-system.webp';
 import marcusSystemImage from '../assets/case-studies/marcus-system.webp';
 import knightJewelriesImage from '../assets/case-studies/knight-jewelries.webp';
+import novaLinesImage from '../assets/case-studies/nova-lines.webp';
 
 export const PAGES_CONFIG: PageInfo[] = [
   {
@@ -316,6 +317,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     industry: 'Games, Hobby & Community Media',
     tools: ['Notion', 'Content Pipelines', 'Event Management', 'Subscriber Tracking'],
     badge: 'Community & Content OS',
+    image: novaLinesImage,
     problem: 'Running a content driven American Mahjong brand across rule breakdowns, newsletters, social posts and video meant Nova Lines had ideas scattered across five different tools, no clear view of what was published versus planned, and a growing player and subscriber base nobody was properly segmenting or tracking.',
     solution: 'Built a full Notion operations hub with a content workflow board covering rule guides, newsletters, social posts and video from idea to publish, a live events and community calendar tracking registration status for every game night and tournament, a team dashboard mapping every role and contact, and a subscriber system tagging each player by campaign type and active status.',
     outcome: 'Nova Lines now runs their entire American Mahjong content and community engine from one workspace. Every piece of content has a clear owner and stage, every game night and tournament shows real time registration status, and the player base is fully segmented for targeted outreach instead of one size fits all blasts.',
