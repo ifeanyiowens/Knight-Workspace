@@ -180,12 +180,37 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   </div>
 
                   <div className="mb-4">
+                  {study.image ? (
+                    <div className="mb-4 overflow-hidden rounded-2xl border border-white/10 bg-black/50 relative group/img aspect-[4/3] shadow-inner">
+                      <img
+                        src={study.image}
+                        alt={`${study.title} Notion Workspace Preview`}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#16201B] via-transparent to-transparent opacity-75 pointer-events-none" />
+                      {study.link && (
+                        <a
+                          href={study.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="absolute top-2.5 right-2.5 px-2 py-1 rounded-lg bg-black/80 hover:bg-[#D4AF37] text-white/90 hover:text-[#111815] transition-all border border-white/20 text-[10px] font-mono font-medium flex items-center gap-1 shadow-md"
+                          title="Open Live Notion Template / Workspace"
+                        >
+                          <span>Notion</span>
+                          <ExternalLink className="w-3 h-3" />
+                        </a>
+                      )}
+                    </div>
+                  ) : (
                     <ParallaxVisualMockup
                       studyId={study.id}
                       client={study.client}
                       title={study.title}
                       tools={study.tools}
                     />
+                  )}
                   </div>
 
                   <h3 className="font-serif text-2xl font-bold text-white hover:text-[#D4AF37] transition-colors mb-1 leading-snug">
