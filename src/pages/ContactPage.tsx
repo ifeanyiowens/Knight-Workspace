@@ -158,7 +158,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
             </div>
 
             {/* Direct Contact Channels */}
-            <div className="rounded-3xl bg-[#111815] border border-white/10 p-7 font-mono text-xs space-y-4">
+            <div className="rounded-3xl bg-[#111815]/88 border border-white/10 p-7 font-mono text-xs space-y-4">
               <span className="text-[#D4AF37] uppercase tracking-widest font-bold block text-[11px]">
                 DIRECT CHANNELS
               </span>
@@ -362,7 +362,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
         </div>
 
         {/* Return to Home Bridge */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815] border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
           <div>
             <span className="text-xs font-mono text-white/40 uppercase">RETURN TO TOP</span>
             <h4 className="font-serif text-2xl font-bold text-white">

@@ -56,7 +56,7 @@ export const BeforeAfterSlider: React.FC = () => {
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
-        className="relative w-full min-h-[520px] sm:min-h-[460px] rounded-3xl overflow-hidden select-none border border-white/10 shadow-2xl bg-[#0B0F0D] cursor-ew-resize"
+        className="relative w-full min-h-[520px] sm:min-h-[460px] rounded-3xl overflow-hidden select-none border border-white/10 shadow-2xl bg-[#0B0F0D]/88 cursor-ew-resize"
         data-cursor-text="DRAG"
       >
         {/* AFTER LAYER (Full background right side) */}

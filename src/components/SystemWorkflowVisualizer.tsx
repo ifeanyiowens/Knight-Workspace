@@ -51,7 +51,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
   };
 
   return (
-    <div className="rounded-3xl bg-[#0E1411] border border-white/10 p-6 sm:p-8 shadow-2xl relative overflow-hidden my-12">
+    <div className="rounded-3xl bg-[#0E1411]/88 border border-white/10 p-6 sm:p-8 shadow-2xl relative overflow-hidden my-12">
       
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-white/10">

@@ -19,7 +19,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
   };
 
   return (
-    <section id="process" className="py-24 bg-[#111815] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+    <section id="process" className="py-24 bg-[#111815]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#1B4332]/30 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 right-0 w-80 h-80 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none" />

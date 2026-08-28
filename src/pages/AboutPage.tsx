@@ -284,7 +284,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         </div>
 
         {/* Verified Certifications & Credentials Grid */}
-        <div id="certifications" className="rounded-3xl bg-[#141C18] border border-white/10 p-8 sm:p-12 mb-24 shadow-2xl">
+        <div id="certifications" className="rounded-3xl bg-[#141C18]/88 border border-white/10 p-8 sm:p-12 mb-24 shadow-2xl">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 mb-8 border-b border-white/10">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
@@ -410,7 +410,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         </div>
 
         {/* Page Bridge Navigation */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815] border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
           <div>
             <span className="text-xs font-mono text-white/40 uppercase">NEXT SECTION</span>
             <h4 className="font-serif text-2xl font-bold text-white">

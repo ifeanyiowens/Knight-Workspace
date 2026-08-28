@@ -307,7 +307,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         </div>
 
         {/* Page Bridge Navigation */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815] border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
           <div>
             <span className="text-xs font-mono text-white/40 uppercase">NEXT SECTION</span>
             <h4 className="font-serif text-2xl font-bold text-white">

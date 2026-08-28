@@ -179,7 +179,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               </div>
             </div>
 
-            <div className="lg:col-span-6 bg-[#0E1411] p-6 sm:p-8 rounded-2xl border border-white/5 space-y-4">
+            <div className="lg:col-span-6 bg-[#0E1411]/88 p-6 sm:p-8 rounded-2xl border border-white/5 space-y-4">
               <span className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] font-bold block">
                 PHASE EXECUTION CHECKLIST
               </span>
@@ -218,7 +218,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         </div>
 
         {/* The Anti-Template Debt Manifesto */}
-        <div className="rounded-3xl bg-[#141C18] border border-white/10 p-8 sm:p-12 mb-20">
+        <div className="rounded-3xl bg-[#141C18]/88 border border-white/10 p-8 sm:p-12 mb-20">
           <div className="max-w-3xl">
             <span className="text-xs font-mono uppercase tracking-widest text-[#D4AF37] font-bold block mb-2">
               OUR CORE PHILOSOPHY
@@ -260,7 +260,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         </div>
 
         {/* Page Bridge Navigation */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815] border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
           <div>
             <span className="text-xs font-mono text-white/40 uppercase">NEXT SECTION</span>
             <h4 className="font-serif text-2xl font-bold text-white">

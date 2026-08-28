@@ -17,7 +17,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
   };
 
   return (
-    <section id="problem" className="py-24 bg-[#111815] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+    <section id="problem" className="py-24 bg-[#111815]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/3 -right-20 w-80 h-80 bg-[#1B4332]/30 rounded-full blur-3xl pointer-events-none" />
 

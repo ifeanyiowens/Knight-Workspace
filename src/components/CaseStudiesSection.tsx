@@ -45,7 +45,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
   });
 
   return (
-    <section id="case-studies" className="py-24 bg-[#111815] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+    <section id="case-studies" className="py-24 bg-[#111815]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

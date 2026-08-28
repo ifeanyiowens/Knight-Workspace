@@ -20,7 +20,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
   const annualValueReclaimed = Math.round(annualCostWasted * 0.8);
 
   return (
-    <section id="calculator" className="py-24 bg-[#0C120F] text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+    <section id="calculator" className="py-24 bg-[#0C120F]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

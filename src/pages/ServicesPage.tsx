@@ -177,7 +177,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         </div>
 
         {/* Selected Service Deep Dive Card */}
-        <div className="rounded-3xl bg-[#141C18] border border-white/10 p-8 sm:p-10 shadow-2xl mb-20 relative overflow-hidden">
+        <div className="rounded-3xl bg-[#141C18]/88 border border-white/10 p-8 sm:p-10 shadow-2xl mb-20 relative overflow-hidden">
           <div className="flex items-center gap-2 mb-3 text-xs font-mono text-[#D4AF37] uppercase">
             <Sparkles className="w-4 h-4" />
             <span>DEEP DIVE: {selectedService.title}</span>
@@ -208,7 +208,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               </div>
             </div>
 
-            <div className="bg-[#0E1411] p-6 rounded-2xl border border-white/5 space-y-4">
+            <div className="bg-[#0E1411]/88 p-6 rounded-2xl border border-white/5 space-y-4">
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/40 font-bold">
                 IDEAL CLIENT FIT
               </h4>
@@ -351,7 +351,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         </div>
 
         {/* Page Bridge Navigation */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815] border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
           <div>
             <span className="text-xs font-mono text-white/40 uppercase">NEXT SECTION</span>
             <h4 className="font-serif text-2xl font-bold text-white">
