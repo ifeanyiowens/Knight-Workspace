@@ -30,6 +30,8 @@ interface ContactPageProps {
 
 export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavigate }) => {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -53,10 +55,27 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     sound.playTrigger();
-    setFormSubmitted(true);
+    setSubmitError(null);
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('/api/submit-brief', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        const data = await response.json().catch(() => ({}));
+        throw new Error(data.error || 'Something went wrong. Please try again.');
+      }
+      setFormSubmitted(true);
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const toggleFaq = (idx: number) => {
@@ -302,12 +321,19 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                     />
                   </div>
 
+                  {submitError && (
+                    <div className="px-4 py-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs">
+                      {submitError}
+                    </div>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-bold text-xs uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                    disabled={isSubmitting}
+                    className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-bold text-xs uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <Send className="w-4 h-4" />
-                    <span>Submit System Brief</span>
+                    <span>{isSubmitting ? 'Sending...' : 'Submit System Brief'}</span>
                   </button>
                 </form>
               )}
