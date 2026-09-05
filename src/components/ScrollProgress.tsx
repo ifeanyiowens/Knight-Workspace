@@ -58,18 +58,18 @@ export const ScrollProgress: React.FC = () => {
   return (
     <>
       {/* Top Thin Progress Bar */}
-      <div className="fixed top-0 left-0 right-0 h-[2.5px] bg-white/5 z-50 pointer-events-none">
+      <div className="fixed top-0 left-0 right-0 h-[2.5px] bg-black/5 z-50 pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-[#1B4332] via-[#D4AF37] to-[#E5C358] transition-all duration-75"
+          className="h-full bg-gradient-to-r from-[#A8C6A9] via-[#D4AF37] to-[#E5C358] transition-all duration-75"
           style={{ width: `${scrollPercent}%` }}
         />
       </div>
 
       {/* Floating Tactical Bottom-Right Pill Controls */}
-      <div className="fixed bottom-6 right-6 z-40 hidden md:flex items-center gap-2 bg-[#16201B]/90 backdrop-blur-md px-3.5 py-2 rounded-2xl border border-white/10 shadow-2xl">
+      <div className="fixed bottom-6 right-6 z-40 hidden md:flex items-center gap-2 bg-white backdrop-blur-md px-3.5 py-2 rounded-2xl border border-black/10 shadow-2xl">
         
         {/* Active Section Indicator */}
-        <span className="font-mono text-[10px] text-white/50 border-r border-white/10 pr-2.5 uppercase tracking-wider">
+        <span className="font-mono text-[10px] text-[#16201B]/50 border-r border-black/10 pr-2.5 uppercase tracking-wider">
           <span className="text-[#D4AF37] font-bold">{activeSection}</span>
         </span>
 
@@ -79,7 +79,7 @@ export const ScrollProgress: React.FC = () => {
           className={`flex items-center gap-1 text-[10px] font-mono px-2 py-1 rounded-lg transition-colors cursor-pointer ${
             isAudioActive
               ? 'bg-[#D4AF37] text-[#111815] font-bold'
-              : 'text-white/60 hover:text-white hover:bg-white/5'
+              : 'text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/5'
           }`}
           title={isAudioActive ? 'Mute tactile clicks' : 'Enable tactile audio effects'}
           aria-label="Toggle tactile audio"
@@ -92,7 +92,7 @@ export const ScrollProgress: React.FC = () => {
         {scrollPercent > 20 && (
           <button
             onClick={scrollToTop}
-            className="p-1 rounded-lg hover:bg-white/10 text-white/60 hover:text-[#D4AF37] transition-colors cursor-pointer"
+            className="p-1 rounded-lg hover:bg-black/10 text-[#16201B]/60 hover:text-[#D4AF37] transition-colors cursor-pointer"
             title="Scroll to top"
             aria-label="Back to top"
           >

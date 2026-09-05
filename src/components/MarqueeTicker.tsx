@@ -26,12 +26,12 @@ export const MarqueeTicker: React.FC<MarqueeTickerProps> = ({
   const reverseClass = reverse ? 'animate-[marquee-reverse_30s_linear_infinite]' : durationClass;
 
   return (
-    <div className="w-full overflow-hidden whitespace-nowrap py-4 border-t border-b border-white/10 bg-[#0A0E0C] text-[#EDEDEA] select-none">
+    <div className="w-full overflow-hidden whitespace-nowrap py-4 border-t border-b border-black/10 bg-white text-[#16201B] select-none">
       <div className="inline-flex gap-8 items-center">
         <div className={`flex items-center gap-8 ${reverseClass}`}>
           {items.map((item, idx) => (
             <div key={idx} className="flex items-center gap-8">
-              <span className="font-mono text-xs uppercase tracking-widest text-white/80 font-bold hover:text-[#D4AF37] transition-colors">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#D4AF37] transition-colors">
                 {item}
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]/60" />
@@ -43,7 +43,7 @@ export const MarqueeTicker: React.FC<MarqueeTickerProps> = ({
         <div className={`flex items-center gap-8 ${reverseClass}`} aria-hidden="true">
           {items.map((item, idx) => (
             <div key={`dup-${idx}`} className="flex items-center gap-8">
-              <span className="font-mono text-xs uppercase tracking-widest text-white/80 font-bold hover:text-[#D4AF37] transition-colors">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#D4AF37] transition-colors">
                 {item}
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]/60" />

@@ -47,7 +47,7 @@ export const BeforeAfterSlider: React.FC = () => {
             Interactive Transformation Matrix
           </span>
         </div>
-        <span className="text-[11px] font-mono text-white/50 hidden sm:inline">
+        <span className="text-[11px] font-mono text-[#16201B]/50 hidden sm:inline">
           Drag slider horizontally to compare all 4 operational states
         </span>
       </div>
@@ -56,16 +56,16 @@ export const BeforeAfterSlider: React.FC = () => {
         ref={containerRef}
         onMouseMove={handleMouseMove}
         onTouchMove={handleTouchMove}
-        className="relative w-full min-h-[520px] sm:min-h-[460px] rounded-3xl overflow-hidden select-none border border-white/10 shadow-2xl bg-[#0B0F0D]/88 cursor-ew-resize"
+        className="relative w-full min-h-[520px] sm:min-h-[460px] rounded-3xl overflow-hidden select-none border border-black/10 shadow-2xl bg-white cursor-ew-resize"
         data-cursor-text="DRAG"
       >
         {/* AFTER LAYER (Dynamically revealed from the right, mirrors BEFORE) */}
         <div
-          className="absolute inset-0 overflow-hidden bg-gradient-to-br from-[#122B20] via-[#16201B] to-[#0A0E0C] p-6 sm:p-8 flex flex-col justify-between text-[#EDEDEA]"
+          className="absolute inset-0 overflow-hidden bg-gradient-to-br from-[#122B20] via-[#16201B] to-[#0A0E0C] p-6 sm:p-8 flex flex-col justify-between text-[#16201B]"
           style={{ left: `${sliderPosition}%` }}
         >
-          <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-emerald-500/20">
-            <span className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-500/40 flex items-center gap-1.5">
+          <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-[#4A7350]/20">
+            <span className="font-mono text-xs font-bold text-[#4A7350] bg-emerald-950/80 px-3 py-1 rounded-full border border-[#4A7350]/40 flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5" />
               AFTER: Oparaku Systems Architecture (4 Pillars)
             </span>
@@ -75,51 +75,51 @@ export const BeforeAfterSlider: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 my-auto py-3 min-w-[640px]">
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#1B4332]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#A8C6A9]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
               <div className="text-xs font-mono text-[#D4AF37] font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✓ 01. Unified Relational Hub</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 One centralized workspace where every lead, project milestone, contractor task, and invoice links dynamically with zero duplicate data entry.
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#1B4332]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
-              <div className="text-xs font-mono text-emerald-400 font-bold uppercase mb-1 flex items-center gap-1.5">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#A8C6A9]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
+              <div className="text-xs font-mono text-[#4A7350] font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✓ 02. Silent Make.com Webhooks</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Forms auto-populate CRM, invoices auto-dispatch on Stripe payment, and team tasks generate instantaneously 24/7.
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#1B4332]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#A8C6A9]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
               <div className="text-xs font-mono text-[#D4AF37] font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✓ 03. Role-Based Video SOPs</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Bespoke Loom libraries and permission views so every contractor and manager executes independently with zero hand-holding.
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#1B4332]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
-              <div className="text-xs font-mono text-emerald-400 font-bold uppercase mb-1 flex items-center gap-1.5">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-[#A8C6A9]/50 border border-[#D4AF37]/30 backdrop-blur-md text-left shadow-lg">
+              <div className="text-xs font-mono text-[#4A7350] font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✓ 04. 100% Deterministic Scaling</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Founder reclaims 20+ hours per week, eliminating operational chaos to focus purely on high-leverage revenue growth.
               </p>
             </div>
           </div>
 
-          <div className="text-right text-xs font-mono text-emerald-400/80 pt-2 border-t border-emerald-500/20 min-w-[640px]">
+          <div className="text-right text-xs font-mono text-[#4A7350]/80 pt-2 border-t border-[#4A7350]/20 min-w-[640px]">
             ✓ 90% Reduction in dropped tasks • 1,000+ hours saved annually
           </div>
         </div>
 
         {/* BEFORE LAYER (Clipped left side) */}
         <div
-          className="absolute inset-0 bg-gradient-to-br from-[#1F1212] via-[#181111] to-[#0E0A0A] p-6 sm:p-8 flex flex-col justify-between text-[#EDEDEA] overflow-hidden border-r border-red-500/40"
+          className="absolute inset-0 bg-gradient-to-br from-[#1F1212] via-[#181111] to-[#0E0A0A] p-6 sm:p-8 flex flex-col justify-between text-[#16201B] overflow-hidden border-r border-red-500/40"
           style={{ width: `${sliderPosition}%` }}
         >
           <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-red-500/20">
@@ -137,7 +137,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-400 font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✗ 01. Fragmented Spreadsheets</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Customer info scattered across 6+ Google Sheets, WhatsApp threads, and unorganized email folders with zero sync.
               </p>
             </div>
@@ -146,7 +146,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-400 font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✗ 02. Founder Is The Bottleneck</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Workflows only exist in the founder's head. Team constantly interrupts for basic approvals and access credentials.
               </p>
             </div>
@@ -155,7 +155,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-400 font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✗ 03. Dropped Leads & Churn</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 New inquiries sit uncontacted for days. Client onboarding falls apart due to lack of clear delivery protocols.
               </p>
             </div>
@@ -164,7 +164,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-400 font-bold uppercase mb-1 flex items-center gap-1.5">
                 <span>✗ 04. 40% Payroll Re-Entry Waste</span>
               </div>
-              <p className="text-xs text-white/80 leading-relaxed font-sans">
+              <p className="text-xs text-[#16201B]/80 leading-relaxed font-sans">
                 Hours wasted copy-pasting customer records across apps, triggering duplicate invoices and painful delivery delays.
               </p>
             </div>
@@ -182,7 +182,7 @@ export const BeforeAfterSlider: React.FC = () => {
           onMouseDown={handleMouseDown}
           onTouchStart={handleMouseDown}
         >
-          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#D4AF37] text-[#111815] shadow-2xl flex items-center justify-center border-2 border-white/20">
+          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#D4AF37] text-[#111815] shadow-2xl flex items-center justify-center border-2 border-black/20">
             <ArrowLeftRight className="w-4 h-4" />
           </div>
         </div>

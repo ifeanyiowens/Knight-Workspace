@@ -20,37 +20,37 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
   const annualValueReclaimed = Math.round(annualCostWasted * 0.8);
 
   return (
-    <section id="calculator" className="py-24 bg-[#0C120F]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
+    <section id="calculator" className="py-24 bg-[#EDEDEA] text-[#16201B] border-b border-black/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
             <Calculator className="w-3.5 h-3.5 text-[#D4AF37]" />
             <span>Interactive Operational Audit</span>
           </div>
           
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight leading-tight mb-4">
             Calculate your operational leakage.
           </h2>
           
-          <p className="text-base sm:text-lg text-white/70 leading-relaxed font-sans">
+          <p className="text-base sm:text-lg text-[#16201B]/70 leading-relaxed font-sans">
             See how many working hours your team loses each year to manual copy-pasting, hunting for files across tabs, and chasing status updates.
           </p>
         </div>
 
         {/* Calculator Card Container (Moritz Dunkel style) */}
-        <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 shadow-2xl overflow-hidden">
+        <div className="rounded-3xl bg-white border border-black/10 shadow-2xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
             {/* Left Column: Sliders & Controls */}
-            <div className="lg:col-span-6 p-7 sm:p-9 lg:p-11 border-b lg:border-b-0 lg:border-r border-white/10 space-y-8">
+            <div className="lg:col-span-6 p-7 sm:p-9 lg:p-11 border-b lg:border-b-0 lg:border-r border-black/10 space-y-8">
               
-              <div className="border-b border-white/10 pb-4">
-                <h3 className="font-serif text-2xl font-bold text-white">
+              <div className="border-b border-black/10 pb-4">
+                <h3 className="font-serif text-2xl font-bold text-[#16201B]">
                   Your Operational Profile
                 </h3>
-                <p className="text-xs font-mono text-white/60 mt-1">
+                <p className="text-xs font-mono text-[#16201B]/60 mt-1">
                   Adjust the sliders to mirror your current team structure.
                 </p>
               </div>
@@ -58,7 +58,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
               {/* Slider 1: Team Size */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-mono uppercase tracking-wider text-white/80">
+                  <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Team Size (including contractors)
                   </label>
                   <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
@@ -74,7 +74,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   onChange={(e) => setTeamSize(Number(e.target.value))}
                   className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
-                <div className="flex justify-between text-[10px] font-mono text-white/40">
+                <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>01 (Solo)</span>
                   <span>10 (Growing)</span>
                   <span>25+ (Scaling)</span>
@@ -84,7 +84,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
               {/* Slider 2: Hours lost per person weekly */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-mono uppercase tracking-wider text-white/80">
+                  <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Manual hours lost per person / week
                   </label>
                   <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
@@ -100,7 +100,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   onChange={(e) => setHoursPerPersonPerWeek(Number(e.target.value))}
                   className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
-                <p className="text-xs text-white/50 font-sans">
+                <p className="text-xs text-[#16201B]/50 font-sans">
                   Spent searching files, asking for updates, updating spreadsheets, and retyping client info.
                 </p>
               </div>
@@ -108,7 +108,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
               {/* Slider 3: Hourly Value */}
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-mono uppercase tracking-wider text-white/80">
+                  <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Average hourly team cost / value
                   </label>
                   <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
@@ -124,7 +124,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   onChange={(e) => setHourlyRate(Number(e.target.value))}
                   className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
-                <div className="flex justify-between text-[10px] font-mono text-white/40">
+                <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>$15/hr</span>
                   <span>$75/hr</span>
                   <span>$150/hr</span>
@@ -134,7 +134,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
             </div>
 
             {/* Right Column: Calculated Results & Impact */}
-            <div className="lg:col-span-6 p-7 sm:p-9 lg:p-11 bg-[#111815] text-[#EDEDEA] flex flex-col justify-between">
+            <div className="lg:col-span-6 p-7 sm:p-9 lg:p-11 bg-white text-[#16201B] flex flex-col justify-between">
               
               <div>
                 <div className="flex items-center justify-between mb-6">
@@ -147,11 +147,11 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                 </div>
 
                 {/* Primary Metric Output */}
-                <div className="mb-6 p-6 rounded-2xl bg-[#1B4332] border border-[#D4AF37]/40 shadow-xl">
-                  <span className="text-xs font-mono uppercase tracking-wider text-white/80 block mb-1">
+                <div className="mb-6 p-6 rounded-2xl bg-[#A8C6A9] border border-[#D4AF37]/40 shadow-xl">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80 block mb-1">
                     Hours Reclaimed Annually
                   </span>
-                  <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-2">
+                  <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2">
                     {annualHoursReclaimed.toLocaleString()}+ hrs
                   </div>
                   <p className="text-xs font-mono text-[#D4AF37]">
@@ -162,7 +162,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                 {/* Secondary Cost Breakdown */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="p-4 rounded-2xl bg-black/40 border border-red-500/20">
-                    <span className="text-[11px] font-mono text-white/50 block mb-1">Current Annual Leakage</span>
+                    <span className="text-[11px] font-mono text-[#16201B]/50 block mb-1">Current Annual Leakage</span>
                     <div className="font-serif text-2xl font-bold text-red-400">
                       ${annualCostWasted.toLocaleString()}
                     </div>
@@ -177,15 +177,15 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
 
                 {/* Micro guarantees */}
                 <div className="space-y-2 mb-6">
-                  <div className="flex items-center gap-2 text-xs text-white/80 font-mono">
+                  <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
                     <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
                     <span>Eliminate manual data handoffs between tools</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-white/80 font-mono">
+                  <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
                     <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
                     <span>Free founder from being the operational bottleneck</span>
                   </div>
-                  <div className="flex items-center gap-2 text-xs text-white/80 font-mono">
+                  <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
                     <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
                     <span>Certified architecture tailored to your workflows</span>
                   </div>

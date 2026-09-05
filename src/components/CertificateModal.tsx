@@ -19,15 +19,15 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-2xl bg-[#141C18] border border-white/20 rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]"
+        className="relative w-full max-w-2xl bg-white border border-black/20 rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header Bar */}
-        <div className="flex items-center justify-between p-5 border-b border-white/10 bg-[#0E1411]">
+        <div className="flex items-center justify-between p-5 border-b border-black/10 bg-white">
           <div className="flex items-center gap-2.5">
             <Award className="w-5 h-5 text-[#D4AF37]" />
             <div>
-              <h3 className="font-serif text-base sm:text-lg font-bold text-white leading-tight">
+              <h3 className="font-serif text-base sm:text-lg font-bold text-[#16201B] leading-tight">
                 {cert.name}
               </h3>
               <p className="text-xs font-mono text-[#D4AF37]">
@@ -38,7 +38,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
 
           <button
             onClick={handleClose}
-            className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors cursor-pointer"
+            className="p-2 rounded-full bg-black/5 hover:bg-black/10 text-[#16201B]/70 hover:text-[#16201B] transition-colors cursor-pointer"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
@@ -49,7 +49,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
           
           {/* Main Visual Certificate Frame */}
-          <div className="w-full bg-[#0A0F0D] p-3 sm:p-6 rounded-2xl border border-white/15 shadow-2xl flex items-center justify-center">
+          <div className="w-full bg-[#0A0F0D] p-3 sm:p-6 rounded-2xl border border-black/15 shadow-2xl flex items-center justify-center">
             
             {/* CLICKUP MODAL VIEW */}
             {cert.category === 'clickup' && (
@@ -64,14 +64,14 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                 </div>
 
                 <div className="flex flex-col items-center justify-center my-auto">
-                  <div className="relative w-28 h-28 sm:w-36 sm:h-36 bg-[#111936] rounded-3xl p-3 flex flex-col items-center justify-center shadow-xl border-4 border-white">
+                  <div className="relative w-28 h-28 sm:w-36 sm:h-36 bg-[#111936] rounded-3xl p-3 flex flex-col items-center justify-center shadow-xl border-4 border-black/10">
                     <div className="absolute inset-0 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:10px_10px] opacity-40 rounded-3xl" />
                     
                     <div className="relative text-4xl sm:text-5xl mb-1">
                       🦄
                     </div>
                     
-                    <div className={`w-full py-1 px-3 text-[11px] sm:text-xs font-black text-white text-center rounded tracking-widest uppercase shadow ${
+                    <div className={`w-full py-1 px-3 text-[11px] sm:text-xs font-black text-[#16201B] text-center rounded tracking-widest uppercase shadow ${
                       cert.badgeType === 'admin'
                         ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500'
                         : cert.badgeType === 'intermediate'
@@ -81,7 +81,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                       {cert.badgeName}
                     </div>
 
-                    <div className="text-[10px] font-bold text-white mt-1 flex items-center gap-1">
+                    <div className="text-[10px] font-bold text-[#16201B] mt-1 flex items-center gap-1">
                       <span className="text-pink-400">▲</span> ClickUp
                     </div>
                   </div>
@@ -105,7 +105,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
             {cert.category === 'airtable' && (
               <div className="w-full max-w-lg aspect-[4/3] bg-[#F4EFFE] text-[#2D2250] p-6 sm:p-8 flex flex-col justify-between relative rounded-xl shadow-2xl border-8 border-[#D8C7F8]">
                 <div className="flex items-start justify-between">
-                  <div className="bg-[#482880] text-white px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow">
+                  <div className="bg-[#482880] text-[#16201B] px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow">
                     <span>⬡</span>
                     <span>Certified Admin</span>
                   </div>
@@ -164,15 +164,15 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                   </div>
 
                   <div className="w-16 border-2 border-black rounded-b-2xl overflow-hidden shadow">
-                    <div className="bg-black text-white text-[8px] text-center py-1 font-sans font-bold leading-tight">
+                    <div className="bg-black text-[#16201B] text-[8px] text-center py-1 font-sans font-bold leading-tight">
                       Notion Academy
                     </div>
                     <div className={`p-2 flex items-center justify-center text-xl text-black font-bold ${
                       cert.badgeType === 'advanced' 
                         ? 'bg-[#F5C518]' 
                         : cert.badgeType === 'workflows' 
-                        ? 'bg-[#1E88E5] text-white' 
-                        : 'bg-[#EA4335] text-white'
+                        ? 'bg-[#1E88E5] text-[#16201B]' 
+                        : 'bg-[#EA4335] text-[#16201B]'
                     }`}>
                       {cert.badgeType === 'advanced' && '🛠️'}
                       {cert.badgeType === 'workflows' && '🔗'}
@@ -185,7 +185,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
 
             {/* MAKE MODAL VIEW */}
             {cert.category === 'make' && (
-              <div className="w-full max-w-lg aspect-[4/3] bg-[#130026] text-white p-6 sm:p-8 flex items-center justify-center relative rounded-2xl shadow-2xl border-4 border-purple-600/40">
+              <div className="w-full max-w-lg aspect-[4/3] bg-[#130026] text-[#16201B] p-6 sm:p-8 flex items-center justify-center relative rounded-2xl shadow-2xl border-4 border-purple-600/40">
                 <div className="w-48 h-48 sm:w-60 sm:h-60 drop-shadow-2xl">
                   <svg viewBox="0 0 400 400" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -249,28 +249,28 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
           </div>
 
           {/* Writeup & Credential Metadata Details (Under the image) */}
-          <div className="space-y-4 bg-[#16201B] p-5 rounded-2xl border border-white/10">
+          <div className="space-y-4 bg-white p-5 rounded-2xl border border-black/10">
             <div>
-              <h4 className="text-xs font-mono text-[#D4AF37] uppercase tracking-wider font-bold mb-1">
+              <h4 className="text-xs font-mono text-[#4A7350] uppercase tracking-wider font-bold mb-1">
                 About This Credential
               </h4>
-              <p className="text-sm text-white/80 leading-relaxed font-sans">
+              <p className="text-sm text-[#16201B]/80 leading-relaxed font-sans">
                 {cert.description}
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-white/10 text-xs font-mono">
-              <div className="p-2.5 rounded-xl bg-black/40 border border-white/5">
-                <span className="text-white/40 block text-[10px]">ISSUING BODY</span>
-                <span className="text-white font-semibold">{cert.organization}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-black/10 text-xs font-mono">
+              <div className="p-2.5 rounded-xl bg-black/40 border border-black/5">
+                <span className="text-[#16201B]/40 block text-[10px]">ISSUING BODY</span>
+                <span className="text-[#16201B] font-semibold">{cert.organization}</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-black/40 border border-white/5">
-                <span className="text-white/40 block text-[10px]">RECIPIENT</span>
-                <span className="text-white font-semibold truncate block">Owens Oparaku</span>
+              <div className="p-2.5 rounded-xl bg-black/40 border border-black/5">
+                <span className="text-[#16201B]/40 block text-[10px]">RECIPIENT</span>
+                <span className="text-[#16201B] font-semibold truncate block">Owens Oparaku</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-black/40 border border-white/5 col-span-2 sm:col-span-1">
-                <span className="text-white/40 block text-[10px]">STATUS</span>
-                <span className="text-emerald-400 font-semibold flex items-center gap-1">
+              <div className="p-2.5 rounded-xl bg-black/40 border border-black/5 col-span-2 sm:col-span-1">
+                <span className="text-[#16201B]/40 block text-[10px]">STATUS</span>
+                <span className="text-[#4A7350] font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> Official Verified
                 </span>
               </div>

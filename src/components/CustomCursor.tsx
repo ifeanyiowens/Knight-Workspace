@@ -109,7 +109,7 @@ export const CustomCursor: React.FC = () => {
             ? 'w-16 h-16 bg-[#D4AF37] text-[#111815] font-mono text-[10px] font-bold border-transparent shadow-xl tracking-widest'
             : isHovered
             ? 'w-10 h-10 bg-[#D4AF37]/15 border-[#D4AF37]/80 backdrop-blur-[1px]'
-            : 'w-7 h-7 bg-transparent border-white/30'
+            : 'w-7 h-7 bg-transparent border-black/30'
         }`}
       >
         {cursorText && (

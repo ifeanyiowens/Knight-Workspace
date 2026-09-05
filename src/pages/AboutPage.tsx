@@ -86,23 +86,23 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
   ];
 
   return (
-    <div className="w-full text-[#EDEDEA]">
+    <div className="w-full text-[#16201B]">
       
       {/* Header Banner */}
-      <section className="py-20 md:py-24 bg-[#111815]/72 border-b border-white/10 relative overflow-hidden">
-        <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#1B4332]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
+        <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#D4AF37] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
+            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
             <span>PAGE [05/06] • ABOUT OWENS & THE OPARAKU PHILOSOPHY</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             The Mind Behind the Systems.
           </h1>
 
-          <p className="text-base sm:text-xl text-white/70 max-w-3xl leading-relaxed font-sans mb-8">
+          <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
             I help high-growth small business owners bridge the gap between where their revenue is and how their team actually operates behind the scenes.
           </p>
 
@@ -121,7 +121,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               href={BRAND_INFO.notionSite}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-white/5 hover:bg-[#1B4332] text-white font-mono text-xs uppercase tracking-wider border border-white/10 hover:border-[#D4AF37]/40 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#A8C6A9] text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#D4AF37]/40 transition-all flex items-center gap-2"
             >
               <Globe className="w-4 h-4 text-[#D4AF37]" />
               <span>Explore Notion Site</span>
@@ -131,7 +131,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               href={BRAND_INFO.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 text-white font-mono text-xs uppercase tracking-wider border border-white/10 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
               <Instagram className="w-4 h-4 text-[#D4AF37]" />
               <span>Follow @notion_knight</span>
@@ -148,85 +148,75 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
           
-          {/* Left: Clean, Welcoming Portrait Image of Owens */}
+          {/* Left: Free floating portrait, matches Hero treatment */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md">
-              {/* Soft warm ambient glow */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-[#1B4332]/60 to-[#D4AF37]/30 rounded-3xl blur-2xl opacity-70 -z-10" />
 
-              <div className="relative rounded-3xl overflow-hidden bg-[#16201B] border border-white/15 shadow-2xl group">
-                {!imageFailed ? (
-                  <img
-                    src={currentImgSrc}
-                    alt={BRAND_INFO.name}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-auto max-h-[500px] object-cover object-top group-hover:scale-[1.02] transition-transform duration-700"
-                    onError={handleImageError}
-                  />
-                ) : (
-                  <div className="w-full h-96 flex flex-col items-center justify-center bg-[#1B4332] text-white p-6 text-center">
-                    <span className="font-serif text-4xl font-bold text-[#D4AF37] mb-2">OO</span>
-                    <span className="font-serif text-xl font-bold">Owens Oparaku</span>
-                    <span className="text-xs text-white/70 mt-1">Business Operations Architect</span>
-                  </div>
-                )}
+              <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
-                {/* Soft bottom gradient */}
-                <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#0E1411] via-[#0E1411]/60 to-transparent pointer-events-none" />
+              {!imageFailed ? (
+                <img
+                  src={currentImgSrc}
+                  alt={BRAND_INFO.name}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-auto max-h-[480px] object-contain object-bottom mx-auto"
+                  onError={handleImageError}
+                />
+              ) : (
+                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#A8C6A9] text-[#16201B] p-6 text-center rounded-3xl">
+                  <span className="font-serif text-4xl font-bold text-[#4A7350] mb-2">OO</span>
+                  <span className="font-serif text-xl font-bold">Owens Oparaku</span>
+                  <span className="text-xs text-[#16201B]/70 mt-1">Business Operations Architect</span>
+                </div>
+              )}
 
-                {/* Friendly Name Badge */}
-                <div className="absolute bottom-4 inset-x-4 p-4 rounded-2xl bg-[#111815]/90 backdrop-blur-md border border-white/10 shadow-lg flex items-center justify-between">
-                  <div>
-                    <h3 className="font-serif text-lg font-bold text-white leading-tight">
-                      Owens Oparaku
-                    </h3>
-                    <p className="text-xs text-[#D4AF37] font-semibold">
-                      Founder & Systems Architect
-                    </p>
-                    <p className="text-[11px] text-white/60 mt-0.5">
-                      Operational Infrastructure & Automations
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-2">
-                    <a
-                      href={BRAND_INFO.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#D4AF37] hover:text-[#111815] transition-all flex items-center justify-center text-white"
-                      title="Instagram"
-                    >
-                      <Instagram className="w-4 h-4" />
-                    </a>
-                    <a
-                      href={BRAND_INFO.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-xl bg-white/10 hover:bg-[#D4AF37] hover:text-[#111815] transition-all flex items-center justify-center text-white"
-                      title="LinkedIn"
-                    >
-                      <Linkedin className="w-4 h-4" />
-                    </a>
-                  </div>
+              <div className="mt-4 flex flex-col items-center gap-2 text-center">
+                <div>
+                  <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
+                    Owens Oparaku
+                  </h3>
+                  <p className="text-xs text-[#4A7350] font-semibold">
+                    Founder & Systems Architect
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 pt-1">
+                  <a
+                    href={BRAND_INFO.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
+                    title="Instagram"
+                  >
+                    <Instagram className="w-4 h-4" />
+                  </a>
+                  <a
+                    href={BRAND_INFO.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
+                    title="LinkedIn"
+                  >
+                    <Linkedin className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div className="lg:col-span-7 space-y-6 rounded-3xl bg-[#0E1411]/90 border border-white/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-7 space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#D4AF37] uppercase tracking-wider relative">
-              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">
+              <span className="w-2 h-2 rounded-full bg-[#4A7350]"></span>
               <span>THE ARCHITECT'S STORY</span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white leading-tight relative">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] leading-tight relative">
               "Most business chaos is not a discipline problem. It is an architecture problem."
             </h2>
 
-            <div className="space-y-4 text-base text-white/80 leading-relaxed font-sans relative">
+            <div className="space-y-4 text-base text-[#16201B]/80 leading-relaxed font-sans relative">
               <p>
                 I founded Oparaku Systems after watching high-revenue entrepreneurs and agency founders run successful businesses using little more than memory, scattered WhatsApp threads, and fragile Google Sheets.
               </p>
@@ -239,13 +229,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             </div>
 
             <div className="pt-4 flex flex-wrap gap-3 relative">
-              <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-white/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
                 ⚡ 1,000+ Annual Hours Saved
               </div>
-              <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-white/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
                 ⭐ 100% 5-Star Client Track Record
               </div>
-              <div className="px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-xs font-semibold text-white/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
                 🌍 Global Clients (US, UK, EU, Africa)
               </div>
             </div>
@@ -256,25 +246,25 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         {/* The 4 Architectural Principles */}
         <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
               FOUNDATIONAL PILLARS
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-white">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
               The 4 Core Architectural Principles
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {principles.map((p) => (
-              <div key={p.num} className="p-8 rounded-3xl bg-[#16201B] border border-white/10 flex flex-col justify-between">
+              <div key={p.num} className="p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
                 <div>
                   <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-black/40 border border-[#D4AF37]/20 inline-block mb-4">
                     PRINCIPLE [{p.num}]
                   </span>
-                  <h4 className="font-serif text-2xl font-bold text-white mb-3">
+                  <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-3">
                     {p.title}
                   </h4>
-                  <p className="text-sm text-white/70 leading-relaxed font-sans">
+                  <p className="text-sm text-[#16201B]/70 leading-relaxed font-sans">
                     {p.desc}
                   </p>
                 </div>
@@ -284,17 +274,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         </div>
 
         {/* Verified Certifications & Credentials Grid */}
-        <div id="certifications" className="rounded-3xl bg-[#141C18]/88 border border-white/10 p-8 sm:p-12 mb-24 shadow-2xl">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 mb-8 border-b border-white/10">
+        <div id="certifications" className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-24 shadow-2xl">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 mb-8 border-b border-black/10">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
                 <Award className="w-3.5 h-3.5 text-[#D4AF37]" />
                 <span>OFFICIAL VERIFIED CREDENTIALS</span>
               </div>
-              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-2">
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-2">
                 Official Certifications & Accreditations
               </h3>
-              <p className="text-sm text-white/70 font-sans max-w-2xl">
+              <p className="text-sm text-[#16201B]/70 font-sans max-w-2xl">
                 Every system is built on certified mastery — verified credentials across Notion Academy, ClickUp, Airtable, and Make.com. Click any certificate to inspect full credentials.
               </p>
             </div>
@@ -317,7 +307,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   className={`text-xs font-mono px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
                     activeCertCategory === tab.id
                       ? 'bg-[#D4AF37] text-[#111815] font-bold shadow-md'
-                      : 'bg-white/5 text-white/60 hover:text-white hover:bg-white/10 border border-white/5'
+                      : 'bg-black/5 text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 border border-black/5'
                   }`}
                 >
                   {tab.label}
@@ -346,20 +336,20 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
 
         {/* Tech Stack Master Matrix */}
         <div className="mb-24">
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-8 text-center">
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-8 text-center">
             The Systems & Integrations Stack
           </h3>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {toolsStack.map((tool) => (
-              <div key={tool.name} className="p-5 rounded-2xl bg-[#16201B] border border-white/10">
+              <div key={tool.name} className="p-5 rounded-2xl bg-white border border-black/10">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-serif text-lg font-bold text-white">{tool.name}</span>
-                  <span className="text-[10px] font-mono text-[#D4AF37] bg-black/40 px-2 py-0.5 rounded border border-white/5">
+                  <span className="font-serif text-lg font-bold text-[#16201B]">{tool.name}</span>
+                  <span className="text-[10px] font-mono text-[#D4AF37] bg-black/40 px-2 py-0.5 rounded border border-black/5">
                     {tool.badge}
                   </span>
                 </div>
-                <p className="text-xs font-mono text-white/60">
+                <p className="text-xs font-mono text-[#16201B]/60">
                   {tool.role}
                 </p>
               </div>
@@ -370,17 +360,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         {/* Full Testimonials Wall */}
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#D4AF37] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
               CLIENT TESTIMONIALS
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-white">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
               What Founders Say Post-Deployment
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {TESTIMONIALS.map((t) => (
-              <div key={t.id} className="p-7 rounded-3xl bg-[#16201B] border border-white/10 flex flex-col justify-between">
+              <div key={t.id} className="p-7 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex text-[#D4AF37] text-sm">
@@ -388,18 +378,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                         <span key={i}>★</span>
                       ))}
                     </div>
-                    <span className="text-[10px] font-mono bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full border border-emerald-500/30">
+                    <span className="text-[10px] font-mono bg-[#4A7350]/10 text-[#4A7350] px-2 py-0.5 rounded-full border border-[#4A7350]/30">
                       {t.source}
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-white/90 italic leading-relaxed mb-6 font-serif">
+                  <p className="text-xs sm:text-sm text-[#16201B]/90 italic leading-relaxed mb-6 font-serif">
                     "{t.content}"
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-white/10 font-mono text-xs">
-                  <div className="font-bold text-white">{t.author}</div>
-                  <div className="text-white/50 text-[11px] mb-2">{t.role || t.company}</div>
+                <div className="pt-4 border-t border-black/10 font-mono text-xs">
+                  <div className="font-bold text-[#16201B]">{t.author}</div>
+                  <div className="text-[#16201B]/50 text-[11px] mb-2">{t.role || t.company}</div>
                   <div className="text-[10px] text-[#D4AF37] bg-black/40 px-2 py-1 rounded inline-block">
                     {t.projectType}
                   </div>
@@ -410,10 +400,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         </div>
 
         {/* Page Bridge Navigation */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-[#111815]/88 border border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-white border border-black/10">
           <div>
-            <span className="text-xs font-mono text-white/40 uppercase">NEXT SECTION</span>
-            <h4 className="font-serif text-2xl font-bold text-white">
+            <span className="text-xs font-mono text-[#16201B]/40 uppercase">NEXT SECTION</span>
+            <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               Book a Systems Discovery & Audit
             </h4>
             <p className="text-xs font-mono text-[#D4AF37] mt-1">

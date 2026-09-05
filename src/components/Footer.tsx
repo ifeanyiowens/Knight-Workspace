@@ -24,17 +24,17 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
   };
 
   return (
-    <footer className="bg-[#0A0E0C]/72 text-[#EDEDEA] pt-20 pb-12 border-t border-white/10 relative overflow-hidden">
+    <footer className="bg-[#EDEDEA] text-[#16201B] pt-20 pb-12 border-t border-black/10 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Giant Statement Headline (Moritz Dunkel signature) */}
-        <div className="pb-16 mb-16 border-b border-white/10">
+        <div className="pb-16 mb-16 border-b border-black/10">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
             <div className="max-w-3xl">
               <span className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] block mb-3">
                 LET'S TALK ARCHITECTURE
               </span>
-              <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-[1.02]">
+              <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#16201B] tracking-tight leading-[1.02]">
                 Let's build a system that holds.
               </h2>
             </div>
@@ -54,7 +54,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
         </div>
 
         {/* Main 3-Column Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-black/10">
           
           {/* Brand & Positioning */}
           <div className="md:col-span-5 space-y-5">
@@ -62,20 +62,20 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               onClick={() => handlePageClick('home')}
               className="flex items-center gap-3 text-left cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#1B4332] text-[#D4AF37] flex items-center justify-center font-serif text-xl font-bold border border-[#D4AF37]/40 shadow-sm group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-[#A8C6A9] text-[#D4AF37] flex items-center justify-center font-serif text-xl font-bold border border-[#D4AF37]/40 shadow-sm group-hover:scale-105 transition-transform">
                 O
               </div>
               <div>
-                <span className="block font-serif text-xl font-bold tracking-tight text-white group-hover:text-[#D4AF37] transition-colors">
+                <span className="block font-serif text-xl font-bold tracking-tight text-[#16201B] group-hover:text-[#D4AF37] transition-colors">
                   Owens Oparaku
                 </span>
-                <span className="block text-[11px] font-mono text-[#D4AF37] uppercase tracking-widest">
+                <span className="block text-[11px] font-mono text-[#4A7350] uppercase tracking-widest">
                   OPARAKU SYSTEMS
                 </span>
               </div>
             </button>
 
-            <p className="text-xs sm:text-sm text-white/60 max-w-sm leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-[#16201B]/60 max-w-sm leading-relaxed font-sans">
               Certified business operations and systems architect. Replacing scattered spreadsheets, messy communication, and manual friction with custom Notion, ClickUp, Airtable, and Make.com engines.
             </p>
 
@@ -85,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -94,7 +94,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -103,14 +103,14 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${BRAND_INFO.email}`}
-                className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
@@ -119,7 +119,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.notionSite}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-2 rounded-xl bg-white/5 border border-white/10 text-white hover:text-[#D4AF37] hover:bg-white/10 transition-colors text-xs font-mono flex items-center gap-1.5"
+                className="px-3 py-2 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors text-xs font-mono flex items-center gap-1.5"
                 title="Notion Site Profile"
               >
                 <span className="font-bold">Notion Site</span>
@@ -133,18 +133,18 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
             <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">
               Site Index [06 Pages]
             </h4>
-            <ul className="space-y-2 text-xs text-white/70">
+            <ul className="space-y-2 text-xs text-[#16201B]/70">
               {PAGES_CONFIG.map((page) => {
                 const isActive = currentPage === page.id;
                 return (
                   <li key={page.id}>
                     <button
                       onClick={() => handlePageClick(page.id)}
-                      className={`hover:text-white hover:underline flex items-center gap-2 transition-colors cursor-pointer text-left ${
-                        isActive ? 'text-[#D4AF37] font-bold' : 'text-white/70'
+                      className={`hover:text-[#16201B] hover:underline flex items-center gap-2 transition-colors cursor-pointer text-left ${
+                        isActive ? 'text-[#D4AF37] font-bold' : 'text-[#16201B]/70'
                       }`}
                     >
-                      <span className={`text-[10px] ${isActive ? 'text-[#D4AF37]' : 'text-white/40'}`}>
+                      <span className={`text-[10px] ${isActive ? 'text-[#D4AF37]' : 'text-[#16201B]/40'}`}>
                         [{page.index}]
                       </span>
                       <span>{page.title}</span>
@@ -161,15 +161,15 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               Direct Contact
             </h4>
             
-            <div className="space-y-2 text-xs font-mono text-white/70">
+            <div className="space-y-2 text-xs font-mono text-[#16201B]/70">
               <div>
-                <span className="block text-white/40 text-[10px]">EMAIL</span>
-                <a href={`mailto:${BRAND_INFO.email}`} className="text-white hover:text-[#D4AF37] transition-colors">
+                <span className="block text-[#16201B]/40 text-[10px]">EMAIL</span>
+                <a href={`mailto:${BRAND_INFO.email}`} className="text-[#16201B] hover:text-[#D4AF37] transition-colors">
                   {BRAND_INFO.email}
                 </a>
               </div>
               <div className="pt-2">
-                <span className="block text-white/40 text-[10px]">CALENDAR</span>
+                <span className="block text-[#16201B]/40 text-[10px]">CALENDAR</span>
                 <button
                   onClick={() => {
                     sound.playTrigger();
@@ -181,12 +181,12 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 </button>
               </div>
               <div className="pt-2">
-                <span className="block text-white/40 text-[10px]">INSTAGRAM</span>
-                <span className="text-white">{BRAND_INFO.instagramHandle}</span>
+                <span className="block text-[#16201B]/40 text-[10px]">INSTAGRAM</span>
+                <span className="text-[#16201B]">{BRAND_INFO.instagramHandle}</span>
               </div>
             </div>
 
-            <div className="p-4 rounded-2xl bg-white/5 border border-white/10 text-xs font-mono text-white/80">
+            <div className="p-4 rounded-2xl bg-black/5 border border-black/10 text-xs font-mono text-[#16201B]/80">
               <span className="text-[#D4AF37] font-bold block mb-1">Status: Open for Q2/Q3</span>
               <span>Accepting 2 new workspace architecture builds this month.</span>
             </div>
@@ -195,16 +195,16 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
         </div>
 
         {/* Subfooter */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-white/50 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#16201B]/50 gap-4">
           <div>
             &copy; {new Date().getFullYear()} Oparaku Systems. Founded by Owens Oparaku.
           </div>
 
           <div className="flex items-center gap-4">
-            <span className="text-white/40">Notion, ClickUp, Airtable & Make Certified</span>
+            <span className="text-[#16201B]/40">Notion, ClickUp, Airtable & Make Certified</span>
             <button
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-[#D4AF37] border border-white/10 transition-colors flex items-center gap-1 cursor-pointer"
+              className="p-2.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#D4AF37] border border-black/10 transition-colors flex items-center gap-1 cursor-pointer"
               aria-label="Back to top"
             >
               <ArrowUp className="w-4 h-4" />
