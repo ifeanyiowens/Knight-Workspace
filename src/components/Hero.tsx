@@ -83,40 +83,31 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           </div>
 
-          {/* Right Column: New photo, white card, sage green base block */}
+          {/* Right Column: Free floating photo, no card */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-sm sm:max-w-md">
 
-              <div className="relative rounded-3xl overflow-hidden bg-white border border-black/10 shadow-xl">
-                {!imageError ? (
-                  <img
-                    src={owensProfilePhoto}
-                    alt="Owens Oparaku"
-                    className="w-full h-auto max-h-[440px] object-contain object-bottom mx-auto pt-6"
-                    onError={() => setImageError(true)}
-                  />
-                ) : (
-                  <div className="w-full h-80 flex flex-col items-center justify-center bg-white text-[#16201B] p-6 text-center">
-                    <span className="font-serif text-4xl font-bold text-[#4A7350] mb-2">OO</span>
-                    <span className="font-serif text-lg font-bold">Owens Oparaku</span>
-                  </div>
-                )}
+              {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
+              <div className="absolute bottom-6 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
-                {/* Sage green base block, doubles as the name plate */}
-                <div className="bg-[#A8C6A9] px-5 py-4 flex items-center justify-between">
-                  <div>
-                    <h3 className="font-serif text-base font-bold text-[#16201B] leading-tight">
-                      Owens Oparaku
-                    </h3>
-                    <p className="text-xs text-[#16201B]/70 font-medium">
-                      Systems & operations architect
-                    </p>
-                  </div>
-                  <span className="px-2.5 py-1 rounded-full bg-white/60 text-[#16201B] text-[11px] font-semibold flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#3D5F41] animate-pulse"></span>
-                    Open for Q2/Q3
-                  </span>
+              {!imageError ? (
+                <img
+                  src={owensProfilePhoto}
+                  alt="Owens Oparaku"
+                  className="w-full h-auto max-h-[460px] object-contain object-bottom mx-auto"
+                  onError={() => setImageError(true)}
+                />
+              ) : (
+                <div className="w-full h-80 flex flex-col items-center justify-center text-[#16201B] p-6 text-center">
+                  <span className="font-serif text-4xl font-bold text-[#4A7350] mb-2">OO</span>
+                  <span className="font-serif text-lg font-bold">Owens Oparaku</span>
                 </div>
+              )}
+
+              <div className="mt-4 flex items-center justify-center gap-2.5">
+                <span className="font-serif text-base font-bold text-[#16201B]">Owens Oparaku</span>
+                <span className="text-[#16201B]/40">•</span>
+                <span className="text-xs text-[#16201B]/70 font-medium">Systems & operations architect</span>
               </div>
 
             </div>
