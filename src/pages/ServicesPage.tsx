@@ -127,7 +127,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-black/40 border border-black/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#A8C6A9] border border-black/10 flex items-center justify-center">
                     {getServiceIcon(service.icon)}
                   </div>
                   <span className="font-mono text-xs font-bold text-[#4A7350]">
@@ -161,7 +161,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {service.tools.map((t) => (
-                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-black/40 text-[#4A7350] border border-[#D4AF37]/20">
+                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#4A7350]/10 text-[#4A7350] border border-[#D4AF37]/20">
                       {t}
                     </span>
                   ))}

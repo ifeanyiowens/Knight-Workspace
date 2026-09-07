@@ -152,7 +152,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
       </div>
 
       {/* Terminal Real-Time Log Output */}
-      <div className="rounded-2xl bg-black/60 border border-black/10 p-4 font-mono text-xs text-[#16201B]/80">
+      <div className="rounded-2xl bg-[#16201B] border border-black/10 p-4 font-mono text-xs text-[#EDEDEA]">
         <div className="flex items-center gap-2 pb-2 mb-2 border-b border-black/10 text-[#16201B]/40 text-[10px]">
           <Terminal className="w-3.5 h-3.5 text-[#D4AF37]" />
           <span>REAL-TIME AUDIT LOG</span>

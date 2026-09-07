@@ -93,7 +93,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                     <span className="text-xs font-bold text-[#D4AF37]">
                       0{idx + 1}
                     </span>
-                    <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/40 text-[#16201B]/80">
+                    <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/5 text-[#16201B]/80">
                       {problem.symptom}
                     </span>
                   </div>
@@ -176,7 +176,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
 
                   <div className="mb-4">
                   {study.image ? (
-                    <div className="mb-4 overflow-hidden rounded-2xl border border-black/10 bg-black/50 relative group/img aspect-[4/3] shadow-inner">
+                    <div className="mb-4 overflow-hidden rounded-2xl border border-black/10 bg-[#EDEDEA] relative group/img aspect-[4/3] shadow-inner">
                       <img
                         src={study.image}
                         alt={`${study.title} Notion Workspace Preview`}
@@ -229,7 +229,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 <div>
                   <div className="flex flex-wrap gap-1.5 mb-4">
                     {study.tools.map((tool) => (
-                      <span key={tool} className="text-[11px] px-2.5 py-1 rounded-lg bg-black/40 text-[#16201B]/80 border border-black/10">
+                      <span key={tool} className="text-[11px] px-2.5 py-1 rounded-lg bg-black/5 text-[#16201B]/80 border border-black/10">
                         {tool}
                       </span>
                     ))}
@@ -300,7 +300,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                     <div className="font-bold text-[#16201B]">{testi.author}</div>
                     <div className="text-[#16201B]/50 text-[11px]">{testi.role || testi.company}</div>
                   </div>
-                  <span className="text-[#D4AF37] text-[11px] bg-black/40 px-2.5 py-1 rounded-lg border border-black/5">
+                  <span className="text-[#D4AF37] text-[11px] bg-black/5 px-2.5 py-1 rounded-lg border border-black/5">
                     {testi.projectType}
                   </span>
                 </div>

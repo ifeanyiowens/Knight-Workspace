@@ -51,7 +51,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* System Preview Image */}
         {study.image && (
-          <div className="mb-6 overflow-hidden rounded-2xl border border-black/15 bg-black/40 shadow-xl group relative">
+          <div className="mb-6 overflow-hidden rounded-2xl border border-black/15 bg-[#EDEDEA] shadow-xl group relative">
             <img 
               src={study.image} 
               alt={`${study.title} Notion System Interface Preview`} 
@@ -159,7 +159,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
             {study.tools.map((t) => (
               <span
                 key={t}
-                className="text-xs font-mono px-3 py-1 rounded-lg bg-black/40 border border-black/10 text-[#16201B]"
+                className="text-xs font-mono px-3 py-1 rounded-lg bg-black/5 border border-black/10 text-[#16201B]"
               >
                 {t}
               </span>

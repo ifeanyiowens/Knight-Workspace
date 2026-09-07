@@ -39,7 +39,7 @@ export const StatsBar: React.FC = () => {
               className="rounded-2xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#D4AF37]/50 transition-all group relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="font-mono text-xs text-[#4A7350] font-bold px-2.5 py-1 rounded-md bg-black/40 border border-[#D4AF37]/20">
+                <span className="font-mono text-xs text-[#4A7350] font-bold px-2.5 py-1 rounded-md bg-[#4A7350]/10 border border-[#D4AF37]/20">
                   METRIC 0{idx + 1}
                 </span>
                 <span className="p-2 rounded-lg bg-[#A8C6A9]/50 border border-black/10">

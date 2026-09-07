@@ -260,11 +260,11 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-black/10 text-xs font-mono">
-              <div className="p-2.5 rounded-xl bg-black/40 border border-black/5">
+              <div className="p-2.5 rounded-xl bg-black/5 border border-black/5">
                 <span className="text-[#16201B]/40 block text-[10px]">ISSUING BODY</span>
                 <span className="text-[#16201B] font-semibold">{cert.organization}</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-black/40 border border-black/5">
+              <div className="p-2.5 rounded-xl bg-black/5 border border-black/5">
                 <span className="text-[#16201B]/40 block text-[10px]">RECIPIENT</span>
                 <span className="text-[#16201B] font-semibold truncate block">Owens Oparaku</span>
               </div>

@@ -142,7 +142,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#4A7350] px-2.5 py-1 rounded-md bg-black/60 border border-[#D4AF37]/30">
+                    <span className="font-mono text-xs font-bold text-[#4A7350] px-2.5 py-1 rounded-md bg-[#4A7350]/10 border border-[#D4AF37]/30">
                       [{String(idx + 1).padStart(2, '0')} / 06]
                     </span>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
@@ -156,7 +156,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
 
                 {/* System Workspace Image Preview */}
                 {study.image && (
-                  <div className="mb-5 overflow-hidden rounded-2xl border border-black/10 bg-black/50 relative group/img aspect-[4/3] shadow-inner">
+                  <div className="mb-5 overflow-hidden rounded-2xl border border-black/10 bg-[#EDEDEA] relative group/img aspect-[4/3] shadow-inner">
                     <img
                       src={study.image}
                       alt={`${study.title} Notion Workspace Preview`}
@@ -212,7 +212,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                   {study.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="text-[10px] font-mono px-2.5 py-1 rounded-lg bg-black/40 text-[#16201B]/80 border border-black/10"
+                      className="text-[10px] font-mono px-2.5 py-1 rounded-lg bg-black/5 text-[#16201B]/80 border border-black/10"
                     >
                       {tool}
                     </span>

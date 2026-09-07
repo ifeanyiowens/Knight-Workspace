@@ -122,7 +122,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                   <span className="font-mono text-xs font-bold text-[#4A7350]">
                     {step.number}
                   </span>
-                  <span className="text-[10px] font-mono uppercase bg-black/40 text-[#16201B]/70 px-2 py-0.5 rounded border border-black/5">
+                  <span className="text-[10px] font-mono uppercase bg-black/5 text-[#16201B]/70 px-2 py-0.5 rounded border border-black/5">
                     {step.duration}
                   </span>
                 </div>

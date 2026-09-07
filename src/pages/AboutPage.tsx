@@ -253,7 +253,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             {principles.map((p) => (
               <div key={p.num} className="p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-black/40 border border-[#D4AF37]/20 inline-block mb-4">
+                  <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-[#4A7350]/10 border border-[#D4AF37]/20 inline-block mb-4">
                     PRINCIPLE [{p.num}]
                   </span>
                   <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-3">
@@ -340,7 +340,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               <div key={tool.name} className="p-5 rounded-2xl bg-white border border-black/10">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-serif text-lg font-bold text-[#16201B]">{tool.name}</span>
-                  <span className="text-[10px] font-mono text-[#D4AF37] bg-black/40 px-2 py-0.5 rounded border border-black/5">
+                  <span className="text-[10px] font-mono text-[#D4AF37] bg-black/5 px-2 py-0.5 rounded border border-black/5">
                     {tool.badge}
                   </span>
                 </div>
