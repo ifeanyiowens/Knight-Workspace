@@ -224,7 +224,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             
             <div className="space-y-4 text-sm text-[#16201B]/80 leading-relaxed font-sans">
               <p>
-                Most small business owners buy pre-made templates hoping for an overnight cure. Within three weeks, the template is abandoned because it was designed for an imaginary generic company — not your team's real communication cadences, clients, or hand-off bottlenecks.
+                Most small business owners buy a template hoping it fixes everything overnight. Three weeks later it sits unused, because it was built for a made up company, not your team, your clients, or the exact spot where handoffs keep breaking down.
               </p>
               <p>
                 At Oparaku Systems, we do not copy-paste templates. We engineer schemas derived directly from how your clients pay, how your staff communicates, and where tasks fall through the cracks.

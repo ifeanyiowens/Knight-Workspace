@@ -55,7 +55,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
     {
       num: '01',
       title: 'Zero Sticky Notes Policy',
-      desc: 'If a vital business process depends on a founder’s memory, a WhatsApp DM, or a yellow sticky note on a monitor, it is not a business — it is a vulnerability waiting to cost you a client.'
+      desc: 'If a business process only works because you remember it, or it lives in a WhatsApp DM, or a sticky note on a monitor, that is not a system. It is one sick day away from costing you a client.'
     },
     {
       num: '02',
@@ -280,7 +280,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 Official Certifications & Accreditations
               </h3>
               <p className="text-sm text-[#16201B]/70 font-sans max-w-2xl">
-                Every system is built on certified mastery — verified credentials across Notion Academy, ClickUp, Airtable, and Make.com. Click any certificate to inspect full credentials.
+                Every system is built on certified mastery, verified credentials across Notion Academy, ClickUp, Airtable, and Make.com. Click any certificate to see the full details.
               </p>
             </div>
 

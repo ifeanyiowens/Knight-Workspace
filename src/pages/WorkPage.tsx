@@ -73,7 +73,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
           </h1>
 
           <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
-            Every build is a bespoke operational backbone engineered for real business complexity — eliminating spreadsheets, zeroing dropped tasks, and scaling team capacity without adding headcount.
+            Every build is made for how that specific business actually runs, so tasks stop getting dropped and the team can grow without hiring just to keep up.
           </p>
 
           {/* Quick Metrics Header Bar */}

@@ -76,7 +76,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
             </button>
 
             <p className="text-xs sm:text-sm text-[#16201B]/60 max-w-sm leading-relaxed font-sans">
-              Certified business operations and systems architect. Replacing scattered spreadsheets, messy communication, and manual friction with custom Notion, ClickUp, Airtable, and Make.com engines.
+              Certified business operations and systems architect. I replace messy communication and manual busywork with Notion, ClickUp, Airtable, and Make.com systems built to run on their own.
             </p>
 
             {/* Social channels */}
