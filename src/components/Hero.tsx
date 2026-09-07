@@ -82,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           {/* Right Column: Free floating photo, no card */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-sm sm:max-w-md">
+            <div className="relative w-full max-w-md sm:max-w-lg">
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
               <div className="absolute bottom-6 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
@@ -91,7 +91,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <img
                   src={owensProfilePhoto}
                   alt="Owens Oparaku"
-                  className="w-full h-auto max-h-[460px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto max-h-[600px] object-contain object-bottom mx-auto"
                   onError={() => setImageError(true)}
                 />
               ) : (

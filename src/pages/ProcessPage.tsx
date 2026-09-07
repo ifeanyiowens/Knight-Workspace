@@ -38,22 +38,22 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
   const guarantees = [
     {
       title: 'Zero Duct Tape Guarantee',
-      desc: 'No fragile, undocumented Zapier zaps that break without warning. Every automation includes built-in error handling and fallback alerts.',
+      desc: 'No automations that quietly break one day with no warning. Every one has error handling and an alert built in.',
       icon: ShieldCheck
     },
     {
       title: 'Single Source of Truth',
-      desc: 'Every team member knows exactly where data lives. No duplicate entries between Slack, WhatsApp, and spreadsheets.',
+      desc: 'Everyone on your team knows exactly where to find something, and it only lives in one place.',
       icon: Lock
     },
     {
       title: '100% Video SOP Hand-Off',
-      desc: 'Complete Loom video walkthroughs and searchable documentation so new team hires can onboard in under 48 hours.',
+      desc: 'Short videos showing exactly how everything works, so a new hire can pick it up in under 48 hours.',
       icon: FileCheck2
     },
     {
       title: '14 Days of Free Support After Delivery',
-      desc: '14 days of dedicated post-delivery support for workflow fine-tuning, team adoption, and minor adjustments just in case I am needed.',
+      desc: 'Two weeks after delivery, I\'m still around for fine-tuning, questions, and small adjustments as your team settles in.',
       icon: Clock
     }
   ];

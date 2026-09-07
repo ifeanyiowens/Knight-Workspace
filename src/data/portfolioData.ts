@@ -151,55 +151,55 @@ export const SERVICES: Service[] = [
   {
     id: 'notion-builds',
     title: 'Custom Notion System Builds',
-    description: 'End-to-end workspaces engineered from the ground up: centralized client trackers, project command centers, standard operating procedure (SOP) libraries, and executive dashboards that team members actually enjoy using.',
+    description: 'A full workspace built around how your team actually works: client tracker, project hub, SOPs, and dashboards people actually open.',
     tools: ['Notion', 'Formulas 2.0', 'Relations & Rollups'],
     deliverables: ['Custom Operations Hub', 'Client & Project Trackers', 'Staff Onboarding Portal', 'Video Walkthrough Guide'],
-    bestFor: 'Founders running on fragmented spreadsheets and notes who need one unified business engine.',
+    bestFor: 'You are running the business out of notes and spreadsheets and need one place that holds it all.',
     icon: 'LayoutGrid'
   },
   {
     id: 'make-automation',
     title: 'Workflow Automation via Make.com',
-    description: 'Silent, dependable backend integrations connecting your forms, CRM, payment processors, and project boards so routine data movement happens instantly without human error.',
+    description: 'Your forms, CRM, payments, and project boards start talking to each other, so nobody retypes the same information twice.',
     tools: ['Make.com', 'Webhooks', 'REST APIs', 'Zapier'],
     deliverables: ['Multi-Branch Scenarios', 'Error-Handling Routines', 'Instant Lead Hand-Offs', 'Automated Notifications'],
-    bestFor: 'Teams spending hours each week manually transferring data between different apps.',
+    bestFor: 'Your team spends hours a week copying data from one app into another by hand.',
     icon: 'Cpu'
   },
   {
     id: 'crm-architecture',
     title: 'CRM Architecture & Access Structuring',
-    description: 'Multi-tiered lead and deal pipelines designed for sales reps, external contractors, and leadership. Strict permission filters keep customer data private while giving reps zero confusion on lead ownership.',
+    description: 'A lead and deal pipeline built for your reps, contractors, and leadership, with clear ownership and no way to see someone else\'s clients by accident.',
     tools: ['Notion', 'Airtable', 'Make.com'],
     deliverables: ['Multi-Tier Lead Pipelines', 'Rep-Specific Filtered Views', 'Master Revenue Dashboard', 'Lead Intake Webhooks'],
-    bestFor: 'Coaching networks, agencies, and sales organizations with multiple reps managing deals.',
+    bestFor: 'You run a coaching network, agency, or sales team where reps keep stepping on each other\'s leads.',
     icon: 'Users'
   },
   {
     id: 'multi-tool',
     title: 'Multi-Tool Ecosystems (ClickUp & Airtable)',
-    description: 'Tailored implementations for organizations whose workflow requires the custom relational power of Airtable or the sprint tracking depth of ClickUp alongside Notion.',
+    description: 'For teams that need Airtable\'s relational data or ClickUp\'s sprint tracking working alongside Notion, not fighting it.',
     tools: ['ClickUp', 'Airtable', 'Notion', 'Make.com'],
     deliverables: ['Custom Relational Bases', 'Sprint & Task Automations', 'Custom Dashboards', 'Cross-Platform Sync'],
-    bestFor: 'Growing teams with specialized operational needs across multiple software platforms.',
+    bestFor: 'Your team has outgrown a single tool and needs a few working together instead.',
     icon: 'Layers'
   },
   {
     id: 'audits-consulting',
     title: 'Workflow Audits & Systems Diagnostics',
-    description: 'A deep-dive investigation into how your business currently handles inquiries, fulfillment, and team communication. You get an exact blueprint showing where your time leaks and how to fix it.',
+    description: 'A close look at how inquiries, fulfillment, and team communication actually move through your business right now, and exactly where the time is leaking.',
     tools: ['Process Mapping', 'Loom Audits', 'Architecture Blueprints'],
     deliverables: ['Bottleneck Analysis Report', 'Recommended Tool Architecture', 'Prioritized 30-Day Action Plan', 'Strategy Call'],
-    bestFor: 'Business owners preparing to scale who want to know what will break before it does.',
+    bestFor: 'You are about to scale and want to know what will break first.',
     icon: 'Search'
   },
   {
     id: 'admin-support',
     title: 'Ongoing Systems & Operations Maintenance',
-    description: 'Dedicated operational support to keep your databases clean, adjust automations as your offerings evolve, and troubleshoot new team requests so your backend stays pristine.',
+    description: 'Someone keeping your databases clean, your automations current, and your team\'s tech questions answered, month after month.',
     tools: ['Notion', 'Make.com', 'ClickUp', 'Airtable'],
     deliverables: ['Monthly Database Hygiene', 'Automation Optimization', 'Team Tech Support', 'New Feature Additions'],
-    bestFor: 'Fast-moving founders who want an expert on retainer to safeguard their operational engine.',
+    bestFor: 'You move fast and want someone on call to keep the systems from falling behind.',
     icon: 'ShieldCheck'
   }
 ];

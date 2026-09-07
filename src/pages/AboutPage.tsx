@@ -60,17 +60,17 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
     {
       num: '02',
       title: 'Relational Integrity First',
-      desc: 'Isolated spreadsheets create duplicate data entry. We design relational database schemas where projects, clients, invoices, and deliverables speak to each other automatically.'
+      desc: 'When your data lives in separate spreadsheets, you end up typing the same thing twice. Your projects, clients, invoices, and deliverables should update each other on their own.'
     },
     {
       num: '03',
       title: 'Humans for Strategy, Machines for Repetition',
-      desc: 'Your high-value team should never spend 45 minutes manually copying lead information or sending generic calendar reminders. Automation handles the mechanical so humans can do the creative.'
+      desc: 'Nobody on your team should spend 45 minutes copying lead info or sending the same reminder by hand. Let automation handle the repetitive part so people can do the thinking part.'
     },
     {
       num: '04',
       title: 'Turnover-Proof Systems',
-      desc: 'When a key team member departs, their institutional knowledge should not leave with them. Every Oparaku build includes step-by-step video SOPs so new staff onboard in 48 hours.'
+      desc: 'When someone leaves, what they knew shouldn\'t leave with them. Every build comes with short videos showing exactly how things work, so a new hire is up to speed in 48 hours.'
     }
   ];
 
@@ -145,7 +145,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           
           {/* Left: Free floating portrait, matches Hero treatment */}
           <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-sm sm:max-w-md">
+            <div className="relative w-full max-w-md sm:max-w-lg">
 
               <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
@@ -154,7 +154,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   src={currentImgSrc}
                   alt={BRAND_INFO.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto max-h-[480px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto max-h-[620px] object-contain object-bottom mx-auto"
                   onError={handleImageError}
                 />
               ) : (
