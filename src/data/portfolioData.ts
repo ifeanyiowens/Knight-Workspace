@@ -213,9 +213,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     tools: ['Notion', 'Make.com', '8 Relational Databases', 'Automations'],
     badge: 'Agency Operating System',
     image: vulturesVzwImage,
-    problem: 'An expanding creative and event management agency struggled with fragmented client briefs, dislocated financial logs, and scattered project files across loose notes and message threads. As their portfolio scaled, the absence of centralized operational architecture created delivery bottlenecks and strained team bandwidth.',
-    solution: 'Engineered a bespoke, unified Client Management System in Notion powered by an 8-relational database architecture. Deeply connected lead pipelines, active client engagements, project milestone queues, budgeting, vendor logistics, and automated Make.com notification webhooks into one central executive cockpit.',
-    outcome: 'Eliminated operational silos, cut client onboarding setup time by 75%, and gave founders instant transparency across all active deliverables. The architecture was so robust that the agency closed their expansion deals on the spot during the initial demo.',
+    problem: 'A growing creative and event agency had client briefs, financial logs, and project files spread across notes and message threads. As they took on more work, nothing tied together, and every new project meant more time lost to delivery bottlenecks.',
+    solution: 'Built one Notion system with 8 connected databases: leads, active clients, project milestones, budgets, and vendors, all linked together with Make.com sending status notifications automatically.',
+    outcome: 'Client onboarding time dropped 75%, and the founders could see every active project at a glance. The system was clear enough that they closed their next expansion deal on the spot during the demo.',
     stats: { label: 'System Complexity', value: '8 Connected Databases' },
     link: 'https://owen-oparaku.notion.site/Vultures-Client-Management-System-3a47f686868a80dd9ee3d2cae2b7d46f?source=copy_link',
     linkText: 'View Notion Workspace Breakdown',
@@ -234,9 +234,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     tools: ['Notion', 'Formulas 2.0', 'Health Scoring', 'Pipeline Logic'],
     badge: 'Donor & Grant OS',
     image: donorPulseImage,
-    problem: 'Nonprofits, foundations, and mission-driven teams routinely lose touch with high-value donors and miss crucial grant reporting deadlines due to expensive, overly rigid enterprise CRMs or messy spreadsheets where records quickly grow obsolete.',
-    solution: 'Architected Donor Pulse — an intelligent donor and grant management system in Notion featuring automatic donor health status tracking (Active, Due for Check-in, Gone Quiet), gift and pledge pipeline tracking, program performance analytics, and structured touchpoint logs.',
-    outcome: 'Automated donor check-in reminders, protected critical funding streams, and eliminated manual spreadsheet maintenance — empowering teams to steward major donors and grant providers with zero dropped follow-ups.',
+    problem: 'Nonprofits and mission-driven teams kept losing touch with major donors and missing grant deadlines. Enterprise CRMs were too rigid, and spreadsheets got out of date the moment someone forgot to update them.',
+    solution: 'Built Donor Pulse, a Notion system that tracks donor health on its own, flagging who is active, who is due for a check-in, and who has gone quiet, alongside gift tracking and program performance in one place.',
+    outcome: 'Donor check-ins now happen automatically instead of falling through, funding relationships stay protected, and nobody is stuck updating a spreadsheet by hand anymore.',
     stats: { label: 'Donor Retention Focus', value: 'Zero Dropped Follow-ups' },
     link: 'https://owen-oparaku.notion.site/Donor-Pulse-1fc7f686868a806789ddec17e2686d75',
     linkText: 'Explore Donor Pulse on Notion Marketplace',
@@ -255,9 +255,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     tools: ['Notion', 'Client Portals', 'Automated Workflows', 'Database Relations'],
     badge: 'Production Systems',
     image: clientManagementSystemImage,
-    problem: 'Managing high-stakes event deliverables and client approvals across disconnected spreadsheets, email threads, and group chats led to frequent scope misunderstandings, delayed asset approvals, and stressful last-minute production fire drills.',
-    solution: 'Engineered an all-in-one Client Management & Production Workspace featuring structured client intake portals, deliverable review queues, vendor dispatch tracking, and automated workback milestone schedules calculated directly from event dates.',
-    outcome: 'Replaced 5 disparate tools with a single source of truth, reduced internal status meetings by 80%, and achieved 100% on-time milestone delivery across live client productions.',
+    problem: 'Event deliverables and client approvals were scattered across spreadsheets, email, and group chats. Scope got misread, assets sat waiting on approval, and every production turned into a last minute scramble.',
+    solution: 'Built one workspace covering client intake, deliverable reviews, vendor dispatch, and a production schedule that counts backward automatically from each event date.',
+    outcome: 'Five separate tools became one. Status meetings dropped by 80%, and every live production hit its deadlines on time.',
     stats: { label: 'Tools Replaced', value: '5 Tools Unified' },
     link: 'https://https://owen-oparaku.notion.site/Client-Management-System-3667f686868a80578963c4f9c8af9c98?source=copy_link',
     linkText: 'View Production System Breakdown',
@@ -276,9 +276,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     tools: ['Notion', 'Inventory Formulas', 'Procurement Logic', 'Relational Schemas'],
     badge: 'Supply Chain Command',
     image: marcusSystemImage,
-    problem: 'Scaling a multi-channel retail and wholesale distribution network on disconnected spreadsheets led to frequent inventory discrepancies, delayed supplier purchase orders, and zero real-time visibility into warehouse stock levels and shipment statuses.',
-    solution: "Engineered Marcus' System — a centralized operational command center in Notion orchestrating wholesale accounts, real-time inventory balances, automated low-stock reorder thresholds, supplier lead times, and dispatch fulfillment pipelines.",
-    outcome: 'Streamlined order fulfillment from procurement to dispatch, eradicated stockouts across core SKUs, and provided instant clarity on supplier unit economics, active purchase orders, and sales margins.',
+    problem: 'A multi-channel retail and wholesale business was running on disconnected spreadsheets, which meant inventory counts didn\'t match reality, supplier orders went out late, and nobody could see warehouse stock in real time.',
+    solution: 'Built a command center in Notion covering wholesale accounts, live inventory, automatic low-stock reorder alerts, supplier lead times, and dispatch, all in one view.',
+    outcome: 'Orders now move from purchase to dispatch without the gaps, stockouts on core products stopped happening, and margins and open purchase orders are visible at a glance.',
     stats: { label: 'Inventory Accuracy', value: '100% Real-Time Tracking' },
     link: 'https://owen-oparaku.notion.site/Marcus-System-3667f686868a8040bd6bd136425008e1?source=copy_link',
     linkText: 'View Supply Chain & Wholesale Engine',
@@ -297,9 +297,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     tools: ['Notion', 'CAD Revision Tracking', 'Gemstone Inventory', 'Formulas 2.0'],
     badge: 'Luxury Studio OS',
     image: knightJewelriesImage,
-    problem: 'Bespoke fine jewelry commissions and studio inventory were difficult to manage across 3D CAD design revisions, gemstone procurement, artisan bench crafting stages, and final valuation certificates, resulting in production delays and lost customer records.',
-    solution: 'Designed a bespoke Notion Operating System built specifically for fine jewelry artisans. Engineered dedicated modules for custom client commissions, CAD design approvals, precious metal/gemstone inventory balances, workshop bench workflows, and valuation documentation.',
-    outcome: 'Accelerated custom piece turnaround, reduced workshop production cycle friction, and provided artisans and sales staff with instant access to gem specifications, metal weights, ring sizings, and client commission histories.',
+    problem: 'Custom jewelry commissions were hard to track across CAD revisions, gemstone sourcing, bench work, and final valuations, which meant delays and lost customer records.',
+    solution: 'Built a Notion system made specifically for a jewelry studio, with dedicated tracking for client commissions, CAD approvals, gemstone and metal inventory, bench workflow, and valuation paperwork.',
+    outcome: 'Custom pieces move faster from order to delivery, and the team can pull up gem specs, metal weights, ring sizes, or a client\'s full commission history in seconds.',
     stats: { label: 'Production Cycle', value: 'Streamlined Commission Workflow' },
     link: 'https://owen-oparaku.notion.site/Knight-Jewelries-Studio-2187f686868a80418071fb84aa15d471?source=copy_link',
     linkText: 'View Jewelry Studio & Vault System',
@@ -519,7 +519,7 @@ export const PROCESS_STEPS = [
     title: 'Diagnostic & Workflow Audit',
     phase: 'Discovery',
     duration: 'Week 1',
-    description: 'We tear down how your business currently operates. We identify every disconnected sheet, broken handoff, manual copy-paste task, and founder bottleneck.',
+    description: 'I look at how your business actually runs right now. Every disconnected sheet, every broken handoff, every task that only happens because you remember it.',
     activities: [
       'Current tech stack & license review',
       'Information flow & bottleneck mapping',
@@ -532,7 +532,7 @@ export const PROCESS_STEPS = [
     title: 'Database Architecture & Data Modeling',
     phase: 'Schema Design',
     duration: 'Week 1 to 2',
-    description: 'We structure the relational foundation. Every client, project, deliverable, lead, and invoice connects logically with zero duplicate data entry.',
+    description: 'This is where the actual database gets built. Every client, project, deliverable, lead, and invoice connects to each other, so nothing gets entered twice.',
     activities: [
       'Entity relationship diagrams & relation models',
       'Custom formulas, rollups & status workflows',
@@ -545,7 +545,7 @@ export const PROCESS_STEPS = [
     title: 'Make.com Zero-Touch Automations',
     phase: 'Integration',
     duration: 'Week 2 to 3',
-    description: 'We connect your forms, payment gateways, calendar, and team chats with Make.com webhook scenarios so data moves without manual human effort.',
+    description: 'Your forms, payments, calendar, and team chat get connected through Make.com, so information moves on its own instead of someone copying it over by hand.',
     activities: [
       'Multi-branch webhook routing & error handling',
       'Instant client intake & automated folder provisioning',
@@ -555,10 +555,10 @@ export const PROCESS_STEPS = [
   },
   {
     number: '04',
-    title: 'Loom SOP Library & 14 Days of Free Support After Delivery',
+    title: 'Video Handoff & 14 Days of Free Support',
     phase: 'Handoff & Adoption',
     duration: 'Week 3 to 4',
-    description: 'A system is only as good as team adoption. We record bespoke video SOPs, train your team live, and provide 14 days of free support after delivery, just in case I am needed.',
+    description: 'A system only works if your team actually uses it. I record videos for each role, walk everyone through it live, and stay on for 14 days after delivery in case anything needs adjusting.',
     activities: [
       'Custom video walkthroughs for every team role',
       'Live team Q&A and onboarding walkthrough session',
@@ -571,23 +571,23 @@ export const PROCESS_STEPS = [
 export const FAQ_ITEMS = [
   {
     q: 'How long does a full systems build take from start to finish?',
-    a: 'Our standard 4-Week Engineering Sprint is completed in 28 days. Week 1 is Audit & Blueprint, Week 2 is Database Schema Modeling, Week 3 is Make.com Automations, and Week 4 is Video SOP Documentation & Live Team Hand-Off.'
+    a: 'About 28 days. Week 1 is figuring out what you actually need, week 2 is building the database, week 3 is the automations, and week 4 is recording videos and handing it to your team.'
   },
   {
     q: 'Do I need to upgrade to Notion Enterprise or pay for expensive software?',
-    a: 'No. In 90% of cases, we optimize within your existing software tiers (e.g. Notion Plus, Make Core plan, standard ClickUp or Airtable). We engineer around your budget to minimize recurring software overhead.'
+    a: 'No. Most of the time your current plan, whether that\'s Notion Plus, Make Core, or standard ClickUp or Airtable, is enough. I build around what you already pay for.'
   },
   {
     q: 'What if my team struggles to adopt new tools and workflows?',
-    a: 'Adoption is our top priority. We do not just build and vanish. We record role-specific video SOPs (Loom/Tango), host a live interactive team training call, and provide 14 days of free support after delivery on Slack/WhatsApp to make adjustments, just in case I am needed.'
+    a: 'That\'s on me to prevent, not you. Every build comes with short videos for each role, a live walkthrough with your team, and 14 days of free support after delivery for anything that needs adjusting.'
   },
   {
     q: 'Can you integrate our existing tools like Stripe, Google Drive, and Slack?',
-    a: 'Yes. Through Make.com and custom webhook pipelines, we connect your entire tech stack — automatically syncing invoices, client folders, calendar events, and team notifications with zero manual data entry.'
+    a: 'Yes. Make.com connects your tools together, so invoices, client folders, and notifications sync on their own, with nobody typing the same thing twice.'
   },
   {
     q: 'How do we get started?',
-    a: 'Book a complimentary 30-minute Systems Diagnostic call. We will audit your current tool sprawl, identify your biggest operational bottleneck, and outline a custom roadmap for your business.'
+    a: 'Book a call. It starts at $50 and we spend it figuring out where your time is actually going and what to fix first.'
   }
 ];
 
