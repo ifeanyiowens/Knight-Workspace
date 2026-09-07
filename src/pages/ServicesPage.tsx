@@ -60,11 +60,6 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span>PAGE [03/06] • SYSTEMS & CAPABILITIES</span>
-          </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             Operational Engines Built to Last.
           </h1>
@@ -82,7 +77,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Scope Your Project</span>
+              <span>Book a call</span>
             </button>
             <button
               onClick={() => {
@@ -135,7 +130,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                   <div className="w-10 h-10 rounded-xl bg-black/40 border border-black/10 flex items-center justify-center">
                     {getServiceIcon(service.icon)}
                   </div>
-                  <span className="font-mono text-xs font-bold text-[#D4AF37]">
+                  <span className="font-mono text-xs font-bold text-[#4A7350]">
                     [0{idx + 1}]
                   </span>
                 </div>
@@ -166,7 +161,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {service.tools.map((t) => (
-                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-black/40 text-[#D4AF37] border border-[#D4AF37]/20">
+                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-black/40 text-[#4A7350] border border-[#D4AF37]/20">
                       {t}
                     </span>
                   ))}
@@ -193,7 +188,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-black/10 mb-8">
             <div>
-              <h4 className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] font-bold mb-4">
+              <h4 className="font-mono text-xs uppercase tracking-widest text-[#4A7350] font-bold mb-4">
                 What's Included in the Sprint:
               </h4>
               <div className="space-y-3">
@@ -240,7 +235,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer shadow-lg"
             >
               <Calendar className="w-4 h-4" />
-              <span>Book Discovery for This Service</span>
+              <span>Book a call</span>
             </button>
           </div>
         </div>
@@ -263,13 +258,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             {/* Tier 1: Sprint */}
             <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#D4AF37] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
                   TIER 01 • ACCELERATOR
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
                   Systems Sprint
                 </h4>
-                <div className="font-mono text-xs text-[#16201B]/50 mb-4">4-Week Turnkey Build</div>
+                <div className="font-mono text-xs text-[#16201B]/50 mb-1">4-Week Turnkey Build</div>
+                <div className="font-mono text-sm font-bold text-[#4A7350] mb-4">Starting at $100</div>
                 <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
                   Perfect for focused bottlenecks (e.g. single Notion CRM, Typeform lead router, or ClickUp team setup).
                 </p>
@@ -284,7 +280,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 onClick={onOpenBooking}
                 className="w-full py-3 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer"
               >
-                Inquire on Sprint
+                Book a call
               </button>
             </div>
 
@@ -294,13 +290,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 MOST POPULAR
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#D4AF37] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
                   TIER 02 • FULL TRANSFORMATION
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
                   Operations Architecture
                 </h4>
-                <div className="font-mono text-xs text-[#16201B]/70 mb-4">6-8 Week Complete Overhaul</div>
+                <div className="font-mono text-xs text-[#16201B]/70 mb-1">6-8 Week Complete Overhaul</div>
+                <div className="font-mono text-sm font-bold text-[#16201B] mb-4">Starting at $100</div>
                 <p className="text-xs text-[#16201B]/80 leading-relaxed mb-6">
                   End-to-end operational engine for 5–25 person teams running on scattered tools and founder memory.
                 </p>
@@ -323,13 +320,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             {/* Tier 3: Retainer */}
             <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#D4AF37] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
                   TIER 03 • FRACTIONAL OPERATIONS
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
                   Systems Hypercare
                 </h4>
-                <div className="font-mono text-xs text-[#16201B]/50 mb-4">Monthly Dedicated Retainer</div>
+                <div className="font-mono text-xs text-[#16201B]/50 mb-1">Monthly Dedicated Retainer</div>
+                <div className="font-mono text-sm font-bold text-[#16201B] mb-4">Custom pricing</div>
                 <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
                   Ongoing operational leadership, quarterly schema updates, new integration builds, and team support.
                 </p>
@@ -344,7 +342,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 onClick={onOpenBooking}
                 className="w-full py-3 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer"
               >
-                Inquire on Retainer
+                Book a call
               </button>
             </div>
           </div>
@@ -357,7 +355,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               The 4-Week Engineering Sprint Methodology
             </h4>
-            <p className="text-xs font-mono text-[#D4AF37] mt-1">
+            <p className="text-xs font-mono text-[#4A7350] mt-1">
               [PAGE 04/06] Audit, Blueprint, Automation Build & Live Simulator
             </p>
           </div>

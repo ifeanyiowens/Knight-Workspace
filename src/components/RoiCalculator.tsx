@@ -25,7 +25,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#4A7350] text-xs font-mono uppercase tracking-widest mb-3">
             <Calculator className="w-3.5 h-3.5 text-[#D4AF37]" />
             <span>Interactive Operational Audit</span>
           </div>
@@ -61,7 +61,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Team Size (including contractors)
                   </label>
-                  <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
+                  <span className="font-mono text-xs font-bold text-[#4A7350] px-3 py-1 bg-[#4A7350]/10 rounded-lg border border-[#4A7350]/30">
                     {teamSize} {teamSize === 1 ? 'PERSON' : 'PEOPLE'}
                   </span>
                 </div>
@@ -72,7 +72,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="1"
                   value={teamSize}
                   onChange={(e) => setTeamSize(Number(e.target.value))}
-                  className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
                 <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>01 (Solo)</span>
@@ -87,7 +87,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Manual hours lost per person / week
                   </label>
-                  <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
+                  <span className="font-mono text-xs font-bold text-[#4A7350] px-3 py-1 bg-[#4A7350]/10 rounded-lg border border-[#4A7350]/30">
                     {hoursPerPersonPerWeek} HRS / WK
                   </span>
                 </div>
@@ -98,7 +98,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="1"
                   value={hoursPerPersonPerWeek}
                   onChange={(e) => setHoursPerPersonPerWeek(Number(e.target.value))}
-                  className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
                 <p className="text-xs text-[#16201B]/50 font-sans">
                   Spent searching files, asking for updates, updating spreadsheets, and retyping client info.
@@ -111,7 +111,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   <label className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80">
                     Average hourly team cost / value
                   </label>
-                  <span className="font-mono text-xs font-bold text-[#D4AF37] px-3 py-1 bg-black/40 rounded-lg border border-[#D4AF37]/30">
+                  <span className="font-mono text-xs font-bold text-[#4A7350] px-3 py-1 bg-[#4A7350]/10 rounded-lg border border-[#4A7350]/30">
                     ${hourlyRate} / HR
                   </span>
                 </div>
@@ -122,7 +122,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="5"
                   value={hourlyRate}
                   onChange={(e) => setHourlyRate(Number(e.target.value))}
-                  className="w-full h-2 bg-black/50 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
                 />
                 <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>$15/hr</span>
@@ -138,10 +138,10 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
               
               <div>
                 <div className="flex items-center justify-between mb-6">
-                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#D4AF37]">
+                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#4A7350]">
                     Projected Annual Recovery
                   </span>
-                  <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-black/50 text-[#D4AF37] border border-[#D4AF37]/30">
+                  <span className="text-[11px] font-mono px-2.5 py-1 rounded-md bg-[#4A7350]/10 text-[#4A7350] border border-[#4A7350]/30">
                     80% Efficiency Gain
                   </span>
                 </div>
@@ -154,22 +154,22 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2">
                     {annualHoursReclaimed.toLocaleString()}+ hrs
                   </div>
-                  <p className="text-xs font-mono text-[#D4AF37]">
+                  <p className="text-xs font-mono text-[#4A7350]">
                     Equivalent to gaining {Math.round(annualHoursReclaimed / 40)} full working weeks of productive team output.
                   </p>
                 </div>
 
                 {/* Secondary Cost Breakdown */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="p-4 rounded-2xl bg-black/40 border border-red-500/20">
+                  <div className="p-4 rounded-2xl bg-red-50 border border-red-200">
                     <span className="text-[11px] font-mono text-[#16201B]/50 block mb-1">Current Annual Leakage</span>
-                    <div className="font-serif text-2xl font-bold text-red-400">
+                    <div className="font-serif text-2xl font-bold text-red-600">
                       ${annualCostWasted.toLocaleString()}
                     </div>
                   </div>
-                  <div className="p-4 rounded-2xl bg-black/40 border border-[#D4AF37]/30">
-                    <span className="text-[11px] font-mono text-[#D4AF37] block mb-1">Recovered Annual Value</span>
-                    <div className="font-serif text-2xl font-bold text-[#D4AF37]">
+                  <div className="p-4 rounded-2xl bg-[#4A7350]/10 border border-[#4A7350]/30">
+                    <span className="text-[11px] font-mono text-[#4A7350] block mb-1">Recovered Annual Value</span>
+                    <div className="font-serif text-2xl font-bold text-[#4A7350]">
                       ${annualValueReclaimed.toLocaleString()}
                     </div>
                   </div>

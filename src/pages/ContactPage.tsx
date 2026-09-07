@@ -91,17 +91,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
         <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-[#D4AF37]/15 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span>PAGE [06/06] • SYSTEMS DISCOVERY & BOOKING</span>
-          </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             Let's Build a System That Holds.
           </h1>
 
           <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
-            Book a complimentary 30-minute Systems Diagnostic with Owens Oparaku, calculate your estimated operational waste, or submit a custom architecture project brief.
+            Book a call to walk through what's slowing your team down. Consultations start at $50, builds start at $100.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -113,7 +108,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Open Live Calendar</span>
+              <span>Book a call</span>
             </button>
             <a
               href={`mailto:${BRAND_INFO.email}`}
@@ -142,11 +137,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
                 INSTANT SCHEDULING
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-4">
-                30-Min Systems Diagnostic
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-1">
+                30 Minute Call
               </h3>
+              <div className="font-mono text-sm font-bold text-[#4A7350] mb-4">Starting at $50</div>
               <p className="text-xs sm:text-sm text-[#16201B]/70 leading-relaxed mb-6 font-sans">
-                On this call, we analyze your current tool sprawl, map out your highest-priority automation opportunities, and give you an actionable roadmap — even if we don't work together.
+                We go through what's actually slowing your team down and map out what to fix first. If it turns into a build, that starts at $100.
               </p>
 
               <div className="space-y-3 mb-6 font-mono text-xs text-[#16201B]/80">
@@ -172,7 +168,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                 className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg"
               >
                 <Calendar className="w-4 h-4" />
-                <span>Select Date & Time</span>
+                <span>Book a call</span>
               </button>
             </div>
 

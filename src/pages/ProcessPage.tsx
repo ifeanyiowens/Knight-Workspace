@@ -66,11 +66,6 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span>PAGE [04/06] • 4-WEEK ENGINEERING METHODOLOGY</span>
-          </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             From Chaos to a System That Holds in 28 Days.
           </h1>
@@ -88,7 +83,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Schedule Sprint Kickoff</span>
+              <span>Book a call</span>
             </button>
             <button
               onClick={() => {
@@ -124,7 +119,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-[#D4AF37]">
+                  <span className="font-mono text-xs font-bold text-[#4A7350]">
                     {step.number}
                   </span>
                   <span className="text-[10px] font-mono uppercase bg-black/40 text-[#16201B]/70 px-2 py-0.5 rounded border border-black/5">
@@ -180,7 +175,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             </div>
 
             <div className="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-black/5 space-y-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] font-bold block">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] font-bold block">
                 PHASE EXECUTION CHECKLIST
               </span>
 
@@ -220,7 +215,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         {/* The Anti-Template Debt Manifesto */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-20">
           <div className="max-w-3xl">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#D4AF37] font-bold block mb-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold block mb-2">
               OUR CORE PHILOSOPHY
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-6">
@@ -266,7 +261,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               About Owens Oparaku & The Oparaku Philosophy
             </h4>
-            <p className="text-xs font-mono text-[#D4AF37] mt-1">
+            <p className="text-xs font-mono text-[#4A7350] mt-1">
               [PAGE 05/06] Credentials, Notion & Make certifications, and client reviews
             </p>
           </div>

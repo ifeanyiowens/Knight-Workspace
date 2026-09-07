@@ -28,7 +28,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* Top Badges */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#A8C6A9] text-[#D4AF37] border border-[#D4AF37]/30 uppercase tracking-wider">
+          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#A8C6A9] text-[#4A7350] border border-[#D4AF37]/30 uppercase tracking-wider">
             {study.badge}
           </span>
           <span className="px-3 py-1 rounded-full text-xs font-mono text-[#16201B]/80 bg-black/5 border border-black/10">
@@ -59,7 +59,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               className="w-full h-56 sm:h-72 object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-black/10 pointer-events-none" />
-            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-black/70 backdrop-blur-md border border-black/15 text-[11px] font-mono text-[#D4AF37] flex items-center gap-1.5">
+            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-black/70 backdrop-blur-md border border-black/15 text-[11px] font-mono text-[#4A7350] flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
               <span>Verified System Workspace Preview</span>
             </div>
@@ -128,7 +128,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
             </p>
 
             <div className="pt-3 border-t border-black/10 space-y-2">
-              <span className="text-xs font-mono text-[#D4AF37] block font-bold uppercase tracking-wider">
+              <span className="text-xs font-mono text-[#4A7350] block font-bold uppercase tracking-wider">
                 Technical Highlights:
               </span>
               {study.highlights.map((h, i) => (
@@ -141,7 +141,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
           </div>
 
           <div className="bg-[#A8C6A9] text-[#16201B] p-5 rounded-2xl border border-[#D4AF37]/40 shadow-lg">
-            <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#D4AF37] mb-1">
+            <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#4A7350] mb-1">
               Measurable Operational Result
             </div>
             <p className="text-sm text-[#16201B]/95 leading-relaxed font-sans">
@@ -185,7 +185,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               href={study.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#D4AF37]/40 bg-[#A8C6A9]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#D4AF37] hover:bg-[#A8C6A9] transition-colors flex items-center justify-center gap-2"
+              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#D4AF37]/40 bg-[#A8C6A9]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#4A7350] hover:bg-[#A8C6A9] transition-colors flex items-center justify-center gap-2"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Open Link</span>

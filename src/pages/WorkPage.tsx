@@ -68,11 +68,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#A8C6A9]/30 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span>PAGE [02/06] • ARCHITECTURAL PORTFOLIO</span>
-          </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             Selected Works & Systems Builds.
           </h1>
@@ -147,10 +142,10 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#D4AF37] px-2.5 py-1 rounded-md bg-black/60 border border-[#D4AF37]/30">
+                    <span className="font-mono text-xs font-bold text-[#4A7350] px-2.5 py-1 rounded-md bg-black/60 border border-[#D4AF37]/30">
                       [{String(idx + 1).padStart(2, '0')} / 06]
                     </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#D4AF37] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
                       {study.badge}
                     </span>
                   </div>
@@ -256,7 +251,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
 
         {/* Operational Comparison Matrix Table across all 6 clients */}
         <div className="rounded-3xl bg-white border border-black/10 p-6 sm:p-8 shadow-2xl mb-16">
-          <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#D4AF37]">
+          <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#4A7350]">
             <Cpu className="w-4 h-4" />
             <span>CROSS-CLIENT ARCHITECTURAL MATRIX</span>
           </div>
@@ -313,7 +308,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               Explore Our Services & Systems Capabilities
             </h4>
-            <p className="text-xs font-mono text-[#D4AF37] mt-1">
+            <p className="text-xs font-mono text-[#4A7350] mt-1">
               [PAGE 03/06] Custom Notion, Make.com, Airtable & ClickUp packages
             </p>
           </div>

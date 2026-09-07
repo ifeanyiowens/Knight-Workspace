@@ -58,7 +58,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span className="text-xs font-mono uppercase tracking-widest text-[#D4AF37] font-bold">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold">
               LIVE SYSTEMS SIMULATOR
             </span>
           </div>

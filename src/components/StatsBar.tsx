@@ -22,7 +22,7 @@ export const StatsBar: React.FC = () => {
         
         {/* Header Tag */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-black/10 gap-4">
-          <span className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] flex items-center gap-2">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
             MEASURABLE OPERATIONAL IMPACT ACROSS CLIENT WORKSPACES
           </span>
@@ -39,7 +39,7 @@ export const StatsBar: React.FC = () => {
               className="rounded-2xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#D4AF37]/50 transition-all group relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded-md bg-black/40 border border-[#D4AF37]/20">
+                <span className="font-mono text-xs text-[#4A7350] font-bold px-2.5 py-1 rounded-md bg-black/40 border border-[#D4AF37]/20">
                   METRIC 0{idx + 1}
                 </span>
                 <span className="p-2 rounded-lg bg-[#A8C6A9]/50 border border-black/10">
@@ -51,7 +51,7 @@ export const StatsBar: React.FC = () => {
                 <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2 group-hover:text-[#D4AF37] transition-colors">
                   {stat.value}
                 </div>
-                <div className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] mb-2 font-bold">
+                <div className="font-mono text-xs uppercase tracking-widest text-[#4A7350] mb-2 font-bold">
                   {stat.label}
                 </div>
                 <p className="text-xs sm:text-sm text-[#16201B]/70 leading-relaxed font-sans">

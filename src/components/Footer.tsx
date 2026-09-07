@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
         <div className="pb-16 mb-16 border-b border-black/10">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
             <div className="max-w-3xl">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#D4AF37] block mb-3">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] block mb-3">
                 LET'S TALK ARCHITECTURE
               </span>
               <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#16201B] tracking-tight leading-[1.02]">
@@ -47,7 +47,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               className="inline-flex items-center gap-3 px-8 py-5 rounded-2xl bg-[#D4AF37] text-[#111815] font-mono font-bold text-sm uppercase tracking-wider hover:bg-[#E5C358] transition-all self-start lg:self-auto cursor-pointer shadow-2xl group"
             >
               <Calendar className="w-5 h-5" />
-              <span>Book Systems Diagnostic</span>
+              <span>Book a call</span>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </div>
@@ -130,7 +130,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
 
           {/* Site Directory / 6-Page Index */}
           <div className="md:col-span-4 space-y-3 font-mono">
-            <h4 className="text-xs uppercase tracking-widest text-[#D4AF37] font-bold">
+            <h4 className="text-xs uppercase tracking-widest text-[#4A7350] font-bold">
               Site Index [06 Pages]
             </h4>
             <ul className="space-y-2 text-xs text-[#16201B]/70">
@@ -157,7 +157,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
 
           {/* Direct Contact & Availability */}
           <div className="md:col-span-3 space-y-4">
-            <h4 className="text-xs font-mono uppercase tracking-widest text-[#D4AF37] font-bold">
+            <h4 className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold">
               Direct Contact
             </h4>
             

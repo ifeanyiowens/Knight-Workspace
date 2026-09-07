@@ -26,10 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-7 flex flex-col items-start space-y-6">
 
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#A8C6A9]/25 border border-[#4A7350]/30 text-[#3D5F41] text-xs font-semibold tracking-wide">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4A7350] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#4A7350]"></span>
-              </span>
+              <span className="w-2 h-2 rounded-full bg-[#4A7350]"></span>
               <span>Systems architect for growing businesses</span>
             </div>
 

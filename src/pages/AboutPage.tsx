@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BRAND_INFO, TESTIMONIALS, CERTIFICATIONS } from '../data/portfolioData';
+import { BRAND_INFO, CERTIFICATIONS } from '../data/portfolioData';
 import { PageId, Certification } from '../types';
 import { TiltCard } from '../components/TiltCard';
 import { MarqueeTicker } from '../components/MarqueeTicker';
@@ -93,11 +93,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center gap-2.5 mb-3 font-mono text-xs text-[#4A7350] uppercase tracking-widest">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span>PAGE [05/06] • ABOUT OWENS & THE OPARAKU PHILOSOPHY</span>
-          </div>
-
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
             The Mind Behind the Systems.
           </h1>
@@ -115,7 +110,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
-              <span>Book Systems Diagnostic</span>
+              <span>Book a call</span>
             </button>
             <a
               href={BRAND_INFO.notionSite}
@@ -352,48 +347,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 <p className="text-xs font-mono text-[#16201B]/60">
                   {tool.role}
                 </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Full Testimonials Wall */}
-        <div className="mb-16">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
-              CLIENT TESTIMONIALS
-            </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
-              What Founders Say Post-Deployment
-            </h3>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.id} className="p-7 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex text-[#D4AF37] text-sm">
-                      {[...Array(t.rating)].map((_, i) => (
-                        <span key={i}>★</span>
-                      ))}
-                    </div>
-                    <span className="text-[10px] font-mono bg-[#4A7350]/10 text-[#4A7350] px-2 py-0.5 rounded-full border border-[#4A7350]/30">
-                      {t.source}
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-[#16201B]/90 italic leading-relaxed mb-6 font-serif">
-                    "{t.content}"
-                  </p>
-                </div>
-
-                <div className="pt-4 border-t border-black/10 font-mono text-xs">
-                  <div className="font-bold text-[#16201B]">{t.author}</div>
-                  <div className="text-[#16201B]/50 text-[11px] mb-2">{t.role || t.company}</div>
-                  <div className="text-[10px] text-[#D4AF37] bg-black/40 px-2 py-1 rounded inline-block">
-                    {t.projectType}
-                  </div>
-                </div>
               </div>
             ))}
           </div>

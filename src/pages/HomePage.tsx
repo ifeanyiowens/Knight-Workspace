@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { MarqueeTicker } from '../components/MarqueeTicker';
-import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
-import { SystemWorkflowVisualizer } from '../components/SystemWorkflowVisualizer';
 import { CASE_STUDIES, CORE_PROBLEMS, TESTIMONIALS } from '../data/portfolioData';
 import { TiltCard } from '../components/TiltCard';
 import { ParallaxVisualMockup } from '../components/ParallaxVisualMockup';
@@ -64,7 +62,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-8 border-b border-black/10">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#D4AF37]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#4A7350]">
                   WHERE TIME GETS LOST
                 </span>
               </div>
@@ -77,9 +75,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
               When your company grows faster than your tools, you become the bottleneck. Here is what is happening behind the scenes:
             </p>
           </div>
-
-          {/* Interactive Before vs After Comparison */}
-          <BeforeAfterSlider />
 
           {/* 4 Super Simple & Human Problem Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-12">
@@ -141,7 +136,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-10 border-b border-black/10">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#D4AF37]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#4A7350]">
                   SELECTED WORKS
                 </span>
               </div>
@@ -255,20 +250,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
         </div>
       </section>
 
-      {/* 6. Live Systems Simulator Preview */}
-      <section className="py-20 bg-[#EDEDEA] text-[#16201B] border-b border-black/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SystemWorkflowVisualizer />
-        </div>
-      </section>
-
       {/* 7. Verified Client Proof & Testimonials Spotlight */}
       <section className="py-20 bg-[#EDEDEA] text-[#16201B] border-b border-black/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-black/10">
             <div>
-              <span className="text-xs font-mono uppercase tracking-widest text-[#D4AF37] font-bold block mb-2">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold block mb-2">
                 VERIFIED SOCIAL PROOF
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
@@ -281,7 +269,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 sound.playClick();
                 onNavigate('about');
               }}
-              className="text-xs font-mono text-[#D4AF37] hover:underline flex items-center gap-1 self-start md:self-auto"
+              className="text-xs font-mono text-[#4A7350] hover:underline flex items-center gap-1 self-start md:self-auto"
             >
               <span>View all certifications & reviews on [05] About</span>
               <ArrowRight className="w-3.5 h-3.5" />
