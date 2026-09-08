@@ -497,7 +497,7 @@ export const CERTIFICATIONS: Certification[] = [
 ];
 
 export const BIO_PARAGRAPHS = [
-  'I am Owens Oparaku, founder of Oparaku Systems. I build the operational backbone that small businesses are usually missing, the client trackers, project systems, and automations that replace scattered spreadsheets and sticky note chaos with something that actually holds.',
+  'I am Owens Oparaku. I build the operational backbone that small businesses are usually missing, the client trackers, project systems, and automations that replace scattered spreadsheets and sticky note chaos with something that actually holds.',
   'My main tools are Notion and Make.com, though I work with ClickUp and Airtable too when a client\'s setup calls for it. I hold certifications across all three (Workflow, Essentials, Advanced level for Notion, Admin and Novice through Intermediate for ClickUp, Admin for Airtable) plus Make automation basics, so the systems I build aren\'t guesswork, they\'re built the right way from the start.',
   'I do not just build once and leave. I set up systems that scale with a business, so when things get busier, the operations do not fall apart, they hold steady.',
   'I have built systems for event agencies, coaching businesses, and growing teams across multiple industries, mostly the unseen backend work that lets founders actually run their business instead of constantly patching it together.'

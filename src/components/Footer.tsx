@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                   Owens Oparaku
                 </span>
                 <span className="block text-[11px] font-mono text-[#4A7350] uppercase tracking-widest">
-                  OPARAKU SYSTEMS
+                  Systems & Operations Architect
                 </span>
               </div>
             </button>
@@ -130,7 +130,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
         {/* Subfooter */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#16201B]/50 gap-4">
           <div>
-            &copy; {new Date().getFullYear()} Oparaku Systems. Founded by Owens Oparaku.
+            &copy; {new Date().getFullYear()} Owens Oparaku.
           </div>
 
           <div className="flex items-center gap-4">

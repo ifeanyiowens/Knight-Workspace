@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                 Owens Oparaku
               </span>
               <span className="block text-[10px] font-mono font-medium text-[#4A7350] tracking-widest uppercase">
-                OPARAKU SYSTEMS
+                Systems & Operations Architect
               </span>
             </div>
           </button>

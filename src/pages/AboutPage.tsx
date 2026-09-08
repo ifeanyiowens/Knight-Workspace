@@ -172,7 +172,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                     Owens Oparaku
                   </h3>
                   <p className="text-xs text-[#4A7350] font-semibold">
-                    Founder & Systems Architect
+                    Systems & Operations Architect
                   </p>
                 </div>
                 <div className="flex items-center gap-2 pt-1">
@@ -213,7 +213,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
 
             <div className="space-y-4 text-base text-[#16201B]/80 leading-relaxed font-sans relative">
               <p>
-                I founded Oparaku Systems after watching high-revenue entrepreneurs and agency founders run successful businesses using little more than memory, scattered WhatsApp threads, and fragile Google Sheets.
+                I started doing this after watching high-revenue entrepreneurs and agency founders run their businesses on little more than memory, scattered WhatsApp threads, and fragile Google Sheets.
               </p>
               <p>
                 When a business grows fast, communication breaks down. Tasks slip through the cracks, onboarding a new hire takes six weeks of hand-holding, and the founder becomes trapped as the single point of failure.

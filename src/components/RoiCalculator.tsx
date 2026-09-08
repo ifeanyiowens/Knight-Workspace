@@ -15,7 +15,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
   const annualHoursLost = weeklyHoursLost * 50; // 50 working weeks
   const annualCostWasted = annualHoursLost * hourlyRate;
   
-  // Reclaimed with Oparaku Systems (estimated 80% automation & consolidation rate)
+  // Reclaimed hours estimate (estimated 80% automation & consolidation rate)
   const annualHoursReclaimed = Math.round(annualHoursLost * 0.8);
   const annualValueReclaimed = Math.round(annualCostWasted * 0.8);
 
