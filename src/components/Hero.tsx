@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 lg:items-stretch">
 
           {/* Left Column */}
-          <div className="lg:col-span-6 flex flex-col justify-center items-start space-y-7">
+          <div className="lg:col-span-6 flex flex-col justify-start items-start space-y-7">
 
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] leading-[1.05] text-[#16201B] font-bold tracking-tight">
               Your business shouldn't run on <span className="text-[#4A7350]">your memory</span>.
@@ -76,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Right Column: Free floating photo, no card */}
-          <div className="lg:col-span-6 flex justify-center items-center">
+          <div className="lg:col-span-6 flex justify-center items-start">
             <div className="relative w-full">
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
@@ -86,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <img
                   src={owensProfilePhoto}
                   alt="Owens Oparaku"
-                  className="w-full h-auto max-h-[760px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto object-contain object-bottom mx-auto"
                   onError={() => setImageError(true)}
                 />
               ) : (

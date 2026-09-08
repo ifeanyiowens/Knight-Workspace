@@ -145,7 +145,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch mb-24">
           
           {/* Left: Free floating portrait, matches Hero treatment */}
-          <div className="lg:col-span-6 flex justify-center items-center">
+          <div className="lg:col-span-6 flex justify-center items-start">
             <div className="relative w-full w-full">
 
               <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
@@ -155,7 +155,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   src={currentImgSrc}
                   alt={BRAND_INFO.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto max-h-[760px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto object-contain object-bottom mx-auto"
                   onError={handleImageError}
                 />
               ) : (
@@ -200,7 +200,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div className="lg:col-span-6 flex flex-col justify-center space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">
