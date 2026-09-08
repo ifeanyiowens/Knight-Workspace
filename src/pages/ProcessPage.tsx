@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { PROCESS_STEPS } from '../data/portfolioData';
 import { ProcessStep, PageId } from '../types';
-import { SystemWorkflowVisualizer } from '../components/SystemWorkflowVisualizer';
-import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { MarqueeTicker } from '../components/MarqueeTicker';
 import { sound } from '../utils/audio';
 import {
@@ -194,24 +192,6 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
           </div>
         </div>
 
-        {/* Live Systems Simulator */}
-        <div className="mb-20">
-          <SystemWorkflowVisualizer />
-        </div>
-
-        {/* Interactive Before vs After Comparison */}
-        <div className="mb-20">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-1">
-              THE TRANSFORMATION
-            </span>
-            <h3 className="font-serif text-3xl font-bold text-[#16201B]">
-              Before vs. After Oparaku Systems
-            </h3>
-          </div>
-          <BeforeAfterSlider />
-        </div>
-
         {/* The Anti-Template Debt Manifesto */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-20">
           <div className="max-w-3xl">
@@ -262,7 +242,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               About Owens Oparaku & The Oparaku Philosophy
             </h4>
             <p className="text-xs font-mono text-[#4A7350] mt-1">
-              [PAGE 05/06] Credentials, Notion & Make certifications, and client reviews
+              Credentials, Notion & Make certifications, and client reviews
             </p>
           </div>
 

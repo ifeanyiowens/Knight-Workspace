@@ -82,7 +82,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
     { name: 'Zapier', role: 'Quick Event Triggers & Alerts', badge: 'Pro' },
     { name: 'Cal.com', role: 'Zero-Friction Client Booking', badge: 'Sync' },
     { name: 'Typeform / Tally', role: 'Structured Client Intake', badge: 'Native' },
-    { name: 'Slack / Discord', role: 'Real-Time Automated Alert Dispatch', badge: 'Bot API' }
+    { name: 'Slack / Email', role: 'Real-Time Automated Alert Dispatch', badge: 'Bot API' }
   ];
 
   return (
@@ -141,11 +141,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
       {/* Main Bio & Founder Card Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch mb-24">
           
           {/* Left: Free floating portrait, matches Hero treatment */}
-          <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md sm:max-w-lg">
+          <div className="lg:col-span-5 flex justify-center items-center">
+            <div className="relative w-full max-w-lg sm:max-w-xl">
 
               <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
@@ -199,7 +199,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div className="lg:col-span-7 space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-7 flex flex-col justify-center space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">
@@ -360,7 +360,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               Book a Systems Discovery & Audit
             </h4>
             <p className="text-xs font-mono text-[#D4AF37] mt-1">
-              [PAGE 06/06] Live Cal.com scheduling, ROI calculator, and project intake
+              Live Cal.com scheduling, ROI calculator, and project intake
             </p>
           </div>
 

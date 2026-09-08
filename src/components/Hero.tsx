@@ -20,21 +20,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
     <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-[#EDEDEA] text-[#16201B] overflow-hidden border-b border-black/5">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 lg:items-stretch">
 
           {/* Left Column */}
-          <div className="lg:col-span-7 flex flex-col items-start space-y-6">
+          <div className="lg:col-span-7 flex flex-col justify-center items-start space-y-7">
 
             <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#A8C6A9]/25 border border-[#4A7350]/30 text-[#3D5F41] text-xs font-semibold tracking-wide">
               <span className="w-2 h-2 rounded-full bg-[#4A7350]"></span>
               <span>Systems architect for growing businesses</span>
             </div>
 
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] leading-[1.08] text-[#16201B] font-bold tracking-tight">
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] leading-[1.05] text-[#16201B] font-bold tracking-tight">
               Your business shouldn't run on <span className="text-[#4A7350]">your memory</span>.
             </h1>
 
-            <p className="text-base sm:text-lg text-[#16201B]/75 leading-relaxed max-w-2xl font-sans">
+            <p className="text-lg sm:text-xl text-[#16201B]/75 leading-relaxed max-w-2xl font-sans">
               When a company grows fast, the systems behind it stop keeping up. Notion, Airtable, and Make.com can catch things up before it costs you a client or burns you out.
             </p>
 
@@ -81,8 +81,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Right Column: Free floating photo, no card */}
-          <div className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md sm:max-w-lg">
+          <div className="lg:col-span-5 flex justify-center items-center">
+            <div className="relative w-full max-w-lg sm:max-w-xl">
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
               <div className="absolute bottom-6 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />

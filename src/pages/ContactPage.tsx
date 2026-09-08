@@ -172,32 +172,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               </button>
             </div>
 
-            {/* Direct Contact Channels */}
-            <div className="rounded-3xl bg-white border border-black/10 p-7 font-mono text-xs space-y-4">
-              <span className="text-[#4A7350] uppercase tracking-widest font-bold block text-[11px]">
-                DIRECT CHANNELS
-              </span>
-              
-              <div className="space-y-3">
-                <div>
-                  <span className="text-[#16201B]/40 block text-[10px]">EMAIL ADDRESS</span>
-                  <a href={`mailto:${BRAND_INFO.email}`} className="text-[#16201B] hover:text-[#D4AF37] transition-colors">
-                    {BRAND_INFO.email}
-                  </a>
-                </div>
-                <div>
-                  <span className="text-[#16201B]/40 block text-[10px]">INSTAGRAM DM</span>
-                  <a href={BRAND_INFO.instagram} target="_blank" rel="noopener noreferrer" className="text-[#16201B] hover:text-[#D4AF37] transition-colors">
-                    {BRAND_INFO.instagramHandle}
-                  </a>
-                </div>
-                <div>
-                  <span className="text-[#16201B]/40 block text-[10px]">AVAILABILITY</span>
-                  <span className="text-[#16201B]">Global Client Coverage • Remote Architecture</span>
-                </div>
-              </div>
-            </div>
-
           </div>
 
           {/* Right: Structured Architecture Project Brief Form */}
@@ -391,7 +365,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               Back to Overview & Architecture
             </h4>
             <p className="text-xs font-mono text-[#D4AF37] mt-1">
-              [PAGE 01/06] Hero, verified metrics, and interactive systems simulator
+              Hero, verified metrics, and real client results
             </p>
           </div>
 
@@ -402,7 +376,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
             }}
             className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
           >
-            <span>Return to Home [01]</span>
+            <span>Return to Home</span>
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>

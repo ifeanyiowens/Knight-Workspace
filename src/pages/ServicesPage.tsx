@@ -356,7 +356,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               The 4-Week Engineering Sprint Methodology
             </h4>
             <p className="text-xs font-mono text-[#4A7350] mt-1">
-              [PAGE 04/06] Audit, Blueprint, Automation Build & Live Simulator
+              Audit, Blueprint, and Automation Build
             </p>
           </div>
 

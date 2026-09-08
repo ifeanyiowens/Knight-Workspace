@@ -249,58 +249,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
           ))}
         </div>
 
-        {/* Operational Comparison Matrix Table across all 6 clients */}
-        <div className="rounded-3xl bg-white border border-black/10 p-6 sm:p-8 shadow-2xl mb-16">
-          <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#4A7350]">
-            <Cpu className="w-4 h-4" />
-            <span>CROSS-CLIENT ARCHITECTURAL MATRIX</span>
-          </div>
-          <h3 className="font-serif text-2xl font-bold text-[#16201B] mb-6">
-            Compare Deliverables & Stack Implementations
-          </h3>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left font-mono text-xs">
-              <thead>
-                <tr className="border-b border-black/10 text-[#16201B]/40 uppercase text-[10px]">
-                  <th className="pb-3 pr-4">Client Project</th>
-                  <th className="pb-3 px-4">Ecosystem</th>
-                  <th className="pb-3 px-4">Key Innovation</th>
-                  <th className="pb-3 px-4">Primary Metric</th>
-                  <th className="pb-3 pl-4 text-right">Inspect</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/5 text-[#16201B]/80">
-                {CASE_STUDIES.map((cs) => (
-                  <tr key={cs.id} className="hover:bg-black/5 transition-colors">
-                    <td className="py-4 pr-4 font-bold text-[#16201B]">
-                      {cs.client}
-                      <span className="block text-[10px] font-normal text-[#16201B]/50">{cs.industry}</span>
-                    </td>
-                    <td className="py-4 px-4 text-[#D4AF37]">
-                      {cs.tools.slice(0, 2).join(' + ')}
-                    </td>
-                    <td className="py-4 px-4 text-[#16201B]/70 max-w-xs truncate">
-                      {cs.highlights[0] || cs.solution}
-                    </td>
-                    <td className="py-4 px-4 text-[#4A7350] font-semibold">
-                      {cs.stats?.value}
-                    </td>
-                    <td className="py-4 pl-4 text-right">
-                      <button
-                        onClick={() => handleStudyOpen(cs)}
-                        className="text-xs text-[#D4AF37] hover:underline cursor-pointer"
-                      >
-                        Details →
-                      </button>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
         {/* Page Bridge Navigation */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-white border border-black/10">
           <div>
@@ -309,7 +257,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
               Explore Our Services & Systems Capabilities
             </h4>
             <p className="text-xs font-mono text-[#4A7350] mt-1">
-              [PAGE 03/06] Custom Notion, Make.com, Airtable & ClickUp packages
+              Custom Notion, Make.com, Airtable & ClickUp packages
             </p>
           </div>
 

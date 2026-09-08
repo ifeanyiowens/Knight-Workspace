@@ -30,24 +30,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
 
   return (
     <header className="sticky top-0 z-50 transition-all duration-300">
-      {/* Top Status Bar */}
-      <div className="bg-[#EDEDEA] text-[#16201B] py-1.5 px-4 text-xs border-b border-black/5 font-mono">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <span className="text-[#16201B]/70 text-[11px]">
-            Open for new clients
-          </span>
-          <a
-            href={BRAND_INFO.instagram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#16201B]/70 hover:text-[#4A7350] transition-colors flex items-center gap-1 text-[11px]"
-          >
-            <span>{BRAND_INFO.instagramHandle}</span>
-            <ArrowUpRight className="w-3 h-3" />
-          </a>
-        </div>
-      </div>
-
       {/* Main Navigation Bar */}
       <div className={`px-4 sm:px-6 lg:px-8 transition-all ${
         scrolled

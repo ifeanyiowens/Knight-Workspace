@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Hero } from '../components/Hero';
 import { StatsBar } from '../components/StatsBar';
 import { MarqueeTicker } from '../components/MarqueeTicker';
+import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { CASE_STUDIES, CORE_PROBLEMS, TESTIMONIALS } from '../data/portfolioData';
 import { TiltCard } from '../components/TiltCard';
 import { ParallaxVisualMockup } from '../components/ParallaxVisualMockup';
@@ -111,6 +112,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Before vs After comparison */}
+          <div className="my-12">
+            <div className="text-center max-w-2xl mx-auto mb-10">
+              <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-1">
+                THE TRANSFORMATION
+              </span>
+              <h3 className="font-serif text-3xl font-bold text-[#16201B]">
+                Before vs. After
+              </h3>
+            </div>
+            <BeforeAfterSlider />
           </div>
 
           <div className="flex justify-center pt-2">
@@ -271,7 +285,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
               }}
               className="text-xs font-mono text-[#4A7350] hover:underline flex items-center gap-1 self-start md:self-auto"
             >
-              <span>View all certifications & reviews on [05] About</span>
+              <span>View all certifications & reviews on About</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>

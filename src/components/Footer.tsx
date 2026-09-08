@@ -53,11 +53,9 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
           </div>
         </div>
 
-        {/* Main 3-Column Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-16 border-b border-black/10">
-          
-          {/* Brand & Positioning */}
-          <div className="md:col-span-5 space-y-5">
+        {/* Footer Brand Block */}
+        <div className="pb-16 border-b border-black/10">
+          <div className="max-w-2xl space-y-5">
             <button
               onClick={() => handlePageClick('home')}
               className="flex items-center gap-3 text-left cursor-pointer group"
@@ -127,71 +125,6 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               </a>
             </div>
           </div>
-
-          {/* Site Directory / 6-Page Index */}
-          <div className="md:col-span-4 space-y-3 font-mono">
-            <h4 className="text-xs uppercase tracking-widest text-[#4A7350] font-bold">
-              Site Index [06 Pages]
-            </h4>
-            <ul className="space-y-2 text-xs text-[#16201B]/70">
-              {PAGES_CONFIG.map((page) => {
-                const isActive = currentPage === page.id;
-                return (
-                  <li key={page.id}>
-                    <button
-                      onClick={() => handlePageClick(page.id)}
-                      className={`hover:text-[#16201B] hover:underline flex items-center gap-2 transition-colors cursor-pointer text-left ${
-                        isActive ? 'text-[#D4AF37] font-bold' : 'text-[#16201B]/70'
-                      }`}
-                    >
-                      <span className={`text-[10px] ${isActive ? 'text-[#D4AF37]' : 'text-[#16201B]/40'}`}>
-                        [{page.index}]
-                      </span>
-                      <span>{page.title}</span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          {/* Direct Contact & Availability */}
-          <div className="md:col-span-3 space-y-4">
-            <h4 className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold">
-              Direct Contact
-            </h4>
-            
-            <div className="space-y-2 text-xs font-mono text-[#16201B]/70">
-              <div>
-                <span className="block text-[#16201B]/40 text-[10px]">EMAIL</span>
-                <a href={`mailto:${BRAND_INFO.email}`} className="text-[#16201B] hover:text-[#D4AF37] transition-colors">
-                  {BRAND_INFO.email}
-                </a>
-              </div>
-              <div className="pt-2">
-                <span className="block text-[#16201B]/40 text-[10px]">CALENDAR</span>
-                <button
-                  onClick={() => {
-                    sound.playTrigger();
-                    onOpenBooking();
-                  }}
-                  className="text-[#D4AF37] hover:underline cursor-pointer text-left block"
-                >
-                  cal.com/owen-oparaku
-                </button>
-              </div>
-              <div className="pt-2">
-                <span className="block text-[#16201B]/40 text-[10px]">INSTAGRAM</span>
-                <span className="text-[#16201B]">{BRAND_INFO.instagramHandle}</span>
-              </div>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-black/5 border border-black/10 text-xs font-mono text-[#16201B]/80">
-              <span className="text-[#D4AF37] font-bold block mb-1">Status: Open for Q2/Q3</span>
-              <span>Accepting 2 new workspace architecture builds this month.</span>
-            </div>
-          </div>
-
         </div>
 
         {/* Subfooter */}
