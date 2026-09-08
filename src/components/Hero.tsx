@@ -23,12 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 lg:items-stretch">
 
           {/* Left Column */}
-          <div className="lg:col-span-7 flex flex-col justify-center items-start space-y-7">
-
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#A8C6A9]/25 border border-[#4A7350]/30 text-[#3D5F41] text-xs font-semibold tracking-wide">
-              <span className="w-2 h-2 rounded-full bg-[#4A7350]"></span>
-              <span>Systems architect for growing businesses</span>
-            </div>
+          <div className="lg:col-span-6 flex flex-col justify-center items-start space-y-7">
 
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] leading-[1.05] text-[#16201B] font-bold tracking-tight">
               Your business shouldn't run on <span className="text-[#4A7350]">your memory</span>.
@@ -81,8 +76,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Right Column: Free floating photo, no card */}
-          <div className="lg:col-span-5 flex justify-center items-center">
-            <div className="relative w-full max-w-lg sm:max-w-xl">
+          <div className="lg:col-span-6 flex justify-center items-center">
+            <div className="relative w-full">
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
               <div className="absolute bottom-6 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
@@ -91,7 +86,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 <img
                   src={owensProfilePhoto}
                   alt="Owens Oparaku"
-                  className="w-full h-auto max-h-[600px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto max-h-[760px] object-contain object-bottom mx-auto"
                   onError={() => setImageError(true)}
                 />
               ) : (

@@ -23,8 +23,7 @@ export const StatsBar: React.FC = () => {
         
         {/* Header Tag */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-8 mb-8 border-b border-black/10 gap-4">
-          <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span>
+          <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350]">
             MEASURABLE OPERATIONAL IMPACT ACROSS CLIENT WORKSPACES
           </span>
           <span className="font-mono text-[11px] text-[#16201B]/50">

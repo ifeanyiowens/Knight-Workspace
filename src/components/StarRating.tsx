@@ -14,20 +14,27 @@ interface StarRatingProps {
 export const StarRating: React.FC<StarRatingProps> = ({ rating, className = '', size = 'w-4 h-4' }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [filled, setFilled] = useState(0);
-  const [hasRun, setHasRun] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
+    const timers: ReturnType<typeof setTimeout>[] = [];
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasRun) {
-            setHasRun(true);
+          if (entry.isIntersecting) {
+            setFilled(0);
+            timers.forEach(clearTimeout);
+            timers.length = 0;
             for (let i = 1; i <= rating; i++) {
-              setTimeout(() => setFilled(i), i * 120);
+              timers.push(setTimeout(() => setFilled(i), i * 120));
             }
+          } else {
+            timers.forEach(clearTimeout);
+            timers.length = 0;
+            setFilled(0);
           }
         });
       },
@@ -35,9 +42,11 @@ export const StarRating: React.FC<StarRatingProps> = ({ rating, className = '', 
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [rating, hasRun]);
+    return () => {
+      observer.disconnect();
+      timers.forEach(clearTimeout);
+    };
+  }, [rating]);
 
   return (
     <div ref={ref} className={`flex items-center gap-0.5 ${className}`}>

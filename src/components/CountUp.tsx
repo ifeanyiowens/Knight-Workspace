@@ -13,7 +13,6 @@ interface CountUpProps {
  */
 export const CountUp: React.FC<CountUpProps> = ({ value, duration = 1400, className }) => {
   const ref = useRef<HTMLSpanElement>(null);
-  const [hasRun, setHasRun] = useState(false);
   const [display, setDisplay] = useState<string>(value.replace(/[0-9]/g, '0'));
 
   useEffect(() => {
@@ -31,23 +30,30 @@ export const CountUp: React.FC<CountUpProps> = ({ value, duration = 1400, classN
     const el = ref.current;
     if (!el) return;
 
+    let rafId: number;
+    const runAnimation = () => {
+      setDisplay(`${prefix}0${suffix}`);
+      const start = performance.now();
+      const step = (now: number) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(target * eased);
+        const formatted = hasComma ? current.toLocaleString() : String(current);
+        setDisplay(`${prefix}${formatted}${suffix}`);
+        if (progress < 1) {
+          rafId = requestAnimationFrame(step);
+        }
+      };
+      rafId = requestAnimationFrame(step);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasRun) {
-            setHasRun(true);
-            const start = performance.now();
-            const step = (now: number) => {
-              const progress = Math.min((now - start) / duration, 1);
-              const eased = 1 - Math.pow(1 - progress, 3);
-              const current = Math.round(target * eased);
-              const formatted = hasComma ? current.toLocaleString() : String(current);
-              setDisplay(`${prefix}${formatted}${suffix}`);
-              if (progress < 1) {
-                requestAnimationFrame(step);
-              }
-            };
-            requestAnimationFrame(step);
+          if (entry.isIntersecting) {
+            runAnimation();
+          } else {
+            cancelAnimationFrame(rafId);
           }
         });
       },
@@ -55,9 +61,12 @@ export const CountUp: React.FC<CountUpProps> = ({ value, duration = 1400, classN
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(rafId);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [value, duration, hasRun]);
+  }, [value, duration]);
 
   return (
     <span ref={ref} className={className}>

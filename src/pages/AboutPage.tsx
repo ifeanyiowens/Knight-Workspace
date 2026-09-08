@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { BRAND_INFO, CERTIFICATIONS } from '../data/portfolioData';
+import { BRAND_INFO, CERTIFICATIONS, TESTIMONIALS } from '../data/portfolioData';
+import { StarRating } from '../components/StarRating';
 import { PageId, Certification } from '../types';
 import { TiltCard } from '../components/TiltCard';
 import { MarqueeTicker } from '../components/MarqueeTicker';
@@ -144,8 +145,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch mb-24">
           
           {/* Left: Free floating portrait, matches Hero treatment */}
-          <div className="lg:col-span-5 flex justify-center items-center">
-            <div className="relative w-full max-w-lg sm:max-w-xl">
+          <div className="lg:col-span-6 flex justify-center items-center">
+            <div className="relative w-full w-full">
 
               <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
@@ -154,7 +155,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   src={currentImgSrc}
                   alt={BRAND_INFO.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto max-h-[620px] object-contain object-bottom mx-auto"
+                  className="w-full h-auto max-h-[760px] object-contain object-bottom mx-auto"
                   onError={handleImageError}
                 />
               ) : (
@@ -199,11 +200,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div className="lg:col-span-7 flex flex-col justify-center space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-6 flex flex-col justify-center space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">
-              <span className="w-2 h-2 rounded-full bg-[#4A7350]"></span>
               <span>THE ARCHITECT'S STORY</span>
             </div>
 
@@ -347,6 +347,44 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 <p className="text-xs font-mono text-[#16201B]/60">
                   {tool.role}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Client Testimonials */}
+        <div className="mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+              CLIENT TESTIMONIALS
+            </span>
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
+              What Founders Say Post-Deployment
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {TESTIMONIALS.map((t) => (
+              <div key={t.id} className="p-7 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <StarRating rating={t.rating} />
+                    <span className="text-[10px] font-mono bg-[#4A7350]/10 text-[#4A7350] px-2 py-0.5 rounded-full border border-[#4A7350]/30">
+                      {t.source}
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#16201B]/90 italic leading-relaxed mb-6 font-serif">
+                    "{t.content}"
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-black/10 font-mono text-xs">
+                  <div className="font-bold text-[#16201B]">{t.author}</div>
+                  <div className="text-[#16201B]/50 text-[11px] mb-2">{t.role || t.company}</div>
+                  <div className="text-[10px] text-[#4A7350] bg-black/5 px-2 py-1 rounded inline-block">
+                    {t.projectType}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
