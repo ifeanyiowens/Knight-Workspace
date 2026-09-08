@@ -5,6 +5,8 @@ import { MarqueeTicker } from '../components/MarqueeTicker';
 import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { CASE_STUDIES, CORE_PROBLEMS, TESTIMONIALS } from '../data/portfolioData';
 import { TiltCard } from '../components/TiltCard';
+import { CountUp } from '../components/CountUp';
+import { StarRating } from '../components/StarRating';
 import { ParallaxVisualMockup } from '../components/ParallaxVisualMockup';
 import { CaseStudyModal } from '../components/CaseStudyModal';
 import { CaseStudy, PageId } from '../types';
@@ -236,7 +238,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
 
                   <div className="text-xs text-[#16201B]/90 font-semibold mb-4 flex items-center gap-1.5">
                     <span className="text-[#D4AF37]">Result:</span>
-                    <span>{study.stats?.value} ({study.stats?.label})</span>
+                    <span><CountUp value={study.stats?.value || ''} /> ({study.stats?.label})</span>
                   </div>
                 </div>
 
@@ -295,11 +297,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
               <div key={testi.id} className="p-7 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="flex text-[#D4AF37]">
-                      {[...Array(testi.rating)].map((_, i) => (
-                        <span key={i}>★</span>
-                      ))}
-                    </div>
+                    <StarRating rating={testi.rating} />
                     <span className="text-[10px] font-mono bg-[#4A7350]/10 text-[#4A7350] px-2.5 py-0.5 rounded-full border border-[#4A7350]/30">
                       {testi.source}
                     </span>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { STATS } from '../data/portfolioData';
 import { Clock, CheckCircle2, TrendingUp, Sparkles, ArrowUpRight } from 'lucide-react';
+import { CountUp } from './CountUp';
 
 export const StatsBar: React.FC = () => {
   const getIcon = (iconName: string) => {
@@ -49,7 +50,7 @@ export const StatsBar: React.FC = () => {
 
               <div>
                 <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2 group-hover:text-[#D4AF37] transition-colors">
-                  {stat.value}
+                  <CountUp value={stat.value} duration={1500 + idx * 200} />
                 </div>
                 <div className="font-mono text-xs uppercase tracking-widest text-[#4A7350] mb-2 font-bold">
                   {stat.label}

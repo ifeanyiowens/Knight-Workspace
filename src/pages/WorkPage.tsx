@@ -3,6 +3,7 @@ import { CASE_STUDIES } from '../data/portfolioData';
 import { CaseStudy, PageId } from '../types';
 import { CaseStudyModal } from '../components/CaseStudyModal';
 import { TiltCard } from '../components/TiltCard';
+import { CountUp } from '../components/CountUp';
 import { ParallaxVisualMockup } from '../components/ParallaxVisualMockup';
 import { MarqueeTicker } from '../components/MarqueeTicker';
 import { sound } from '../utils/audio';
@@ -202,7 +203,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                   <span className="font-mono text-[10px] font-bold text-[#4A7350] uppercase tracking-wider block mb-0.5">
                     Measurable Result:
                   </span>
-                  <p className="text-[#16201B] font-semibold text-sm">{study.stats?.value} — <span className="text-[#16201B]/70 font-normal">{study.stats?.label}</span></p>
+                  <p className="text-[#16201B] font-semibold text-sm"><CountUp value={study.stats?.value || ''} className="text-[#16201B] font-semibold" /> <span className="text-[#16201B]/70 font-normal">, {study.stats?.label}</span></p>
                 </div>
               </div>
 
