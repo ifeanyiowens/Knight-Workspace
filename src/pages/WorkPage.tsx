@@ -3,6 +3,7 @@ import { CASE_STUDIES } from '../data/portfolioData';
 import { CaseStudy, PageId } from '../types';
 import { CaseStudyModal } from '../components/CaseStudyModal';
 import { TiltCard } from '../components/TiltCard';
+import { ScrollReveal } from '../components/ScrollReveal';
 import { CountUp } from '../components/CountUp';
 import { ParallaxVisualMockup } from '../components/ParallaxVisualMockup';
 import { MarqueeTicker } from '../components/MarqueeTicker';
@@ -132,8 +133,8 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         {/* 6 In-Depth Case Study Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {filteredStudies.map((study, idx) => (
+            <ScrollReveal key={study.id} delay={(idx % 3) * 100}>
             <TiltCard
-              key={study.id}
               maxTilt={4}
               glare={true}
               cursorText="EXPLORE"
@@ -247,6 +248,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 </div>
               </div>
             </TiltCard>
+            </ScrollReveal>
           ))}
         </div>
 

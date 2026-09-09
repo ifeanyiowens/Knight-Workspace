@@ -1,6 +1,7 @@
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import { BRAND_INFO, CERTIFICATIONS, TESTIMONIALS } from '../data/portfolioData';
 import { StarRating } from '../components/StarRating';
+import { ScrollReveal } from '../components/ScrollReveal';
 import { PageId, Certification } from '../types';
 import { TiltCard } from '../components/TiltCard';
 import { MarqueeTicker } from '../components/MarqueeTicker';
@@ -272,8 +273,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {principles.map((p) => (
-              <div key={p.num} className="p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
+            {principles.map((p, idx) => (
+              <ScrollReveal key={p.num} delay={(idx % 2) * 100}>
+              <div className="hover-lift p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between h-full">
                 <div>
                   <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-[#04703D]/10 border border-[#D4AF37]/20 inline-block mb-4">
                     PRINCIPLE [{p.num}]
@@ -286,6 +288,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   </p>
                 </div>
               </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

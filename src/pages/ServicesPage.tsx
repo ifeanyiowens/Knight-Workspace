@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SERVICES } from '../data/portfolioData';
+import { ScrollReveal } from '../components/ScrollReveal';
 import { Service, PageId } from '../types';
 import { MarqueeTicker } from '../components/MarqueeTicker';
 import { TiltCard } from '../components/TiltCard';
@@ -116,10 +117,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         {/* 6 Interactive Service Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {SERVICES.map((service, idx) => (
+            <ScrollReveal key={service.id} delay={(idx % 3) * 100}>
             <div
-              key={service.id}
               onClick={() => handleSelectService(idx)}
-              className={`rounded-3xl p-7 transition-all cursor-pointer border flex flex-col justify-between ${
+              className={`hover-lift rounded-3xl p-7 transition-all cursor-pointer border flex flex-col justify-between h-full ${
                 selectedServiceIdx === idx
                   ? 'bg-[#059C54] border-[#D4AF37] shadow-2xl ring-1 ring-[#D4AF37]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
@@ -168,6 +169,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
 

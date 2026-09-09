@@ -4,6 +4,7 @@ import { StatsBar } from '../components/StatsBar';
 import { MarqueeTicker } from '../components/MarqueeTicker';
 import { BeforeAfterSlider } from '../components/BeforeAfterSlider';
 import { CORE_PROBLEMS } from '../data/portfolioData';
+import { ScrollReveal } from '../components/ScrollReveal';
 import { PageId } from '../types';
 import { sound } from '../utils/audio';
 import {
@@ -69,10 +70,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
           {/* 4 Super Simple & Human Problem Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-12">
             {CORE_PROBLEMS.map((problem, idx) => (
+              <ScrollReveal key={problem.id} delay={(idx % 4) * 90}>
               <div
-                key={problem.id}
                 onClick={() => handleProblemSelect(idx)}
-                className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between ${
+                className={`hover-lift rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between h-full ${
                   selectedProblemIdx === idx
                     ? 'bg-[#059C54] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/40'
                     : 'bg-white border-black/10 hover:border-black/20'
@@ -100,6 +101,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   <span>{problem.solution}</span>
                 </div>
               </div>
+              </ScrollReveal>
             ))}
           </div>
 
