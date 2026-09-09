@@ -66,7 +66,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
       
       {/* Page Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#A8C6A9]/30 rounded-full blur-[140px] pointer-events-none -z-10" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#059C54]/30 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
@@ -85,7 +85,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
             </div>
             <div>
               <span className="text-[#16201B]/40 block text-[10px] uppercase">HOURS SAVED</span>
-              <span className="text-lg font-bold text-[#4A7350]">1,000+ / yr</span>
+              <span className="text-lg font-bold text-[#04703D]">1,000+ / yr</span>
             </div>
             <div>
               <span className="text-[#16201B]/40 block text-[10px] uppercase">DROPPED TASKS</span>
@@ -143,14 +143,14 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#4A7350] px-2.5 py-1 rounded-md bg-[#4A7350]/10 border border-[#D4AF37]/30">
+                    <span className="font-mono text-xs font-bold text-[#04703D] px-2.5 py-1 rounded-md bg-[#04703D]/10 border border-[#D4AF37]/30">
                       [{String(idx + 1).padStart(2, '0')} / 06]
                     </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
                       {study.badge}
                     </span>
                   </div>
-                  <span className="text-[11px] font-mono text-[#4A7350] font-semibold">
+                  <span className="text-[11px] font-mono text-[#04703D] font-semibold">
                     ✓ Deployed OS
                   </span>
                 </div>
@@ -200,7 +200,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
 
                 {/* The Outcome Highlight */}
                 <div className="text-xs text-[#16201B]/80 leading-relaxed bg-white p-3.5 rounded-xl border border-black/10 mb-5">
-                  <span className="font-mono text-[10px] font-bold text-[#4A7350] uppercase tracking-wider block mb-0.5">
+                  <span className="font-mono text-[10px] font-bold text-[#04703D] uppercase tracking-wider block mb-0.5">
                     Measurable Result:
                   </span>
                   <p className="text-[#16201B] font-semibold text-sm"><CountUp value={study.stats?.value || ''} className="text-[#16201B] font-semibold" /> <span className="text-[#16201B]/70 font-normal">, {study.stats?.label}</span></p>
@@ -238,7 +238,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                         e.stopPropagation();
                         sound.playClick();
                       }}
-                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#A8C6A9] text-[#16201B]/80 hover:text-[#D4AF37] border border-black/10 hover:border-[#D4AF37]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
+                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B]/80 hover:text-[#D4AF37] border border-black/10 hover:border-[#D4AF37]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
                       title={study.linkText || 'Open System Link'}
                     >
                       <ExternalLink className="w-4 h-4" />
@@ -257,7 +257,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               Explore Our Services & Systems Capabilities
             </h4>
-            <p className="text-xs font-mono text-[#4A7350] mt-1">
+            <p className="text-xs font-mono text-[#04703D] mt-1">
               Custom Notion, Make.com, Airtable & ClickUp packages
             </p>
           </div>

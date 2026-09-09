@@ -52,7 +52,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-8 border-b border-black/10">
             <div className="max-w-3xl">
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#4A7350]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#04703D]">
                   WHERE TIME GETS LOST
                 </span>
               </div>
@@ -74,7 +74,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleProblemSelect(idx)}
                 className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between ${
                   selectedProblemIdx === idx
-                    ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/40'
+                    ? 'bg-[#059C54] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/40'
                     : 'bg-white border-black/10 hover:border-black/20'
                 }`}
               >
@@ -106,7 +106,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
           {/* Before vs After comparison */}
           <div className="my-12">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-1">
+              <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-1">
                 THE TRANSFORMATION
               </span>
               <h3 className="font-serif text-3xl font-bold text-[#16201B]">
@@ -138,7 +138,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>
-              <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest block mb-2">
+              <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest block mb-2">
                 READY TO STOP RUNNING ON STICKY NOTES?
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-2">

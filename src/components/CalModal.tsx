@@ -19,7 +19,7 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
         {/* Header bar */}
         <div className="p-4 sm:px-6 bg-white text-[#16201B] flex items-center justify-between border-b border-black/10">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-[#A8C6A9] text-[#D4AF37] border border-[#D4AF37]/30">
+            <div className="p-2 rounded-xl bg-[#059C54] text-[#D4AF37] border border-[#D4AF37]/30">
               <Calendar className="w-5 h-5" />
             </div>
             <div>

@@ -61,7 +61,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
-        <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
+        <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-[#059C54]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
@@ -111,13 +111,13 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               onClick={() => handleStepSelect(idx)}
               className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between relative overflow-hidden ${
                 activeStepIdx === idx
-                  ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/50'
+                  ? 'bg-[#059C54] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-xs font-bold text-[#4A7350]">
+                  <span className="font-mono text-xs font-bold text-[#04703D]">
                     {step.number}
                   </span>
                   <span className="text-[10px] font-mono uppercase bg-black/5 text-[#16201B]/70 px-2 py-0.5 rounded border border-black/5">
@@ -125,7 +125,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                   </span>
                 </div>
 
-                <div className="font-mono text-[11px] text-[#4A7350] uppercase tracking-wider mb-1 font-semibold">
+                <div className="font-mono text-[11px] text-[#04703D] uppercase tracking-wider mb-1 font-semibold">
                   {step.phase}
                 </div>
 
@@ -153,7 +153,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-6 space-y-4">
-              <div className="flex items-center gap-2 font-mono text-xs text-[#4A7350] uppercase tracking-wider">
+              <div className="flex items-center gap-2 font-mono text-xs text-[#04703D] uppercase tracking-wider">
                 <Sparkles className="w-4 h-4" />
                 <span>PHASE {activeStep.number}: {activeStep.duration}</span>
               </div>
@@ -173,14 +173,14 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             </div>
 
             <div className="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-black/5 space-y-4">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] font-bold block">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#04703D] font-bold block">
                 PHASE EXECUTION CHECKLIST
               </span>
 
               <div className="space-y-3">
                 {activeStep.activities.map((act, aIdx) => (
                   <div key={aIdx} className="flex items-start gap-3 text-xs sm:text-sm font-mono text-[#16201B]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#A8C6A9] text-[#4A7350] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#D4AF37]/30">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#D4AF37]/30">
                       ✓
                     </span>
                     <span>{act}</span>
@@ -195,7 +195,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         {/* The Anti-Template Debt Manifesto */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-20">
           <div className="max-w-3xl">
-            <span className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold block mb-2">
+            <span className="text-xs font-mono uppercase tracking-widest text-[#04703D] font-bold block mb-2">
               OUR CORE PHILOSOPHY
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-6">
@@ -241,7 +241,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               About Owens Oparaku & The Oparaku Philosophy
             </h4>
-            <p className="text-xs font-mono text-[#4A7350] mt-1">
+            <p className="text-xs font-mono text-[#04703D] mt-1">
               Credentials, Notion & Make certifications, and client reviews
             </p>
           </div>

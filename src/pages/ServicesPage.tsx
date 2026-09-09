@@ -57,7 +57,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
-        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
+        <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#059C54]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
@@ -101,7 +101,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-12 border-b border-black/10">
           <div>
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest block mb-1">
+            <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest block mb-1">
               FULL CAPABILITY MATRIX
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
@@ -121,16 +121,16 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               onClick={() => handleSelectService(idx)}
               className={`rounded-3xl p-7 transition-all cursor-pointer border flex flex-col justify-between ${
                 selectedServiceIdx === idx
-                  ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-2xl ring-1 ring-[#D4AF37]/50'
+                  ? 'bg-[#059C54] border-[#D4AF37] shadow-2xl ring-1 ring-[#D4AF37]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#A8C6A9] border border-black/10 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-xl bg-[#059C54] border border-black/10 flex items-center justify-center">
                     {getServiceIcon(service.icon)}
                   </div>
-                  <span className="font-mono text-xs font-bold text-[#4A7350]">
+                  <span className="font-mono text-xs font-bold text-[#04703D]">
                     [0{idx + 1}]
                   </span>
                 </div>
@@ -143,12 +143,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </p>
 
                 <div className="space-y-2 mb-6">
-                  <span className="font-mono text-[10px] text-[#4A7350] uppercase font-bold tracking-wider block">
+                  <span className="font-mono text-[10px] text-[#04703D] uppercase font-bold tracking-wider block">
                     Core Deliverables:
                   </span>
                   {service.deliverables.slice(0, 3).map((item, dIdx) => (
                     <div key={dIdx} className="flex items-start gap-2 text-xs text-[#16201B]/80">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#4A7350] flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#04703D] flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -161,7 +161,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {service.tools.map((t) => (
-                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#4A7350]/10 text-[#4A7350] border border-[#D4AF37]/20">
+                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#04703D]/10 text-[#04703D] border border-[#D4AF37]/20">
                       {t}
                     </span>
                   ))}
@@ -173,7 +173,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
 
         {/* Selected Service Deep Dive Card */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-10 shadow-2xl mb-20 relative overflow-hidden">
-          <div className="flex items-center gap-2 mb-3 text-xs font-mono text-[#4A7350] uppercase">
+          <div className="flex items-center gap-2 mb-3 text-xs font-mono text-[#04703D] uppercase">
             <Sparkles className="w-4 h-4" />
             <span>DEEP DIVE: {selectedService.title}</span>
           </div>
@@ -188,13 +188,13 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 border-t border-black/10 mb-8">
             <div>
-              <h4 className="font-mono text-xs uppercase tracking-widest text-[#4A7350] font-bold mb-4">
+              <h4 className="font-mono text-xs uppercase tracking-widest text-[#04703D] font-bold mb-4">
                 What's Included in the Sprint:
               </h4>
               <div className="space-y-3">
                 {selectedService.deliverables.map((del, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-3 text-xs font-mono text-[#16201B]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#A8C6A9] text-[#D4AF37] flex items-center justify-center text-[10px] font-bold flex-shrink-0">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#D4AF37] flex items-center justify-center text-[10px] font-bold flex-shrink-0">
                       ✓
                     </span>
                     <span>{del}</span>
@@ -243,7 +243,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
         {/* 3-Tier Engagement Structure Comparison */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-10 shadow-2xl mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               HOW WE WORK TOGETHER
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-3">
@@ -258,14 +258,14 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             {/* Tier 1: Sprint */}
             <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
                   TIER 01 • ACCELERATOR
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
                   Systems Sprint
                 </h4>
                 <div className="font-mono text-xs text-[#16201B]/50 mb-1">4-Week Turnkey Build</div>
-                <div className="font-mono text-sm font-bold text-[#4A7350] mb-4">Starting at $100</div>
+                <div className="font-mono text-sm font-bold text-[#04703D] mb-4">Starting at $100</div>
                 <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
                   Perfect for focused bottlenecks (e.g. single Notion CRM, Typeform lead router, or ClickUp team setup).
                 </p>
@@ -285,12 +285,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             </div>
 
             {/* Tier 2: Full Architecture */}
-            <div className="p-7 rounded-2xl bg-[#A8C6A9] border-2 border-[#D4AF37] shadow-2xl flex flex-col justify-between relative">
+            <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#D4AF37] shadow-2xl flex flex-col justify-between relative">
               <div className="absolute -top-3 right-6 bg-[#D4AF37] text-[#111815] text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
                 MOST POPULAR
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
                   TIER 02 • FULL TRANSFORMATION
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
@@ -320,7 +320,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             {/* Tier 3: Retainer */}
             <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#4A7350] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
                   TIER 03 • FRACTIONAL OPERATIONS
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
@@ -355,7 +355,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               The 4-Week Engineering Sprint Methodology
             </h4>
-            <p className="text-xs font-mono text-[#4A7350] mt-1">
+            <p className="text-xs font-mono text-[#04703D] mt-1">
               Audit, Blueprint, and Automation Build
             </p>
           </div>

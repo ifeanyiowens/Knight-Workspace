@@ -134,28 +134,28 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
           <div className="lg:col-span-5 space-y-6">
             
             <div className="rounded-3xl bg-white border border-black/10 p-7 sm:p-8 shadow-2xl">
-              <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+              <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
                 INSTANT SCHEDULING
               </span>
               <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-1">
                 30 Minute Call
               </h3>
-              <div className="font-mono text-sm font-bold text-[#4A7350] mb-4">Starting at $50</div>
+              <div className="font-mono text-sm font-bold text-[#04703D] mb-4">Starting at $50</div>
               <p className="text-xs sm:text-sm text-[#16201B]/70 leading-relaxed mb-6 font-sans">
                 We go through what's actually slowing your team down and map out what to fix first. If it turns into a build, that starts at $100.
               </p>
 
               <div className="space-y-3 mb-6 font-mono text-xs text-[#16201B]/80">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#4A7350]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#04703D]" />
                   <span>Conducted via Zoom / Google Meet</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#4A7350]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#04703D]" />
                   <span>Direct 1-on-1 with Owens Oparaku</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-[#4A7350]" />
+                  <CheckCircle2 className="w-4 h-4 text-[#04703D]" />
                   <span>No pushy sales. Pure architecture breakdown.</span>
                 </div>
               </div>
@@ -178,7 +178,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
           <div className="lg:col-span-7">
             <div className="rounded-3xl bg-white border border-black/10 p-7 sm:p-10 shadow-2xl">
               
-              <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#4A7350] uppercase">
+              <div className="flex items-center gap-2 mb-2 font-mono text-xs text-[#04703D] uppercase">
                 <MessageSquare className="w-4 h-4" />
                 <span>PROJECT INTAKE BRIEF</span>
               </div>
@@ -191,8 +191,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               </p>
 
               {formSubmitted ? (
-                <div className="p-8 rounded-2xl bg-[#A8C6A9] border border-[#D4AF37] text-center space-y-4">
-                  <CheckCircle2 className="w-12 h-12 text-[#4A7350] mx-auto" />
+                <div className="p-8 rounded-2xl bg-[#059C54] border border-[#D4AF37] text-center space-y-4">
+                  <CheckCircle2 className="w-12 h-12 text-[#04703D] mx-auto" />
                   <h4 className="font-serif text-2xl font-bold text-[#16201B]">
                     Brief Received Successfully!
                   </h4>
@@ -269,7 +269,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                           onClick={() => handleStackToggle(tool)}
                           className={`px-3 py-1.5 rounded-lg border text-[11px] transition-all cursor-pointer ${
                             formData.stack.includes(tool)
-                              ? 'bg-[#A8C6A9] text-[#D4AF37] border-[#D4AF37]'
+                              ? 'bg-[#059C54] text-[#D4AF37] border-[#D4AF37]'
                               : 'bg-black/5 text-[#16201B]/60 border-black/10 hover:border-black/20'
                           }`}
                         >
@@ -321,7 +321,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
         {/* Frequently Asked Questions Accordion */}
         <div className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-20 shadow-2xl">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               FREQUENTLY ASKED QUESTIONS
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">

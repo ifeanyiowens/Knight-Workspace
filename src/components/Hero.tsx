@@ -1,6 +1,6 @@
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import { BRAND_INFO } from '../data/portfolioData';
-import owensProfilePhoto from '../assets/owens_profile_hoodie.png';
+import owensProfilePhoto from '../assets/owens_profile_hoodie.webp';
 import { Calendar, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
 
@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div ref={textColRef} className="lg:col-span-6 flex flex-col justify-start items-start space-y-7">
 
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] leading-[1.05] text-[#16201B] font-bold tracking-tight">
-              Your business shouldn't run on <span className="text-[#4A7350]">your memory</span>.
+              Your business shouldn't run on <span className="text-[#04703D]">your memory</span>.
             </h1>
 
             <p className="text-lg sm:text-xl text-[#16201B]/75 leading-relaxed max-w-2xl font-sans">
@@ -98,7 +98,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
-              <div className="absolute bottom-0 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
+              <div className="absolute bottom-0 inset-x-6 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
 
               {!imageError ? (
                 <img
@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 />
               ) : (
                 <div className="w-full h-80 flex flex-col items-center justify-center text-[#16201B] p-6 text-center">
-                  <span className="font-serif text-4xl font-bold text-[#4A7350] mb-2">OO</span>
+                  <span className="font-serif text-4xl font-bold text-[#04703D] mb-2">OO</span>
                   <span className="font-serif text-lg font-bold">Owens Oparaku</span>
                 </div>
               )}

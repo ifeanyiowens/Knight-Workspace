@@ -292,7 +292,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
               <ExternalLink className="w-3 h-3 text-[#D4AF37]" />
             </a>
           ) : (
-            <span className="inline-flex items-center gap-1 text-[11px] font-mono text-[#4A7350]">
+            <span className="inline-flex items-center gap-1 text-[11px] font-mono text-[#04703D]">
               <CheckCircle2 className="w-3.5 h-3.5" />
               <span>Verified</span>
             </span>

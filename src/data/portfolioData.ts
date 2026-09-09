@@ -1,5 +1,5 @@
 import { CaseStudy, Testimonial, Certification, Service, StatItem, PageInfo } from '../types';
-import owensProfilePhoto from '../assets/owens_profile_hoodie.png';
+import owensProfilePhoto from '../assets/owens_profile_hoodie.webp';
 import vulturesVzwImage from '../assets/case-studies/vultures-vzw.webp';
 import donorPulseImage from '../assets/case-studies/donor-pulse.webp';
 import clientManagementSystemImage from '../assets/case-studies/client-management-system.webp';

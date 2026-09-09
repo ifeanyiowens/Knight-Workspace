@@ -43,14 +43,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="w-9 h-9 rounded-lg bg-[#A8C6A9] text-[#16201B] flex items-center justify-center font-serif text-lg font-bold border border-[#4A7350]/30 shadow-sm group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-lg bg-[#059C54] text-[#16201B] flex items-center justify-center font-serif text-lg font-bold border border-[#04703D]/30 shadow-sm group-hover:scale-105 transition-transform">
               O
             </div>
             <div>
-              <span className="block font-serif text-base sm:text-lg font-bold tracking-tight text-[#16201B] leading-tight group-hover:text-[#4A7350] transition-colors">
+              <span className="block font-serif text-base sm:text-lg font-bold tracking-tight text-[#16201B] leading-tight group-hover:text-[#04703D] transition-colors">
                 Owens Oparaku
               </span>
-              <span className="block text-[10px] font-mono font-medium text-[#4A7350] tracking-widest uppercase">
+              <span className="block text-[10px] font-mono font-medium text-[#04703D] tracking-widest uppercase">
                 Systems & Operations Architect
               </span>
             </div>
@@ -158,7 +158,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
               rel="noopener noreferrer"
               className="py-2.5 px-4 rounded-xl border border-black/10 text-[#16201B] text-xs font-mono text-center flex items-center justify-center gap-2 hover:bg-black/5"
             >
-              <Instagram className="w-3.5 h-3.5 text-[#4A7350]" />
+              <Instagram className="w-3.5 h-3.5 text-[#04703D]" />
               <span>Follow {BRAND_INFO.instagramHandle}</span>
             </a>
           </div>

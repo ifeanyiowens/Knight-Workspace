@@ -109,7 +109,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
-        <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#A8C6A9]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
+        <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#059C54]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
@@ -135,7 +135,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               href={BRAND_INFO.notionSite}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#A8C6A9] text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#D4AF37]/40 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#D4AF37]/40 transition-all flex items-center gap-2"
             >
               <Globe className="w-4 h-4 text-[#D4AF37]" />
               <span>Explore Notion Site</span>
@@ -166,7 +166,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           <div className="lg:col-span-6 flex flex-col items-center lg:items-end">
             <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
 
-              <div className="absolute bottom-0 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
+              <div className="absolute bottom-0 inset-x-10 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
 
               {!imageFailed ? (
                 <img
@@ -177,8 +177,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   onError={handleImageError}
                 />
               ) : (
-                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#A8C6A9] text-[#16201B] p-6 text-center rounded-3xl">
-                  <span className="font-serif text-4xl font-bold text-[#4A7350] mb-2">OO</span>
+                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#059C54] text-[#16201B] p-6 text-center rounded-3xl">
+                  <span className="font-serif text-4xl font-bold text-[#04703D] mb-2">OO</span>
                   <span className="font-serif text-xl font-bold">Owens Oparaku</span>
                   <span className="text-xs text-[#16201B]/70 mt-1">Business Operations Architect</span>
                 </div>
@@ -190,7 +190,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
                   Owens Oparaku
                 </h3>
-                <p className="text-xs text-[#4A7350] font-semibold">
+                <p className="text-xs text-[#04703D] font-semibold">
                   Systems & Operations Architect
                 </p>
               </div>
@@ -221,7 +221,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           <div ref={narrativeRef} className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
-            <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">
+            <div className="flex items-center gap-2 text-xs font-semibold text-[#04703D] uppercase tracking-wider relative">
               <span>THE ARCHITECT'S STORY</span>
             </div>
 
@@ -259,7 +259,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         {/* The 4 Architectural Principles */}
         <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               FOUNDATIONAL PILLARS
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
@@ -271,7 +271,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             {principles.map((p) => (
               <div key={p.num} className="p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between">
                 <div>
-                  <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-[#4A7350]/10 border border-[#D4AF37]/20 inline-block mb-4">
+                  <span className="font-mono text-xs text-[#D4AF37] font-bold px-2.5 py-1 rounded bg-[#04703D]/10 border border-[#D4AF37]/20 inline-block mb-4">
                     PRINCIPLE [{p.num}]
                   </span>
                   <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-3">
@@ -373,7 +373,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         {/* Client Testimonials */}
         <div className="mb-16">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="text-xs font-mono text-[#4A7350] uppercase tracking-widest font-bold block mb-2">
+            <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               CLIENT TESTIMONIALS
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
@@ -387,7 +387,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 <div>
                   <div className="flex items-center justify-between mb-4">
                     <StarRating rating={t.rating} />
-                    <span className="text-[10px] font-mono bg-[#4A7350]/10 text-[#4A7350] px-2 py-0.5 rounded-full border border-[#4A7350]/30">
+                    <span className="text-[10px] font-mono bg-[#04703D]/10 text-[#04703D] px-2 py-0.5 rounded-full border border-[#04703D]/30">
                       {t.source}
                     </span>
                   </div>
@@ -399,7 +399,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 <div className="pt-4 border-t border-black/10 font-mono text-xs">
                   <div className="font-bold text-[#16201B]">{t.author}</div>
                   <div className="text-[#16201B]/50 text-[11px] mb-2">{t.role || t.company}</div>
-                  <div className="text-[10px] text-[#4A7350] bg-black/5 px-2 py-1 rounded inline-block">
+                  <div className="text-[10px] text-[#04703D] bg-black/5 px-2 py-1 rounded inline-block">
                     {t.projectType}
                   </div>
                 </div>

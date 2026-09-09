@@ -42,7 +42,7 @@ export const BeforeAfterSlider: React.FC = () => {
     <div className="w-full my-12">
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
-          <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] flex items-center gap-1.5">
+          <span className="font-mono text-xs uppercase tracking-widest text-[#04703D] flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5" />
             Drag to compare
           </span>
@@ -64,19 +64,19 @@ export const BeforeAfterSlider: React.FC = () => {
           className="absolute inset-0 overflow-hidden bg-[#EEF4EE] p-6 sm:p-8 flex flex-col justify-between text-[#16201B]"
           style={{ left: `${sliderPosition}%` }}
         >
-          <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-[#4A7350]/20">
-            <span className="font-mono text-xs font-bold text-[#2F4E33] bg-white px-3 py-1 rounded-full border border-[#4A7350]/40 flex items-center gap-1.5">
+          <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-[#04703D]/20">
+            <span className="font-mono text-xs font-bold text-[#04703D] bg-white px-3 py-1 rounded-full border border-[#04703D]/40 flex items-center gap-1.5">
               <CheckCircle2 className="w-3.5 h-3.5" />
               After: what a real system looks like
             </span>
-            <span className="text-xs font-mono text-[#4A7350] hidden md:block">
+            <span className="text-xs font-mono text-[#04703D] hidden md:block">
               Scales without adding headcount
             </span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 my-auto py-3 min-w-[640px]">
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#4A7350]/25 text-left shadow-sm">
-              <div className="text-xs font-mono text-[#2F4E33] font-bold uppercase mb-1">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#04703D]/25 text-left shadow-sm">
+              <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 One home for everything
               </div>
               <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
@@ -84,8 +84,8 @@ export const BeforeAfterSlider: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#4A7350]/25 text-left shadow-sm">
-              <div className="text-xs font-mono text-[#2F4E33] font-bold uppercase mb-1">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#04703D]/25 text-left shadow-sm">
+              <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 Work happens automatically
               </div>
               <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
@@ -93,8 +93,8 @@ export const BeforeAfterSlider: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#4A7350]/25 text-left shadow-sm">
-              <div className="text-xs font-mono text-[#2F4E33] font-bold uppercase mb-1">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#04703D]/25 text-left shadow-sm">
+              <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 Nobody needs to ask you
               </div>
               <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
@@ -102,8 +102,8 @@ export const BeforeAfterSlider: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#4A7350]/25 text-left shadow-sm">
-              <div className="text-xs font-mono text-[#2F4E33] font-bold uppercase mb-1">
+            <div className="p-3.5 sm:p-4 rounded-2xl bg-white border border-[#04703D]/25 text-left shadow-sm">
+              <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 You get your week back
               </div>
               <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
@@ -112,7 +112,7 @@ export const BeforeAfterSlider: React.FC = () => {
             </div>
           </div>
 
-          <div className="text-right text-xs font-mono text-[#2F4E33] pt-2 border-t border-[#4A7350]/20 min-w-[640px]">
+          <div className="text-right text-xs font-mono text-[#04703D] pt-2 border-t border-[#04703D]/20 min-w-[640px]">
             90% fewer dropped tasks, 1,000+ hours saved a year
           </div>
         </div>

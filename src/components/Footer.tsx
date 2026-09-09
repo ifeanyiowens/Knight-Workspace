@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
         <div className="pb-16 mb-16 border-b border-black/10">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
             <div className="max-w-3xl">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#4A7350] block mb-3">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#04703D] block mb-3">
                 LET'S TALK ARCHITECTURE
               </span>
               <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#16201B] tracking-tight leading-[1.02]">
@@ -60,14 +60,14 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               onClick={() => handlePageClick('home')}
               className="flex items-center gap-3 text-left cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#A8C6A9] text-[#D4AF37] flex items-center justify-center font-serif text-xl font-bold border border-[#D4AF37]/40 shadow-sm group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-[#059C54] text-[#D4AF37] flex items-center justify-center font-serif text-xl font-bold border border-[#D4AF37]/40 shadow-sm group-hover:scale-105 transition-transform">
                 O
               </div>
               <div>
                 <span className="block font-serif text-xl font-bold tracking-tight text-[#16201B] group-hover:text-[#D4AF37] transition-colors">
                   Owens Oparaku
                 </span>
-                <span className="block text-[11px] font-mono text-[#4A7350] uppercase tracking-widest">
+                <span className="block text-[11px] font-mono text-[#04703D] uppercase tracking-widest">
                   Systems & Operations Architect
                 </span>
               </div>

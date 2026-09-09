@@ -39,7 +39,7 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
         <div className="flex items-center gap-1.5">
           <span className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
           <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/80" />
-          <span className="w-2.5 h-2.5 rounded-full bg-[#4A7350]/80" />
+          <span className="w-2.5 h-2.5 rounded-full bg-[#04703D]/80" />
           <span className="text-[10px] text-[#16201B]/40 ml-2 font-mono hidden sm:inline">
             oparaku-os://{studyId}.sys
           </span>
@@ -91,8 +91,8 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
               <span className="text-[#16201B]/70 flex items-center gap-1.5 font-bold">
                 <span className="text-[#D4AF37]">📁</span> {client} Master Operations
               </span>
-              <span className="text-[10px] text-[#4A7350] bg-emerald-950/60 px-2 py-0.5 rounded border border-[#4A7350]/30 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#4A7350] animate-pulse" />
+              <span className="text-[10px] text-[#04703D] bg-emerald-950/60 px-2 py-0.5 rounded border border-[#04703D]/30 flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#04703D] animate-pulse" />
                 Live Sync Active
               </span>
             </div>
@@ -112,10 +112,10 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                   </div>
                   <div className="p-2.5 rounded-xl bg-black/5 border border-black/5 flex items-center justify-between hover:border-[#D4AF37]/40 transition-colors">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-[#4A7350]" />
+                      <span className="w-2 h-2 rounded-full bg-[#04703D]" />
                       <span className="text-[#16201B] font-medium">Pipeline: $48,000 Group Q3</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#4A7350]/30">
+                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#04703D]/30">
                       Closed • Deposit In
                     </span>
                   </div>
@@ -126,10 +126,10 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                 <>
                   <div className="p-2.5 rounded-xl bg-black/5 border border-black/5 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-[#4A7350]" />
+                      <span className="w-2 h-2 rounded-full bg-[#04703D]" />
                       <span className="text-[#16201B] font-medium">Donor: Vanguard Foundation</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#4A7350]/30">
+                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#04703D]/30">
                       Active • $125k Grant
                     </span>
                   </div>
@@ -152,7 +152,7 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                       <span className="w-2 h-2 rounded-full bg-[#D4AF37]" />
                       <span className="text-[#16201B] font-medium">Client Ops: 8 DB Interconnect</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-[#A8C6A9] text-[#D4AF37] text-[10px] border border-[#D4AF37]/30">
+                    <span className="px-2 py-0.5 rounded bg-[#059C54] text-[#D4AF37] text-[10px] border border-[#D4AF37]/30">
                       8 Relational Bases
                     </span>
                   </div>
@@ -181,10 +181,10 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                   </div>
                   <div className="p-2.5 rounded-xl bg-black/5 border border-black/5 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-[#4A7350]" />
+                      <span className="w-2 h-2 rounded-full bg-[#04703D]" />
                       <span className="text-[#16201B] font-medium">Workback Milestones</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#4A7350]/30">
+                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#04703D]/30">
                       100% On-Time
                     </span>
                   </div>
@@ -204,10 +204,10 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                   </div>
                   <div className="p-2.5 rounded-xl bg-black/5 border border-black/5 flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-[#4A7350]" />
+                      <span className="w-2 h-2 rounded-full bg-[#04703D]" />
                       <span className="text-[#16201B] font-medium">Supplier Lead Time Tracker</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#4A7350]/30">
+                    <span className="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px] border border-[#04703D]/30">
                       PO #1042 Dispatched
                     </span>
                   </div>
@@ -221,7 +221,7 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
                       <span className="w-2 h-2 rounded-full bg-[#D4AF37]" />
                       <span className="text-[#16201B] font-medium">Commission: 1.8ct Sapphire Ring</span>
                     </div>
-                    <span className="px-2 py-0.5 rounded bg-[#A8C6A9] text-[#D4AF37] text-[10px] border border-[#D4AF37]/30">
+                    <span className="px-2 py-0.5 rounded bg-[#059C54] text-[#D4AF37] text-[10px] border border-[#D4AF37]/30">
                       3D CAD Approved
                     </span>
                   </div>
@@ -273,8 +273,8 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
               </div>
 
               {/* Node 1 */}
-              <div className="z-10 p-2 rounded-xl bg-[#A8C6A9] border border-[#D4AF37]/40 text-center shadow-lg">
-                <span className="block text-[9px] text-[#4A7350] uppercase">01 Trigger</span>
+              <div className="z-10 p-2 rounded-xl bg-[#059C54] border border-[#D4AF37]/40 text-center shadow-lg">
+                <span className="block text-[9px] text-[#04703D] uppercase">01 Trigger</span>
                 <span className="text-[10px] text-[#16201B] font-bold block truncate">Webhook</span>
               </div>
 
@@ -291,14 +291,14 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
               </div>
 
               {/* Node 4 */}
-              <div className="z-10 p-2 rounded-xl bg-[#A8C6A9] border border-[#D4AF37]/40 text-center shadow-lg">
-                <span className="block text-[9px] text-[#4A7350] uppercase">04 Action</span>
+              <div className="z-10 p-2 rounded-xl bg-[#059C54] border border-[#D4AF37]/40 text-center shadow-lg">
+                <span className="block text-[9px] text-[#04703D] uppercase">04 Action</span>
                 <span className="text-[10px] text-[#16201B] font-bold block truncate">Slack/Email</span>
               </div>
             </div>
 
             <div className="p-2 rounded-lg bg-black/40 border border-black/5 text-[10px] text-[#16201B]/60 flex items-center justify-between">
-              <span>Status: <strong className="text-[#4A7350]">200 OK</strong></span>
+              <span>Status: <strong className="text-[#04703D]">200 OK</strong></span>
               <span>Execution Time: <strong className="text-[#16201B]">180ms</strong></span>
             </div>
           </div>
@@ -334,7 +334,7 @@ export const ParallaxVisualMockup: React.FC<ParallaxVisualMockupProps> = ({
               </div>
             </div>
 
-            <div className="text-[10px] text-[#4A7350] bg-emerald-950/40 p-2 rounded-lg border border-[#4A7350]/20 text-center font-mono">
+            <div className="text-[10px] text-[#04703D] bg-emerald-950/40 p-2 rounded-lg border border-[#04703D]/20 text-center font-mono">
               ✓ Zero duplicate record entries across departments
             </div>
           </div>

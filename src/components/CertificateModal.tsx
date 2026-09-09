@@ -251,7 +251,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
           {/* Writeup & Credential Metadata Details (Under the image) */}
           <div className="space-y-4 bg-white p-5 rounded-2xl border border-black/10">
             <div>
-              <h4 className="text-xs font-mono text-[#4A7350] uppercase tracking-wider font-bold mb-1">
+              <h4 className="text-xs font-mono text-[#04703D] uppercase tracking-wider font-bold mb-1">
                 About This Credential
               </h4>
               <p className="text-sm text-[#16201B]/80 leading-relaxed font-sans">
@@ -270,7 +270,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
               </div>
               <div className="p-2.5 rounded-xl bg-black/40 border border-black/5 col-span-2 sm:col-span-1">
                 <span className="text-[#16201B]/40 block text-[10px]">STATUS</span>
-                <span className="text-[#4A7350] font-semibold flex items-center gap-1">
+                <span className="text-[#04703D] font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> Official Verified
                 </span>
               </div>

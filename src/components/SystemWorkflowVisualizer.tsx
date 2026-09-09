@@ -57,8 +57,8 @@ export const SystemWorkflowVisualizer: React.FC = () => {
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-black/10">
         <div>
           <div className="flex items-center gap-2 mb-1">
-            <span className="w-2 h-2 rounded-full bg-[#4A7350] animate-pulse" />
-            <span className="text-xs font-mono uppercase tracking-widest text-[#4A7350] font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#04703D] animate-pulse" />
+            <span className="text-xs font-mono uppercase tracking-widest text-[#04703D] font-bold">
               LIVE SYSTEMS SIMULATOR
             </span>
           </div>
@@ -96,12 +96,12 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 1: Intake Form */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 0
-            ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="font-mono text-[10px] text-[#4A7350] uppercase">01 Intake</span>
-            <span className={`w-2 h-2 rounded-full ${activeStep >= 0 ? 'bg-[#4A7350] animate-ping' : 'bg-black/20'}`} />
+            <span className="font-mono text-[10px] text-[#04703D] uppercase">01 Intake</span>
+            <span className={`w-2 h-2 rounded-full ${activeStep >= 0 ? 'bg-[#04703D] animate-ping' : 'bg-black/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Typeform Submission</div>
           <p className="text-[11px] text-[#16201B]/60 font-mono">Lead captures client stack & budget</p>
@@ -110,11 +110,11 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 2: Make.com Router */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 1
-            ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="font-mono text-[10px] text-[#4A7350] uppercase">02 Router</span>
+            <span className="font-mono text-[10px] text-[#04703D] uppercase">02 Router</span>
             <Zap className={`w-3.5 h-3.5 ${activeStep >= 1 ? 'text-[#D4AF37]' : 'text-[#16201B]/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Make.com Logic</div>
@@ -124,11 +124,11 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 3: Notion Database */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 2
-            ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="font-mono text-[10px] text-[#4A7350] uppercase">03 Database</span>
+            <span className="font-mono text-[10px] text-[#04703D] uppercase">03 Database</span>
             <Database className={`w-3.5 h-3.5 ${activeStep >= 2 ? 'text-[#D4AF37]' : 'text-[#16201B]/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Notion CRM Sync</div>
@@ -138,12 +138,12 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 4: Instant Action */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 3
-            ? 'bg-[#A8C6A9] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
-            <span className="font-mono text-[10px] text-[#4A7350] uppercase">04 Complete</span>
-            <CheckCircle2 className={`w-3.5 h-3.5 ${activeStep >= 3 ? 'text-[#4A7350]' : 'text-[#16201B]/20'}`} />
+            <span className="font-mono text-[10px] text-[#04703D] uppercase">04 Complete</span>
+            <CheckCircle2 className={`w-3.5 h-3.5 ${activeStep >= 3 ? 'text-[#04703D]' : 'text-[#16201B]/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Slack & Calendar</div>
           <p className="text-[11px] text-[#16201B]/60 font-mono">Founder alerted; zero manual work</p>
@@ -161,7 +161,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
           {logs.map((log, index) => (
             <div key={index} className="flex items-start gap-2">
               <span className="text-[#D4AF37] select-none">›</span>
-              <span className={index === logs.length - 1 ? 'text-[#4A7350] font-semibold' : 'text-[#16201B]/70'}>
+              <span className={index === logs.length - 1 ? 'text-[#04703D] font-semibold' : 'text-[#16201B]/70'}>
                 {log}
               </span>
             </div>

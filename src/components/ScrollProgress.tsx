@@ -60,7 +60,7 @@ export const ScrollProgress: React.FC = () => {
       {/* Top Thin Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-[2.5px] bg-black/5 z-50 pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-[#A8C6A9] via-[#D4AF37] to-[#E5C358] transition-all duration-75"
+          className="h-full bg-gradient-to-r from-[#059C54] via-[#D4AF37] to-[#E5C358] transition-all duration-75"
           style={{ width: `${scrollPercent}%` }}
         />
       </div>
