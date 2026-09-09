@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { BRAND_INFO, CERTIFICATIONS, TESTIMONIALS } from '../data/portfolioData';
 import { StarRating } from '../components/StarRating';
 import { PageId, Certification } from '../types';
@@ -38,6 +38,24 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
   const [imageFailed, setImageFailed] = useState(false);
   const [activeCertCategory, setActiveCertCategory] = useState<'all' | 'clickup' | 'notion' | 'airtable' | 'make'>('all');
   const [selectedCert, setSelectedCert] = useState<Certification | null>(null);
+  const narrativeRef = useRef<HTMLDivElement>(null);
+  const [matchHeight, setMatchHeight] = useState<number | undefined>(undefined);
+
+  useLayoutEffect(() => {
+    const el = narrativeRef.current;
+    if (!el) return;
+
+    const update = () => setMatchHeight(el.offsetHeight);
+    update();
+
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    window.addEventListener('resize', update);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', update);
+    };
+  }, []);
 
   const handleImageError = () => {
     if (currentImgSrc !== BRAND_INFO.profilePhotoFallback) {
@@ -142,20 +160,20 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
       {/* Main Bio & Founder Card Section */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-stretch mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-start mb-24">
           
           {/* Left: Free floating portrait, matches Hero treatment */}
-          <div className="lg:col-span-6 flex justify-center items-start">
-            <div className="relative w-full w-full">
+          <div className="lg:col-span-6 flex flex-col items-center lg:items-end">
+            <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
 
-              <div className="absolute bottom-6 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
+              <div className="absolute bottom-0 inset-x-10 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
               {!imageFailed ? (
                 <img
                   src={currentImgSrc}
                   alt={BRAND_INFO.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-contain object-bottom mx-auto"
+                  className="h-full w-auto object-contain object-top"
                   onError={handleImageError}
                 />
               ) : (
@@ -165,42 +183,42 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   <span className="text-xs text-[#16201B]/70 mt-1">Business Operations Architect</span>
                 </div>
               )}
+            </div>
 
-              <div className="mt-4 flex flex-col items-center gap-2 text-center">
-                <div>
-                  <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
-                    Owens Oparaku
-                  </h3>
-                  <p className="text-xs text-[#4A7350] font-semibold">
-                    Systems & Operations Architect
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 pt-1">
-                  <a
-                    href={BRAND_INFO.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
-                    title="Instagram"
-                  >
-                    <Instagram className="w-4 h-4" />
-                  </a>
-                  <a
-                    href={BRAND_INFO.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
-                    title="LinkedIn"
-                  >
-                    <Linkedin className="w-4 h-4" />
-                  </a>
-                </div>
+            <div className="mt-4 flex flex-col items-center gap-2 text-center">
+              <div>
+                <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
+                  Owens Oparaku
+                </h3>
+                <p className="text-xs text-[#4A7350] font-semibold">
+                  Systems & Operations Architect
+                </p>
+              </div>
+              <div className="flex items-center gap-2 pt-1">
+                <a
+                  href={BRAND_INFO.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
+                  title="Instagram"
+                >
+                  <Instagram className="w-4 h-4" />
+                </a>
+                <a
+                  href={BRAND_INFO.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#D4AF37] hover:text-[#16201B] transition-all flex items-center justify-center text-[#16201B]"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+          <div ref={narrativeRef} className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#D4AF37]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
             <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#D4AF37]/10 select-none pointer-events-none">"</span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#4A7350] uppercase tracking-wider relative">

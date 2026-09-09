@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useLayoutEffect } from 'react';
 import { BRAND_INFO } from '../data/portfolioData';
 import owensProfilePhoto from '../assets/owens_profile_hoodie.png';
 import { Calendar, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
@@ -10,6 +10,24 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   const [imageError, setImageError] = useState(false);
+  const textColRef = useRef<HTMLDivElement>(null);
+  const [matchHeight, setMatchHeight] = useState<number | undefined>(undefined);
+
+  useLayoutEffect(() => {
+    const el = textColRef.current;
+    if (!el) return;
+
+    const update = () => setMatchHeight(el.offsetHeight);
+    update();
+
+    const observer = new ResizeObserver(update);
+    observer.observe(el);
+    window.addEventListener('resize', update);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('resize', update);
+    };
+  }, []);
 
   const handleBookClick = () => {
     sound.playTrigger();
@@ -20,10 +38,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
     <section className="relative pt-12 pb-20 md:pt-20 md:pb-28 bg-[#EDEDEA] text-[#16201B] overflow-hidden border-b border-black/5">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 lg:items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 lg:items-start">
 
           {/* Left Column */}
-          <div className="lg:col-span-6 flex flex-col justify-start items-start space-y-7">
+          <div ref={textColRef} className="lg:col-span-6 flex flex-col justify-start items-start space-y-7">
 
             <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] leading-[1.05] text-[#16201B] font-bold tracking-tight">
               Your business shouldn't run on <span className="text-[#4A7350]">your memory</span>.
@@ -75,18 +93,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
           </div>
 
-          {/* Right Column: Free floating photo, no card */}
-          <div className="lg:col-span-6 flex justify-center items-start">
-            <div className="relative w-full">
+          {/* Right Column: Photo sized to match the text column's height exactly */}
+          <div className="lg:col-span-6 flex flex-col items-center lg:items-end">
+            <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
-              <div className="absolute bottom-6 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
+              <div className="absolute bottom-0 inset-x-6 h-2/5 bg-[#A8C6A9] rounded-[2.5rem] -z-10" />
 
               {!imageError ? (
                 <img
                   src={owensProfilePhoto}
                   alt="Owens Oparaku"
-                  className="w-full h-auto object-contain object-bottom mx-auto"
+                  className="h-full w-auto object-contain object-top"
                   onError={() => setImageError(true)}
                 />
               ) : (
@@ -95,13 +113,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   <span className="font-serif text-lg font-bold">Owens Oparaku</span>
                 </div>
               )}
+            </div>
 
-              <div className="mt-4 flex items-center justify-center gap-2.5">
-                <span className="font-serif text-base font-bold text-[#16201B]">Owens Oparaku</span>
-                <span className="text-[#16201B]/40">•</span>
-                <span className="text-xs text-[#16201B]/70 font-medium">Systems & operations architect</span>
-              </div>
-
+            <div className="mt-4 flex items-center justify-center gap-2.5">
+              <span className="font-serif text-base font-bold text-[#16201B]">Owens Oparaku</span>
+              <span className="text-[#16201B]/40">•</span>
+              <span className="text-xs text-[#16201B]/70 font-medium">Systems & operations architect</span>
             </div>
           </div>
 
