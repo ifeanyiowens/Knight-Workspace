@@ -61,7 +61,7 @@ export const BeforeAfterSlider: React.FC = () => {
       >
         {/* AFTER LAYER (revealed from the right) */}
         <div
-          className="absolute inset-0 overflow-hidden bg-[#EEF4EE] p-6 sm:p-8 flex flex-col justify-between text-[#16201B]"
+          className="absolute inset-0 overflow-hidden bg-[#E3F5E9] p-6 sm:p-8 flex flex-col justify-between text-[#16201B]"
           style={{ left: `${sliderPosition}%` }}
         >
           <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-[#04703D]/20">
