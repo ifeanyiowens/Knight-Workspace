@@ -163,8 +163,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-start mb-24">
           
           {/* Left: Free floating portrait, matches Hero treatment */}
-          <div className="lg:col-span-6 flex flex-col items-center lg:items-end">
-            <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
+          <div className="lg:col-span-6 flex flex-col items-center">
+            <div className="relative w-full flex justify-center" style={matchHeight ? { height: matchHeight } : undefined}>
 
               <div className="absolute bottom-0 inset-x-10 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
 

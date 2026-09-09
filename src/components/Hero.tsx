@@ -94,8 +94,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           </div>
 
           {/* Right Column: Photo sized to match the text column's height exactly */}
-          <div className="lg:col-span-6 flex flex-col items-center lg:items-end">
-            <div className="relative w-full flex justify-center lg:justify-end" style={matchHeight ? { height: matchHeight } : undefined}>
+          <div className="lg:col-span-6 flex flex-col items-center">
+            <div className="relative w-full flex justify-center" style={matchHeight ? { height: matchHeight } : undefined}>
 
               {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
               <div className="absolute bottom-0 inset-x-6 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
