@@ -97,14 +97,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           <div className="lg:col-span-6 flex flex-col items-center">
             <div className="relative w-full flex justify-center" style={matchHeight ? { height: matchHeight } : undefined}>
 
-              {/* Soft sage shape sitting behind the lower half, masks the crop and grounds the photo */}
-              <div className="absolute bottom-0 inset-x-6 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
-
               {!imageError ? (
                 <img
                   src={owensProfilePhoto}
                   alt="Owens Oparaku"
                   className="h-full w-auto object-contain object-top"
+                  style={{
+                    maskImage: 'linear-gradient(to bottom, black 65%, transparent 96%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 65%, transparent 96%)',
+                  }}
                   onError={() => setImageError(true)}
                 />
               ) : (
@@ -113,12 +114,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   <span className="font-serif text-lg font-bold">Owens Oparaku</span>
                 </div>
               )}
-            </div>
 
-            <div className="mt-4 flex items-center justify-center gap-2.5">
-              <span className="font-serif text-base font-bold text-[#16201B]">Owens Oparaku</span>
-              <span className="text-[#16201B]/40">•</span>
-              <span className="text-xs text-[#16201B]/70 font-medium">Systems & operations architect</span>
+              {/* Caption sits inside the faded area instead of below the photo */}
+              <div className="absolute bottom-6 inset-x-0 flex items-center justify-center gap-2.5">
+                <span className="font-serif text-base font-bold text-[#16201B]">Owens Oparaku</span>
+                <span className="text-[#16201B]/40">•</span>
+                <span className="text-xs text-[#16201B]/70 font-medium">Systems & operations architect</span>
+              </div>
             </div>
           </div>
 

@@ -166,14 +166,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           <div className="lg:col-span-6 flex flex-col items-center">
             <div className="relative w-full flex justify-center" style={matchHeight ? { height: matchHeight } : undefined}>
 
-              <div className="absolute bottom-0 inset-x-10 h-2/5 bg-[#059C54] rounded-[2.5rem] -z-10" />
-
               {!imageFailed ? (
                 <img
                   src={currentImgSrc}
                   alt={BRAND_INFO.name}
                   referrerPolicy="no-referrer"
                   className="h-full w-auto object-contain object-top"
+                  style={{
+                    maskImage: 'linear-gradient(to bottom, black 65%, transparent 96%)',
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 65%, transparent 96%)',
+                  }}
                   onError={handleImageError}
                 />
               ) : (
@@ -183,10 +185,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   <span className="text-xs text-[#16201B]/70 mt-1">Business Operations Architect</span>
                 </div>
               )}
-            </div>
 
-            <div className="mt-4 flex flex-col items-center gap-2 text-center">
-              <div>
+              {/* Name and title sit inside the faded area instead of on a solid backdrop */}
+              <div className="absolute bottom-14 inset-x-0 text-center">
                 <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
                   Owens Oparaku
                 </h3>
@@ -194,6 +195,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   Systems & Operations Architect
                 </p>
               </div>
+            </div>
+
+            <div className="mt-4 flex flex-col items-center gap-2 text-center">
               <div className="flex items-center gap-2 pt-1">
                 <a
                   href={BRAND_INFO.instagram}
