@@ -8,8 +8,6 @@ import { sound } from '../utils/audio';
 import {
   Calendar,
   CheckCircle2,
-  ArrowRight,
-  ArrowUpRight,
   Sparkles,
   Layers,
   Zap,
@@ -88,7 +86,6 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
               <span>See the 7-Day Process</span>
-              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
@@ -404,7 +401,6 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Process</span>
-            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 

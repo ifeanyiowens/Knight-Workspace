@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BRAND_INFO, PAGES_CONFIG } from '../data/portfolioData';
 import { PageId } from '../types';
 import { sound } from '../utils/audio';
-import { Calendar, Menu, X, ArrowUpRight, Instagram } from 'lucide-react';
+import { Calendar, Menu, X, Instagram } from 'lucide-react';
 
 interface NavbarProps {
   currentPage: PageId;
@@ -88,7 +88,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             >
               <Calendar className="w-3.5 h-3.5" />
               <span>Book a call</span>
-              <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
           </div>
 
@@ -149,7 +148,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
-              <ArrowUpRight className="w-4 h-4" />
             </button>
 
             <a

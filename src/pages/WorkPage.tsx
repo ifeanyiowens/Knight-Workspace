@@ -10,9 +10,7 @@ import { MarqueeTicker } from '../components/MarqueeTicker';
 import { sound } from '../utils/audio';
 import {
   Database,
-  ArrowUpRight,
   Sparkles,
-  ArrowRight,
   Layers,
   ExternalLink,
   SlidersHorizontal,
@@ -144,9 +142,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#04703D] px-2.5 py-1 rounded-md bg-[#04703D]/10 border border-[#D4AF37]/30">
-                      [{String(idx + 1).padStart(2, '0')} / 06]
-                    </span>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
                       {study.badge}
                     </span>
@@ -166,19 +161,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent opacity-75 pointer-events-none" />
-                    {study.link && (
-                      <a
-                        href={study.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="absolute top-2.5 right-2.5 px-2 py-1 rounded-lg bg-black/80 hover:bg-[#D4AF37] text-[#16201B]/90 hover:text-[#111815] transition-all border border-black/20 text-[10px] font-mono font-medium flex items-center gap-1 shadow-md"
-                        title="Open Live Notion Template / Workspace"
-                      >
-                        <span>Notion</span>
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                    )}
                   </div>
                 )}
 
@@ -227,7 +209,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                     className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-[#16201B] hover:bg-[#D4AF37] hover:text-[#111815] transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
                   >
                     <span>Inspect Architecture</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </button>
 
                   {study.link && (
@@ -272,7 +253,6 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
             className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Services</span>
-            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 

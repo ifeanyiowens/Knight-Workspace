@@ -10,8 +10,6 @@ import {
   Instagram,
   Linkedin,
   Facebook,
-  ArrowRight,
-  ArrowUpRight,
   CheckCircle2,
   Clock,
   Send,
@@ -377,7 +375,6 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
             className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Return to Home</span>
-            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 

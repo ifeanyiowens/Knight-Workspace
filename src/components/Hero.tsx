@@ -1,7 +1,7 @@
 import React, { useState, useRef, useLayoutEffect } from 'react';
 import { BRAND_INFO } from '../data/portfolioData';
 import owensProfilePhoto from '../assets/owens_profile_hoodie.webp';
-import { Calendar, ArrowUpRight, CheckCircle2, Sparkles } from 'lucide-react';
+import { Calendar, CheckCircle2, Sparkles } from 'lucide-react';
 import { sound } from '../utils/audio';
 
 interface HeroProps {
@@ -60,7 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book a call</span>
-                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
 
               <a

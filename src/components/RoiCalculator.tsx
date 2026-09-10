@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, TrendingUp, Clock, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { Calculator, TrendingUp, Clock, CheckCircle2 } from 'lucide-react';
 
 interface RoiCalculatorProps {
   onOpenBooking: () => void;
@@ -199,7 +199,6 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                 className="w-full py-4 px-6 rounded-xl bg-[#D4AF37] text-[#111815] hover:bg-[#E5C358] font-mono font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
               >
                 <span>Book Call to Reclaim {annualHoursReclaimed.toLocaleString()} Hours</span>
-                <ArrowUpRight className="w-4 h-4" />
               </button>
 
             </div>

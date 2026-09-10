@@ -11,8 +11,6 @@ import { sound } from '../utils/audio';
 import {
   Calendar,
   CheckCircle2,
-  ArrowRight,
-  ArrowUpRight,
   Sparkles,
   ShieldCheck,
   Award,
@@ -140,7 +138,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             >
               <Globe className="w-4 h-4 text-[#D4AF37]" />
               <span>Explore Notion Site</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
             </a>
             <a
               href={BRAND_INFO.instagram}
@@ -435,7 +432,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Contact & Booking</span>
-            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 

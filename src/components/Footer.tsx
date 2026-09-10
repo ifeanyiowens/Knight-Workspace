@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BRAND_INFO, PAGES_CONFIG } from '../data/portfolioData';
 import { PageId } from '../types';
 import { sound } from '../utils/audio';
-import { Instagram, Linkedin, Facebook, Mail, ArrowUp, Calendar, ArrowUpRight, Clock } from 'lucide-react';
+import { Instagram, Linkedin, Facebook, Mail, ArrowUp, Calendar, Clock } from 'lucide-react';
 
 interface FooterProps {
   currentPage?: PageId;
@@ -48,7 +48,6 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
             >
               <Calendar className="w-5 h-5" />
               <span>Book a call</span>
-              <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </button>
           </div>
         </div>
@@ -121,7 +120,6 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 title="Notion Site Profile"
               >
                 <span className="font-bold">Notion Site</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
               </a>
             </div>
           </div>

@@ -9,8 +9,6 @@ import { PageId } from '../types';
 import { sound } from '../utils/audio';
 import {
   Calendar,
-  ArrowUpRight,
-  ArrowRight,
   Sparkles,
   Layers,
   ShieldCheck,
@@ -127,7 +125,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] border border-black/10 text-xs font-semibold uppercase tracking-wider transition-all"
             >
               <span>See How We Fix These in 4 Weeks</span>
-              <ArrowRight className="w-4 h-4 text-[#D4AF37]" />
             </button>
           </div>
 
