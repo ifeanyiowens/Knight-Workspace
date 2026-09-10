@@ -286,7 +286,6 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                   className="w-full py-3 px-4 rounded-xl bg-[#D4AF37] text-[#111815] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#E5C358] transition-colors shadow-md"
                 >
                   <span>Verify on Skilljar Online Registry</span>
-                  <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             )}

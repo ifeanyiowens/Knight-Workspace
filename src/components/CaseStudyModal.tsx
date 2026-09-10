@@ -1,6 +1,6 @@
 import React from 'react';
 import { CaseStudy } from '../types';
-import { X, CheckCircle2, ArrowUpRight, Database, Calendar, ExternalLink, Sparkles } from 'lucide-react';
+import { X, CheckCircle2, Database, Calendar } from 'lucide-react';
 
 interface CaseStudyModalProps {
   study: CaseStudy | null;
@@ -59,26 +59,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               className="w-full h-56 sm:h-72 object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-black/10 pointer-events-none" />
-            <div className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-black/70 backdrop-blur-md border border-black/15 text-[11px] font-mono text-[#04703D] flex items-center gap-1.5">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Verified System Workspace Preview</span>
-            </div>
-            {study.link && (
-              <a
-                href={study.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-[#D4AF37] hover:bg-[#E5C358] text-[#111815] text-xs font-mono font-bold uppercase tracking-wider transition-colors flex items-center gap-1.5 shadow-lg"
-              >
-                <span>{study.linkText || 'Open System Link'}</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            )}
           </div>
         )}
 
-        {/* Key Stat & Quick Links Bar */}
-        <div className="mb-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {/* Key Stat */}
+        <div className="mb-6">
           {study.stats && (
             <div className="p-4 rounded-2xl bg-white border border-[#D4AF37]/30 flex items-center justify-between">
               <span className="text-xs font-mono uppercase tracking-wider text-[#16201B]/60">
@@ -88,21 +73,6 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
                 {study.stats.value}
               </span>
             </div>
-          )}
-
-          {study.link && (
-            <a
-              href={study.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-2xl bg-white hover:bg-[#059C54]/40 border border-black/15 hover:border-[#D4AF37]/50 transition-all flex items-center justify-between group"
-            >
-              <div className="flex items-center gap-2 text-xs font-mono text-[#16201B]/80 group-hover:text-[#16201B]">
-                <ExternalLink className="w-4 h-4 text-[#D4AF37]" />
-                <span className="truncate">{study.linkText || 'Live Notion Link'}</span>
-              </div>
-              <ArrowUpRight className="w-4 h-4 text-[#D4AF37] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform flex-shrink-0" />
-            </a>
           )}
         </div>
 
@@ -178,7 +148,6 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
           >
             <Calendar className="w-4 h-4" />
             <span>Book a Call to Build Similar Architecture</span>
-            <ArrowUpRight className="w-4 h-4" />
           </button>
           {study.link && (
             <a
@@ -187,7 +156,6 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               rel="noopener noreferrer"
               className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#D4AF37]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
             >
-              <ExternalLink className="w-4 h-4" />
               <span>Open Link</span>
             </a>
           )}
