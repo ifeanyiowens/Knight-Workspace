@@ -96,7 +96,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
           </h1>
 
           <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
-            Book a call to walk through what's slowing your team down. Consultations start at $50, builds start at $100.
+            Book a call to walk through what's slowing your team down. Consultations start at $50, builds start at $70.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -142,7 +142,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               </h3>
               <div className="font-mono text-sm font-bold text-[#04703D] mb-4">Starting at $50</div>
               <p className="text-xs sm:text-sm text-[#16201B]/70 leading-relaxed mb-6 font-sans">
-                We go through what's actually slowing your team down and map out what to fix first. If it turns into a build, that starts at $100.
+                We go through what's actually slowing your team down and map out what to fix first. If it turns into a build, that starts at $70.
               </p>
 
               <div className="space-y-3 mb-6 font-mono text-xs text-[#16201B]/80">

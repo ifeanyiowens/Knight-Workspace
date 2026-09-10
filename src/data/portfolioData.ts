@@ -35,7 +35,7 @@ export const PAGES_CONFIG: PageInfo[] = [
   {
     id: 'process',
     index: '04',
-    title: '4-Week Engineering Sprint',
+    title: '7-Day Engineering Sprint',
     shortTitle: 'Process',
     tagline: 'Our deterministic 4-phase build, test, and SOP hand-off sprint',
     path: '#process',
@@ -515,7 +515,7 @@ export const PROCESS_STEPS = [
     number: '01',
     title: 'Diagnostic & Workflow Audit',
     phase: 'Discovery',
-    duration: 'Week 1',
+    duration: 'Day 1',
     description: 'I look at how your business actually runs right now. Every disconnected sheet, every broken handoff, every task that only happens because you remember it.',
     activities: [
       'Current tech stack & license review',
@@ -528,7 +528,7 @@ export const PROCESS_STEPS = [
     number: '02',
     title: 'Database Architecture & Data Modeling',
     phase: 'Schema Design',
-    duration: 'Week 1 to 2',
+    duration: 'Day 2 to 3',
     description: 'This is where the actual database gets built. Every client, project, deliverable, lead, and invoice connects to each other, so nothing gets entered twice.',
     activities: [
       'Entity relationship diagrams & relation models',
@@ -541,7 +541,7 @@ export const PROCESS_STEPS = [
     number: '03',
     title: 'Make.com Zero-Touch Automations',
     phase: 'Integration',
-    duration: 'Week 2 to 3',
+    duration: 'Day 4 to 5',
     description: 'Your forms, payments, calendar, and team chat get connected through Make.com, so information moves on its own instead of someone copying it over by hand.',
     activities: [
       'Multi-branch webhook routing & error handling',
@@ -552,14 +552,14 @@ export const PROCESS_STEPS = [
   },
   {
     number: '04',
-    title: 'Video Handoff & 14 Days of Free Support',
+    title: 'Video Handoff & Live Training',
     phase: 'Handoff & Adoption',
-    duration: 'Week 3 to 4',
-    description: 'A system only works if your team actually uses it. I record videos for each role, walk everyone through it live, and stay on for 14 days after delivery in case anything needs adjusting.',
+    duration: 'Day 6 to 7',
+    description: 'A system only works if your team actually uses it. I record videos for each role, walk everyone through it live, and revise until you are satisfied with the result.',
     activities: [
       'Custom video walkthroughs for every team role',
       'Live team Q&A and onboarding walkthrough session',
-      '14 days of free priority support after delivery on Slack/WhatsApp'
+      'Revisions to your satisfaction before final handoff'
     ],
     deliverable: 'Complete SOP Knowledge Base & Fully Adopted System'
   }
@@ -568,7 +568,7 @@ export const PROCESS_STEPS = [
 export const FAQ_ITEMS = [
   {
     q: 'How long does a full systems build take from start to finish?',
-    a: 'About 28 days. Week 1 is figuring out what you actually need, week 2 is building the database, week 3 is the automations, and week 4 is recording videos and handing it to your team.'
+    a: 'It depends on the build. A single database can be done in a day or two, a small connected system in a few days. The full 8+ database build with automation, training, and SOPs takes about 7 days from kickoff to handoff.'
   },
   {
     q: 'Do I need to upgrade to Notion Enterprise or pay for expensive software?',
@@ -576,7 +576,7 @@ export const FAQ_ITEMS = [
   },
   {
     q: 'What if my team struggles to adopt new tools and workflows?',
-    a: 'That\'s on me to prevent, not you. Every build comes with short videos for each role, a live walkthrough with your team, and 14 days of free support after delivery for anything that needs adjusting.'
+    a: 'That\'s on me to prevent, not you. Every build comes with short videos for each role, a live walkthrough with your team, and revisions until you\'re actually satisfied with how it runs.'
   },
   {
     q: 'Can you integrate our existing tools like Stripe, Google Drive, and Slack?',

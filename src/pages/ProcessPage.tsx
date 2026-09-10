@@ -50,8 +50,8 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
       icon: FileCheck2
     },
     {
-      title: '14 Days of Free Support After Delivery',
-      desc: 'Two weeks after delivery, I\'m still around for fine-tuning, questions, and small adjustments as your team settles in.',
+      title: 'Revisions Until You Are Satisfied',
+      desc: 'The build is not done until it actually works for your team. Revisions continue until you are happy with the result, not until a clock runs out.',
       icon: Clock
     }
   ];
@@ -65,7 +65,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
-            From Chaos to a System That Holds in 28 Days.
+            From Chaos to a System That Holds in 7 Days.
           </h1>
 
           <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">

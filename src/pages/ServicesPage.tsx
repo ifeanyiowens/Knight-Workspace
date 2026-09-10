@@ -87,7 +87,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               }}
               className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
-              <span>See the 4-Week Process</span>
+              <span>See the 7-Day Process</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -249,33 +249,33 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               HOW WE WORK TOGETHER
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-3">
-              3 Transparent Engagement Models
+              Pick the Scope That Fits Right Now
             </h3>
             <p className="text-xs sm:text-sm text-[#16201B]/60 font-sans">
-              Choose the level of support that matches your growth velocity and current operational complexity.
+              Every tier is priced by what actually gets built, not a vague estimate. Bigger, multi-tool builds are scoped individually.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Tier 1: Sprint */}
-            <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            {/* Tier 1: Quick Start */}
+            <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between hover-lift h-full">
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
-                  TIER 01 • ACCELERATOR
+                  TIER 01
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
-                  Systems Sprint
+                  Quick Start
                 </h4>
-                <div className="font-mono text-xs text-[#16201B]/50 mb-1">4-Week Turnkey Build</div>
-                <div className="font-mono text-sm font-bold text-[#04703D] mb-4">Starting at $100</div>
+                <div className="font-mono text-xs text-[#16201B]/50 mb-1">1 to 2 Days</div>
+                <div className="font-mono text-sm font-bold text-[#04703D] mb-4">$70</div>
                 <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
-                  Perfect for focused bottlenecks (e.g. single Notion CRM, Typeform lead router, or ClickUp team setup).
+                  One database done right. A client tracker, content calendar, or task list with real views and formulas, not a template.
                 </p>
                 <div className="space-y-2.5 text-xs text-[#16201B]/80 mb-6 font-mono">
-                  <div className="flex items-center gap-2">✓ Single Master Workspace</div>
-                  <div className="flex items-center gap-2">✓ Up to 3 Core Automations</div>
-                  <div className="flex items-center gap-2">✓ Full Loom Video SOPs</div>
-                  <div className="flex items-center gap-2">✓ 14 Days of Free Support After Delivery</div>
+                  <div className="flex items-center gap-2">✓ 1 Custom Database</div>
+                  <div className="flex items-center gap-2">✓ Up to 3 Views</div>
+                  <div className="flex items-center gap-2">✓ Loom Walkthrough</div>
+                  <div className="flex items-center gap-2">✓ 1 Round of Revisions</div>
                 </div>
               </div>
               <button
@@ -286,67 +286,101 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               </button>
             </div>
 
-            {/* Tier 2: Full Architecture */}
-            <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#D4AF37] shadow-2xl flex flex-col justify-between relative">
+            {/* Tier 2: Mini Hub */}
+            <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between hover-lift h-full">
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
+                  TIER 02
+                </span>
+                <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
+                  Mini Hub
+                </h4>
+                <div className="font-mono text-xs text-[#16201B]/50 mb-1">2 to 3 Days</div>
+                <div className="font-mono text-sm font-bold text-[#04703D] mb-4">$150</div>
+                <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
+                  A small system, not just a tracker. Two to three databases actually linked together with a simple dashboard.
+                </p>
+                <div className="space-y-2.5 text-xs text-[#16201B]/80 mb-6 font-mono">
+                  <div className="flex items-center gap-2">✓ 2 to 3 Connected Databases</div>
+                  <div className="flex items-center gap-2">✓ Relations & Rollups</div>
+                  <div className="flex items-center gap-2">✓ Simple Dashboard View</div>
+                  <div className="flex items-center gap-2">✓ 1 Round of Revisions</div>
+                </div>
+              </div>
+              <button
+                onClick={onOpenBooking}
+                className="w-full py-3 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer"
+              >
+                Book a call
+              </button>
+            </div>
+
+            {/* Tier 3: Core Build */}
+            <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between hover-lift h-full">
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
+                  TIER 03
+                </span>
+                <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
+                  Core Build
+                </h4>
+                <div className="font-mono text-xs text-[#16201B]/50 mb-1">3 to 4 Days</div>
+                <div className="font-mono text-sm font-bold text-[#04703D] mb-4">$300</div>
+                <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
+                  This is where it stops being a tracker and starts being a system. Real automation included.
+                </p>
+                <div className="space-y-2.5 text-xs text-[#16201B]/80 mb-6 font-mono">
+                  <div className="flex items-center gap-2">✓ 4 to 6 Connected Databases</div>
+                  <div className="flex items-center gap-2">✓ Team & Owner Dashboards</div>
+                  <div className="flex items-center gap-2">✓ 1 Working Automation</div>
+                  <div className="flex items-center gap-2">✓ Up to 2 Rounds of Revisions</div>
+                </div>
+              </div>
+              <button
+                onClick={onOpenBooking}
+                className="w-full py-3 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer"
+              >
+                Book a call
+              </button>
+            </div>
+
+            {/* Tier 4: Standard Build */}
+            <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#D4AF37] shadow-2xl flex flex-col justify-between relative hover-lift h-full">
               <div className="absolute -top-3 right-6 bg-[#D4AF37] text-[#111815] text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
-                MOST POPULAR
+                FLAGSHIP
               </div>
               <div>
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
-                  TIER 02 • FULL TRANSFORMATION
+                  STANDARD BUILD
                 </span>
                 <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
-                  Operations Architecture
+                  Full Operations Build
                 </h4>
-                <div className="font-mono text-xs text-[#16201B]/70 mb-1">6-8 Week Complete Overhaul</div>
-                <div className="font-mono text-sm font-bold text-[#16201B] mb-4">Starting at $100</div>
+                <div className="font-mono text-xs text-[#16201B]/70 mb-1">7 Days</div>
+                <div className="font-mono text-sm font-bold text-[#16201B] mb-4">$1,500 and up</div>
                 <p className="text-xs text-[#16201B]/80 leading-relaxed mb-6">
-                  End-to-end operational engine for 5–25 person teams running on scattered tools and founder memory.
+                  A complete operational engine, built once and meant to hold as the team grows.
                 </p>
                 <div className="space-y-2.5 text-xs text-[#16201B]/90 mb-6 font-mono">
-                  <div className="flex items-center gap-2">✓ Company-Wide Single Source of Truth</div>
-                  <div className="flex items-center gap-2">✓ Unlimited Inter-App Make.com Pipelines</div>
-                  <div className="flex items-center gap-2">✓ Role-Based Permission Architecture</div>
-                  <div className="flex items-center gap-2">✓ Live Team Training Workshop</div>
-                  <div className="flex items-center gap-2">✓ 14 Days of Free Post-Delivery Support</div>
+                  <div className="flex items-center gap-2">✓ 8+ Connected Databases</div>
+                  <div className="flex items-center gap-2">✓ Full Make.com Automation</div>
+                  <div className="flex items-center gap-2">✓ Role-Based Permissions</div>
+                  <div className="flex items-center gap-2">✓ Full Video SOP Library</div>
+                  <div className="flex items-center gap-2">✓ Live Training Call</div>
+                  <div className="flex items-center gap-2">✓ Revisions to Your Satisfaction</div>
                 </div>
               </div>
               <button
                 onClick={onOpenBooking}
                 className="w-full py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all cursor-pointer shadow-lg"
               >
-                Book Discovery Call
-              </button>
-            </div>
-
-            {/* Tier 3: Retainer */}
-            <div className="p-7 rounded-2xl bg-white border border-black/10 flex flex-col justify-between">
-              <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
-                  TIER 03 • FRACTIONAL OPERATIONS
-                </span>
-                <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-2">
-                  Systems Hypercare
-                </h4>
-                <div className="font-mono text-xs text-[#16201B]/50 mb-1">Monthly Dedicated Retainer</div>
-                <div className="font-mono text-sm font-bold text-[#16201B] mb-4">Custom pricing</div>
-                <p className="text-xs text-[#16201B]/70 leading-relaxed mb-6">
-                  Ongoing operational leadership, quarterly schema updates, new integration builds, and team support.
-                </p>
-                <div className="space-y-2.5 text-xs text-[#16201B]/80 mb-6 font-mono">
-                  <div className="flex items-center gap-2">✓ Guaranteed 24hr Turnaround</div>
-                  <div className="flex items-center gap-2">✓ New Scenario Builds on Demand</div>
-                  <div className="flex items-center gap-2">✓ Monthly Team Optimization Review</div>
-                  <div className="flex items-center gap-2">✓ Slack Channel Access</div>
-                </div>
-              </div>
-              <button
-                onClick={onOpenBooking}
-                className="w-full py-3 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all cursor-pointer"
-              >
                 Book a call
               </button>
             </div>
+          </div>
+
+          <div className="mt-6 p-5 rounded-2xl bg-black/5 border border-black/10 text-xs sm:text-sm text-[#16201B]/70 text-center">
+            Need more than one tool, or an ongoing retainer? Every custom package is scoped and priced after we talk through what you actually need.
           </div>
         </div>
 
@@ -355,7 +389,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
           <div>
             <span className="text-xs font-mono text-[#16201B]/40 uppercase">NEXT SECTION</span>
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
-              The 4-Week Engineering Sprint Methodology
+              The 7-Day Engineering Sprint Methodology
             </h4>
             <p className="text-xs font-mono text-[#04703D] mt-1">
               Audit, Blueprint, and Automation Build

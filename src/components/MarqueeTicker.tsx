@@ -14,7 +14,7 @@ export const MarqueeTicker: React.FC<MarqueeTickerProps> = ({
     'CLICKUP OPERATIONS',
     'ZERO TEMPLATE DEBT',
     'CUSTOM CRM PERMISSIONS',
-    '4-WEEK SPRINT DELIVERY',
+    '7-DAY SPRINT DELIVERY',
     '1,000+ HOURS RECLAIMED',
     'NO STICKY NOTES',
     '10X CAPACITY SCALING',
