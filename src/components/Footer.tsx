@@ -44,7 +44,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="inline-flex items-center gap-3 px-8 py-5 rounded-2xl bg-[#D4AF37] text-[#111815] font-mono font-bold text-sm uppercase tracking-wider hover:bg-[#E5C358] transition-all self-start lg:self-auto cursor-pointer shadow-2xl group"
+              className="inline-flex items-center gap-3 px-8 py-5 rounded-2xl bg-[#1C3A5E] text-white font-mono font-bold text-sm uppercase tracking-wider hover:bg-[#2A4D7A] transition-all self-start lg:self-auto cursor-pointer shadow-2xl group"
             >
               <Calendar className="w-5 h-5" />
               <span>Book a call</span>
@@ -59,11 +59,11 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               onClick={() => handlePageClick('home')}
               className="flex items-center gap-3 text-left cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#059C54] text-[#D4AF37] flex items-center justify-center font-serif text-xl font-bold border border-[#D4AF37]/40 shadow-sm group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-[#059C54] text-[#1C3A5E] flex items-center justify-center font-serif text-xl font-bold border border-[#1C3A5E]/40 shadow-sm group-hover:scale-105 transition-transform">
                 O
               </div>
               <div>
-                <span className="block font-serif text-xl font-bold tracking-tight text-[#16201B] group-hover:text-[#D4AF37] transition-colors">
+                <span className="block font-serif text-xl font-bold tracking-tight text-[#16201B] group-hover:text-[#1C3A5E] transition-colors">
                   Owens Oparaku
                 </span>
                 <span className="block text-[11px] font-mono text-[#04703D] uppercase tracking-widest">
@@ -82,7 +82,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#1C3A5E] hover:bg-black/10 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#1C3A5E] hover:bg-black/10 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -100,14 +100,14 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#1C3A5E] hover:bg-black/10 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
                 href={`mailto:${BRAND_INFO.email}`}
-                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors"
+                className="p-2.5 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#1C3A5E] hover:bg-black/10 transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-4 h-4" />
@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
                 href={BRAND_INFO.notionSite}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-2 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#D4AF37] hover:bg-black/10 transition-colors text-xs font-mono flex items-center gap-1.5"
+                className="px-3 py-2 rounded-xl bg-black/5 border border-black/10 text-[#16201B] hover:text-[#1C3A5E] hover:bg-black/10 transition-colors text-xs font-mono flex items-center gap-1.5"
                 title="Notion Site Profile"
               >
                 <span className="font-bold">Notion Site</span>
@@ -135,7 +135,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
             <span className="text-[#16201B]/40">Notion, ClickUp, Airtable & Make Certified</span>
             <button
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#D4AF37] border border-black/10 transition-colors flex items-center gap-1 cursor-pointer"
+              className="p-2.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#1C3A5E] border border-black/10 transition-colors flex items-center gap-1 cursor-pointer"
               aria-label="Back to top"
             >
               <ArrowUp className="w-4 h-4" />

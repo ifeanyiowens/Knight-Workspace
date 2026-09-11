@@ -24,8 +24,8 @@ export const CertificationsSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#D4AF37] text-xs font-mono uppercase tracking-widest mb-3">
-              <Award className="w-3.5 h-3.5 text-[#D4AF37]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
+              <Award className="w-3.5 h-3.5 text-[#1C3A5E]" />
               <span>Verified Technical Mastery</span>
             </div>
             
@@ -49,7 +49,7 @@ export const CertificationsSection: React.FC = () => {
                 }}
                 className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                   selectedPlatform === p
-                    ? 'bg-[#D4AF37] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
                     : 'text-white/60 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -77,9 +77,9 @@ export const CertificationsSection: React.FC = () => {
         />
 
         {/* Why Certification Matters Callout */}
-        <div className="rounded-3xl bg-[#1B4332] text-white p-7 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6 border border-[#D4AF37]/30 shadow-2xl">
+        <div className="rounded-3xl bg-[#1B4332] text-white p-7 sm:p-9 flex flex-col md:flex-row items-center justify-between gap-6 border border-[#1C3A5E]/30 shadow-2xl">
           <div className="space-y-2 text-center md:text-left">
-            <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#D4AF37]">
+            <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#1C3A5E]">
               The Oparaku Engineering Standard
             </div>
             <h4 className="font-serif text-xl sm:text-2xl font-bold text-white">
@@ -90,7 +90,7 @@ export const CertificationsSection: React.FC = () => {
             </p>
           </div>
           
-          <div className="flex-shrink-0 flex items-center gap-2 bg-[#111815] px-5 py-3 rounded-xl border border-[#D4AF37]/30 text-xs font-mono font-bold text-[#D4AF37]">
+          <div className="flex-shrink-0 flex items-center gap-2 bg-[#111815] px-5 py-3 rounded-xl border border-[#1C3A5E]/30 text-xs font-mono font-bold text-[#1C3A5E]">
             <CheckCircle className="w-4 h-4" />
             <span>Zero Template Debt Guaranteed</span>
           </div>

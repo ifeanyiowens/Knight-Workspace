@@ -15,7 +15,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
   };
 
   return (
-    <div className="rounded-3xl bg-white border border-black/10 hover:border-[#D4AF37]/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl group">
+    <div className="rounded-3xl bg-white border border-black/10 hover:border-[#1C3A5E]/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl group">
       
       {/* 1. PRIMARY FOCUS: The Visual Certificate (Top Focus) */}
       <div 
@@ -23,7 +23,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         className="relative p-3 sm:p-4 bg-[#0A0F0D] cursor-pointer overflow-hidden border-b border-black/10 group-hover:bg-[#070B09] transition-colors"
       >
         {/* Hover zoom hint badge */}
-        <div className="absolute top-5 right-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-[#D4AF37] px-2.5 py-1 rounded-full text-[11px] font-mono flex items-center gap-1.5 shadow-lg border border-[#D4AF37]/40 backdrop-blur-sm">
+        <div className="absolute top-5 right-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-[#1C3A5E] px-2.5 py-1 rounded-full text-[11px] font-mono flex items-center gap-1.5 shadow-lg border border-[#1C3A5E]/40 backdrop-blur-sm">
           <ZoomIn className="w-3.5 h-3.5" />
           <span>Click to Inspect</span>
         </div>
@@ -251,7 +251,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         <div>
           {/* Badge & Organization */}
           <div className="flex items-center justify-between mb-2.5">
-            <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#D4AF37]/15 text-[#D4AF37] border border-[#D4AF37]/30">
+            <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#1C3A5E]/15 text-[#1C3A5E] border border-[#1C3A5E]/30">
               {cert.tier}
             </span>
             <span className="text-xs font-mono text-[#16201B]/50">
@@ -260,7 +260,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
           </div>
 
           {/* Title */}
-          <h4 className="font-serif text-lg font-bold text-[#16201B] mb-2 leading-snug group-hover:text-[#D4AF37] transition-colors">
+          <h4 className="font-serif text-lg font-bold text-[#16201B] mb-2 leading-snug group-hover:text-[#1C3A5E] transition-colors">
             {cert.name}
           </h4>
 
@@ -274,7 +274,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         <div className="pt-3 border-t border-black/10 flex items-center justify-between gap-2">
           <button
             onClick={handleClick}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#D4AF37] hover:underline cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1C3A5E] hover:underline cursor-pointer"
           >
             <ZoomIn className="w-3.5 h-3.5" />
             <span>Inspect Full Certificate</span>
@@ -289,7 +289,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
               className="inline-flex items-center gap-1 text-[11px] font-mono text-[#16201B]/60 hover:text-[#16201B] transition-colors"
             >
               <span>Skilljar ID</span>
-              <ExternalLink className="w-3 h-3 text-[#D4AF37]" />
+              <ExternalLink className="w-3 h-3 text-[#1C3A5E]" />
             </a>
           ) : (
             <span className="inline-flex items-center gap-1 text-[11px] font-mono text-[#04703D]">

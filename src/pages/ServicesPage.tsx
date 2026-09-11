@@ -37,17 +37,17 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
   const getServiceIcon = (iconName: string) => {
     switch (iconName) {
       case 'FileCode2':
-        return <FileCode2 className="w-5 h-5 text-[#D4AF37]" />;
+        return <FileCode2 className="w-5 h-5 text-[#1C3A5E]" />;
       case 'Workflow':
-        return <Workflow className="w-5 h-5 text-[#D4AF37]" />;
+        return <Workflow className="w-5 h-5 text-[#1C3A5E]" />;
       case 'Database':
-        return <Database className="w-5 h-5 text-[#D4AF37]" />;
+        return <Database className="w-5 h-5 text-[#1C3A5E]" />;
       case 'Layers':
-        return <Layers className="w-5 h-5 text-[#D4AF37]" />;
+        return <Layers className="w-5 h-5 text-[#1C3A5E]" />;
       case 'Sparkles':
-        return <Sparkles className="w-5 h-5 text-[#D4AF37]" />;
+        return <Sparkles className="w-5 h-5 text-[#1C3A5E]" />;
       default:
-        return <Zap className="w-5 h-5 text-[#D4AF37]" />;
+        return <Zap className="w-5 h-5 text-[#1C3A5E]" />;
     }
   };
 
@@ -73,7 +73,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -119,7 +119,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               onClick={() => handleSelectService(idx)}
               className={`hover-lift rounded-3xl p-7 transition-all cursor-pointer border flex flex-col justify-between h-full ${
                 selectedServiceIdx === idx
-                  ? 'bg-[#059C54] border-[#D4AF37] shadow-2xl ring-1 ring-[#D4AF37]/50'
+                  ? 'bg-[#059C54] border-[#1C3A5E] shadow-2xl ring-1 ring-[#1C3A5E]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
@@ -159,7 +159,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {service.tools.map((t) => (
-                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#04703D]/10 text-[#04703D] border border-[#D4AF37]/20">
+                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#04703D]/10 text-[#04703D] border border-[#1C3A5E]/20">
                       {t}
                     </span>
                   ))}
@@ -193,7 +193,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               <div className="space-y-3">
                 {selectedService.deliverables.map((del, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-3 text-xs font-mono text-[#16201B]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#D4AF37] flex items-center justify-center text-[10px] font-bold flex-shrink-0">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#1C3A5E] flex items-center justify-center text-[10px] font-bold flex-shrink-0">
                       ✓
                     </span>
                     <span>{del}</span>
@@ -216,7 +216,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {selectedService.tools.map((t) => (
-                    <span key={t} className="px-3 py-1 rounded-lg bg-black/5 text-[#D4AF37] font-mono text-xs border border-black/10">
+                    <span key={t} className="px-3 py-1 rounded-lg bg-black/5 text-[#1C3A5E] font-mono text-xs border border-black/10">
                       {t}
                     </span>
                   ))}
@@ -231,7 +231,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer shadow-lg"
+              className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer shadow-lg"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -342,8 +342,8 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
             </div>
 
             {/* Tier 4: Standard Build */}
-            <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#D4AF37] shadow-2xl flex flex-col justify-between relative hover-lift h-full">
-              <div className="absolute -top-3 right-6 bg-[#D4AF37] text-[#111815] text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
+            <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#1C3A5E] shadow-2xl flex flex-col justify-between relative hover-lift h-full">
+              <div className="absolute -top-3 right-6 bg-[#1C3A5E] text-white text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
                 FLAGSHIP
               </div>
               <div>
@@ -369,7 +369,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               </div>
               <button
                 onClick={onOpenBooking}
-                className="w-full py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all cursor-pointer shadow-lg"
+                className="w-full py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all cursor-pointer shadow-lg"
               >
                 Book a call
               </button>
@@ -398,7 +398,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               sound.playClick();
               onNavigate('process');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Process</span>
           </button>

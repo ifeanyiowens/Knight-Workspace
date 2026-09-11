@@ -60,7 +60,7 @@ export const ScrollProgress: React.FC = () => {
       {/* Top Thin Progress Bar */}
       <div className="fixed top-0 left-0 right-0 h-[2.5px] bg-black/5 z-50 pointer-events-none">
         <div
-          className="h-full bg-gradient-to-r from-[#059C54] via-[#D4AF37] to-[#E5C358] transition-all duration-75"
+          className="h-full bg-gradient-to-r from-[#059C54] via-[#1C3A5E] to-[#2A4D7A] transition-all duration-75"
           style={{ width: `${scrollPercent}%` }}
         />
       </div>
@@ -70,7 +70,7 @@ export const ScrollProgress: React.FC = () => {
         
         {/* Active Section Indicator */}
         <span className="font-mono text-[10px] text-[#16201B]/50 border-r border-black/10 pr-2.5 uppercase tracking-wider">
-          <span className="text-[#D4AF37] font-bold">{activeSection}</span>
+          <span className="text-[#1C3A5E] font-bold">{activeSection}</span>
         </span>
 
         {/* Tactile Audio Mode Toggle */}
@@ -78,7 +78,7 @@ export const ScrollProgress: React.FC = () => {
           onClick={handleAudioToggle}
           className={`flex items-center gap-1 text-[10px] font-mono px-2 py-1 rounded-lg transition-colors cursor-pointer ${
             isAudioActive
-              ? 'bg-[#D4AF37] text-[#111815] font-bold'
+              ? 'bg-[#1C3A5E] text-[#111815] font-bold'
               : 'text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/5'
           }`}
           title={isAudioActive ? 'Mute tactile clicks' : 'Enable tactile audio effects'}
@@ -92,7 +92,7 @@ export const ScrollProgress: React.FC = () => {
         {scrollPercent > 20 && (
           <button
             onClick={scrollToTop}
-            className="p-1 rounded-lg hover:bg-black/10 text-[#16201B]/60 hover:text-[#D4AF37] transition-colors cursor-pointer"
+            className="p-1 rounded-lg hover:bg-black/10 text-[#16201B]/60 hover:text-[#1C3A5E] transition-colors cursor-pointer"
             title="Scroll to top"
             aria-label="Back to top"
           >

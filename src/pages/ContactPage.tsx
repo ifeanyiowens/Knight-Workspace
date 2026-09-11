@@ -86,7 +86,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
-        <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-[#D4AF37]/15 rounded-full blur-[140px] pointer-events-none -z-10" />
+        <div className="absolute top-0 right-1/3 w-[500px] h-[500px] bg-[#1C3A5E]/15 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
@@ -103,7 +103,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -112,7 +112,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               href={`mailto:${BRAND_INFO.email}`}
               className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
-              <Mail className="w-4 h-4 text-[#D4AF37]" />
+              <Mail className="w-4 h-4 text-[#1C3A5E]" />
               <span>Direct Email</span>
             </a>
           </div>
@@ -163,7 +163,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                   sound.playTrigger();
                   onOpenBooking();
                 }}
-                className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+                className="w-full py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book a call</span>
@@ -189,7 +189,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               </p>
 
               {formSubmitted ? (
-                <div className="p-8 rounded-2xl bg-[#059C54] border border-[#D4AF37] text-center space-y-4">
+                <div className="p-8 rounded-2xl bg-[#059C54] border border-[#1C3A5E] text-center space-y-4">
                   <CheckCircle2 className="w-12 h-12 text-[#04703D] mx-auto" />
                   <h4 className="font-serif text-2xl font-bold text-[#16201B]">
                     Brief Received Successfully!
@@ -215,7 +215,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                         value={formData.name}
                         onChange={e => setFormData({ ...formData, name: e.target.value })}
                         placeholder="e.g. Marcus Vance"
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#1C3A5E] focus:outline-none"
                       />
                     </div>
                     <div>
@@ -226,7 +226,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                         value={formData.email}
                         onChange={e => setFormData({ ...formData, email: e.target.value })}
                         placeholder="marcus@agency.com"
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#1C3A5E] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -239,7 +239,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                         value={formData.company}
                         onChange={e => setFormData({ ...formData, company: e.target.value })}
                         placeholder="Vance Media Group"
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#1C3A5E] focus:outline-none"
                       />
                     </div>
                     <div>
@@ -247,7 +247,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                       <select
                         value={formData.teamSize}
                         onChange={e => setFormData({ ...formData, teamSize: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] focus:border-[#D4AF37] focus:outline-none"
+                        className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] focus:border-[#1C3A5E] focus:outline-none"
                       >
                         <option value="1-5">1 - 5 Team Members</option>
                         <option value="6-15">6 - 15 Team Members</option>
@@ -267,7 +267,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                           onClick={() => handleStackToggle(tool)}
                           className={`px-3 py-1.5 rounded-lg border text-[11px] transition-all cursor-pointer ${
                             formData.stack.includes(tool)
-                              ? 'bg-[#059C54] text-[#D4AF37] border-[#D4AF37]'
+                              ? 'bg-[#059C54] text-[#1C3A5E] border-[#1C3A5E]'
                               : 'bg-black/5 text-[#16201B]/60 border-black/10 hover:border-black/20'
                           }`}
                         >
@@ -285,7 +285,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                       value={formData.bottleneck}
                       onChange={e => setFormData({ ...formData, bottleneck: e.target.value })}
                       placeholder="e.g. Lead intake is lost between WhatsApp and spreadsheets, and clients constantly ask where their deliverables are."
-                      className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#D4AF37] focus:outline-none"
+                      className="w-full px-4 py-3 rounded-xl bg-white border border-black/10 text-[#16201B] placeholder-white/30 focus:border-[#1C3A5E] focus:outline-none"
                     />
                   </div>
 
@@ -298,7 +298,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-bold text-xs uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full py-4 rounded-xl bg-[#1C3A5E] text-white font-bold text-xs uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <Send className="w-4 h-4" />
                     <span>{isSubmitting ? 'Sending...' : 'Submit System Brief'}</span>
@@ -335,11 +335,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               >
                 <button
                   onClick={() => toggleFaq(idx)}
-                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-lg font-bold text-[#16201B] hover:text-[#D4AF37] transition-colors cursor-pointer"
+                  className="w-full p-5 text-left flex items-center justify-between gap-4 font-serif text-lg font-bold text-[#16201B] hover:text-[#1C3A5E] transition-colors cursor-pointer"
                 >
                   <span>{faq.q}</span>
                   {openFaqIdx === idx ? (
-                    <ChevronUp className="w-5 h-5 text-[#D4AF37] flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-[#1C3A5E] flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-[#16201B]/40 flex-shrink-0" />
                   )}
@@ -362,7 +362,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
             <h4 className="font-serif text-2xl font-bold text-[#16201B]">
               Back to Overview & Architecture
             </h4>
-            <p className="text-xs font-mono text-[#D4AF37] mt-1">
+            <p className="text-xs font-mono text-[#1C3A5E] mt-1">
               Hero, verified metrics, and real client results
             </p>
           </div>
@@ -372,7 +372,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
               sound.playClick();
               onNavigate('home');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Return to Home</span>
           </button>

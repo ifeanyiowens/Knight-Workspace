@@ -7,13 +7,13 @@ export const StatsBar: React.FC = () => {
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'Clock':
-        return <Clock className="w-4 h-4 text-[#D4AF37]" />;
+        return <Clock className="w-4 h-4 text-[#1C3A5E]" />;
       case 'CheckCircle2':
-        return <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />;
+        return <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />;
       case 'TrendingUp':
-        return <TrendingUp className="w-4 h-4 text-[#D4AF37]" />;
+        return <TrendingUp className="w-4 h-4 text-[#1C3A5E]" />;
       default:
-        return <Sparkles className="w-4 h-4 text-[#D4AF37]" />;
+        return <Sparkles className="w-4 h-4 text-[#1C3A5E]" />;
     }
   };
 
@@ -36,10 +36,10 @@ export const StatsBar: React.FC = () => {
           {STATS.map((stat, idx) => (
             <div
               key={stat.id}
-              className="rounded-2xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#D4AF37]/50 transition-all group relative overflow-hidden"
+              className="rounded-2xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#1C3A5E]/50 transition-all group relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-6">
-                <span className="font-mono text-xs text-[#04703D] font-bold px-2.5 py-1 rounded-md bg-[#04703D]/10 border border-[#D4AF37]/20">
+                <span className="font-mono text-xs text-[#04703D] font-bold px-2.5 py-1 rounded-md bg-[#04703D]/10 border border-[#1C3A5E]/20">
                   METRIC 0{idx + 1}
                 </span>
                 <span className="p-2 rounded-lg bg-[#059C54]/50 border border-black/10">
@@ -48,7 +48,7 @@ export const StatsBar: React.FC = () => {
               </div>
 
               <div>
-                <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2 group-hover:text-[#D4AF37] transition-colors">
+                <div className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#16201B] tracking-tight mb-2 group-hover:text-[#1C3A5E] transition-colors">
                   <CountUp value={stat.value} duration={1500 + idx * 200} />
                 </div>
                 <div className="font-mono text-xs uppercase tracking-widest text-[#04703D] mb-2 font-bold">

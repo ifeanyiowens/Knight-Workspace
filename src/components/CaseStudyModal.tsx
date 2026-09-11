@@ -28,7 +28,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* Top Badges */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-[#04703D] border border-[#D4AF37]/30 uppercase tracking-wider">
+          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-[#04703D] border border-[#1C3A5E]/30 uppercase tracking-wider">
             {study.badge}
           </span>
           <span className="px-3 py-1 rounded-full text-xs font-mono text-[#16201B]/80 bg-black/5 border border-black/10">
@@ -65,11 +65,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
         {/* Key Stat */}
         <div className="mb-6">
           {study.stats && (
-            <div className="p-4 rounded-2xl bg-white border border-[#D4AF37]/30 flex items-center justify-between">
+            <div className="p-4 rounded-2xl bg-white border border-[#1C3A5E]/30 flex items-center justify-between">
               <span className="text-xs font-mono uppercase tracking-wider text-[#16201B]/60">
                 {study.stats.label}
               </span>
-              <span className="font-serif text-lg sm:text-xl font-bold text-[#D4AF37]">
+              <span className="font-serif text-lg sm:text-xl font-bold text-[#1C3A5E]">
                 {study.stats.value}
               </span>
             </div>
@@ -88,9 +88,9 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
             </p>
           </div>
 
-          <div className="bg-white p-5 rounded-2xl border border-[#D4AF37]/30">
-            <div className="flex items-center gap-2 text-[#D4AF37] text-xs font-mono font-bold uppercase tracking-wider mb-2">
-              <Database className="w-4 h-4 text-[#D4AF37]" />
+          <div className="bg-white p-5 rounded-2xl border border-[#1C3A5E]/30">
+            <div className="flex items-center gap-2 text-[#1C3A5E] text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              <Database className="w-4 h-4 text-[#1C3A5E]" />
               <span>The Custom Oparaku Architecture</span>
             </div>
             <p className="text-xs sm:text-sm text-[#16201B]/90 leading-relaxed mb-4 font-sans">
@@ -103,14 +103,14 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               </span>
               {study.highlights.map((h, i) => (
                 <div key={i} className="flex items-start gap-2 text-xs text-[#16201B]/70">
-                  <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-4 h-4 text-[#1C3A5E] flex-shrink-0 mt-0.5" />
                   <span>{h}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-[#059C54] text-[#16201B] p-5 rounded-2xl border border-[#D4AF37]/40 shadow-lg">
+          <div className="bg-[#059C54] text-[#16201B] p-5 rounded-2xl border border-[#1C3A5E]/40 shadow-lg">
             <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#04703D] mb-1">
               Measurable Operational Result
             </div>
@@ -144,7 +144,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               onClose();
               onOpenBooking();
             }}
-            className="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-[#D4AF37] text-[#111815] text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+            className="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-[#1C3A5E] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
           >
             <Calendar className="w-4 h-4" />
             <span>Book a Call to Build Similar Architecture</span>
@@ -154,7 +154,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               href={study.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#D4AF37]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
+              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#1C3A5E]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
             >
               <span>Open Link</span>
             </a>

@@ -80,7 +80,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-black/5 border border-black/10 font-mono text-xs">
             <div>
               <span className="text-[#16201B]/40 block text-[10px] uppercase">DEPLOYMENTS</span>
-              <span className="text-lg font-bold text-[#D4AF37]">Master OS</span>
+              <span className="text-lg font-bold text-[#1C3A5E]">Master OS</span>
             </div>
             <div>
               <span className="text-[#16201B]/40 block text-[10px] uppercase">HOURS SAVED</span>
@@ -92,7 +92,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
             </div>
             <div>
               <span className="text-[#16201B]/40 block text-[10px] uppercase">CLIENT RATING</span>
-              <span className="text-lg font-bold text-[#D4AF37]">5.0 ★ Top Rated</span>
+              <span className="text-lg font-bold text-[#1C3A5E]">5.0 ★ Top Rated</span>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         {/* Interactive Filter Pills */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 mb-10 border-b border-black/10">
           <div className="flex items-center gap-2 text-xs font-mono text-[#16201B]/60">
-            <SlidersHorizontal className="w-4 h-4 text-[#D4AF37]" />
+            <SlidersHorizontal className="w-4 h-4 text-[#1C3A5E]" />
             <span>FILTER BY ECOSYSTEM:</span>
           </div>
 
@@ -118,7 +118,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleFilterClick(f.value as any)}
                 className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                   selectedFilter === f.value
-                    ? 'bg-[#D4AF37] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
                     : 'bg-black/5 text-[#16201B]/70 hover:text-[#16201B] hover:bg-black/10 border border-black/10'
                 }`}
               >
@@ -136,13 +136,13 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
               maxTilt={4}
               glare={true}
               cursorText="EXPLORE"
-              className="rounded-3xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#D4AF37]/50 transition-all shadow-xl group"
+              className="rounded-3xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#1C3A5E]/50 transition-all shadow-xl group"
             >
               <div>
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#D4AF37]/10 px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#1C3A5E]/10 px-2.5 py-0.5 rounded-full border border-[#1C3A5E]/30">
                       {study.badge}
                     </span>
                   </div>
@@ -165,7 +165,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 )}
 
                 {/* Bold, Commanding System Title */}
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] group-hover:text-[#D4AF37] transition-colors mb-2 leading-tight">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] group-hover:text-[#1C3A5E] transition-colors mb-2 leading-tight">
                   {study.title}
                 </h3>
                 
@@ -206,7 +206,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleStudyOpen(study)}
-                    className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-[#16201B] hover:bg-[#D4AF37] hover:text-[#111815] transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
+                    className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-white hover:bg-[#1C3A5E] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
                   >
                     <span>Inspect Architecture</span>
                   </button>
@@ -220,7 +220,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                         e.stopPropagation();
                         sound.playClick();
                       }}
-                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B]/80 hover:text-[#D4AF37] border border-black/10 hover:border-[#D4AF37]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
+                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B]/80 hover:text-[#1C3A5E] border border-black/10 hover:border-[#1C3A5E]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
                       title={study.linkText || 'Open System Link'}
                     >
                       <ExternalLink className="w-4 h-4" />
@@ -250,7 +250,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
               sound.playClick();
               onNavigate('services');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Services</span>
           </button>

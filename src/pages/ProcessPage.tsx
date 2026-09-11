@@ -76,7 +76,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-7 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -108,7 +108,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               onClick={() => handleStepSelect(idx)}
               className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between relative overflow-hidden ${
                 activeStepIdx === idx
-                  ? 'bg-[#059C54] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/50'
+                  ? 'bg-[#059C54] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
@@ -164,7 +164,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               </p>
 
               <div className="p-4 rounded-xl bg-white border border-black/10 font-mono text-xs">
-                <span className="text-[#D4AF37] font-bold block mb-1">Key Deliverable:</span>
+                <span className="text-[#1C3A5E] font-bold block mb-1">Key Deliverable:</span>
                 <span className="text-[#16201B]">{activeStep.deliverable}</span>
               </div>
             </div>
@@ -177,7 +177,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               <div className="space-y-3">
                 {activeStep.activities.map((act, aIdx) => (
                   <div key={aIdx} className="flex items-start gap-3 text-xs sm:text-sm font-mono text-[#16201B]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#D4AF37]/30">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#1C3A5E]/30">
                       ✓
                     </span>
                     <span>{act}</span>
@@ -219,7 +219,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {guarantees.map((g, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-white border border-black/10">
-                <g.icon className="w-6 h-6 text-[#D4AF37] mb-3" />
+                <g.icon className="w-6 h-6 text-[#1C3A5E] mb-3" />
                 <h4 className="font-serif text-lg font-bold text-[#16201B] mb-2">
                   {g.title}
                 </h4>
@@ -248,7 +248,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               sound.playClick();
               onNavigate('about');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#D4AF37] text-[#111815] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#E5C358] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to About</span>
           </button>

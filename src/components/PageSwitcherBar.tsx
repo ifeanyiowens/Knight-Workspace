@@ -45,12 +45,12 @@ export const PageSwitcherBar: React.FC<PageSwitcherBarProps> = ({ currentPage, o
                 onClick={() => handleNavigate(page.id)}
                 className={`px-3 py-1.5 rounded-full transition-all flex items-center gap-1 cursor-pointer ${
                   isActive
-                    ? 'bg-[#D4AF37] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
                     : 'text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 text-[11px]'
                 }`}
                 title={`Jump to [${page.index}] ${page.title}`}
               >
-                <span className={`text-[10px] ${isActive ? 'text-[#111815]' : 'text-[#D4AF37]'}`}>
+                <span className={`text-[10px] ${isActive ? 'text-[#111815]' : 'text-[#1C3A5E]'}`}>
                   {page.index}
                 </span>
                 <span className="hidden sm:inline">{page.shortTitle}</span>

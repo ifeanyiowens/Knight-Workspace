@@ -54,7 +54,7 @@ export const StarRating: React.FC<StarRatingProps> = ({ rating, className = '', 
         <Star
           key={i}
           className={`${size} transition-all duration-200 ${
-            i < filled ? 'text-[#D4AF37] fill-[#D4AF37] scale-100' : 'text-black/15 fill-transparent scale-90'
+            i < filled ? 'text-[#1C3A5E] fill-[#1C3A5E] scale-100' : 'text-black/15 fill-transparent scale-90'
           }`}
         />
       ))}

@@ -19,7 +19,7 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
         {/* Header bar */}
         <div className="p-4 sm:px-6 bg-white text-[#16201B] flex items-center justify-between border-b border-black/10">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-[#059C54] text-[#D4AF37] border border-[#D4AF37]/30">
+            <div className="p-2 rounded-xl bg-[#059C54] text-[#1C3A5E] border border-[#1C3A5E]/30">
               <Calendar className="w-5 h-5" />
             </div>
             <div>
@@ -37,7 +37,7 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
               href={BRAND_INFO.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-[#D4AF37] hover:underline px-3 py-1.5 rounded-xl bg-black/5 border border-black/10"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-[#1C3A5E] hover:underline px-3 py-1.5 rounded-xl bg-black/5 border border-black/10"
             >
               <span>Open in new tab</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -65,14 +65,14 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
         {/* Modal footer */}
         <div className="p-3 sm:px-6 bg-white border-t border-black/10 flex flex-wrap items-center justify-between text-xs font-mono text-[#16201B]/60 gap-2">
           <div className="flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-[#D4AF37]" />
+            <ShieldCheck className="w-4 h-4 text-[#1C3A5E]" />
             <span>Direct diagnostic session to map bottlenecks and recommend architecture.</span>
           </div>
           <a
             href={BRAND_INFO.bookingLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#D4AF37] font-semibold hover:underline"
+            className="text-[#1C3A5E] font-semibold hover:underline"
           >
             cal.com/owen-oparaku
           </a>

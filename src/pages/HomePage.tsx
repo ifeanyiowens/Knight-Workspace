@@ -73,13 +73,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleProblemSelect(idx)}
                 className={`hover-lift rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between h-full ${
                   selectedProblemIdx === idx
-                    ? 'bg-[#059C54] border-[#D4AF37] shadow-xl ring-1 ring-[#D4AF37]/40'
+                    ? 'bg-[#059C54] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/40'
                     : 'bg-white border-black/10 hover:border-black/20'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold text-[#D4AF37]">
+                    <span className="text-xs font-bold text-[#1C3A5E]">
                       0{idx + 1}
                     </span>
                     <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/5 text-[#16201B]/80">
@@ -94,7 +94,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-black/10 text-xs text-[#D4AF37] font-semibold flex items-center gap-1.5">
+                <div className="pt-3 border-t border-black/10 text-xs text-[#1C3A5E] font-semibold flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                   <span>{problem.solution}</span>
                 </div>
@@ -154,7 +154,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   sound.playTrigger();
                   onOpenBooking();
                 }}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#D4AF37] text-[#111815] font-bold text-sm font-mono uppercase tracking-wider hover:bg-[#E5C358] transition-all shadow-2xl flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#1C3A5E] text-white font-bold text-sm font-mono uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-2xl flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Call with Owens</span>

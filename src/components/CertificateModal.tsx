@@ -25,12 +25,12 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
         {/* Header Bar */}
         <div className="flex items-center justify-between p-5 border-b border-black/10 bg-white">
           <div className="flex items-center gap-2.5">
-            <Award className="w-5 h-5 text-[#D4AF37]" />
+            <Award className="w-5 h-5 text-[#1C3A5E]" />
             <div>
               <h3 className="font-serif text-base sm:text-lg font-bold text-[#16201B] leading-tight">
                 {cert.name}
               </h3>
-              <p className="text-xs font-mono text-[#D4AF37]">
+              <p className="text-xs font-mono text-[#1C3A5E]">
                 {cert.organization} • {cert.tier}
               </p>
             </div>
@@ -283,7 +283,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                   href={cert.verificationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-[#D4AF37] text-[#111815] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#E5C358] transition-colors shadow-md"
+                  className="w-full py-3 px-4 rounded-xl bg-[#1C3A5E] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#2A4D7A] transition-colors shadow-md"
                 >
                   <span>Verify on Skilljar Online Registry</span>
                 </a>

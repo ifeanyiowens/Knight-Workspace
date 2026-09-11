@@ -56,7 +56,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                 onClick={handleBookClick}
                 id="hero-book-call-cta"
                 data-cursor-text="BOOK"
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-[#D4AF37] text-[#16201B] font-bold text-sm uppercase tracking-wider hover:bg-[#C29B26] transition-all shadow-lg group cursor-pointer"
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-[#1C3A5E] text-white font-bold text-sm uppercase tracking-wider hover:bg-[#152E4A] transition-all shadow-lg group cursor-pointer"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book a call</span>
@@ -73,19 +73,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             <div className="pt-2 flex flex-wrap items-center gap-y-2.5 gap-x-6 text-xs text-[#16201B]/70">
               <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />
                 Notion Academy certified
               </span>
               <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />
                 ClickUp certified admin
               </span>
               <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />
                 Airtable certified
               </span>
               <span className="flex items-center gap-1.5 font-medium">
-                <CheckCircle2 className="w-4 h-4 text-[#D4AF37]" />
+                <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />
                 Make.com automation expert
               </span>
             </div>

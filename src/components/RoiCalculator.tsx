@@ -26,7 +26,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
-            <Calculator className="w-3.5 h-3.5 text-[#D4AF37]" />
+            <Calculator className="w-3.5 h-3.5 text-[#1C3A5E]" />
             <span>Interactive Operational Audit</span>
           </div>
           
@@ -72,7 +72,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="1"
                   value={teamSize}
                   onChange={(e) => setTeamSize(Number(e.target.value))}
-                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#1C3A5E]"
                 />
                 <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>01 (Solo)</span>
@@ -98,7 +98,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="1"
                   value={hoursPerPersonPerWeek}
                   onChange={(e) => setHoursPerPersonPerWeek(Number(e.target.value))}
-                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#1C3A5E]"
                 />
                 <p className="text-xs text-[#16201B]/50 font-sans">
                   Spent searching files, asking for updates, updating spreadsheets, and retyping client info.
@@ -122,7 +122,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                   step="5"
                   value={hourlyRate}
                   onChange={(e) => setHourlyRate(Number(e.target.value))}
-                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#D4AF37]"
+                  className="w-full h-2 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#1C3A5E]"
                 />
                 <div className="flex justify-between text-[10px] font-mono text-[#16201B]/40">
                   <span>$15/hr</span>
@@ -147,7 +147,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                 </div>
 
                 {/* Primary Metric Output */}
-                <div className="mb-6 p-6 rounded-2xl bg-[#059C54] border border-[#D4AF37]/40 shadow-xl">
+                <div className="mb-6 p-6 rounded-2xl bg-[#059C54] border border-[#1C3A5E]/40 shadow-xl">
                   <span className="text-xs font-mono uppercase tracking-wider text-[#16201B]/80 block mb-1">
                     Hours Reclaimed Annually
                   </span>
@@ -178,15 +178,15 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
                 {/* Micro guarantees */}
                 <div className="space-y-2 mb-6">
                   <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
-                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#1C3A5E] flex-shrink-0" />
                     <span>Eliminate manual data handoffs between tools</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
-                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#1C3A5E] flex-shrink-0" />
                     <span>Free founder from being the operational bottleneck</span>
                   </div>
                   <div className="flex items-center gap-2 text-xs text-[#16201B]/80 font-mono">
-                    <CheckCircle2 className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#1C3A5E] flex-shrink-0" />
                     <span>Certified architecture tailored to your workflows</span>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenBooking }) =
               <button
                 onClick={onOpenBooking}
                 id="calc-claim-hours-cta"
-                className="w-full py-4 px-6 rounded-xl bg-[#D4AF37] text-[#111815] hover:bg-[#E5C358] font-mono font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                className="w-full py-4 px-6 rounded-xl bg-[#1C3A5E] text-white hover:bg-[#2A4D7A] font-mono font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
               >
                 <span>Book Call to Reclaim {annualHoursReclaimed.toLocaleString()} Hours</span>
               </button>

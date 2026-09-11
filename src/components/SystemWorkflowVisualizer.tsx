@@ -73,7 +73,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
           className={`inline-flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shadow-lg ${
             isRunning
               ? 'bg-black/10 text-[#16201B]/40 cursor-not-allowed'
-              : 'bg-[#D4AF37] text-[#111815] hover:bg-[#E5C358]'
+              : 'bg-[#1C3A5E] text-[#111815] hover:bg-[#2A4D7A]'
           }`}
         >
           {isRunning ? (
@@ -96,7 +96,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 1: Intake Form */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 0
-            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
@@ -110,12 +110,12 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 2: Make.com Router */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 1
-            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">02 Router</span>
-            <Zap className={`w-3.5 h-3.5 ${activeStep >= 1 ? 'text-[#D4AF37]' : 'text-[#16201B]/20'}`} />
+            <Zap className={`w-3.5 h-3.5 ${activeStep >= 1 ? 'text-[#1C3A5E]' : 'text-[#16201B]/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Make.com Logic</div>
           <p className="text-[11px] text-[#16201B]/60 font-mono">Filters by deal size & assigns rep</p>
@@ -124,12 +124,12 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 3: Notion Database */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 2
-            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">03 Database</span>
-            <Database className={`w-3.5 h-3.5 ${activeStep >= 2 ? 'text-[#D4AF37]' : 'text-[#16201B]/20'}`} />
+            <Database className={`w-3.5 h-3.5 ${activeStep >= 2 ? 'text-[#1C3A5E]' : 'text-[#16201B]/20'}`} />
           </div>
           <div className="font-bold text-[#16201B] text-sm mb-1">Notion CRM Sync</div>
           <p className="text-[11px] text-[#16201B]/60 font-mono">Creates scoped deal card & rollups</p>
@@ -138,7 +138,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 4: Instant Action */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 3
-            ? 'bg-[#059C54] border-[#D4AF37] shadow-lg shadow-[#D4AF37]/10'
+            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
@@ -154,13 +154,13 @@ export const SystemWorkflowVisualizer: React.FC = () => {
       {/* Terminal Real-Time Log Output */}
       <div className="rounded-2xl bg-[#16201B] border border-black/10 p-4 font-mono text-xs text-[#EDEDEA]">
         <div className="flex items-center gap-2 pb-2 mb-2 border-b border-black/10 text-[#16201B]/40 text-[10px]">
-          <Terminal className="w-3.5 h-3.5 text-[#D4AF37]" />
+          <Terminal className="w-3.5 h-3.5 text-[#1C3A5E]" />
           <span>REAL-TIME AUDIT LOG</span>
         </div>
         <div className="space-y-1 max-h-28 overflow-y-auto">
           {logs.map((log, index) => (
             <div key={index} className="flex items-start gap-2">
-              <span className="text-[#D4AF37] select-none">›</span>
+              <span className="text-[#1C3A5E] select-none">›</span>
               <span className={index === logs.length - 1 ? 'text-[#04703D] font-semibold' : 'text-[#16201B]/70'}>
                 {log}
               </span>

@@ -177,12 +177,12 @@ export const BeforeAfterSlider: React.FC = () => {
 
         {/* Slider Divider Handle */}
         <div
-          className="absolute top-0 bottom-0 w-1 bg-[#D4AF37] cursor-ew-resize z-30"
+          className="absolute top-0 bottom-0 w-1 bg-[#1C3A5E] cursor-ew-resize z-30"
           style={{ left: `${sliderPosition}%` }}
           onMouseDown={handleMouseDown}
           onTouchStart={handleMouseDown}
         >
-          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#D4AF37] text-[#16201B] shadow-lg flex items-center justify-center border-2 border-white">
+          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#1C3A5E] text-white shadow-lg flex items-center justify-center border-2 border-white">
             <ArrowLeftRight className="w-4 h-4" />
           </div>
         </div>

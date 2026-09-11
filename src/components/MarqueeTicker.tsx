@@ -31,10 +31,10 @@ export const MarqueeTicker: React.FC<MarqueeTickerProps> = ({
         <div className={`flex items-center gap-8 ${reverseClass}`}>
           {items.map((item, idx) => (
             <div key={idx} className="flex items-center gap-8">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#D4AF37] transition-colors">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#1C3A5E] transition-colors">
                 {item}
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]/60" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1C3A5E]/60" />
             </div>
           ))}
         </div>
@@ -43,10 +43,10 @@ export const MarqueeTicker: React.FC<MarqueeTickerProps> = ({
         <div className={`flex items-center gap-8 ${reverseClass}`} aria-hidden="true">
           {items.map((item, idx) => (
             <div key={`dup-${idx}`} className="flex items-center gap-8">
-              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#D4AF37] transition-colors">
+              <span className="font-mono text-xs uppercase tracking-widest text-[#16201B]/80 font-bold hover:text-[#1C3A5E] transition-colors">
                 {item}
               </span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37]/60" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1C3A5E]/60" />
             </div>
           ))}
         </div>
