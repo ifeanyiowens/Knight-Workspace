@@ -47,7 +47,7 @@ export const BeforeAfterSlider: React.FC = () => {
             Drag to compare
           </span>
         </div>
-        <span className="text-[11px] font-mono text-[#16201B]/50 hidden sm:inline">
+        <span className="text-[11px] font-mono text-[#0A0A0A]/50 hidden sm:inline">
           Drag the slider to see both sides
         </span>
       </div>
@@ -61,7 +61,7 @@ export const BeforeAfterSlider: React.FC = () => {
       >
         {/* AFTER LAYER (revealed from the right) */}
         <div
-          className="absolute inset-0 overflow-hidden bg-[#E3F5E9] p-6 sm:p-8 flex flex-col justify-between text-[#16201B]"
+          className="absolute inset-0 overflow-hidden bg-[#E3F5E9] p-6 sm:p-8 flex flex-col justify-between text-[#0A0A0A]"
           style={{ left: `${sliderPosition}%` }}
         >
           <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-[#04703D]/20">
@@ -79,7 +79,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 One home for everything
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 Every lead, project, contractor task, and invoice lives in one place and updates itself, no double entry.
               </p>
             </div>
@@ -88,7 +88,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 Work happens automatically
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 A form fills the CRM. A payment sends the invoice. A task shows up the moment it's needed, all day, every day.
               </p>
             </div>
@@ -97,7 +97,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 Nobody needs to ask you
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 Short videos and clear permissions mean your team gets unstuck on their own.
               </p>
             </div>
@@ -106,7 +106,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-[#04703D] font-bold uppercase mb-1">
                 You get your week back
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 20+ hours a week stop going to busywork, so they can go toward growing the business instead.
               </p>
             </div>
@@ -119,7 +119,7 @@ export const BeforeAfterSlider: React.FC = () => {
 
         {/* BEFORE LAYER (clipped left side) */}
         <div
-          className="absolute inset-0 bg-[#FBECEC] p-6 sm:p-8 flex flex-col justify-between text-[#16201B] overflow-hidden border-r border-red-300"
+          className="absolute inset-0 bg-[#FBECEC] p-6 sm:p-8 flex flex-col justify-between text-[#0A0A0A] overflow-hidden border-r border-red-300"
           style={{ width: `${sliderPosition}%` }}
         >
           <div className="min-w-[640px] flex items-center justify-between pb-3 border-b border-red-300">
@@ -137,7 +137,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-700 font-bold uppercase mb-1">
                 Customer info everywhere
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 Six different spreadsheets, WhatsApp threads, and email folders, none of them talking to each other.
               </p>
             </div>
@@ -146,7 +146,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-700 font-bold uppercase mb-1">
                 You're the bottleneck
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 The workflow only lives in your head, so the team keeps interrupting you for approvals and passwords.
               </p>
             </div>
@@ -155,7 +155,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-700 font-bold uppercase mb-1">
                 Leads go cold
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 New inquiries sit for days. Onboarding falls apart because there's no clear next step.
               </p>
             </div>
@@ -164,7 +164,7 @@ export const BeforeAfterSlider: React.FC = () => {
               <div className="text-xs font-mono text-red-700 font-bold uppercase mb-1">
                 Hours lost to retyping
               </div>
-              <p className="text-xs text-[#16201B]/75 leading-relaxed font-sans">
+              <p className="text-xs text-[#0A0A0A]/75 leading-relaxed font-sans">
                 The same customer record gets copied by hand into five different apps, and mistakes creep in every time.
               </p>
             </div>
@@ -177,12 +177,12 @@ export const BeforeAfterSlider: React.FC = () => {
 
         {/* Slider Divider Handle */}
         <div
-          className="absolute top-0 bottom-0 w-1 bg-[#1C3A5E] cursor-ew-resize z-30"
+          className="absolute top-0 bottom-0 w-1 bg-[#04703D] cursor-ew-resize z-30"
           style={{ left: `${sliderPosition}%` }}
           onMouseDown={handleMouseDown}
           onTouchStart={handleMouseDown}
         >
-          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#1C3A5E] text-white shadow-lg flex items-center justify-center border-2 border-white">
+          <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#04703D] text-white shadow-lg flex items-center justify-center border-2 border-white">
             <ArrowLeftRight className="w-4 h-4" />
           </div>
         </div>

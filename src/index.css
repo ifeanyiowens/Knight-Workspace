@@ -6,7 +6,7 @@
   --color-forest: #1B4332;
   --color-forest-dark: #122B20;
   --color-forest-light: #2D6A4F;
-  --color-gold: #1C3A5E;
+  --color-gold: #04703D;
   --color-gold-light: #E8CA66;
   --color-gold-dark: #B38F24;
   --color-canvas: #EDEDEA;
@@ -39,7 +39,7 @@
   border: 1px solid rgba(212, 175, 55, 0.3);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1C3A5E;
+  background: #04703D;
 }
 
 .hover-lift {

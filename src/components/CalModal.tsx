@@ -13,20 +13,20 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
       <div 
-        className="relative w-full max-w-4xl h-[90vh] bg-white rounded-3xl shadow-2xl border border-black/10 flex flex-col overflow-hidden text-[#16201B]"
+        className="relative w-full max-w-4xl h-[90vh] bg-white rounded-3xl shadow-2xl border border-black/10 flex flex-col overflow-hidden text-[#0A0A0A]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header bar */}
-        <div className="p-4 sm:px-6 bg-white text-[#16201B] flex items-center justify-between border-b border-black/10">
+        <div className="p-4 sm:px-6 bg-white text-[#0A0A0A] flex items-center justify-between border-b border-black/10">
           <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-[#059C54] text-[#1C3A5E] border border-[#1C3A5E]/30">
+            <div className="p-2 rounded-xl bg-[#059C54] text-[#04703D] border border-[#04703D]/30">
               <Calendar className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-serif font-bold text-lg text-[#16201B]">
+              <h3 className="font-serif font-bold text-lg text-[#0A0A0A]">
                 Book a Systems Discovery Call
               </h3>
-              <p className="text-xs font-mono text-[#16201B]/60">
+              <p className="text-xs font-mono text-[#0A0A0A]/60">
                 20-minute operational audit with Owens Oparaku
               </p>
             </div>
@@ -37,14 +37,14 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
               href={BRAND_INFO.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-[#1C3A5E] hover:underline px-3 py-1.5 rounded-xl bg-black/5 border border-black/10"
+              className="hidden sm:inline-flex items-center gap-1.5 text-xs font-mono text-[#04703D] hover:underline px-3 py-1.5 rounded-xl bg-black/5 border border-black/10"
             >
               <span>Open in new tab</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <button
               onClick={onClose}
-              className="p-2 rounded-full hover:bg-black/10 text-[#16201B] transition-colors cursor-pointer"
+              className="p-2 rounded-full hover:bg-black/10 text-[#0A0A0A] transition-colors cursor-pointer"
               aria-label="Close booking modal"
             >
               <X className="w-5 h-5" />
@@ -63,16 +63,16 @@ export const CalModal: React.FC<CalModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Modal footer */}
-        <div className="p-3 sm:px-6 bg-white border-t border-black/10 flex flex-wrap items-center justify-between text-xs font-mono text-[#16201B]/60 gap-2">
+        <div className="p-3 sm:px-6 bg-white border-t border-black/10 flex flex-wrap items-center justify-between text-xs font-mono text-[#0A0A0A]/60 gap-2">
           <div className="flex items-center gap-1.5">
-            <ShieldCheck className="w-4 h-4 text-[#1C3A5E]" />
+            <ShieldCheck className="w-4 h-4 text-[#04703D]" />
             <span>Direct diagnostic session to map bottlenecks and recommend architecture.</span>
           </div>
           <a
             href={BRAND_INFO.bookingLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#1C3A5E] font-semibold hover:underline"
+            className="text-[#04703D] font-semibold hover:underline"
           >
             cal.com/owen-oparaku
           </a>

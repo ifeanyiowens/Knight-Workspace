@@ -51,8 +51,8 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-              <Database className="w-3.5 h-3.5 text-[#1C3A5E]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+              <Database className="w-3.5 h-3.5 text-[#04703D]" />
               <span>Selected Works & Client Architectures</span>
             </div>
             
@@ -73,7 +73,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                 onClick={() => handleFilterClick(f.value as any)}
                 className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                   selectedFilter === f.value
-                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
                     : 'text-white/60 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -91,16 +91,16 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
               maxTilt={4}
               glare={true}
               cursorText="EXPLORE"
-              className="rounded-3xl bg-[#16201B] border border-white/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#1C3A5E]/50 transition-all shadow-xl group"
+              className="rounded-3xl bg-[#0A0A0A] border border-white/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#04703D]/50 transition-all shadow-xl group"
             >
               <div>
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between gap-2 pb-4 mb-4 border-b border-white/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#1C3A5E] px-2.5 py-1 rounded-md bg-black/60 border border-[#1C3A5E]/30">
+                    <span className="font-mono text-xs font-bold text-[#04703D] px-2.5 py-1 rounded-md bg-black/60 border border-[#04703D]/30">
                       [{String(idx + 1).padStart(2, '0')} / 06]
                     </span>
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#1C3A5E] bg-[#1C3A5E]/10 px-2.5 py-0.5 rounded-full border border-[#1C3A5E]/30">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#04703D]/10 px-2.5 py-0.5 rounded-full border border-[#04703D]/30">
                       {study.badge}
                     </span>
                   </div>
@@ -118,14 +118,14 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top transition-transform duration-500 group-hover/img:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#16201B] via-transparent to-transparent opacity-75 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-75 pointer-events-none" />
                     {study.link && (
                       <a
                         href={study.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="absolute top-2.5 right-2.5 px-2 py-1 rounded-lg bg-black/80 hover:bg-[#1C3A5E] text-white/90 hover:text-white transition-all border border-white/20 text-[10px] font-mono font-medium flex items-center gap-1 shadow-md"
+                        className="absolute top-2.5 right-2.5 px-2 py-1 rounded-lg bg-black/80 hover:bg-[#04703D] text-white/90 hover:text-white transition-all border border-white/20 text-[10px] font-mono font-medium flex items-center gap-1 shadow-md"
                         title="Open Live Notion Template / Workspace"
                       >
                         <span>Notion</span>
@@ -136,7 +136,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                 )}
 
                 {/* Title and Client */}
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white group-hover:text-[#1C3A5E] transition-colors mb-2 leading-tight">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white group-hover:text-[#04703D] transition-colors mb-2 leading-tight">
                   {study.title}
                 </h3>
                 
@@ -155,7 +155,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                 {/* The Outcome Highlight */}
                 {study.stats && (
                   <div className="text-xs text-white/80 leading-relaxed bg-[#141C18] p-3.5 rounded-xl border border-white/10 mb-5">
-                    <span className="font-mono text-[10px] font-bold text-[#1C3A5E] uppercase tracking-wider block mb-0.5">
+                    <span className="font-mono text-[10px] font-bold text-[#04703D] uppercase tracking-wider block mb-0.5">
                       Measurable Result:
                     </span>
                     <p className="text-white font-semibold text-sm">{study.stats.value} — <span className="text-white/70 font-normal">{study.stats.label}</span></p>
@@ -179,7 +179,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleStudyOpen(study)}
-                    className="flex-1 py-3.5 px-4 rounded-xl bg-white/5 text-white hover:bg-[#1C3A5E] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-white/10 shadow-sm group"
+                    className="flex-1 py-3.5 px-4 rounded-xl bg-white/5 text-white hover:bg-[#04703D] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-white/10 shadow-sm group"
                   >
                     <span>Inspect Architecture</span>
                     <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -194,7 +194,7 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onOpenBo
                         e.stopPropagation();
                         sound.playClick();
                       }}
-                      className="p-3.5 rounded-xl bg-white/5 hover:bg-[#1B4332] text-white/80 hover:text-[#1C3A5E] border border-white/10 hover:border-[#1C3A5E]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
+                      className="p-3.5 rounded-xl bg-white/5 hover:bg-[#1B4332] text-white/80 hover:text-[#04703D] border border-white/10 hover:border-[#04703D]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
                       title={study.linkText || 'Open System Link'}
                     >
                       <ExternalLink className="w-4 h-4" />

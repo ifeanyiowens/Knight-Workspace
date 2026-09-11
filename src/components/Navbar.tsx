@@ -43,11 +43,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="w-9 h-9 rounded-lg bg-[#059C54] text-[#16201B] flex items-center justify-center font-serif text-lg font-bold border border-[#04703D]/30 shadow-sm group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-lg bg-[#059C54] text-[#0A0A0A] flex items-center justify-center font-serif text-lg font-bold border border-[#04703D]/30 shadow-sm group-hover:scale-105 transition-transform">
               O
             </div>
             <div>
-              <span className="block font-serif text-base sm:text-lg font-bold tracking-tight text-[#16201B] leading-tight group-hover:text-[#04703D] transition-colors">
+              <span className="block font-serif text-base sm:text-lg font-bold tracking-tight text-[#0A0A0A] leading-tight group-hover:text-[#04703D] transition-colors">
                 Owens Oparaku
               </span>
               <span className="block text-[10px] font-mono font-medium text-[#04703D] tracking-widest uppercase">
@@ -66,8 +66,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                   onClick={() => handleNavClick(page.id)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all flex items-center gap-1.5 cursor-pointer ${
                     isActive
-                      ? 'bg-[#1C3A5E] text-[#16201B] font-bold shadow-sm'
-                      : 'text-[#16201B]/70 hover:text-[#16201B] hover:bg-black/5'
+                      ? 'bg-[#04703D] text-[#0A0A0A] font-bold shadow-sm'
+                      : 'text-[#0A0A0A]/70 hover:text-[#0A0A0A] hover:bg-black/5'
                   }`}
                 >
                   <span>{page.shortTitle}</span>
@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                 onOpenBooking();
               }}
               id="nav-book-call-btn"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1C3A5E] text-white text-xs font-bold font-mono uppercase tracking-wider hover:bg-[#152E4A] transition-all shadow-sm group cursor-pointer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#04703D] text-white text-xs font-bold font-mono uppercase tracking-wider hover:bg-[#035C39] transition-all shadow-sm group cursor-pointer"
             >
               <Calendar className="w-3.5 h-3.5" />
               <span>Book a call</span>
@@ -98,14 +98,14 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="sm:hidden px-3 py-1.5 rounded-full bg-[#1C3A5E] text-white text-[11px] font-bold font-mono uppercase flex items-center gap-1 cursor-pointer"
+              className="sm:hidden px-3 py-1.5 rounded-full bg-[#04703D] text-white text-[11px] font-bold font-mono uppercase flex items-center gap-1 cursor-pointer"
             >
               <Calendar className="w-3 h-3" />
               <span>Call</span>
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-[#16201B] hover:bg-black/5 focus:outline-hidden cursor-pointer"
+              className="p-2 rounded-lg text-[#0A0A0A] hover:bg-black/5 focus:outline-hidden cursor-pointer"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -127,8 +127,8 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                   onClick={() => handleNavClick(page.id)}
                   className={`px-3 py-2.5 text-xs rounded-lg flex items-center gap-2 text-left cursor-pointer transition-colors ${
                     isActive
-                      ? 'bg-[#1C3A5E] text-[#16201B] font-bold'
-                      : 'text-[#16201B]/80 hover:text-[#16201B] hover:bg-black/5'
+                      ? 'bg-[#04703D] text-[#0A0A0A] font-bold'
+                      : 'text-[#0A0A0A]/80 hover:text-[#0A0A0A] hover:bg-black/5'
                   }`}
                 >
                   <span>{page.shortTitle}</span>
@@ -144,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="w-full py-3 px-4 rounded-xl bg-[#1C3A5E] text-white font-bold text-xs uppercase font-mono tracking-wider text-center flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-3 px-4 rounded-xl bg-[#04703D] text-white font-bold text-xs uppercase font-mono tracking-wider text-center flex items-center justify-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -154,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
               href={BRAND_INFO.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2.5 px-4 rounded-xl border border-black/10 text-[#16201B] text-xs font-mono text-center flex items-center justify-center gap-2 hover:bg-black/5"
+              className="py-2.5 px-4 rounded-xl border border-black/10 text-[#0A0A0A] text-xs font-mono text-center flex items-center justify-center gap-2 hover:bg-black/5"
             >
               <Instagram className="w-3.5 h-3.5 text-[#04703D]" />
               <span>Follow {BRAND_INFO.instagramHandle}</span>

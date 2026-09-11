@@ -15,7 +15,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
   };
 
   return (
-    <div className="rounded-3xl bg-white border border-black/10 hover:border-[#1C3A5E]/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl group">
+    <div className="rounded-3xl bg-white border border-black/10 hover:border-[#04703D]/50 transition-all duration-300 overflow-hidden flex flex-col justify-between shadow-xl group">
       
       {/* 1. PRIMARY FOCUS: The Visual Certificate (Top Focus) */}
       <div 
@@ -23,7 +23,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         className="relative p-3 sm:p-4 bg-[#0A0F0D] cursor-pointer overflow-hidden border-b border-black/10 group-hover:bg-[#070B09] transition-colors"
       >
         {/* Hover zoom hint badge */}
-        <div className="absolute top-5 right-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-[#1C3A5E] px-2.5 py-1 rounded-full text-[11px] font-mono flex items-center gap-1.5 shadow-lg border border-[#1C3A5E]/40 backdrop-blur-sm">
+        <div className="absolute top-5 right-5 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white text-[#04703D] px-2.5 py-1 rounded-full text-[11px] font-mono flex items-center gap-1.5 shadow-lg border border-[#04703D]/40 backdrop-blur-sm">
           <ZoomIn className="w-3.5 h-3.5" />
           <span>Click to Inspect</span>
         </div>
@@ -56,7 +56,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
                   </div>
                   
                   {/* Gradient Badge Band */}
-                  <div className={`w-full py-0.5 px-2 text-[9px] sm:text-[10px] font-extrabold text-[#16201B] text-center rounded tracking-wider uppercase shadow ${
+                  <div className={`w-full py-0.5 px-2 text-[9px] sm:text-[10px] font-extrabold text-[#0A0A0A] text-center rounded tracking-wider uppercase shadow ${
                     cert.badgeType === 'admin'
                       ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500'
                       : cert.badgeType === 'intermediate'
@@ -67,7 +67,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
                   </div>
 
                   {/* ClickUp small logo mark */}
-                  <div className="text-[8px] font-bold text-[#16201B] mt-0.5 flex items-center gap-0.5">
+                  <div className="text-[8px] font-bold text-[#0A0A0A] mt-0.5 flex items-center gap-0.5">
                     <span className="text-pink-400">▲</span> ClickUp
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
             <div className="w-full h-full bg-[#F4EFFE] text-[#2D2250] p-4 sm:p-5 flex flex-col justify-between relative border-4 border-[#D8C7F8]">
               {/* Top Purple Badge */}
               <div className="flex items-start justify-between">
-                <div className="bg-[#482880] text-[#16201B] px-2.5 py-1 rounded-lg text-[9px] sm:text-[10px] font-bold flex items-center gap-1 shadow">
+                <div className="bg-[#482880] text-[#0A0A0A] px-2.5 py-1 rounded-lg text-[9px] sm:text-[10px] font-bold flex items-center gap-1 shadow">
                   <span>⬡</span>
                   <span>Certified Admin</span>
                 </div>
@@ -161,15 +161,15 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
 
                 {/* Notion Shield Badge */}
                 <div className="w-10 sm:w-12 border border-black rounded-b-xl overflow-hidden shadow-sm">
-                  <div className="bg-black text-[#16201B] text-[6px] sm:text-[7px] text-center py-0.5 font-sans font-bold leading-tight">
+                  <div className="bg-black text-[#0A0A0A] text-[6px] sm:text-[7px] text-center py-0.5 font-sans font-bold leading-tight">
                     Notion Academy
                   </div>
                   <div className={`p-1.5 flex items-center justify-center text-xs text-black font-bold ${
                     cert.badgeType === 'advanced' 
                       ? 'bg-[#F5C518]' 
                       : cert.badgeType === 'workflows' 
-                      ? 'bg-[#1E88E5] text-[#16201B]' 
-                      : 'bg-[#EA4335] text-[#16201B]'
+                      ? 'bg-[#1E88E5] text-[#0A0A0A]' 
+                      : 'bg-[#EA4335] text-[#0A0A0A]'
                   }`}>
                     {cert.badgeType === 'advanced' && '🛠️'}
                     {cert.badgeType === 'workflows' && '🔗'}
@@ -251,21 +251,21 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         <div>
           {/* Badge & Organization */}
           <div className="flex items-center justify-between mb-2.5">
-            <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#1C3A5E]/15 text-[#1C3A5E] border border-[#1C3A5E]/30">
+            <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#04703D]/15 text-[#04703D] border border-[#04703D]/30">
               {cert.tier}
             </span>
-            <span className="text-xs font-mono text-[#16201B]/50">
+            <span className="text-xs font-mono text-[#0A0A0A]/50">
               {cert.organization}
             </span>
           </div>
 
           {/* Title */}
-          <h4 className="font-serif text-lg font-bold text-[#16201B] mb-2 leading-snug group-hover:text-[#1C3A5E] transition-colors">
+          <h4 className="font-serif text-lg font-bold text-[#0A0A0A] mb-2 leading-snug group-hover:text-[#04703D] transition-colors">
             {cert.name}
           </h4>
 
           {/* Writeup Description */}
-          <p className="text-xs sm:text-sm text-[#16201B]/75 leading-relaxed mb-4 font-sans">
+          <p className="text-xs sm:text-sm text-[#0A0A0A]/75 leading-relaxed mb-4 font-sans">
             {cert.description}
           </p>
         </div>
@@ -274,7 +274,7 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
         <div className="pt-3 border-t border-black/10 flex items-center justify-between gap-2">
           <button
             onClick={handleClick}
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#1C3A5E] hover:underline cursor-pointer"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#04703D] hover:underline cursor-pointer"
           >
             <ZoomIn className="w-3.5 h-3.5" />
             <span>Inspect Full Certificate</span>
@@ -286,10 +286,10 @@ export const CertificateCard: React.FC<CertificateCardProps> = ({ cert, onInspec
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-1 text-[11px] font-mono text-[#16201B]/60 hover:text-[#16201B] transition-colors"
+              className="inline-flex items-center gap-1 text-[11px] font-mono text-[#0A0A0A]/60 hover:text-[#0A0A0A] transition-colors"
             >
               <span>Skilljar ID</span>
-              <ExternalLink className="w-3 h-3 text-[#1C3A5E]" />
+              <ExternalLink className="w-3 h-3 text-[#04703D]" />
             </a>
           ) : (
             <span className="inline-flex items-center gap-1 text-[11px] font-mono text-[#04703D]">

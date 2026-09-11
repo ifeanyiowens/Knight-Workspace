@@ -96,7 +96,7 @@ export const CustomCursor: React.FC = () => {
       {/* Precision Dot */}
       <div
         ref={dotRef}
-        className={`fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-[#1C3A5E] transition-opacity duration-150 ${
+        className={`fixed top-0 left-0 w-1.5 h-1.5 rounded-full bg-[#04703D] transition-opacity duration-150 ${
           isHovered && cursorText ? 'opacity-0' : 'opacity-100'
         }`}
       />
@@ -106,9 +106,9 @@ export const CustomCursor: React.FC = () => {
         ref={circleRef}
         className={`fixed top-0 left-0 rounded-full flex items-center justify-center transition-[width,height,background-color,border-color,opacity] duration-200 ease-out border ${
           cursorText
-            ? 'w-16 h-16 bg-[#1C3A5E] text-[#111815] font-mono text-[10px] font-bold border-transparent shadow-xl tracking-widest'
+            ? 'w-16 h-16 bg-[#04703D] text-[#111815] font-mono text-[10px] font-bold border-transparent shadow-xl tracking-widest'
             : isHovered
-            ? 'w-10 h-10 bg-[#1C3A5E]/15 border-[#1C3A5E]/80 backdrop-blur-[1px]'
+            ? 'w-10 h-10 bg-[#04703D]/15 border-[#04703D]/80 backdrop-blur-[1px]'
             : 'w-7 h-7 bg-transparent border-black/30'
         }`}
       >

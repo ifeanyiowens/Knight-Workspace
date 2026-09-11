@@ -14,13 +14,13 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
       <div 
-        className="relative w-full max-w-3xl max-h-[92vh] overflow-y-auto bg-white rounded-3xl shadow-2xl border border-black/10 p-6 sm:p-8 text-[#16201B]"
+        className="relative w-full max-w-3xl max-h-[92vh] overflow-y-auto bg-white rounded-3xl shadow-2xl border border-black/10 p-6 sm:p-8 text-[#0A0A0A]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-2.5 rounded-full bg-black/5 hover:bg-black/10 text-[#16201B]/80 transition-colors cursor-pointer border border-black/10 z-10"
+          className="absolute top-6 right-6 p-2.5 rounded-full bg-black/5 hover:bg-black/10 text-[#0A0A0A]/80 transition-colors cursor-pointer border border-black/10 z-10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -28,21 +28,21 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* Top Badges */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-[#04703D] border border-[#1C3A5E]/30 uppercase tracking-wider">
+          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-[#04703D] border border-[#04703D]/30 uppercase tracking-wider">
             {study.badge}
           </span>
-          <span className="px-3 py-1 rounded-full text-xs font-mono text-[#16201B]/80 bg-black/5 border border-black/10">
+          <span className="px-3 py-1 rounded-full text-xs font-mono text-[#0A0A0A]/80 bg-black/5 border border-black/10">
             {study.industry}
           </span>
           {study.location && (
-            <span className="px-3 py-1 rounded-full text-xs font-mono text-[#16201B]/60 bg-black/5">
+            <span className="px-3 py-1 rounded-full text-xs font-mono text-[#0A0A0A]/60 bg-black/5">
               📍 {study.location}
             </span>
           )}
         </div>
 
         {/* Header Title */}
-        <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#16201B] mb-1.5">
+        <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0A0A0A] mb-1.5">
           {study.title}
         </h3>
         <p className="text-xs font-mono text-[#04703D] uppercase tracking-widest mb-6">
@@ -65,11 +65,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
         {/* Key Stat */}
         <div className="mb-6">
           {study.stats && (
-            <div className="p-4 rounded-2xl bg-white border border-[#1C3A5E]/30 flex items-center justify-between">
-              <span className="text-xs font-mono uppercase tracking-wider text-[#16201B]/60">
+            <div className="p-4 rounded-2xl bg-white border border-[#04703D]/30 flex items-center justify-between">
+              <span className="text-xs font-mono uppercase tracking-wider text-[#0A0A0A]/60">
                 {study.stats.label}
               </span>
-              <span className="font-serif text-lg sm:text-xl font-bold text-[#1C3A5E]">
+              <span className="font-serif text-lg sm:text-xl font-bold text-[#04703D]">
                 {study.stats.value}
               </span>
             </div>
@@ -83,17 +83,17 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               <span className="w-2 h-2 rounded-full bg-red-400"></span>
               <span>The Operational Bottleneck</span>
             </div>
-            <p className="text-xs sm:text-sm text-[#16201B]/80 leading-relaxed font-sans">
+            <p className="text-xs sm:text-sm text-[#0A0A0A]/80 leading-relaxed font-sans">
               {study.problem}
             </p>
           </div>
 
-          <div className="bg-white p-5 rounded-2xl border border-[#1C3A5E]/30">
-            <div className="flex items-center gap-2 text-[#1C3A5E] text-xs font-mono font-bold uppercase tracking-wider mb-2">
-              <Database className="w-4 h-4 text-[#1C3A5E]" />
+          <div className="bg-white p-5 rounded-2xl border border-[#04703D]/30">
+            <div className="flex items-center gap-2 text-[#04703D] text-xs font-mono font-bold uppercase tracking-wider mb-2">
+              <Database className="w-4 h-4 text-[#04703D]" />
               <span>The Custom Oparaku Architecture</span>
             </div>
-            <p className="text-xs sm:text-sm text-[#16201B]/90 leading-relaxed mb-4 font-sans">
+            <p className="text-xs sm:text-sm text-[#0A0A0A]/90 leading-relaxed mb-4 font-sans">
               {study.solution}
             </p>
 
@@ -102,19 +102,19 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
                 Technical Highlights:
               </span>
               {study.highlights.map((h, i) => (
-                <div key={i} className="flex items-start gap-2 text-xs text-[#16201B]/70">
-                  <CheckCircle2 className="w-4 h-4 text-[#1C3A5E] flex-shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-2 text-xs text-[#0A0A0A]/70">
+                  <CheckCircle2 className="w-4 h-4 text-[#04703D] flex-shrink-0 mt-0.5" />
                   <span>{h}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="bg-[#059C54] text-[#16201B] p-5 rounded-2xl border border-[#1C3A5E]/40 shadow-lg">
+          <div className="bg-[#059C54] text-[#0A0A0A] p-5 rounded-2xl border border-[#04703D]/40 shadow-lg">
             <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#04703D] mb-1">
               Measurable Operational Result
             </div>
-            <p className="text-sm text-[#16201B]/95 leading-relaxed font-sans">
+            <p className="text-sm text-[#0A0A0A]/95 leading-relaxed font-sans">
               {study.outcome}
             </p>
           </div>
@@ -122,14 +122,14 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* Tools Used */}
         <div className="mb-8">
-          <span className="text-xs font-mono text-[#16201B]/60 uppercase tracking-widest block mb-2">
+          <span className="text-xs font-mono text-[#0A0A0A]/60 uppercase tracking-widest block mb-2">
             Tools & Platform Stack:
           </span>
           <div className="flex flex-wrap gap-2">
             {study.tools.map((t) => (
               <span
                 key={t}
-                className="text-xs font-mono px-3 py-1 rounded-lg bg-black/5 border border-black/10 text-[#16201B]"
+                className="text-xs font-mono px-3 py-1 rounded-lg bg-black/5 border border-black/10 text-[#0A0A0A]"
               >
                 {t}
               </span>
@@ -144,7 +144,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               onClose();
               onOpenBooking();
             }}
-            className="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-[#1C3A5E] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
+            className="w-full sm:w-auto flex-1 py-3.5 px-6 rounded-xl bg-[#04703D] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-lg"
           >
             <Calendar className="w-4 h-4" />
             <span>Book a Call to Build Similar Architecture</span>
@@ -154,14 +154,14 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               href={study.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#1C3A5E]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
+              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#04703D]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
             >
               <span>Open Link</span>
             </a>
           )}
           <button
             onClick={onClose}
-            className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-black/10 bg-black/5 text-xs font-mono uppercase tracking-wider text-[#16201B] hover:bg-black/10 transition-colors cursor-pointer"
+            className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-black/10 bg-black/5 text-xs font-mono uppercase tracking-wider text-[#0A0A0A] hover:bg-black/10 transition-colors cursor-pointer"
           >
             Close
           </button>

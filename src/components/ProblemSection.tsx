@@ -25,8 +25,8 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-            <AlertCircle className="w-3.5 h-3.5 text-[#1C3A5E]" />
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+            <AlertCircle className="w-3.5 h-3.5 text-[#04703D]" />
             <span>The Anatomy of Operational Leakage</span>
           </div>
           
@@ -50,17 +50,17 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
               onClick={() => handleProblemSelect(idx)}
               className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between ${
                 selectedProblemIdx === idx
-                  ? 'bg-[#1B4332] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/40'
-                  : 'bg-[#16201B] border-white/10 hover:bg-[#1A2520] hover:border-white/20'
+                  ? 'bg-[#1B4332] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/40'
+                  : 'bg-[#0A0A0A] border-white/10 hover:bg-[#1A2520] hover:border-white/20'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-bold text-[#1C3A5E] px-2.5 py-1 rounded-md bg-black/40 border border-[#1C3A5E]/20">
+                  <span className="font-mono text-xs font-bold text-[#04703D] px-2.5 py-1 rounded-md bg-black/40 border border-[#04703D]/20">
                     0{idx + 1}
                   </span>
                   {selectedProblemIdx === idx && (
-                    <span className="text-[10px] font-mono text-[#1C3A5E] flex items-center gap-1 uppercase tracking-wider">
+                    <span className="text-[10px] font-mono text-[#04703D] flex items-center gap-1 uppercase tracking-wider">
                       <Sparkles className="w-3 h-3" />
                       Active Focus
                     </span>
@@ -71,7 +71,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
                   {problem.title}
                 </h3>
 
-                <div className="text-xs font-mono text-[#1C3A5E] mb-3">
+                <div className="text-xs font-mono text-[#04703D] mb-3">
                   {problem.symptom}
                 </div>
 
@@ -80,7 +80,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
                 </p>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-white/10 text-xs font-mono text-[#1C3A5E] flex items-center gap-1.5">
+              <div className="mt-4 pt-3 border-t border-white/10 text-xs font-mono text-[#04703D] flex items-center gap-1.5">
                 <span>Explore the fix</span>
                 <ArrowRight className="w-3 h-3" />
               </div>
@@ -89,7 +89,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
         </div>
 
         {/* Deep Dive Problem-to-Solution Bridge */}
-        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
+        <div className="rounded-2xl bg-[#0A0A0A]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left: Current Chaos */}
@@ -110,15 +110,15 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
 
             {/* Middle: Transform indicator */}
             <div className="hidden lg:flex lg:col-span-2 justify-center">
-              <div className="w-12 h-12 rounded-full bg-[#1B4332] border border-[#1C3A5E] flex items-center justify-center text-[#1C3A5E] shadow-xl">
+              <div className="w-12 h-12 rounded-full bg-[#1B4332] border border-[#04703D] flex items-center justify-center text-[#04703D] shadow-xl">
                 <ArrowRight className="w-5 h-5" />
               </div>
             </div>
 
             {/* Right: The Oparaku Engineered System */}
-            <div className="lg:col-span-5 space-y-4 bg-[#111815] p-6 sm:p-7 rounded-2xl border border-[#1C3A5E]/30">
-              <div className="flex items-center gap-2 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest font-bold">
-                <CheckCircle2 className="w-4 h-4 text-[#1C3A5E]" />
+            <div className="lg:col-span-5 space-y-4 bg-[#111815] p-6 sm:p-7 rounded-2xl border border-[#04703D]/30">
+              <div className="flex items-center gap-2 text-[#04703D] text-xs font-mono uppercase tracking-widest font-bold">
+                <CheckCircle2 className="w-4 h-4 text-[#04703D]" />
                 <span>The Oparaku Engineered Fix</span>
               </div>
               
@@ -133,7 +133,7 @@ export const ProblemSection: React.FC<ProblemSectionProps> = ({ onOpenBooking })
               <div className="pt-2">
                 <button
                   onClick={onOpenBooking}
-                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#1C3A5E] hover:underline cursor-pointer font-bold"
+                  className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#04703D] hover:underline cursor-pointer font-bold"
                 >
                   <span>Audit your setup with Owens</span>
                   <ArrowRight className="w-3.5 h-3.5" />

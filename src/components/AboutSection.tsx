@@ -27,9 +27,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           {/* Left Column: Visual Profile & Badges */}
           <div className="lg:col-span-5 flex flex-col space-y-6">
             
-            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-7 shadow-2xl relative overflow-hidden">
+            <div className="rounded-3xl bg-[#0A0A0A]/88 border border-white/10 p-7 shadow-2xl relative overflow-hidden">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-[#1B4332] border-2 border-[#1C3A5E] flex-shrink-0 shadow-lg">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-[#1B4332] border-2 border-[#04703D] flex-shrink-0 shadow-lg">
                   {!imageFailed ? (
                     <img
                       src={currentImgSrc}
@@ -39,7 +39,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                       onError={handleImageError}
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-[#1B4332] text-[#1C3A5E] font-serif text-2xl font-bold">
+                    <div className="w-full h-full flex items-center justify-center bg-[#1B4332] text-[#04703D] font-serif text-2xl font-bold">
                       OO
                     </div>
                   )}
@@ -49,7 +49,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                   <h3 className="font-serif text-2xl font-bold text-white">
                     Owens Oparaku
                   </h3>
-                  <p className="text-xs font-mono text-[#1C3A5E]">
+                  <p className="text-xs font-mono text-[#04703D]">
                     Founder & Systems Architect
                   </p>
                 </div>
@@ -57,13 +57,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
 
               {/* Verified Badge Pills */}
               <div className="space-y-2 mb-6 pt-4 border-t border-white/10">
-                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#1C3A5E] block">
+                <span className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#04703D] block">
                   Official Certifications:
                 </span>
                 <div className="flex flex-col gap-2">
                   {BADGE_PILLS.map((badge, idx) => (
                     <div key={idx} className="flex items-center gap-2.5 text-xs text-white/90 bg-black/40 p-2.5 rounded-xl border border-white/10 font-mono">
-                      <ShieldCheck className="w-4 h-4 text-[#1C3A5E] flex-shrink-0" />
+                      <ShieldCheck className="w-4 h-4 text-[#04703D] flex-shrink-0" />
                       <span>{badge}</span>
                     </div>
                   ))}
@@ -76,27 +76,27 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                   href={BRAND_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#1C3A5E] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
+                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#04703D] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
                 >
-                  <Instagram className="w-3.5 h-3.5 text-[#1C3A5E]" />
+                  <Instagram className="w-3.5 h-3.5 text-[#04703D]" />
                   <span>Instagram</span>
                 </a>
                 <a
                   href={BRAND_INFO.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#1C3A5E] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
+                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#04703D] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
                 >
-                  <Linkedin className="w-3.5 h-3.5 text-[#1C3A5E]" />
+                  <Linkedin className="w-3.5 h-3.5 text-[#04703D]" />
                   <span>LinkedIn</span>
                 </a>
                 <a
                   href={BRAND_INFO.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#1C3A5E] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
+                  className="flex items-center gap-1.5 text-xs font-mono text-white/80 hover:text-[#04703D] transition-colors px-3 py-2 rounded-xl bg-white/5 border border-white/10"
                 >
-                  <Facebook className="w-3.5 h-3.5 text-[#1C3A5E]" />
+                  <Facebook className="w-3.5 h-3.5 text-[#04703D]" />
                   <span>Facebook</span>
                 </a>
               </div>
@@ -104,11 +104,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             </div>
 
             {/* Philosophy Quote block */}
-            <div className="p-7 rounded-3xl bg-[#1B4332] text-[#EDEDEA] border border-[#1C3A5E]/30 shadow-xl">
+            <div className="p-7 rounded-3xl bg-[#1B4332] text-[#EDEDEA] border border-[#04703D]/30 shadow-xl">
               <p className="font-serif italic text-base sm:text-lg leading-relaxed text-white">
                 &ldquo;I do not just build once and leave. I set up systems that scale with a business, so when things get busier, the operations do not fall apart, they hold steady.&rdquo;
               </p>
-              <span className="block text-xs font-mono font-bold text-[#1C3A5E] mt-3 uppercase tracking-widest">
+              <span className="block text-xs font-mono font-bold text-[#04703D] mt-3 uppercase tracking-widest">
                 — Owens Oparaku
               </span>
             </div>
@@ -119,8 +119,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="lg:col-span-7 space-y-6">
             
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#1C3A5E]"></span>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#04703D]"></span>
                 <span>The Story & Philosophy</span>
               </div>
               
@@ -132,7 +132,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             {/* Paragraphs */}
             <div className="space-y-4 text-base text-white/80 leading-relaxed font-sans">
               {BIO_PARAGRAPHS.map((p, idx) => (
-                <p key={idx} className="bg-[#16201B] p-5 rounded-2xl border border-white/10">
+                <p key={idx} className="bg-[#0A0A0A] p-5 rounded-2xl border border-white/10">
                   {p}
                 </p>
               ))}
@@ -142,7 +142,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="pt-4 flex flex-col sm:flex-row items-center gap-4">
               <button
                 onClick={onOpenBooking}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono font-bold text-xs uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#04703D] text-white font-mono font-bold text-xs uppercase tracking-wider hover:bg-[#059C54] transition-all flex items-center justify-center gap-2 cursor-pointer shadow-xl"
               >
                 <span>Book a Call with Owens</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -152,7 +152,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                 href={`mailto:${BRAND_INFO.email}`}
                 className="w-full sm:w-auto px-6 py-4 rounded-xl bg-white/5 text-white font-mono text-xs uppercase tracking-wider border border-white/10 hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
               >
-                <Mail className="w-4 h-4 text-[#1C3A5E]" />
+                <Mail className="w-4 h-4 text-[#04703D]" />
                 <span>{BRAND_INFO.email}</span>
               </a>
             </div>

@@ -25,12 +25,12 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
         {/* Header Bar */}
         <div className="flex items-center justify-between p-5 border-b border-black/10 bg-white">
           <div className="flex items-center gap-2.5">
-            <Award className="w-5 h-5 text-[#1C3A5E]" />
+            <Award className="w-5 h-5 text-[#04703D]" />
             <div>
-              <h3 className="font-serif text-base sm:text-lg font-bold text-[#16201B] leading-tight">
+              <h3 className="font-serif text-base sm:text-lg font-bold text-[#0A0A0A] leading-tight">
                 {cert.name}
               </h3>
-              <p className="text-xs font-mono text-[#1C3A5E]">
+              <p className="text-xs font-mono text-[#04703D]">
                 {cert.organization} • {cert.tier}
               </p>
             </div>
@@ -38,7 +38,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
 
           <button
             onClick={handleClose}
-            className="p-2 rounded-full bg-black/5 hover:bg-black/10 text-[#16201B]/70 hover:text-[#16201B] transition-colors cursor-pointer"
+            className="p-2 rounded-full bg-black/5 hover:bg-black/10 text-[#0A0A0A]/70 hover:text-[#0A0A0A] transition-colors cursor-pointer"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
@@ -71,7 +71,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                       🦄
                     </div>
                     
-                    <div className={`w-full py-1 px-3 text-[11px] sm:text-xs font-black text-[#16201B] text-center rounded tracking-widest uppercase shadow ${
+                    <div className={`w-full py-1 px-3 text-[11px] sm:text-xs font-black text-[#0A0A0A] text-center rounded tracking-widest uppercase shadow ${
                       cert.badgeType === 'admin'
                         ? 'bg-gradient-to-r from-pink-500 via-purple-500 to-yellow-500'
                         : cert.badgeType === 'intermediate'
@@ -81,7 +81,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                       {cert.badgeName}
                     </div>
 
-                    <div className="text-[10px] font-bold text-[#16201B] mt-1 flex items-center gap-1">
+                    <div className="text-[10px] font-bold text-[#0A0A0A] mt-1 flex items-center gap-1">
                       <span className="text-pink-400">▲</span> ClickUp
                     </div>
                   </div>
@@ -105,7 +105,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
             {cert.category === 'airtable' && (
               <div className="w-full max-w-lg aspect-[4/3] bg-[#F4EFFE] text-[#2D2250] p-6 sm:p-8 flex flex-col justify-between relative rounded-xl shadow-2xl border-8 border-[#D8C7F8]">
                 <div className="flex items-start justify-between">
-                  <div className="bg-[#482880] text-[#16201B] px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow">
+                  <div className="bg-[#482880] text-[#0A0A0A] px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-1.5 shadow">
                     <span>⬡</span>
                     <span>Certified Admin</span>
                   </div>
@@ -164,15 +164,15 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                   </div>
 
                   <div className="w-16 border-2 border-black rounded-b-2xl overflow-hidden shadow">
-                    <div className="bg-black text-[#16201B] text-[8px] text-center py-1 font-sans font-bold leading-tight">
+                    <div className="bg-black text-[#0A0A0A] text-[8px] text-center py-1 font-sans font-bold leading-tight">
                       Notion Academy
                     </div>
                     <div className={`p-2 flex items-center justify-center text-xl text-black font-bold ${
                       cert.badgeType === 'advanced' 
                         ? 'bg-[#F5C518]' 
                         : cert.badgeType === 'workflows' 
-                        ? 'bg-[#1E88E5] text-[#16201B]' 
-                        : 'bg-[#EA4335] text-[#16201B]'
+                        ? 'bg-[#1E88E5] text-[#0A0A0A]' 
+                        : 'bg-[#EA4335] text-[#0A0A0A]'
                     }`}>
                       {cert.badgeType === 'advanced' && '🛠️'}
                       {cert.badgeType === 'workflows' && '🔗'}
@@ -185,7 +185,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
 
             {/* MAKE MODAL VIEW */}
             {cert.category === 'make' && (
-              <div className="w-full max-w-lg aspect-[4/3] bg-[#130026] text-[#16201B] p-6 sm:p-8 flex items-center justify-center relative rounded-2xl shadow-2xl border-4 border-purple-600/40">
+              <div className="w-full max-w-lg aspect-[4/3] bg-[#130026] text-[#0A0A0A] p-6 sm:p-8 flex items-center justify-center relative rounded-2xl shadow-2xl border-4 border-purple-600/40">
                 <div className="w-48 h-48 sm:w-60 sm:h-60 drop-shadow-2xl">
                   <svg viewBox="0 0 400 400" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -254,22 +254,22 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
               <h4 className="text-xs font-mono text-[#04703D] uppercase tracking-wider font-bold mb-1">
                 About This Credential
               </h4>
-              <p className="text-sm text-[#16201B]/80 leading-relaxed font-sans">
+              <p className="text-sm text-[#0A0A0A]/80 leading-relaxed font-sans">
                 {cert.description}
               </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-3 border-t border-black/10 text-xs font-mono">
               <div className="p-2.5 rounded-xl bg-black/5 border border-black/5">
-                <span className="text-[#16201B]/40 block text-[10px]">ISSUING BODY</span>
-                <span className="text-[#16201B] font-semibold">{cert.organization}</span>
+                <span className="text-[#0A0A0A]/40 block text-[10px]">ISSUING BODY</span>
+                <span className="text-[#0A0A0A] font-semibold">{cert.organization}</span>
               </div>
               <div className="p-2.5 rounded-xl bg-black/5 border border-black/5">
-                <span className="text-[#16201B]/40 block text-[10px]">RECIPIENT</span>
-                <span className="text-[#16201B] font-semibold truncate block">Owens Oparaku</span>
+                <span className="text-[#0A0A0A]/40 block text-[10px]">RECIPIENT</span>
+                <span className="text-[#0A0A0A] font-semibold truncate block">Owens Oparaku</span>
               </div>
               <div className="p-2.5 rounded-xl bg-black/40 border border-black/5 col-span-2 sm:col-span-1">
-                <span className="text-[#16201B]/40 block text-[10px]">STATUS</span>
+                <span className="text-[#0A0A0A]/40 block text-[10px]">STATUS</span>
                 <span className="text-[#04703D] font-semibold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" /> Official Verified
                 </span>
@@ -283,7 +283,7 @@ export const CertificateModal: React.FC<CertificateModalProps> = ({ cert, onClos
                   href={cert.verificationUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3 px-4 rounded-xl bg-[#1C3A5E] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#2A4D7A] transition-colors shadow-md"
+                  className="w-full py-3 px-4 rounded-xl bg-[#04703D] text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 hover:bg-[#059C54] transition-colors shadow-md"
                 >
                   <span>Verify on Skilljar Online Registry</span>
                 </a>

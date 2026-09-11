@@ -61,38 +61,38 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
   });
 
   return (
-    <div className="w-full text-[#16201B]">
+    <div className="w-full text-[#0A0A0A]">
       
       {/* Page Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#059C54]/30 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#0A0A0A] tracking-tight leading-[1.05] mb-6">
             Selected Works & Systems Builds.
           </h1>
 
-          <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
+          <p className="text-base sm:text-xl text-[#0A0A0A]/70 max-w-3xl leading-relaxed font-sans mb-8">
             Every build is made for how that specific business actually runs, so tasks stop getting dropped and the team can grow without hiring just to keep up.
           </p>
 
           {/* Quick Metrics Header Bar */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-5 rounded-2xl bg-black/5 border border-black/10 font-mono text-xs">
             <div>
-              <span className="text-[#16201B]/40 block text-[10px] uppercase">DEPLOYMENTS</span>
-              <span className="text-lg font-bold text-[#1C3A5E]">Master OS</span>
+              <span className="text-[#0A0A0A]/40 block text-[10px] uppercase">DEPLOYMENTS</span>
+              <span className="text-lg font-bold text-[#04703D]">Master OS</span>
             </div>
             <div>
-              <span className="text-[#16201B]/40 block text-[10px] uppercase">HOURS SAVED</span>
+              <span className="text-[#0A0A0A]/40 block text-[10px] uppercase">HOURS SAVED</span>
               <span className="text-lg font-bold text-[#04703D]">1,000+ / yr</span>
             </div>
             <div>
-              <span className="text-[#16201B]/40 block text-[10px] uppercase">DROPPED TASKS</span>
-              <span className="text-lg font-bold text-[#16201B]">90% Reduction</span>
+              <span className="text-[#0A0A0A]/40 block text-[10px] uppercase">DROPPED TASKS</span>
+              <span className="text-lg font-bold text-[#0A0A0A]">90% Reduction</span>
             </div>
             <div>
-              <span className="text-[#16201B]/40 block text-[10px] uppercase">CLIENT RATING</span>
-              <span className="text-lg font-bold text-[#1C3A5E]">5.0 ★ Top Rated</span>
+              <span className="text-[#0A0A0A]/40 block text-[10px] uppercase">CLIENT RATING</span>
+              <span className="text-lg font-bold text-[#04703D]">5.0 ★ Top Rated</span>
             </div>
           </div>
         </div>
@@ -106,8 +106,8 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         
         {/* Interactive Filter Pills */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 mb-10 border-b border-black/10">
-          <div className="flex items-center gap-2 text-xs font-mono text-[#16201B]/60">
-            <SlidersHorizontal className="w-4 h-4 text-[#1C3A5E]" />
+          <div className="flex items-center gap-2 text-xs font-mono text-[#0A0A0A]/60">
+            <SlidersHorizontal className="w-4 h-4 text-[#04703D]" />
             <span>FILTER BY ECOSYSTEM:</span>
           </div>
 
@@ -118,8 +118,8 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleFilterClick(f.value as any)}
                 className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                   selectedFilter === f.value
-                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
-                    : 'bg-black/5 text-[#16201B]/70 hover:text-[#16201B] hover:bg-black/10 border border-black/10'
+                    ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                    : 'bg-black/5 text-[#0A0A0A]/70 hover:text-[#0A0A0A] hover:bg-black/10 border border-black/10'
                 }`}
               >
                 {f.label}
@@ -136,13 +136,13 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
               maxTilt={4}
               glare={true}
               cursorText="EXPLORE"
-              className="rounded-3xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#1C3A5E]/50 transition-all shadow-xl group"
+              className="rounded-3xl bg-white border border-black/10 p-7 sm:p-8 flex flex-col justify-between hover:border-[#04703D]/50 transition-all shadow-xl group"
             >
               <div>
                 {/* Top Number & Badge Header */}
                 <div className="flex items-center justify-between pb-4 mb-4 border-b border-black/10">
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#1C3A5E]/10 px-2.5 py-0.5 rounded-full border border-[#1C3A5E]/30">
+                    <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] bg-[#04703D]/10 px-2.5 py-0.5 rounded-full border border-[#04703D]/30">
                       {study.badge}
                     </span>
                   </div>
@@ -165,16 +165,16 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 )}
 
                 {/* Bold, Commanding System Title */}
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] group-hover:text-[#1C3A5E] transition-colors mb-2 leading-tight">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A0A0A] group-hover:text-[#04703D] transition-colors mb-2 leading-tight">
                   {study.title}
                 </h3>
                 
-                <div className="text-xs font-mono text-[#16201B]/60 mb-5">
-                  Client: <span className="text-[#16201B] font-semibold">{study.client}</span> • {study.industry}
+                <div className="text-xs font-mono text-[#0A0A0A]/60 mb-5">
+                  Client: <span className="text-[#0A0A0A] font-semibold">{study.client}</span> • {study.industry}
                 </div>
 
                 {/* The Bottleneck Box */}
-                <div className="text-xs text-[#16201B]/70 leading-relaxed bg-white p-4 rounded-2xl border border-black/5 mb-4">
+                <div className="text-xs text-[#0A0A0A]/70 leading-relaxed bg-white p-4 rounded-2xl border border-black/5 mb-4">
                   <span className="font-mono text-[10px] font-bold text-red-400 uppercase tracking-wider block mb-1">
                     Operational Bottleneck:
                   </span>
@@ -182,11 +182,11 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 </div>
 
                 {/* The Outcome Highlight */}
-                <div className="text-xs text-[#16201B]/80 leading-relaxed bg-white p-3.5 rounded-xl border border-black/10 mb-5">
+                <div className="text-xs text-[#0A0A0A]/80 leading-relaxed bg-white p-3.5 rounded-xl border border-black/10 mb-5">
                   <span className="font-mono text-[10px] font-bold text-[#04703D] uppercase tracking-wider block mb-0.5">
                     Measurable Result:
                   </span>
-                  <p className="text-[#16201B] font-semibold text-sm"><CountUp value={study.stats?.value || ''} className="text-[#16201B] font-semibold" /> <span className="text-[#16201B]/70 font-normal">, {study.stats?.label}</span></p>
+                  <p className="text-[#0A0A0A] font-semibold text-sm"><CountUp value={study.stats?.value || ''} className="text-[#0A0A0A] font-semibold" /> <span className="text-[#0A0A0A]/70 font-normal">, {study.stats?.label}</span></p>
                 </div>
               </div>
 
@@ -196,7 +196,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                   {study.tools.map((tool) => (
                     <span
                       key={tool}
-                      className="text-[10px] font-mono px-2.5 py-1 rounded-lg bg-black/5 text-[#16201B]/80 border border-black/10"
+                      className="text-[10px] font-mono px-2.5 py-1 rounded-lg bg-black/5 text-[#0A0A0A]/80 border border-black/10"
                     >
                       {tool}
                     </span>
@@ -206,7 +206,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleStudyOpen(study)}
-                    className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-white hover:bg-[#1C3A5E] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
+                    className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-white hover:bg-[#04703D] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
                   >
                     <span>Inspect Architecture</span>
                   </button>
@@ -220,7 +220,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                         e.stopPropagation();
                         sound.playClick();
                       }}
-                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B]/80 hover:text-[#1C3A5E] border border-black/10 hover:border-[#1C3A5E]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
+                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A]/80 hover:text-[#04703D] border border-black/10 hover:border-[#04703D]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
                       title={study.linkText || 'Open System Link'}
                     >
                       <ExternalLink className="w-4 h-4" />
@@ -236,8 +236,8 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
         {/* Page Bridge Navigation */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-white border border-black/10">
           <div>
-            <span className="text-xs font-mono text-[#16201B]/40 uppercase">NEXT SECTION</span>
-            <h4 className="font-serif text-2xl font-bold text-[#16201B]">
+            <span className="text-xs font-mono text-[#0A0A0A]/40 uppercase">NEXT SECTION</span>
+            <h4 className="font-serif text-2xl font-bold text-[#0A0A0A]">
               Explore Our Services & Systems Capabilities
             </h4>
             <p className="text-xs font-mono text-[#04703D] mt-1">
@@ -250,7 +250,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
               sound.playClick();
               onNavigate('services');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Services</span>
           </button>

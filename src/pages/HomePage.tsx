@@ -45,7 +45,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
       <StatsBar />
 
       {/* 4. Problem & Diagnostic Showcase with Before/After Slider */}
-      <section className="py-20 bg-[#EDEDEA] text-[#16201B] border-b border-black/10 relative overflow-hidden">
+      <section className="py-20 bg-[#EDEDEA] text-[#0A0A0A] border-b border-black/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 mb-8 border-b border-black/10">
@@ -55,12 +55,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   WHERE TIME GETS LOST
                 </span>
               </div>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#16201B] tracking-tight leading-tight">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#0A0A0A] tracking-tight leading-tight">
                 Signs your business outgrew its current setup.
               </h2>
             </div>
             
-            <p className="text-sm text-[#16201B]/70 max-w-sm font-sans">
+            <p className="text-sm text-[#0A0A0A]/70 max-w-sm font-sans">
               When your company grows faster than your tools, you become the bottleneck. Here is what is happening behind the scenes:
             </p>
           </div>
@@ -73,28 +73,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleProblemSelect(idx)}
                 className={`hover-lift rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between h-full ${
                   selectedProblemIdx === idx
-                    ? 'bg-[#059C54] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/40'
+                    ? 'bg-[#059C54] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/40'
                     : 'bg-white border-black/10 hover:border-black/20'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold text-[#1C3A5E]">
+                    <span className="text-xs font-bold text-[#04703D]">
                       0{idx + 1}
                     </span>
-                    <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/5 text-[#16201B]/80">
+                    <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/5 text-[#0A0A0A]/80">
                       {problem.symptom}
                     </span>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-[#16201B] mb-2 leading-snug">
+                  <h3 className="font-serif text-xl font-bold text-[#0A0A0A] mb-2 leading-snug">
                     {problem.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#16201B]/75 leading-relaxed mb-4">
+                  <p className="text-xs sm:text-sm text-[#0A0A0A]/75 leading-relaxed mb-4">
                     {problem.description}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-black/10 text-xs text-[#1C3A5E] font-semibold flex items-center gap-1.5">
+                <div className="pt-3 border-t border-black/10 text-xs text-[#04703D] font-semibold flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                   <span>{problem.solution}</span>
                 </div>
@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
               <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-1">
                 THE TRANSFORMATION
               </span>
-              <h3 className="font-serif text-3xl font-bold text-[#16201B]">
+              <h3 className="font-serif text-3xl font-bold text-[#0A0A0A]">
                 Before vs. After
               </h3>
             </div>
@@ -122,7 +122,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                 sound.playClick();
                 onNavigate('process');
               }}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] border border-black/10 text-xs font-semibold uppercase tracking-wider transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-black/5 hover:bg-black/10 text-[#0A0A0A] border border-black/10 text-xs font-semibold uppercase tracking-wider transition-all"
             >
               <span>See How We Fix These in 4 Weeks</span>
             </button>
@@ -133,17 +133,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
 
 
       {/* 8. Bottom Page-Turn Call to Action */}
-      <section className="py-20 bg-[#EDEDEA] text-[#16201B] border-b border-black/10 relative overflow-hidden">
+      <section className="py-20 bg-[#EDEDEA] text-[#0A0A0A] border-b border-black/10 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
             <div>
               <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest block mb-2">
                 READY TO STOP RUNNING ON STICKY NOTES?
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-2">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-2">
                 Book your 30-minute Systems Diagnostic.
               </h2>
-              <p className="text-sm text-[#16201B]/70 max-w-xl font-sans">
+              <p className="text-sm text-[#0A0A0A]/70 max-w-xl font-sans">
                 We'll audit your current tool stack, identify the #1 operational bottleneck stealing founder hours, and map out your custom architecture blueprint.
               </p>
             </div>
@@ -154,7 +154,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   sound.playTrigger();
                   onOpenBooking();
                 }}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#1C3A5E] text-white font-bold text-sm font-mono uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-2xl flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#04703D] text-white font-bold text-sm font-mono uppercase tracking-wider hover:bg-[#059C54] transition-all shadow-2xl flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Call with Owens</span>
@@ -165,7 +165,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
                   sound.playClick();
                   onNavigate('contact');
                 }}
-                className="w-full sm:w-auto px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all text-center"
+                className="w-full sm:w-auto px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#0A0A0A] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all text-center"
               >
                 <span>Calculate Your ROI</span>
               </button>

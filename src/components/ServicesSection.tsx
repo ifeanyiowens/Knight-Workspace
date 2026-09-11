@@ -12,19 +12,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
   const getServiceIcon = (iconName: string) => {
     switch (iconName) {
       case 'LayoutGrid':
-        return <LayoutGrid className="w-5 h-5 text-[#1C3A5E]" />;
+        return <LayoutGrid className="w-5 h-5 text-[#04703D]" />;
       case 'Cpu':
-        return <Cpu className="w-5 h-5 text-[#1C3A5E]" />;
+        return <Cpu className="w-5 h-5 text-[#04703D]" />;
       case 'Users':
-        return <Users className="w-5 h-5 text-[#1C3A5E]" />;
+        return <Users className="w-5 h-5 text-[#04703D]" />;
       case 'Layers':
-        return <Layers className="w-5 h-5 text-[#1C3A5E]" />;
+        return <Layers className="w-5 h-5 text-[#04703D]" />;
       case 'Search':
-        return <Search className="w-5 h-5 text-[#1C3A5E]" />;
+        return <Search className="w-5 h-5 text-[#04703D]" />;
       case 'ShieldCheck':
-        return <ShieldCheck className="w-5 h-5 text-[#1C3A5E]" />;
+        return <ShieldCheck className="w-5 h-5 text-[#04703D]" />;
       default:
-        return <LayoutGrid className="w-5 h-5 text-[#1C3A5E]" />;
+        return <LayoutGrid className="w-5 h-5 text-[#04703D]" />;
     }
   };
 
@@ -35,8 +35,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         {/* Section Header (Moritz Dunkel style) */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#1C3A5E]"></span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#04703D]"></span>
               <span>Scope of Expertise & Systems</span>
             </div>
             
@@ -53,9 +53,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
             onClick={onOpenBooking}
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-mono text-xs uppercase tracking-wider transition-all self-start md:self-auto cursor-pointer"
           >
-            <Calendar className="w-4 h-4 text-[#1C3A5E]" />
+            <Calendar className="w-4 h-4 text-[#04703D]" />
             <span>Inquire About Custom Setup</span>
-            <ArrowUpRight className="w-4 h-4 text-[#1C3A5E]" />
+            <ArrowUpRight className="w-4 h-4 text-[#04703D]" />
           </button>
         </div>
 
@@ -67,7 +67,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
               onClick={() => setSelectedServiceId(service.id)}
               className={`rounded-2xl p-7 transition-all cursor-pointer border flex flex-col justify-between ${
                 selectedServiceId === service.id
-                  ? 'bg-[#16201B] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/30'
+                  ? 'bg-[#0A0A0A] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/30'
                   : 'bg-[#111815] border-white/10 hover:bg-[#141C18] hover:border-white/20'
               }`}
             >
@@ -75,10 +75,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 {/* Header with Number and Icon */}
                 <div className="flex items-center justify-between mb-5">
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-black/50 text-[#1C3A5E] border border-[#1C3A5E]/20">
+                    <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-black/50 text-[#04703D] border border-[#04703D]/20">
                       0{idx + 1}
                     </span>
-                    <div className="p-2 rounded-lg bg-[#1B4332]/60 border border-[#1C3A5E]/30">
+                    <div className="p-2 rounded-lg bg-[#1B4332]/60 border border-[#04703D]/30">
                       {getServiceIcon(service.icon)}
                     </div>
                   </div>
@@ -107,13 +107,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
               <div>
                 {/* Deliverables */}
                 <div className="pt-4 border-t border-white/10 space-y-2 mb-5">
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#1C3A5E] block">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-[#04703D] block">
                     Core Deliverables:
                   </span>
                   <div className="space-y-1.5">
                     {service.deliverables.map((item) => (
                       <div key={item} className="flex items-center gap-2 text-xs text-white/85">
-                        <Check className="w-3.5 h-3.5 text-[#1C3A5E] flex-shrink-0" />
+                        <Check className="w-3.5 h-3.5 text-[#04703D] flex-shrink-0" />
                         <span>{item}</span>
                       </div>
                     ))}
@@ -126,7 +126,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                     e.stopPropagation();
                     onOpenBooking();
                   }}
-                  className="w-full py-2.5 px-3 rounded-xl text-xs font-mono font-semibold uppercase tracking-wider bg-white/5 text-white hover:bg-[#1C3A5E] hover:text-white transition-colors flex items-center justify-center gap-1.5 cursor-pointer border border-white/10"
+                  className="w-full py-2.5 px-3 rounded-xl text-xs font-mono font-semibold uppercase tracking-wider bg-white/5 text-white hover:bg-[#04703D] hover:text-white transition-colors flex items-center justify-center gap-1.5 cursor-pointer border border-white/10"
                 >
                   <span>Inquire For This System</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -137,7 +137,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         </div>
 
         {/* Bottom Banner */}
-        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+        <div className="rounded-2xl bg-[#0A0A0A]/88 border border-white/10 p-7 sm:p-9 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
           <div className="space-y-1.5 text-center sm:text-left">
             <h4 className="font-serif text-xl sm:text-2xl font-bold text-white">
               Unsure which setup fits your business best?
@@ -149,7 +149,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
           
           <button
             onClick={onOpenBooking}
-            className="px-7 py-3.5 rounded-xl bg-[#1C3A5E] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 flex-shrink-0 cursor-pointer shadow-lg"
+            className="px-7 py-3.5 rounded-xl bg-[#04703D] text-white text-xs font-mono font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all flex items-center gap-2 flex-shrink-0 cursor-pointer shadow-lg"
           >
             <Calendar className="w-4 h-4" />
             <span>Book Systems Diagnostic</span>

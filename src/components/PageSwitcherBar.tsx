@@ -28,7 +28,7 @@ export const PageSwitcherBar: React.FC<PageSwitcherBarProps> = ({ currentPage, o
         <button
           onClick={() => prevPage && handleNavigate(prevPage.id)}
           disabled={!prevPage}
-          className="w-8 h-8 rounded-full flex items-center justify-center text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 disabled:opacity-20 disabled:hover:bg-transparent transition-all cursor-pointer"
+          className="w-8 h-8 rounded-full flex items-center justify-center text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 disabled:opacity-20 disabled:hover:bg-transparent transition-all cursor-pointer"
           title={prevPage ? `Previous: [${prevPage.index}] ${prevPage.shortTitle}` : 'First Page'}
           aria-label="Previous Page"
         >
@@ -45,12 +45,12 @@ export const PageSwitcherBar: React.FC<PageSwitcherBarProps> = ({ currentPage, o
                 onClick={() => handleNavigate(page.id)}
                 className={`px-3 py-1.5 rounded-full transition-all flex items-center gap-1 cursor-pointer ${
                   isActive
-                    ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
-                    : 'text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 text-[11px]'
+                    ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                    : 'text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 text-[11px]'
                 }`}
                 title={`Jump to [${page.index}] ${page.title}`}
               >
-                <span className={`text-[10px] ${isActive ? 'text-[#111815]' : 'text-[#1C3A5E]'}`}>
+                <span className={`text-[10px] ${isActive ? 'text-[#111815]' : 'text-[#04703D]'}`}>
                   {page.index}
                 </span>
                 <span className="hidden sm:inline">{page.shortTitle}</span>
@@ -63,7 +63,7 @@ export const PageSwitcherBar: React.FC<PageSwitcherBarProps> = ({ currentPage, o
         <button
           onClick={() => nextPage && handleNavigate(nextPage.id)}
           disabled={!nextPage}
-          className="w-8 h-8 rounded-full flex items-center justify-center text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 disabled:opacity-20 disabled:hover:bg-transparent transition-all cursor-pointer"
+          className="w-8 h-8 rounded-full flex items-center justify-center text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 disabled:opacity-20 disabled:hover:bg-transparent transition-all cursor-pointer"
           title={nextPage ? `Next: [${nextPage.index}] ${nextPage.shortTitle}` : 'Last Page'}
           aria-label="Next Page"
         >

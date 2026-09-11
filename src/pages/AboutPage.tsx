@@ -104,18 +104,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
   ];
 
   return (
-    <div className="w-full text-[#16201B]">
+    <div className="w-full text-[#0A0A0A]">
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
         <div className="absolute top-0 right-10 w-[500px] h-[500px] bg-[#059C54]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#0A0A0A] tracking-tight leading-[1.05] mb-6">
             The Mind Behind the Systems.
           </h1>
 
-          <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
+          <p className="text-base sm:text-xl text-[#0A0A0A]/70 max-w-3xl leading-relaxed font-sans mb-8">
             I help high-growth small business owners bridge the gap between where their revenue is and how their team actually operates behind the scenes.
           </p>
 
@@ -125,7 +125,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-7 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -134,18 +134,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               href={BRAND_INFO.notionSite}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#1C3A5E]/40 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#04703D]/40 transition-all flex items-center gap-2"
             >
-              <Globe className="w-4 h-4 text-[#1C3A5E]" />
+              <Globe className="w-4 h-4 text-[#04703D]" />
               <span>Explore Notion Site</span>
             </a>
             <a
               href={BRAND_INFO.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#0A0A0A] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
-              <Instagram className="w-4 h-4 text-[#1C3A5E]" />
+              <Instagram className="w-4 h-4 text-[#04703D]" />
               <span>Follow @notion_knight</span>
             </a>
           </div>
@@ -177,16 +177,16 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   onError={handleImageError}
                 />
               ) : (
-                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#059C54] text-[#16201B] p-6 text-center rounded-3xl">
+                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#059C54] text-[#0A0A0A] p-6 text-center rounded-3xl">
                   <span className="font-serif text-4xl font-bold text-[#04703D] mb-2">OO</span>
                   <span className="font-serif text-xl font-bold">Owens Oparaku</span>
-                  <span className="text-xs text-[#16201B]/70 mt-1">Business Operations Architect</span>
+                  <span className="text-xs text-[#0A0A0A]/70 mt-1">Business Operations Architect</span>
                 </div>
               )}
 
               {/* Name and title sit inside the faded area instead of on a solid backdrop */}
               <div className="absolute bottom-14 inset-x-0 text-center">
-                <h3 className="font-serif text-lg font-bold text-[#16201B] leading-tight">
+                <h3 className="font-serif text-lg font-bold text-[#0A0A0A] leading-tight">
                   Owens Oparaku
                 </h3>
                 <p className="text-xs text-[#04703D] font-semibold">
@@ -201,7 +201,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   href={BRAND_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#1C3A5E] hover:text-white transition-all flex items-center justify-center text-white"
+                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#04703D] hover:text-white transition-all flex items-center justify-center text-white"
                   title="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
@@ -210,7 +210,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   href={BRAND_INFO.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#1C3A5E] hover:text-white transition-all flex items-center justify-center text-white"
+                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#04703D] hover:text-white transition-all flex items-center justify-center text-white"
                   title="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
@@ -220,18 +220,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
           </div>
 
           {/* Right: Detailed Narrative */}
-          <div ref={narrativeRef} className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#1C3A5E]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
-            <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#1C3A5E]/10 select-none pointer-events-none">"</span>
+          <div ref={narrativeRef} className="lg:col-span-6 flex flex-col justify-start space-y-6 rounded-3xl bg-white border border-black/10 border-l-4 border-l-[#04703D]/70 p-7 sm:p-9 shadow-2xl relative overflow-hidden">
+            <span className="absolute -top-6 -left-2 font-serif text-[8rem] leading-none text-[#04703D]/10 select-none pointer-events-none">"</span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#04703D] uppercase tracking-wider relative">
               <span>THE ARCHITECT'S STORY</span>
             </div>
 
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] leading-tight relative">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A] leading-tight relative">
               "Most business chaos is not a discipline problem. It is an architecture problem."
             </h2>
 
-            <div className="space-y-4 text-base text-[#16201B]/80 leading-relaxed font-sans relative">
+            <div className="space-y-4 text-base text-[#0A0A0A]/80 leading-relaxed font-sans relative">
               <p>
                 I started doing this after watching high-revenue entrepreneurs and agency founders run their businesses on little more than memory, scattered WhatsApp threads, and fragile Google Sheets.
               </p>
@@ -244,13 +244,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             </div>
 
             <div className="pt-4 flex flex-wrap gap-3 relative">
-              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#0A0A0A]/90">
                 ⚡ 1,000+ Annual Hours Saved
               </div>
-              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#0A0A0A]/90">
                 ⭐ 100% 5-Star Client Track Record
               </div>
-              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#16201B]/90">
+              <div className="px-4 py-2 rounded-xl bg-black/5 border border-black/10 text-xs font-semibold text-[#0A0A0A]/90">
                 🌍 Global Clients (US, UK, EU, Africa)
               </div>
             </div>
@@ -264,7 +264,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               FOUNDATIONAL PILLARS
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A]">
               The 4 Core Architectural Principles
             </h3>
           </div>
@@ -274,13 +274,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               <ScrollReveal key={p.num} delay={(idx % 2) * 100}>
               <div className="hover-lift p-8 rounded-3xl bg-white border border-black/10 flex flex-col justify-between h-full">
                 <div>
-                  <span className="font-mono text-xs text-[#1C3A5E] font-bold px-2.5 py-1 rounded bg-[#04703D]/10 border border-[#1C3A5E]/20 inline-block mb-4">
+                  <span className="font-mono text-xs text-[#04703D] font-bold px-2.5 py-1 rounded bg-[#04703D]/10 border border-[#04703D]/20 inline-block mb-4">
                     PRINCIPLE [{p.num}]
                   </span>
-                  <h4 className="font-serif text-2xl font-bold text-[#16201B] mb-3">
+                  <h4 className="font-serif text-2xl font-bold text-[#0A0A0A] mb-3">
                     {p.title}
                   </h4>
-                  <p className="text-sm text-[#16201B]/70 leading-relaxed font-sans">
+                  <p className="text-sm text-[#0A0A0A]/70 leading-relaxed font-sans">
                     {p.desc}
                   </p>
                 </div>
@@ -294,14 +294,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         <div id="certifications" className="rounded-3xl bg-white border border-black/10 p-8 sm:p-12 mb-24 shadow-2xl">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 mb-8 border-b border-black/10">
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-                <Award className="w-3.5 h-3.5 text-[#1C3A5E]" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/5 border border-black/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+                <Award className="w-3.5 h-3.5 text-[#04703D]" />
                 <span>OFFICIAL VERIFIED CREDENTIALS</span>
               </div>
-              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-2">
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-2">
                 Official Certifications & Accreditations
               </h3>
-              <p className="text-sm text-[#16201B]/70 font-sans max-w-2xl">
+              <p className="text-sm text-[#0A0A0A]/70 font-sans max-w-2xl">
                 Every system is built on certified mastery, verified credentials across Notion Academy, ClickUp, Airtable, and Make.com. Click any certificate to see the full details.
               </p>
             </div>
@@ -323,8 +323,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   }}
                   className={`text-xs font-mono px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
                     activeCertCategory === tab.id
-                      ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
-                      : 'bg-black/5 text-[#16201B]/60 hover:text-[#16201B] hover:bg-black/10 border border-black/5'
+                      ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                      : 'bg-black/5 text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 border border-black/5'
                   }`}
                 >
                   {tab.label}
@@ -353,7 +353,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
 
         {/* Tech Stack Master Matrix */}
         <div className="mb-24">
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-8 text-center">
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A0A0A] mb-8 text-center">
             The Systems & Integrations Stack
           </h3>
 
@@ -361,12 +361,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             {toolsStack.map((tool) => (
               <div key={tool.name} className="p-5 rounded-2xl bg-white border border-black/10">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="font-serif text-lg font-bold text-[#16201B]">{tool.name}</span>
-                  <span className="text-[10px] font-mono text-[#1C3A5E] bg-black/5 px-2 py-0.5 rounded border border-black/5">
+                  <span className="font-serif text-lg font-bold text-[#0A0A0A]">{tool.name}</span>
+                  <span className="text-[10px] font-mono text-[#04703D] bg-black/5 px-2 py-0.5 rounded border border-black/5">
                     {tool.badge}
                   </span>
                 </div>
-                <p className="text-xs font-mono text-[#16201B]/60">
+                <p className="text-xs font-mono text-[#0A0A0A]/60">
                   {tool.role}
                 </p>
               </div>
@@ -380,7 +380,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
             <span className="text-xs font-mono text-[#04703D] uppercase tracking-widest font-bold block mb-2">
               CLIENT TESTIMONIALS
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B]">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A]">
               What Founders Say Post-Deployment
             </h3>
           </div>
@@ -395,14 +395,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                       {t.source}
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-[#16201B]/90 italic leading-relaxed mb-6 font-serif">
+                  <p className="text-xs sm:text-sm text-[#0A0A0A]/90 italic leading-relaxed mb-6 font-serif">
                     "{t.content}"
                   </p>
                 </div>
 
                 <div className="pt-4 border-t border-black/10 font-mono text-xs">
-                  <div className="font-bold text-[#16201B]">{t.author}</div>
-                  <div className="text-[#16201B]/50 text-[11px] mb-2">{t.role || t.company}</div>
+                  <div className="font-bold text-[#0A0A0A]">{t.author}</div>
+                  <div className="text-[#0A0A0A]/50 text-[11px] mb-2">{t.role || t.company}</div>
                   <div className="text-[10px] text-[#04703D] bg-black/5 px-2 py-1 rounded inline-block">
                     {t.projectType}
                   </div>
@@ -415,11 +415,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
         {/* Page Bridge Navigation */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-white border border-black/10">
           <div>
-            <span className="text-xs font-mono text-[#16201B]/40 uppercase">NEXT SECTION</span>
-            <h4 className="font-serif text-2xl font-bold text-[#16201B]">
+            <span className="text-xs font-mono text-[#0A0A0A]/40 uppercase">NEXT SECTION</span>
+            <h4 className="font-serif text-2xl font-bold text-[#0A0A0A]">
               Book a Systems Discovery & Audit
             </h4>
-            <p className="text-xs font-mono text-[#1C3A5E] mt-1">
+            <p className="text-xs font-mono text-[#04703D] mt-1">
               Live Cal.com scheduling, ROI calculator, and project intake
             </p>
           </div>
@@ -429,7 +429,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               sound.playClick();
               onNavigate('contact');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to Contact & Booking</span>
           </button>

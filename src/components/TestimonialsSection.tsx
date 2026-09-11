@@ -21,8 +21,8 @@ export const TestimonialsSection: React.FC = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-              <MessageSquare className="w-3.5 h-3.5 text-[#1C3A5E]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+              <MessageSquare className="w-3.5 h-3.5 text-[#04703D]" />
               <span>Verified Client Proof</span>
             </div>
             
@@ -41,7 +41,7 @@ export const TestimonialsSection: React.FC = () => {
               onClick={() => setActiveTab('grid')}
               className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                 activeTab === 'grid'
-                  ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
+                  ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
                   : 'text-white/60 hover:text-white'
               }`}
             >
@@ -51,7 +51,7 @@ export const TestimonialsSection: React.FC = () => {
               onClick={() => setActiveTab('carousel')}
               className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                 activeTab === 'carousel'
-                  ? 'bg-[#1C3A5E] text-[#111815] font-bold shadow-md'
+                  ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
                   : 'text-white/60 hover:text-white'
               }`}
             >
@@ -66,24 +66,24 @@ export const TestimonialsSection: React.FC = () => {
             {TESTIMONIALS.map((t, idx) => (
               <div
                 key={t.id}
-                className="rounded-3xl bg-[#16201B] border border-white/10 p-7 flex flex-col justify-between hover:border-[#1C3A5E]/40 transition-all relative group"
+                className="rounded-3xl bg-[#0A0A0A] border border-white/10 p-7 flex flex-col justify-between hover:border-[#04703D]/40 transition-all relative group"
               >
                 <div>
                   {/* Rating Stars & Source */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-1">
                       {[...Array(t.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-[#1C3A5E] text-[#1C3A5E]" />
+                        <Star key={i} className="w-4 h-4 fill-[#04703D] text-[#04703D]" />
                       ))}
                     </div>
-                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-black/50 text-[#1C3A5E] border border-[#1C3A5E]/20 flex items-center gap-1">
-                      <CheckCircle2 className="w-3 h-3 text-[#1C3A5E]" />
+                    <span className="text-[10px] font-mono px-2.5 py-1 rounded-md bg-black/50 text-[#04703D] border border-[#04703D]/20 flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3 text-[#04703D]" />
                       {t.source}
                     </span>
                   </div>
 
                   {/* Project Type */}
-                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#1C3A5E] mb-3">
+                  <div className="text-[11px] font-mono font-bold uppercase tracking-widest text-[#04703D] mb-3">
                     {t.projectType}
                   </div>
 
@@ -103,7 +103,7 @@ export const TestimonialsSection: React.FC = () => {
                       {t.role} {t.company ? `(${t.company})` : ''}
                     </p>
                   </div>
-                  <Quote className="w-6 h-6 text-[#1C3A5E]/30" />
+                  <Quote className="w-6 h-6 text-[#04703D]/30" />
                 </div>
               </div>
             ))}
@@ -113,20 +113,20 @@ export const TestimonialsSection: React.FC = () => {
         {/* Carousel / Spotlight View */}
         {activeTab === 'carousel' && (
           <div className="max-w-3xl mx-auto">
-            <div className="rounded-3xl bg-[#16201B]/88 border border-white/10 p-8 sm:p-12 shadow-2xl relative">
+            <div className="rounded-3xl bg-[#0A0A0A]/88 border border-white/10 p-8 sm:p-12 shadow-2xl relative">
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-1.5">
                   {[...Array(TESTIMONIALS[carouselIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#1C3A5E] text-[#1C3A5E]" />
+                    <Star key={i} className="w-5 h-5 fill-[#04703D] text-[#04703D]" />
                   ))}
                 </div>
-                <span className="text-xs font-mono px-3 py-1 rounded-lg bg-black/50 text-[#1C3A5E] border border-[#1C3A5E]/30 flex items-center gap-1.5">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#1C3A5E]" />
+                <span className="text-xs font-mono px-3 py-1 rounded-lg bg-black/50 text-[#04703D] border border-[#04703D]/30 flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#04703D]" />
                   {TESTIMONIALS[carouselIndex].source}
                 </span>
               </div>
 
-              <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#1C3A5E] mb-4">
+              <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#04703D] mb-4">
                 Project: {TESTIMONIALS[carouselIndex].projectType}
               </div>
 

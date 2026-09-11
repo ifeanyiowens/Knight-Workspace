@@ -22,15 +22,15 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
     <section id="process" className="py-24 bg-[#111815]/72 text-[#EDEDEA] border-b border-white/10 relative overflow-hidden">
       {/* Background ambient lighting */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-[#1B4332]/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-80 h-80 bg-[#1C3A5E]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-80 h-80 bg-[#04703D]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#1C3A5E] text-xs font-mono uppercase tracking-widest mb-3">
-              <Layers className="w-3.5 h-3.5 text-[#1C3A5E]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#04703D] text-xs font-mono uppercase tracking-widest mb-3">
+              <Layers className="w-3.5 h-3.5 text-[#04703D]" />
               <span>The 4-Step Methodology</span>
             </div>
             
@@ -48,7 +48,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
               sound.playTrigger();
               onOpenBooking();
             }}
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-bold text-sm hover:bg-[#2A4D7A] transition-all self-start md:self-auto cursor-pointer shadow-lg group"
+            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#04703D] text-white font-bold text-sm hover:bg-[#059C54] transition-all self-start md:self-auto cursor-pointer shadow-lg group"
           >
             <Calendar className="w-4 h-4" />
             <span>Schedule Project Audit</span>
@@ -64,24 +64,24 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
               onClick={() => handleStepSelect(idx)}
               className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between relative overflow-hidden ${
                 activeStepIdx === idx
-                  ? 'bg-[#1B4332] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/50'
-                  : 'bg-[#16201B]/80 border-white/10 hover:bg-[#1A2520] hover:border-white/20'
+                  ? 'bg-[#1B4332] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/50'
+                  : 'bg-[#0A0A0A]/80 border-white/10 hover:bg-[#1A2520] hover:border-white/20'
               }`}
             >
               <div>
                 {/* Step Number & Duration */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-black/40 text-[#1C3A5E] border border-[#1C3A5E]/30">
+                  <span className="font-mono text-xs font-bold px-2.5 py-1 rounded-md bg-black/40 text-[#04703D] border border-[#04703D]/30">
                     PHASE {step.number}
                   </span>
                   <span className="text-[11px] font-mono text-white/60 flex items-center gap-1">
-                    <Clock className="w-3 h-3 text-[#1C3A5E]" />
+                    <Clock className="w-3 h-3 text-[#04703D]" />
                     {step.duration}
                   </span>
                 </div>
 
                 {/* Phase Tag */}
-                <span className="text-[11px] font-mono uppercase tracking-widest text-[#1C3A5E] block mb-1">
+                <span className="text-[11px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
                   {step.phase}
                 </span>
 
@@ -101,7 +101,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
                 <span className="text-[10px] font-mono uppercase tracking-wider text-white/50 block mb-1">
                   Primary Outcome:
                 </span>
-                <span className="text-xs font-semibold text-[#1C3A5E] line-clamp-1">
+                <span className="text-xs font-semibold text-[#04703D] line-clamp-1">
                   {step.deliverable}
                 </span>
               </div>
@@ -110,13 +110,13 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
         </div>
 
         {/* Deep Dive Spotlight for Active Phase */}
-        <div className="rounded-2xl bg-[#16201B]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden mb-12">
+        <div className="rounded-2xl bg-[#0A0A0A]/88 border border-white/10 p-6 sm:p-8 lg:p-10 shadow-2xl relative overflow-hidden mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Left: Phase Overview */}
             <div className="lg:col-span-6 space-y-4">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-xs px-3 py-1 rounded-md bg-[#1B4332] text-[#1C3A5E] font-bold border border-[#1C3A5E]/30">
+                <span className="font-mono text-xs px-3 py-1 rounded-md bg-[#1B4332] text-[#04703D] font-bold border border-[#04703D]/30">
                   PHASE {activeStep.number} / 04
                 </span>
                 <span className="text-xs text-white/60 font-mono">
@@ -133,9 +133,9 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
               </p>
 
               <div className="p-4 rounded-xl bg-black/40 border border-white/10 flex items-start gap-3">
-                <ShieldCheck className="w-5 h-5 text-[#1C3A5E] flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="w-5 h-5 text-[#04703D] flex-shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#1C3A5E] block font-bold">
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#04703D] block font-bold">
                     Official Deliverable
                   </span>
                   <span className="text-sm font-semibold text-white">
@@ -147,14 +147,14 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
 
             {/* Right: Key Activities Checklist */}
             <div className="lg:col-span-6 bg-[#111815] p-6 rounded-xl border border-white/10 space-y-4">
-              <span className="text-xs font-mono uppercase tracking-widest text-[#1C3A5E] block font-bold">
+              <span className="text-xs font-mono uppercase tracking-widest text-[#04703D] block font-bold">
                 Activities & Milestones in this Sprint:
               </span>
 
               <div className="space-y-3">
                 {activeStep.activities.map((activity, idx) => (
                   <div key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-white/90">
-                    <div className="w-5 h-5 rounded-full bg-[#1B4332] text-[#1C3A5E] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#1C3A5E]/30">
+                    <div className="w-5 h-5 rounded-full bg-[#1B4332] text-[#04703D] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#04703D]/30">
                       <Check className="w-3.5 h-3.5" />
                     </div>
                     <span>{activity}</span>
@@ -168,7 +168,7 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ onOpenBooking })
                 </span>
                 <button
                   onClick={onOpenBooking}
-                  className="text-xs font-bold text-[#1C3A5E] hover:underline flex items-center gap-1 cursor-pointer"
+                  className="text-xs font-bold text-[#04703D] hover:underline flex items-center gap-1 cursor-pointer"
                 >
                   <span>Book Initial Audit</span>
                   <ArrowRight className="w-3.5 h-3.5" />

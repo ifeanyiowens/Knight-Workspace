@@ -55,18 +55,18 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
   ];
 
   return (
-    <div className="w-full text-[#16201B]">
+    <div className="w-full text-[#0A0A0A]">
       
       {/* Header Banner */}
       <section className="py-20 md:py-24 bg-[#EDEDEA] border-b border-black/10 relative overflow-hidden">
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-[#059C54]/35 rounded-full blur-[140px] pointer-events-none -z-10" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#16201B] tracking-tight leading-[1.05] mb-6">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-[#0A0A0A] tracking-tight leading-[1.05] mb-6">
             From Chaos to a System That Holds in 7 Days.
           </h1>
 
-          <p className="text-base sm:text-xl text-[#16201B]/70 max-w-3xl leading-relaxed font-sans mb-8">
+          <p className="text-base sm:text-xl text-[#0A0A0A]/70 max-w-3xl leading-relaxed font-sans mb-8">
             A deterministic, sprint-based approach designed to prevent founder fatigue. We handle the heavy engineering while your business keeps generating revenue.
           </p>
 
@@ -76,7 +76,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                 sound.playTrigger();
                 onOpenBooking();
               }}
-              className="px-7 py-4 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
+              className="px-7 py-4 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all shadow-xl flex items-center gap-2 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book a call</span>
@@ -86,7 +86,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                 sound.playClick();
                 onNavigate('work');
               }}
-              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#16201B] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
+              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-black/10 text-[#0A0A0A] font-mono text-xs uppercase tracking-wider border border-black/10 transition-all flex items-center gap-2"
             >
               <span>Review Past Deployments</span>
             </button>
@@ -108,7 +108,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               onClick={() => handleStepSelect(idx)}
               className={`rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between relative overflow-hidden ${
                 activeStepIdx === idx
-                  ? 'bg-[#059C54] border-[#1C3A5E] shadow-xl ring-1 ring-[#1C3A5E]/50'
+                  ? 'bg-[#059C54] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
@@ -117,7 +117,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                   <span className="font-mono text-xs font-bold text-[#04703D]">
                     {step.number}
                   </span>
-                  <span className="text-[10px] font-mono uppercase bg-black/5 text-[#16201B]/70 px-2 py-0.5 rounded border border-black/5">
+                  <span className="text-[10px] font-mono uppercase bg-black/5 text-[#0A0A0A]/70 px-2 py-0.5 rounded border border-black/5">
                     {step.duration}
                   </span>
                 </div>
@@ -126,18 +126,18 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                   {step.phase}
                 </div>
 
-                <h3 className="font-serif text-xl font-bold text-[#16201B] mb-2 leading-snug">
+                <h3 className="font-serif text-xl font-bold text-[#0A0A0A] mb-2 leading-snug">
                   {step.title}
                 </h3>
 
-                <p className="text-xs text-[#16201B]/70 leading-relaxed mb-4">
+                <p className="text-xs text-[#0A0A0A]/70 leading-relaxed mb-4">
                   {step.description}
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-mono text-[#16201B]/60">
+              <div className="pt-3 border-t border-black/10 flex items-center justify-between text-xs font-mono text-[#0A0A0A]/60">
                 <span className="text-[10px] uppercase">Deliverable</span>
-                <span className="text-[#16201B] font-semibold text-[11px] truncate max-w-[140px]">
+                <span className="text-[#0A0A0A] font-semibold text-[11px] truncate max-w-[140px]">
                   {step.deliverable}
                 </span>
               </div>
@@ -155,17 +155,17 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
                 <span>PHASE {activeStep.number}: {activeStep.duration}</span>
               </div>
 
-              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] leading-tight">
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A] leading-tight">
                 {activeStep.title}
               </h3>
 
-              <p className="text-sm text-[#16201B]/80 leading-relaxed font-sans">
+              <p className="text-sm text-[#0A0A0A]/80 leading-relaxed font-sans">
                 {activeStep.description}
               </p>
 
               <div className="p-4 rounded-xl bg-white border border-black/10 font-mono text-xs">
-                <span className="text-[#1C3A5E] font-bold block mb-1">Key Deliverable:</span>
-                <span className="text-[#16201B]">{activeStep.deliverable}</span>
+                <span className="text-[#04703D] font-bold block mb-1">Key Deliverable:</span>
+                <span className="text-[#0A0A0A]">{activeStep.deliverable}</span>
               </div>
             </div>
 
@@ -176,8 +176,8 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
 
               <div className="space-y-3">
                 {activeStep.activities.map((act, aIdx) => (
-                  <div key={aIdx} className="flex items-start gap-3 text-xs sm:text-sm font-mono text-[#16201B]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#1C3A5E]/30">
+                  <div key={aIdx} className="flex items-start gap-3 text-xs sm:text-sm font-mono text-[#0A0A0A]/90">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#04703D]/30">
                       ✓
                     </span>
                     <span>{act}</span>
@@ -195,11 +195,11 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
             <span className="text-xs font-mono uppercase tracking-widest text-[#04703D] font-bold block mb-2">
               OUR CORE PHILOSOPHY
             </span>
-            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#16201B] mb-6">
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-[#0A0A0A] mb-6">
               Why $19 Notion Templates Destroy Operational Velocity.
             </h3>
             
-            <div className="space-y-4 text-sm text-[#16201B]/80 leading-relaxed font-sans">
+            <div className="space-y-4 text-sm text-[#0A0A0A]/80 leading-relaxed font-sans">
               <p>
                 Most small business owners buy a template hoping it fixes everything overnight. Three weeks later it sits unused, because it was built for a made up company, not your team, your clients, or the exact spot where handoffs keep breaking down.
               </p>
@@ -212,18 +212,18 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
 
         {/* 4 Operational Guarantees */}
         <div className="mb-16">
-          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#16201B] mb-8 text-center">
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#0A0A0A] mb-8 text-center">
             Our 4 Operational Guarantees
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {guarantees.map((g, idx) => (
               <div key={idx} className="p-6 rounded-2xl bg-white border border-black/10">
-                <g.icon className="w-6 h-6 text-[#1C3A5E] mb-3" />
-                <h4 className="font-serif text-lg font-bold text-[#16201B] mb-2">
+                <g.icon className="w-6 h-6 text-[#04703D] mb-3" />
+                <h4 className="font-serif text-lg font-bold text-[#0A0A0A] mb-2">
                   {g.title}
                 </h4>
-                <p className="text-xs text-[#16201B]/70 leading-relaxed">
+                <p className="text-xs text-[#0A0A0A]/70 leading-relaxed">
                   {g.desc}
                 </p>
               </div>
@@ -234,8 +234,8 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
         {/* Page Bridge Navigation */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-8 rounded-3xl bg-white border border-black/10">
           <div>
-            <span className="text-xs font-mono text-[#16201B]/40 uppercase">NEXT SECTION</span>
-            <h4 className="font-serif text-2xl font-bold text-[#16201B]">
+            <span className="text-xs font-mono text-[#0A0A0A]/40 uppercase">NEXT SECTION</span>
+            <h4 className="font-serif text-2xl font-bold text-[#0A0A0A]">
               About Owens Oparaku & The Oparaku Philosophy
             </h4>
             <p className="text-xs font-mono text-[#04703D] mt-1">
@@ -248,7 +248,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               sound.playClick();
               onNavigate('about');
             }}
-            className="px-6 py-3.5 rounded-xl bg-[#1C3A5E] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#2A4D7A] transition-all flex items-center gap-2 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all flex items-center gap-2 cursor-pointer"
           >
             <span>Proceed to About</span>
           </button>

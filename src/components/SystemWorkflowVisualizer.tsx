@@ -62,7 +62,7 @@ export const SystemWorkflowVisualizer: React.FC = () => {
               LIVE SYSTEMS SIMULATOR
             </span>
           </div>
-          <h3 className="font-serif text-2xl font-bold text-[#16201B]">
+          <h3 className="font-serif text-2xl font-bold text-[#0A0A0A]">
             Watch an Oparaku Automation in Real-Time
           </h3>
         </div>
@@ -72,8 +72,8 @@ export const SystemWorkflowVisualizer: React.FC = () => {
           disabled={isRunning}
           className={`inline-flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shadow-lg ${
             isRunning
-              ? 'bg-black/10 text-[#16201B]/40 cursor-not-allowed'
-              : 'bg-[#1C3A5E] text-[#111815] hover:bg-[#2A4D7A]'
+              ? 'bg-black/10 text-[#0A0A0A]/40 cursor-not-allowed'
+              : 'bg-[#04703D] text-[#111815] hover:bg-[#059C54]'
           }`}
         >
           {isRunning ? (
@@ -96,72 +96,72 @@ export const SystemWorkflowVisualizer: React.FC = () => {
         {/* Step 1: Intake Form */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 0
-            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
+            ? 'bg-[#059C54] border-[#04703D] shadow-lg shadow-[#04703D]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">01 Intake</span>
             <span className={`w-2 h-2 rounded-full ${activeStep >= 0 ? 'bg-[#04703D] animate-ping' : 'bg-black/20'}`} />
           </div>
-          <div className="font-bold text-[#16201B] text-sm mb-1">Typeform Submission</div>
-          <p className="text-[11px] text-[#16201B]/60 font-mono">Lead captures client stack & budget</p>
+          <div className="font-bold text-[#0A0A0A] text-sm mb-1">Typeform Submission</div>
+          <p className="text-[11px] text-[#0A0A0A]/60 font-mono">Lead captures client stack & budget</p>
         </div>
 
         {/* Step 2: Make.com Router */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 1
-            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
+            ? 'bg-[#059C54] border-[#04703D] shadow-lg shadow-[#04703D]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">02 Router</span>
-            <Zap className={`w-3.5 h-3.5 ${activeStep >= 1 ? 'text-[#1C3A5E]' : 'text-[#16201B]/20'}`} />
+            <Zap className={`w-3.5 h-3.5 ${activeStep >= 1 ? 'text-[#04703D]' : 'text-[#0A0A0A]/20'}`} />
           </div>
-          <div className="font-bold text-[#16201B] text-sm mb-1">Make.com Logic</div>
-          <p className="text-[11px] text-[#16201B]/60 font-mono">Filters by deal size & assigns rep</p>
+          <div className="font-bold text-[#0A0A0A] text-sm mb-1">Make.com Logic</div>
+          <p className="text-[11px] text-[#0A0A0A]/60 font-mono">Filters by deal size & assigns rep</p>
         </div>
 
         {/* Step 3: Notion Database */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 2
-            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
+            ? 'bg-[#059C54] border-[#04703D] shadow-lg shadow-[#04703D]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">03 Database</span>
-            <Database className={`w-3.5 h-3.5 ${activeStep >= 2 ? 'text-[#1C3A5E]' : 'text-[#16201B]/20'}`} />
+            <Database className={`w-3.5 h-3.5 ${activeStep >= 2 ? 'text-[#04703D]' : 'text-[#0A0A0A]/20'}`} />
           </div>
-          <div className="font-bold text-[#16201B] text-sm mb-1">Notion CRM Sync</div>
-          <p className="text-[11px] text-[#16201B]/60 font-mono">Creates scoped deal card & rollups</p>
+          <div className="font-bold text-[#0A0A0A] text-sm mb-1">Notion CRM Sync</div>
+          <p className="text-[11px] text-[#0A0A0A]/60 font-mono">Creates scoped deal card & rollups</p>
         </div>
 
         {/* Step 4: Instant Action */}
         <div className={`p-4 rounded-2xl border transition-all duration-300 ${
           activeStep >= 3
-            ? 'bg-[#059C54] border-[#1C3A5E] shadow-lg shadow-[#1C3A5E]/10'
+            ? 'bg-[#059C54] border-[#04703D] shadow-lg shadow-[#04703D]/10'
             : 'bg-white border-black/5 opacity-60'
         }`}>
           <div className="flex items-center justify-between mb-2">
             <span className="font-mono text-[10px] text-[#04703D] uppercase">04 Complete</span>
-            <CheckCircle2 className={`w-3.5 h-3.5 ${activeStep >= 3 ? 'text-[#04703D]' : 'text-[#16201B]/20'}`} />
+            <CheckCircle2 className={`w-3.5 h-3.5 ${activeStep >= 3 ? 'text-[#04703D]' : 'text-[#0A0A0A]/20'}`} />
           </div>
-          <div className="font-bold text-[#16201B] text-sm mb-1">Slack & Calendar</div>
-          <p className="text-[11px] text-[#16201B]/60 font-mono">Founder alerted; zero manual work</p>
+          <div className="font-bold text-[#0A0A0A] text-sm mb-1">Slack & Calendar</div>
+          <p className="text-[11px] text-[#0A0A0A]/60 font-mono">Founder alerted; zero manual work</p>
         </div>
 
       </div>
 
       {/* Terminal Real-Time Log Output */}
-      <div className="rounded-2xl bg-[#16201B] border border-black/10 p-4 font-mono text-xs text-[#EDEDEA]">
-        <div className="flex items-center gap-2 pb-2 mb-2 border-b border-black/10 text-[#16201B]/40 text-[10px]">
-          <Terminal className="w-3.5 h-3.5 text-[#1C3A5E]" />
+      <div className="rounded-2xl bg-[#0A0A0A] border border-black/10 p-4 font-mono text-xs text-[#EDEDEA]">
+        <div className="flex items-center gap-2 pb-2 mb-2 border-b border-black/10 text-[#0A0A0A]/40 text-[10px]">
+          <Terminal className="w-3.5 h-3.5 text-[#04703D]" />
           <span>REAL-TIME AUDIT LOG</span>
         </div>
         <div className="space-y-1 max-h-28 overflow-y-auto">
           {logs.map((log, index) => (
             <div key={index} className="flex items-start gap-2">
-              <span className="text-[#1C3A5E] select-none">›</span>
-              <span className={index === logs.length - 1 ? 'text-[#04703D] font-semibold' : 'text-[#16201B]/70'}>
+              <span className="text-[#04703D] select-none">›</span>
+              <span className={index === logs.length - 1 ? 'text-[#04703D] font-semibold' : 'text-[#0A0A0A]/70'}>
                 {log}
               </span>
             </div>
