@@ -45,7 +45,7 @@ export const PageSwitcherBar: React.FC<PageSwitcherBarProps> = ({ currentPage, o
                 onClick={() => handleNavigate(page.id)}
                 className={`px-3 py-1.5 rounded-full transition-all flex items-center gap-1 cursor-pointer ${
                   isActive
-                    ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#04703D] text-white font-bold shadow-md'
                     : 'text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 text-[11px]'
                 }`}
                 title={`Jump to [${page.index}] ${page.title}`}

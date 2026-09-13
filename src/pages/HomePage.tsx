@@ -67,40 +67,43 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenBooking, onNavigate })
 
           {/* 4 Super Simple & Human Problem Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-12">
-            {CORE_PROBLEMS.map((problem, idx) => (
+            {CORE_PROBLEMS.map((problem, idx) => {
+              const isSelected = selectedProblemIdx === idx;
+              return (
               <ScrollReveal key={problem.id} delay={(idx % 4) * 90}>
               <div
                 onClick={() => handleProblemSelect(idx)}
                 className={`hover-lift rounded-2xl p-6 transition-all cursor-pointer border flex flex-col justify-between h-full ${
-                  selectedProblemIdx === idx
+                  isSelected
                     ? 'bg-[#059C54] border-[#04703D] shadow-xl ring-1 ring-[#04703D]/40'
                     : 'bg-white border-black/10 hover:border-black/20'
                 }`}
               >
                 <div>
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs font-bold text-[#04703D]">
+                    <span className={`text-xs font-bold ${isSelected ? 'text-white/80' : 'text-[#04703D]'}`}>
                       0{idx + 1}
                     </span>
-                    <span className="text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-black/5 text-[#0A0A0A]/80">
+                    <span className={`text-[11px] font-medium px-2.5 py-0.5 rounded-full ${isSelected ? 'bg-white/20 text-white' : 'bg-black/5 text-[#0A0A0A]/80'}`}>
                       {problem.symptom}
                     </span>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-[#0A0A0A] mb-2 leading-snug">
+                  <h3 className={`font-serif text-xl font-bold mb-2 leading-snug ${isSelected ? 'text-white' : 'text-[#0A0A0A]'}`}>
                     {problem.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-[#0A0A0A]/75 leading-relaxed mb-4">
+                  <p className={`text-xs sm:text-sm leading-relaxed mb-4 ${isSelected ? 'text-white/90' : 'text-[#0A0A0A]/75'}`}>
                     {problem.description}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-black/10 text-xs text-[#04703D] font-semibold flex items-center gap-1.5">
+                <div className={`pt-3 border-t text-xs font-semibold flex items-center gap-1.5 ${isSelected ? 'border-white/20 text-white' : 'border-black/10 text-[#04703D]'}`}>
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                   <span>{problem.solution}</span>
                 </div>
               </div>
               </ScrollReveal>
-            ))}
+              );
+            })}
           </div>
 
           {/* Before vs After comparison */}

@@ -110,11 +110,11 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
             </div>
           </div>
 
-          <div className="bg-[#059C54] text-[#0A0A0A] p-5 rounded-2xl border border-[#04703D]/40 shadow-lg">
-            <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#04703D] mb-1">
+          <div className="bg-[#059C54] text-white p-5 rounded-2xl border border-[#04703D]/40 shadow-lg">
+            <div className="text-xs font-mono font-bold uppercase tracking-widest text-white/80 mb-1">
               Measurable Operational Result
             </div>
-            <p className="text-sm text-[#0A0A0A]/95 leading-relaxed font-sans">
+            <p className="text-sm text-white/95 leading-relaxed font-sans">
               {study.outcome}
             </p>
           </div>

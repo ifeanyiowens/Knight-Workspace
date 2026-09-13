@@ -118,7 +118,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 onClick={() => handleFilterClick(f.value as any)}
                 className={`text-xs font-mono px-3.5 py-2 rounded-xl transition-all cursor-pointer ${
                   selectedFilter === f.value
-                    ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                    ? 'bg-[#04703D] text-white font-bold shadow-md'
                     : 'bg-black/5 text-[#0A0A0A]/70 hover:text-[#0A0A0A] hover:bg-black/10 border border-black/10'
                 }`}
               >
@@ -206,7 +206,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => handleStudyOpen(study)}
-                    className="flex-1 py-3.5 px-4 rounded-xl bg-black/5 text-white hover:bg-[#04703D] hover:text-white transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer border border-black/10 shadow-sm group"
+                    className="flex-1 py-3.5 px-4 rounded-xl bg-[#04703D] text-white hover:bg-[#059C54] transition-all text-xs font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 cursor-pointer shadow-sm group"
                   >
                     <span>Inspect Architecture</span>
                   </button>
@@ -220,7 +220,7 @@ export const WorkPage: React.FC<WorkPageProps> = ({ onOpenBooking, onNavigate })
                         e.stopPropagation();
                         sound.playClick();
                       }}
-                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A]/80 hover:text-[#04703D] border border-black/10 hover:border-[#04703D]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
+                      className="p-3.5 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A]/80 hover:text-white border border-black/10 hover:border-[#04703D]/40 transition-all text-xs font-mono flex items-center justify-center gap-1.5 flex-shrink-0"
                       title={study.linkText || 'Open System Link'}
                     >
                       <ExternalLink className="w-4 h-4" />

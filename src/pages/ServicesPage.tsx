@@ -113,53 +113,55 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
 
         {/* 6 Interactive Service Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {SERVICES.map((service, idx) => (
+          {SERVICES.map((service, idx) => {
+            const isSelected = selectedServiceIdx === idx;
+            return (
             <ScrollReveal key={service.id} delay={(idx % 3) * 100}>
             <div
               onClick={() => handleSelectService(idx)}
               className={`hover-lift rounded-3xl p-7 transition-all cursor-pointer border flex flex-col justify-between h-full ${
-                selectedServiceIdx === idx
+                isSelected
                   ? 'bg-[#059C54] border-[#04703D] shadow-2xl ring-1 ring-[#04703D]/50'
                   : 'bg-white border-black/10 hover:border-black/20'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#059C54] border border-black/10 flex items-center justify-center">
+                  <div className={`w-10 h-10 rounded-xl border flex items-center justify-center ${isSelected ? 'bg-white/20 border-white/30' : 'bg-[#059C54] border-black/10'}`}>
                     {getServiceIcon(service.icon)}
                   </div>
-                  <span className="font-mono text-xs font-bold text-[#04703D]">
+                  <span className={`font-mono text-xs font-bold ${isSelected ? 'text-white/80' : 'text-[#04703D]'}`}>
                     [0{idx + 1}]
                   </span>
                 </div>
 
-                <h3 className="font-serif text-2xl font-bold text-[#0A0A0A] mb-2 leading-snug">
+                <h3 className={`font-serif text-2xl font-bold mb-2 leading-snug ${isSelected ? 'text-white' : 'text-[#0A0A0A]'}`}>
                   {service.title}
                 </h3>
-                <p className="text-xs text-[#0A0A0A]/70 leading-relaxed mb-6">
+                <p className={`text-xs leading-relaxed mb-6 ${isSelected ? 'text-white/90' : 'text-[#0A0A0A]/70'}`}>
                   {service.description}
                 </p>
 
                 <div className="space-y-2 mb-6">
-                  <span className="font-mono text-[10px] text-[#04703D] uppercase font-bold tracking-wider block">
+                  <span className={`font-mono text-[10px] uppercase font-bold tracking-wider block ${isSelected ? 'text-white/80' : 'text-[#04703D]'}`}>
                     Core Deliverables:
                   </span>
                   {service.deliverables.slice(0, 3).map((item, dIdx) => (
-                    <div key={dIdx} className="flex items-start gap-2 text-xs text-[#0A0A0A]/80">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#04703D] flex-shrink-0 mt-0.5" />
+                    <div key={dIdx} className={`flex items-start gap-2 text-xs ${isSelected ? 'text-white/90' : 'text-[#0A0A0A]/80'}`}>
+                      <CheckCircle2 className={`w-3.5 h-3.5 flex-shrink-0 mt-0.5 ${isSelected ? 'text-white' : 'text-[#04703D]'}`} />
                       <span>{item}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-black/10">
-                <div className="text-[11px] font-mono text-[#0A0A0A]/50 mb-3">
-                  Best For: <span className="text-[#0A0A0A]/80">{service.bestFor}</span>
+              <div className={`pt-4 border-t ${isSelected ? 'border-white/20' : 'border-black/10'}`}>
+                <div className={`text-[11px] font-mono mb-3 ${isSelected ? 'text-white/70' : 'text-[#0A0A0A]/50'}`}>
+                  Best For: <span className={isSelected ? 'text-white/90' : 'text-[#0A0A0A]/80'}>{service.bestFor}</span>
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {service.tools.map((t) => (
-                    <span key={t} className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#04703D]/10 text-[#04703D] border border-[#04703D]/20">
+                    <span key={t} className={`text-[10px] font-mono px-2 py-0.5 rounded border ${isSelected ? 'bg-white/15 text-white border-white/30' : 'bg-[#04703D]/10 text-[#04703D] border-[#04703D]/20'}`}>
                       {t}
                     </span>
                   ))}
@@ -167,7 +169,8 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               </div>
             </div>
             </ScrollReveal>
-          ))}
+            );
+          })}
         </div>
 
         {/* Selected Service Deep Dive Card */}

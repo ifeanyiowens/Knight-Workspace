@@ -134,9 +134,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
               href={BRAND_INFO.notionSite}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-4 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A] font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#04703D]/40 transition-all flex items-center gap-2"
+              className="group px-6 py-4 rounded-xl bg-black/5 hover:bg-[#059C54] text-[#0A0A0A] hover:text-white font-mono text-xs uppercase tracking-wider border border-black/10 hover:border-[#04703D]/40 transition-all flex items-center gap-2"
             >
-              <Globe className="w-4 h-4 text-[#04703D]" />
+              <Globe className="w-4 h-4 text-[#04703D] group-hover:text-white transition-colors" />
               <span>Explore Notion Site</span>
             </a>
             <a
@@ -177,7 +177,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   onError={handleImageError}
                 />
               ) : (
-                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#059C54] text-[#0A0A0A] p-6 text-center rounded-3xl">
+                <div className="w-full h-96 flex flex-col items-center justify-center bg-[#059C54] text-white p-6 text-center rounded-3xl">
                   <span className="font-serif text-4xl font-bold text-[#04703D] mb-2">OO</span>
                   <span className="font-serif text-xl font-bold">Owens Oparaku</span>
                   <span className="text-xs text-[#0A0A0A]/70 mt-1">Business Operations Architect</span>
@@ -201,7 +201,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   href={BRAND_INFO.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#04703D] hover:text-white transition-all flex items-center justify-center text-white"
+                  className="w-9 h-9 rounded-xl bg-[#04703D] hover:bg-[#059C54] transition-all flex items-center justify-center text-white"
                   title="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
@@ -210,7 +210,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   href={BRAND_INFO.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-xl bg-black/5 hover:bg-[#04703D] hover:text-white transition-all flex items-center justify-center text-white"
+                  className="w-9 h-9 rounded-xl bg-[#04703D] hover:bg-[#059C54] transition-all flex items-center justify-center text-white"
                   title="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
@@ -323,7 +323,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenBooking, onNavigate 
                   }}
                   className={`text-xs font-mono px-3 py-1.5 rounded-xl transition-all cursor-pointer ${
                     activeCertCategory === tab.id
-                      ? 'bg-[#04703D] text-[#111815] font-bold shadow-md'
+                      ? 'bg-[#04703D] text-white font-bold shadow-md'
                       : 'bg-black/5 text-[#0A0A0A]/60 hover:text-[#0A0A0A] hover:bg-black/10 border border-black/5'
                   }`}
                 >

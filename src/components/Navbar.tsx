@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
             onClick={() => handleNavClick('home')}
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="w-9 h-9 rounded-lg bg-[#059C54] text-[#0A0A0A] flex items-center justify-center font-serif text-lg font-bold border border-[#04703D]/30 shadow-sm group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-lg bg-[#059C54] text-white flex items-center justify-center font-serif text-lg font-bold border border-[#04703D]/30 shadow-sm group-hover:scale-105 transition-transform">
               O
             </div>
             <div>
@@ -66,7 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                   onClick={() => handleNavClick(page.id)}
                   className={`px-3.5 py-1.5 rounded-full text-xs font-mono transition-all flex items-center gap-1.5 cursor-pointer ${
                     isActive
-                      ? 'bg-[#04703D] text-[#0A0A0A] font-bold shadow-sm'
+                      ? 'bg-[#04703D] text-white font-bold shadow-sm'
                       : 'text-[#0A0A0A]/70 hover:text-[#0A0A0A] hover:bg-black/5'
                   }`}
                 >
@@ -127,7 +127,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenB
                   onClick={() => handleNavClick(page.id)}
                   className={`px-3 py-2.5 text-xs rounded-lg flex items-center gap-2 text-left cursor-pointer transition-colors ${
                     isActive
-                      ? 'bg-[#04703D] text-[#0A0A0A] font-bold'
+                      ? 'bg-[#04703D] text-white font-bold'
                       : 'text-[#0A0A0A]/80 hover:text-[#0A0A0A] hover:bg-black/5'
                   }`}
                 >
