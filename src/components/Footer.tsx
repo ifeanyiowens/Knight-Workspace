@@ -59,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ currentPage = 'home', onNavigate
               onClick={() => handlePageClick('home')}
               className="flex items-center gap-3 text-left cursor-pointer group"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#059C54] text-[#04703D] flex items-center justify-center font-serif text-xl font-bold border border-[#04703D]/40 shadow-sm group-hover:scale-105 transition-transform">
+              <div className="w-10 h-10 rounded-xl bg-[#059C54] text-white flex items-center justify-center font-serif text-xl font-bold border border-[#04703D]/40 shadow-sm group-hover:scale-105 transition-transform">
                 O
               </div>
               <div>

@@ -267,7 +267,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenBooking, onNavig
                           onClick={() => handleStackToggle(tool)}
                           className={`px-3 py-1.5 rounded-lg border text-[11px] transition-all cursor-pointer ${
                             formData.stack.includes(tool)
-                              ? 'bg-[#059C54] text-[#04703D] border-[#04703D]'
+                              ? 'bg-[#059C54] text-white border-[#04703D]'
                               : 'bg-black/5 text-[#0A0A0A]/60 border-black/10 hover:border-black/20'
                           }`}
                         >

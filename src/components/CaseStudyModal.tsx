@@ -28,7 +28,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
 
         {/* Top Badges */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
-          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-[#04703D] border border-[#04703D]/30 uppercase tracking-wider">
+          <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#059C54] text-white border border-[#04703D]/30 uppercase tracking-wider">
             {study.badge}
           </span>
           <span className="px-3 py-1 rounded-full text-xs font-mono text-[#0A0A0A]/80 bg-black/5 border border-black/10">
@@ -154,7 +154,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ study, onClose, 
               href={study.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#04703D]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-[#04703D] hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
+              className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#04703D]/40 bg-[#059C54]/60 text-xs font-mono font-bold uppercase tracking-wider text-white hover:bg-[#059C54] transition-colors flex items-center justify-center gap-2"
             >
               <span>Open Link</span>
             </a>

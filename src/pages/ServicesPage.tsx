@@ -196,7 +196,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               <div className="space-y-3">
                 {selectedService.deliverables.map((del, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-3 text-xs font-mono text-[#0A0A0A]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-[10px] font-bold flex-shrink-0">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-white flex items-center justify-center text-[10px] font-bold flex-shrink-0">
                       ✓
                     </span>
                     <span>{del}</span>
@@ -346,22 +346,22 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
 
             {/* Tier 4: Standard Build */}
             <div className="p-7 rounded-2xl bg-[#059C54] border-2 border-[#04703D] shadow-2xl flex flex-col justify-between relative hover-lift h-full">
-              <div className="absolute -top-3 right-6 bg-[#04703D] text-white text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
+              <div className="absolute -top-3 right-6 bg-white text-[#04703D] text-[10px] font-mono font-bold px-3 py-0.5 rounded-full uppercase">
                 FLAGSHIP
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase tracking-widest text-[#04703D] block mb-1">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-white/80 block mb-1">
                   STANDARD BUILD
                 </span>
-                <h4 className="font-serif text-2xl font-bold text-[#0A0A0A] mb-2">
+                <h4 className="font-serif text-2xl font-bold text-white mb-2">
                   Full Operations Build
                 </h4>
-                <div className="font-mono text-xs text-[#0A0A0A]/70 mb-1">7 Days</div>
-                <div className="font-mono text-sm font-bold text-[#0A0A0A] mb-4">$1,500 and up</div>
-                <p className="text-xs text-[#0A0A0A]/80 leading-relaxed mb-6">
+                <div className="font-mono text-xs text-white/70 mb-1">7 Days</div>
+                <div className="font-mono text-sm font-bold text-white mb-4">$1,500 and up</div>
+                <p className="text-xs text-white/90 leading-relaxed mb-6">
                   A complete operational engine, built once and meant to hold as the team grows.
                 </p>
-                <div className="space-y-2.5 text-xs text-[#0A0A0A]/90 mb-6 font-mono">
+                <div className="space-y-2.5 text-xs text-white/95 mb-6 font-mono">
                   <div className="flex items-center gap-2">✓ 8+ Connected Databases</div>
                   <div className="flex items-center gap-2">✓ Full Make.com Automation</div>
                   <div className="flex items-center gap-2">✓ Role-Based Permissions</div>
@@ -372,7 +372,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenBooking, onNav
               </div>
               <button
                 onClick={onOpenBooking}
-                className="w-full py-3.5 rounded-xl bg-[#04703D] text-white font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#059C54] transition-all cursor-pointer shadow-lg"
+                className="w-full py-3.5 rounded-xl bg-white text-[#04703D] font-mono text-xs font-bold uppercase tracking-wider hover:bg-[#0A0A0A] hover:text-white transition-all cursor-pointer shadow-lg"
               >
                 Book a call
               </button>

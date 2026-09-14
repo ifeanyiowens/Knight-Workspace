@@ -177,7 +177,7 @@ export const ProcessPage: React.FC<ProcessPageProps> = ({ onOpenBooking, onNavig
               <div className="space-y-3">
                 {activeStep.activities.map((act, aIdx) => (
                   <div key={aIdx} className="flex items-start gap-3 text-xs sm:text-sm font-mono text-[#0A0A0A]/90">
-                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-[#04703D] flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#04703D]/30">
+                    <span className="w-5 h-5 rounded-md bg-[#059C54] text-white flex items-center justify-center text-xs flex-shrink-0 mt-0.5 border border-[#04703D]/30">
                       ✓
                     </span>
                     <span>{act}</span>
